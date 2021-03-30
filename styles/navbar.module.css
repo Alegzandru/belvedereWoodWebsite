@@ -1,0 +1,422 @@
+.navbarHeightWrapper{
+    height: 140px;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    transition: 500ms;
+    overflow: visible;
+}
+
+.wrapperClosed{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: #031D1E;
+    transition: 500ms;
+    overflow: visible;
+}
+
+.wrapperMobile{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #031D1E;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+.linksWrapperMobile{
+    width: 100%;
+    height: auto;
+
+    transition: 300ms;
+}
+
+.linksWrapperMobileClosed{
+    width: 100%;
+    height: auto;
+
+    transition: 300ms;
+    display: none;
+}
+
+.linkMobile{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Futura PT custom Mediu;
+    color: #031D1E;
+    font-size: 18px;
+    line-height: 48px;
+    box-sizing: border-box;
+}
+
+.linkMobile:hover{
+    border: 6px solid #031D1E;
+    border-left-width: 6px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+.mobileA{
+    text-decoration: none;
+}
+
+.container{
+    width: 940px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: 500ms;
+}
+
+.containerClosed{
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.containerMobile{
+    display: none;
+}
+
+.navContainer{
+    width: 700px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 500ms;
+}
+
+.navContainerClosed{
+    width: 592px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+
+.langWrapper{
+    margin-top: 45px;
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.langWrapperClosed{
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.langButton{
+    width: 120px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.languagesWrapper{
+    width: 100%;
+    height: auto;
+    background-color: #031D1E;
+    border-radius: 0px 0px 4px 4px;
+    border: 3px solid #031D1E;
+    box-sizing: border-box;
+}
+
+.langBox{
+    width: 100%;
+    height: 48px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.flag{
+    width: 14px;
+    height: 10px;
+    margin-right: 6px;
+}
+
+.langText{
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 6px;
+}
+
+.arrowDown{
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+}
+
+.contactUsWrapper{
+    width: 120px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contactUsButton{
+    width: 120px;
+    height: 48px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+.contactUsButtonClosed{
+    width: 120px;
+    height: 32px;
+    background-color: white;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactUsText{
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.contactUsTextClosed{
+    font-family: Futura PT custom Mediu;
+    color: #031D1E;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.phoneIcon{
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+
+.navLink{
+    width: 140px;
+    height: 48px;
+
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+
+    text-align: center;
+    transition: 500ms;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinkClosed{
+    width: 118px;
+    height: 48px;
+
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 18px;
+    line-height: 48px;
+
+    text-align: center;
+    transition: 500ms;
+}
+
+.desktopLink {
+    position: relative;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+  
+.desktopLink:hover {
+    color: white;
+}
+
+.desktopLink::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.desktopLink:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.desktopLinkBlack {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+  
+.desktopLinkBlack:hover {
+    color: #000;
+}
+
+.desktopLinkBlack::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.desktopLinkBlack:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.desktopLinkClosed {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+  
+.desktopLinkClosed:hover {
+    color: white;
+}
+
+.desktopLinkClosed::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 2px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.desktopLinkClosed:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+.logo{
+    height: 112px;
+    width: 112px;
+
+    margin-top: 14px;
+    transition: 500ms;
+}
+
+.logoClosed{
+    height:48px;
+    width: 48px;
+
+    margin-top: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
+    transition: 500ms;
+}
+
+.mobileContainer{
+    width: 100%;
+    height: "48px";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #031D1E;
+}
+
+.mobileLogo{
+    height: 48px;
+    width: 48px;
+    margin-left: 16px;
+}
+
+.mobileIcon{
+    height: 48px;
+    width: 48px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 940px){
+    
+}

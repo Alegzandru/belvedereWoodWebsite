@@ -1,0 +1,684 @@
+.wrapper{
+    height: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    background-color: #031D1E;
+}
+
+.container{
+    max-width: 940px;
+    height: 630px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../../public/contacte/backgroundContacte.png");
+    background-color: black;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dirrectContactsWrapper{
+    height: 100%;
+    width: 50%;
+
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.backwardContactsWrapper{
+    height: 100%;
+    width: 50%;
+
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+}
+
+.h2Left{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.h2Right{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.contactsNameWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size:24px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.contactsNameWrapper2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 29px;
+}
+
+.contactsNameImg{
+    height: 24px;
+    width: 24px;
+
+    margin-right: 5px;
+}
+
+.contactsLink{
+    font-family: Futura PT custom Mediu;
+    color: #EDB65C;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    margin-left: 29px;
+    position: relative;
+}
+  
+.contactsLink>a:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #EDB65C;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+}
+
+.contactsLink>a:hover:after{
+    width: 100%;
+    left: 0;
+    background: #EDB65C;
+}
+  
+
+.socialPhotosWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-left: 29px;
+}
+
+.socialImg{
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+}
+
+.nameInputsWrapper{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.form{
+    
+}
+
+.inputSmall{
+    width: 150px;
+    height: 30px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: #54545C;
+
+    background-color: white;
+    border: 2px solid #54545C;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: #54545C;
+
+    background-color: white;
+    border: 2px solid #54545C;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    width: 140px;
+    height: 35px;
+
+    font-family: Futura PT custom Mediu;
+    font-size: 22px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    /* background: #EDB65C; */
+    background-color: #CD9D2F;
+    border-radius: 2px; 
+
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #CD9D2F;
+    color: white;
+    border: 3px solid white;
+    transition: 300ms;
+
+    box-shadow: 4px 4px 16px rgb(205, 157, 47, 0.3);
+}
+
+.contactsBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 940px){
+
+    .wrapper{
+        height: auto;
+        width: 100%;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        /* padding-left: 54px;
+        padding-right: 54px; */
+    
+        background-color: #031D1E;
+    }
+
+    .section{
+        width: calc(100% - 108px);
+        min-width: 528px;
+        height: 930px;
+
+        background-image: url("../../public/contacte/backgroundContacte.png");
+        background-color: white;
+        background-position: 0px -27%;
+        background-repeat: no-repeat;
+        background-size: auto 60%;
+
+        margin-left: 54px;
+        margin-right: 54px;
+
+    }
+    
+    .container{
+        max-width: 528px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+        background-image: none;
+        background-color:transparent;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .dirrectContactsWrapper{
+        height: 460px;
+        width: 100%;
+    
+        padding-left: 0px;
+        padding-right: 00px;
+    }
+    
+    .backwardContactsWrapper{
+        height: 470px;
+        width: 100%;
+    
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: white;
+    }
+    
+    .h2Left{
+        width: 100%;
+    
+        font-family: Futura PT custom Demi;
+        color: white;
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .h2Right{
+        width: 100%;
+    
+        font-family: Futura PT custom Demi;
+        color: black;
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .contactsNameWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size:24px;
+        line-height: 24px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .contactsNameWrapper2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 29px;
+    }
+    
+    .contactsNameImg{
+        height: 24px;
+        width: 24px;
+    
+        margin-right: 5px;
+    }
+    
+    .contactsLink{
+        font-family: Futura PT custom Mediu;
+        color: #EDB65C;
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    
+        margin-left: 29px;
+    }
+    
+    .socialPhotosWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        margin-left: 29px;
+    }
+    
+    .socialImg{
+        height: 30px;
+        width: 30px;
+        margin-right: 12px;
+    }
+    
+    .nameInputsWrapper{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-bottom: 10px;
+    }
+    
+    .inputSmall{
+        width: 250px;
+        height: 30px;
+    
+        font-size: 18px;
+        line-height: 18px;
+        font-family: Futura PT custom Mediu; 
+        color: #54545C;
+    
+        background-color: white;
+        border: 2px solid #54545C;
+        box-sizing: border-box;
+    
+        padding-left: 10px;
+    }
+    
+    .input{
+        width: 100%;
+        height: 30px;
+    
+        font-size: 18px;
+        line-height: 18px;
+        font-family: Futura PT custom Mediu; 
+        color: #54545C;
+    
+        background-color: white;
+        border: 2px solid #54545C;
+        box-sizing: border-box;
+    
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .button{
+        width: 140px;
+        height: 35px;
+    
+        font-family: Futura PT custom Mediu;
+        font-size: 22px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    
+        background: #EDB65C;
+        border-radius: 2px; 
+    
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactsBox{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 524px){
+
+    .wrapper{
+        height: auto;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        /* padding-left: 54px;
+        padding-right: 54px; */
+    
+        background-color: #031D1E;
+    }
+
+    .section{
+        width: auto;
+        min-width: 0px;
+        height: auto;
+
+        background-image: url("../../public/contacte/backgroundContacte.png");
+        background-color: white;
+        background-position: 0px -125px;
+        background-repeat: no-repeat;
+        background-size: auto 415px;
+
+        margin-left: 16px;
+        margin-right: 16px;
+
+    }
+    
+    .container{
+        max-width: 276px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+        background-image: none;
+        background-color:transparent;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .dirrectContactsWrapper{
+        height: 290px;
+        width: 100%;
+    
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .backwardContactsWrapper{
+        height: auto;
+        width: 100%;
+    
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: white;
+    }
+    
+    .h2Left{
+        width: 100%;
+    
+        font-family: Futura PT custom Book;
+        color: white;
+        font-size: 34px;
+        line-height: 34px;
+        margin-top: 38px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .h2Right{
+        width: 100%;
+        max-width: 276px;
+    
+        font-family: Futura PT custom Book;
+        color: black;
+        font-size: 34px;
+        line-height: 34px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactsBox{
+        margin-bottom: 20px;
+    }
+    
+    .contactsNameWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size:16px;
+        line-height: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .contactsNameWrapper2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 18px;
+    }
+    
+    .contactsNameImg{
+        height: 16px;
+        width: 16px;
+    
+        margin-right: 5px;
+    }
+    
+    .contactsLink{
+        font-family: Futura PT custom Mediu;
+        color: #EDB65C;
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+        margin-left: 0px;
+    }
+    
+    .socialPhotosWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+        margin-left: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .socialImg{
+        height: 20px;
+        width: 20px;
+        margin-right: 6px;
+    }
+    
+    .nameInputsWrapper{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-bottom: 10px;
+    }
+    
+    .inputSmall{
+        width: 45%;
+        height: 24px;
+    
+        font-size: 14px;
+        line-height: 14px;
+        font-family: Futura PT custom Mediu; 
+        color: #54545C;
+    
+        background-color: white;
+        border: 2px solid #54545C;
+        box-sizing: border-box;
+    
+        padding-left: 10px;
+    }
+    
+    .input{
+        width: 100%;
+        height: 24px;
+    
+        font-size: 14px;
+        line-height: 14px;
+        font-family: Futura PT custom Mediu; 
+        color: #54545C;
+    
+        background-color: white;
+        border: 2px solid #54545C;
+        box-sizing: border-box;
+    
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .button{
+        width: 140px;
+        height: 30px;
+    
+        font-family: Futura PT custom Mediu;
+        font-size: 18px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    
+        background: #EDB65C;
+        border-radius: 2px; 
+    
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .contactsBox{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}

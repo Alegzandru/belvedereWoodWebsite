@@ -1,0 +1,123 @@
+.avantaj{
+    width: 300px;
+    height: 160px;
+
+    background: #FFFFFF;
+    border: 3px solid #031D1E;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #031D1E;
+    transition: 300ms;
+}
+
+.avantaj:hover{
+    background-color: #031D1E;
+    color: white;
+    transition: 300ms;
+}
+
+.avantajImg{
+    margin-left: 14px;
+}
+
+.avantajTextWrapper{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-right: 10px;
+}
+
+.avantajText{
+    width: 100%;
+    text-align: left;
+
+    font-family: Futura PT custom Mediu;
+    /* color: #031D1E; */
+    font-size: 26px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 940px){
+    .avantaj{
+        width: 100%;
+        height: 74px;
+        margin-bottom: 6px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .avantajImg{
+        height: 65px;
+        width: 65px;
+
+        margin-left: 40px;
+    }
+    
+    .avantajTextWrapper{
+        width: 100%;
+        padding-left: 35px;
+    }
+    
+    .avantajText{
+        width: 100%;
+        text-align: left;
+    
+        font-family: Futura PT custom Mediu;
+        color: #031D1E;
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 528px){
+    .avantaj{
+        width: 100%;
+        height: 85px;
+        margin-bottom: 6px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .avantajImg{
+        height: 65px;
+        width: 65px;
+
+        margin-left: 20px;
+    }
+    
+    .avantajTextWrapper{
+        width: 100%;
+        padding-left: 40px;
+    }
+    
+    .avantajText{
+        width: 100%;
+        text-align: left;
+    
+        font-family: Futura PT custom Mediu;
+        color: #031D1E;
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}

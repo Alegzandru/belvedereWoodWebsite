@@ -1,0 +1,2071 @@
+.wrapper{
+    height: auto;
+    width: 100%;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+}
+
+.upperPhotoWrapper{
+    height: 448px;
+    width: 100%;
+
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobileTypeWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    padding-top: 150px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.subheading{
+    width: 620px;
+
+    font-family: Futura PT custom Book;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 100px;
+}
+
+.popupWrapper{
+    width: 860px;
+    height: auto;
+    background-color: white;
+
+    position: fixed;
+    z-index: 3;
+    top: 250px;
+    left: calc((100% - 940px) / 2);
+
+    padding-left: 80px;
+}
+
+.popupHeading{
+    font-size: 32px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.selectionBox{
+    width: 460px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.dropdownColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 220px;
+
+    /* border: 2px solid #031D1E; */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.selectionText{
+    font-size: 24px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+}
+
+.inputBox{
+    width: 220px;
+    height: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 24px;
+    font-family: Futura PT custom Book;
+    color: black;
+}
+
+.surfaceInput{
+    width: 160px;
+    height: 36px;
+    background-color: white;
+    border: 2px solid #031D1E;
+
+    font-size: 24px;
+    font-family: Futura PT custom Book;
+    color: #031D1E;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdownBoxActive{
+    width: 220px;
+    height: 36px;
+    background-color: #031D1E;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 0px;
+}
+
+.dropdownBoxInactive{
+    width: 100%;
+    height: 36px;
+    background-color: white;
+    color: #031D1E;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 0px;
+    transition: 300ms;
+}
+
+.dropdownBoxInactive:hover{
+    color: rgb(3, 29, 30, 0.5);
+    transition: 300ms;
+}
+
+.dropdownTextActive{
+    font-size: 24px;
+    font-family: Futura PT custom Book;
+    color: white;
+    margin-left: 10px;
+}
+
+.dropdownTextInactive{
+    font-size: 24px;
+    font-family: Futura PT custom Book;
+    margin-left: 10px;
+}
+
+.inactiveBox{
+    border: 2px solid #031D1E;
+    box-sizing: border-box;
+    width: 220px;
+}
+
+.whiteArrow{
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.priceBoxPopup{
+    width: auto;
+    height: 33px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 30px;
+}
+
+.priceText{
+    font-size: 30px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.price{
+    font-size: 30px;
+    font-family: Futura PT custom Mediu;
+    color: #CD9D2F;
+}
+
+.currency{
+    font-size: 30px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+    margin-left: 6px;
+}
+
+.closeIcon{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.priceInsideBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.breadcrumbWrapper{
+    height: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.inactiveLink{
+    font-family: Futura PT custom Book;
+    color: black;
+    font-size: 16px;
+    line-height: 16px;
+
+    margin-right: 4px;
+    text-decoration: none;
+    position: relative;
+}
+
+.inactiveLink:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #000;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+}
+
+.inactiveLink:hover:after{
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+.arrow{
+    height: 14px;
+    width: 14px;
+    margin-right: 4px;
+}
+
+.activeLink{
+    font-family: Futura PT custom Mediu;
+}
+
+.productDescriptionWrapper{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliderWrapper{
+    width: 540px;
+    height: 388px;
+}
+
+.productImg{
+    width: 540px;
+    height: 360px;
+    object-fit: cover;
+
+    box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
+}
+
+.changeSlideWrapper{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -230px;
+}
+
+.changeSlideButton{
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(3, 29, 30, 0.15);
+    border-radius: 50%;
+
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.changeSlideButton:hover{
+    transition: 300ms;
+    background-color: #031D1E;
+}
+
+.arrowLeft{
+    width: 60px;
+    height: 60px;
+
+    transform: rotate(180deg);
+}
+
+.arrowRight{
+    width: 60px;
+    height: 60px;
+}
+
+.slideButtonsWrapper{
+    height: 14px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slideButtonInactive{
+    height: 14px;
+    width: 14px;
+
+    background-color: rgba(3, 29, 30, 0.1);
+    border-radius: 50%;
+    margin-right: 6px;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.slideButtonInactive:hover{
+    background-color: rgba(3, 29, 30, 0.5);
+    transition: 300ms;
+}
+
+.slideButtonActive{
+    height: 14px;
+    width: 14px;
+
+    background: #031D1E;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.textWrapper{
+    height: 388px;
+    width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2Small{
+    font-size: 40px;
+    line-height: 40px;
+    font-family: Futura PT custom Demi;
+    color: black;
+    width: 100%;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.description{
+    height: auto;
+    width: 100%;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Futura PT custom Book;
+    color: black;
+    text-align: start;
+}
+
+.buttonsWrapper{
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.button{
+    width: 180px;
+    height: 48px;
+
+    border: 3px solid #031D1E;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Futura PT custom Demi;
+    color: #031D1E;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button:hover{
+    background-color: #031D1E;
+    color: white;
+    border: 3px solid white;
+    transition: 300ms;
+
+    box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.3)
+}
+
+.scrollWrapper{
+    width: auto;
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    transition: 500ms;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.scrollText{
+    font-family: Futura PT custom Book;
+    color: #031D1E;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+
+    animation: keepTextInPlace 3s infinite;
+    width: 250px;
+}
+
+@keyframes mouseMove {
+    0% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    70% {
+        margin-top: -15px;
+        opacity: 0.5;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes keepTextInPlace {
+    0% {margin-top: 0px;}
+    70% {margin-top: 15px;}
+    100% {margin-top: 0px;}
+}
+
+.mouseImg{
+    height: 40px;
+    animation: mouseMove 3s infinite;
+    /* margin-top: -100px; */
+}
+
+.h2{
+    font-size: 50px;
+    line-height: 50px;
+    font-family: Futura PT custom Demi;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+.productTypesBox{
+    width : 70%;
+    height : auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productTypeBox{
+    width: 300px;
+    height: 200px;
+
+    background-image: url("../../public/catalog/parquet.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.productTypeBox:hover{
+    box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.5);
+    transition: 200ms;
+}
+
+.productNameWrapper{
+    height: 56px;
+    width: 100%;
+    background-color: white;
+
+    box-shadow: 0px 4px 7px rgba(255, 255, 255, 0.5);
+}
+
+.productTypeName{
+    width: 100%;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: Futura PT custom Demi;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.productTypeDeg{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Futura PT custom Book;
+    color: rgb(145, 145, 145);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.priceBox{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: Futura PT custom Demi;
+    color: black;
+    text-align: center;
+}
+
+.price{
+    color: #CD9D2F;
+}
+
+.characteristicsWrapper{
+    width: 100%;
+}
+
+.characteristicsBox{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.characteristicsColumn{
+    width: 300px;
+    height: auto;
+}
+
+.h3{
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Futura PT custom Demi;
+    color: black;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #7E7E89;
+
+    margin-bottom: 10px;
+}
+
+.accentChar{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.char{
+    width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Futura PT custom Book;
+    color: black;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.avantajBox{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avantajImg{
+    height : 100%;
+    width: auto;
+}
+
+.avantajText{
+    width: 220px;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Futura PT custom Book;
+    color: black;
+    text-align: left;
+}
+
+.photosBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidePhoto{
+    height: 260px;
+    width: 375px;
+    box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    margin-top: -100px;
+}
+
+.centerPhoto{
+    height: 414px;
+    width: 620px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+}
+
+.changeSlideButton1{
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(3, 29, 30);
+    border-radius: 50%;
+
+    transition: 300ms;
+    cursor: pointer;
+    margin-top: -160px;
+}
+
+.changeSlideButton1:hover{
+    background-color: rgb(3, 29, 30, 0.5);
+    transition: 300ms;
+}
+
+.arrowLeft1{
+    width: 60px;
+    height: 60px;
+
+    transform: rotate(180deg);
+}
+
+.arrowRight1{
+    width: 60px;
+    height: 60px;
+}
+
+.currentText{
+    width: 100%;
+
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Futura PT custom Mediu;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mobileButtonsWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:-160px;
+    display:none;
+}
+
+.changeSlideButtonTablet{
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(3, 29, 30);
+    border-radius: 50%;
+
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 940px){
+    .upperPhotoWrapper{
+        height: 400px;
+        width: 100%;
+    }
+        
+    .h1{
+        width: 528px;
+    
+        font-family: Futura PT custom Demi;
+        color: white;
+        font-size: 60px;
+        line-height: 60px;
+        text-align: center;
+    
+        padding-top: 110px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .subheading{
+        width: 528px;
+    
+        font-family: Futura PT custom Book;
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container{
+        max-width: 528px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        padding-bottom: 100px;
+    }
+
+    .popupWrapper{
+        width: calc(100% - 32px - 80px);
+        height: auto;
+        background-color: white;
+    
+        position: fixed;
+        z-index: 3;
+        top: 250px;
+        left: 16px;
+
+        padding-left: 80px;
+    }
+    
+    .breadcrumbWrapper{
+        height: 48px;
+        margin-top: 36px;
+        margin-bottom: 12px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .inactiveLink{
+        font-family: Futura PT custom Book;
+        color: black;
+        font-size: 16px;
+        line-height: 16px;
+    
+        margin-right: 4px;
+    }
+    
+    .arrow{
+        height: 14px;
+        width: 14px;
+        margin-right: 4px;
+    }
+    
+    .activeLink{
+        font-family: Futura PT custom Mediu;
+    }
+    
+    .productDescriptionWrapper{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .sliderWrapper{
+        width: 100%;
+        height: 388px;
+    }
+    
+    .productImg{
+        width: 540px;
+        height: 360px;
+    
+        box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .changeSlideWrapper{
+        width: 100%;
+        height: 60px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-top: -230px;
+    }
+    
+    .changeSlideButton{
+        width: 60px;
+        height: 60px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30, 0.15);
+        border-radius: 50%;
+    }
+    
+    .arrowLeft{
+        width: 60px;
+        height: 60px;
+    
+        transform: rotate(180deg);
+    }
+    
+    .arrowRight{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .slideButtonsWrapper{
+        height: 14px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .slideButtonInactive{
+        height: 14px;
+        width: 14px;
+    
+        background-color: rgba(3, 29, 30, 0.1);
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    
+    .slideButtonActive{
+        height: 14px;
+        width: 14px;
+    
+        background: #031D1E;
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    
+    .textWrapper{
+        height: auto;
+        width: 380px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .h2Small{
+        font-size: 40px;
+        line-height: 40px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        width: 100%;
+    
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        height: auto;
+        width: 100%;
+    
+        font-size: 20px;
+        line-height: 24px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: start;
+    }
+    
+    .buttonsWrapper{
+        width: 100%;
+        height: 48px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .button{
+        width: 180px;
+        height: 48px;
+    
+        border: 3px solid #031D1E;
+        box-sizing: border-box;
+        border-radius: 2px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 20px;
+        line-height: 24px;
+        font-family: Futura PT custom Demi;
+        color: #031D1E;
+    }
+    
+    .scrollWrapper{
+        width: auto;
+        height: 70px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        text-align: center;
+        transition: 500ms;
+    
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .scrollText{
+        font-family: Futura PT custom Book;
+        color: #031D1E;
+        font-size: 18px;
+        line-height: 18px;
+        height: 18px;
+    
+        animation: keepTextInPlace 3s infinite;
+        width: 250px;
+    }
+    
+    @keyframes mouseMove {
+        0% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+        70% {
+            margin-top: -15px;
+            opacity: 0.5;
+        }
+        100% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes keepTextInPlace {
+        0% {margin-top: 0px;}
+        70% {margin-top: 15px;}
+        100% {margin-top: 0px;}
+    }
+    
+    .mouseImg{
+        height: 40px;
+        animation: mouseMove 3s infinite;
+        /* margin-top: -100px; */
+    }
+    
+    .h2{
+        font-size: 40px;
+        line-height: 40px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        width: 100%;
+        text-align: center;
+    
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    
+    .productTypesBox{
+        width : 100%;
+        height : auto;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .productTypeBox{
+        width: 168px;
+        height: 153px;
+    
+        background-image: url("../../public/catalog/parquet.png");
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .productNameWrapper{
+        height: 43px;
+        width: 100%;
+        background-color: white;
+    
+        box-shadow: 0px 4px 7px rgba(255, 255, 255, 0.5);
+    }
+    
+    .productTypeName{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: center;
+        margin-top: 3px;
+    }
+    
+    .productTypeDeg{
+        width: 100%;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: Futura PT custom Book;
+        color: rgb(145, 145, 145);
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .priceBox{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: center;
+    }
+    
+    .price{
+        color: #CD9D2F;
+    }
+    
+    .characteristicsWrapper{
+        width: 100%;
+    }
+    
+    .characteristicsBox{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .characteristicsColumn{
+        width: 168px;
+        height: auto;
+    }
+    
+    .h3{
+        width: 100%;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #7E7E89;
+    
+        margin-bottom: 10px;
+    }
+    
+    .accentChar{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .char{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+    
+    .avantajBox{
+        width: 100%;
+        height: 33px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .avantajImg{
+        height : 100%;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .avantajText{
+        width: 220px;
+        height: auto;
+    
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: left;
+    }
+
+    .photoColumnCenter{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .photosBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .sidePhoto{
+        height: 260px;
+        width: 375px;
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+        margin-top: 0px;
+        margin-top: 40px;
+    }
+    
+    .centerPhoto{
+        height: auto;
+        width: 528px;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .changeSlideButton1{
+        position: relative;
+        width: 60px;
+        height: 60px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30);
+        border-radius: 50%;
+    
+        margin-top: -160px;
+        display: none;
+    }
+
+
+    .photosWrapper{
+        padding-bottom: 50px;
+    }
+
+    .mobileButtonsWrapper{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: -300px;
+    }
+
+    .changeSlideButtonTablet{
+        position: relative;
+        width: 60px;
+        height: 60px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30);
+        border-radius: 50%;
+    
+        margin-top: 0px;
+        display: block;
+    }
+    
+    .arrowLeft1{
+        width: 60px;
+        height: 60px;
+    
+        transform: rotate(180deg);
+    }
+    
+    .arrowRight1{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .currentText{
+        width: 100%;
+    
+        font-size: 28px;
+        line-height: 28px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 528px){
+    .upperPhotoWrapper{
+        height: 222px;
+        width: 100%;
+    }
+    
+    .h1{
+        width: auto;
+    
+        font-family: Futura PT custom Demi;
+        color: white;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    
+        padding-top: 50px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .subheading{
+        width: auto;
+    
+        font-family: Futura PT custom Book;
+        color: white;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .container{
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    
+        padding-bottom: 60px;
+    }
+
+    .popupWrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(100% - 20px - 32px)
+    }
+
+    .popupHeading{
+        font-size: 24px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .selectionBox{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .selectionText{
+        font-size: 20px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        width: 100px;
+    }
+
+    .dropdownColumn{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        width: 200px;
+    
+        /* border: 2px solid #031D1E; */
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .inputBox{
+        width: 200px;
+    }
+
+    .surfaceInput{
+        width: 140px;
+    }
+    
+    .dropdownBoxActive{
+        width: 100%;
+        height: 36px;
+        background-color: #031D1E;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-bottom: 0px;
+    }
+    
+    .dropdownTextActive{
+        font-size: 20px;
+        font-family: Futura PT custom Book;
+        color: white;
+        margin-left: 5px;
+    }
+
+    .dropdownTextInactive{
+        font-size: 20px;
+        font-family: Futura PT custom Book;
+        color: #031D1E;
+        margin-left: 5px;
+    }
+
+    .inactiveBox{
+        width: 200px;
+    }
+    
+    .whiteArrow{
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+    
+    .priceBoxPopup{
+        width: auto;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        margin-bottom: 20px;
+    }
+    
+    .priceText{
+        font-size: 24px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        text-decoration: underline;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .price{
+        font-size: 32px;
+        font-family: Futura PT custom Mediu;
+        color: #CD9D2F;
+    }
+    
+    .currency{
+        font-size: 32px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        margin-left: 6px;
+    }
+    
+    .closeIcon{
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+    
+    .breadcrumbWrapper{
+        height: 36px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .inactiveLink{
+        font-family: Futura PT custom Book;
+        color: black;
+        font-size: 14px;
+        line-height: 14px;
+    
+        margin-right: 4px;
+    }
+    
+    .arrow{
+        height: 12px;
+        width: 12px;
+        margin-right: 4px;
+    }
+    
+    .activeLink{
+        font-family: Futura PT custom Mediu;
+        font-size: 14px;
+    }
+    
+    .productDescriptionWrapper{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .sliderWrapper{
+        width: 100%;
+        height: auto;
+    }
+    
+    .productImg{
+        width: 100%;
+        height: 230px;
+    
+        box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .changeSlideWrapper{
+        width: 100%;
+        height: 40px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-top: -155px;
+    }
+    
+    .changeSlideButton{
+        width: 40px;
+        height: 40px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30, 0.15);
+        border-radius: 50%;
+    }
+    
+    .arrowLeft{
+        width: 40px;
+        height: 40px;
+    
+        transform: rotate(180deg);
+    }
+    
+    .arrowRight{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .slideButtonsWrapper{
+        height: 14px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .slideButtonInactive{
+        height: 14px;
+        width: 14px;
+    
+        background-color: rgba(3, 29, 30, 0.1);
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    
+    .slideButtonActive{
+        height: 14px;
+        width: 14px;
+    
+        background: #031D1E;
+        border-radius: 50%;
+        margin-right: 6px;
+    }
+    
+    .textWrapper{
+        height: auto;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .h2Small{
+        font-size: 30px;
+        line-height: 30px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        width: 100%;
+    
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        height: auto;
+        width: 100%;
+    
+        font-size: 18px;
+        line-height: 24px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: start;
+    }
+    
+    .buttonsWrapper{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .button{
+        width: 100%;
+        height: 35px;
+    
+        border: 3px solid #031D1E;
+        box-sizing: border-box;
+        border-radius: 2px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        font-size: 18px;
+        line-height: 24px;
+        font-family: Futura PT custom Demi;
+        color: #031D1E;
+        margin-bottom: 10px;
+    }
+    
+    .scrollWrapper{
+        width: auto;
+        height: 70px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        text-align: center;
+        transition: 500ms;
+    
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    
+    .scrollText{
+        font-family: Futura PT custom Book;
+        color: #031D1E;
+        font-size: 18px;
+        line-height: 18px;
+        height: 18px;
+    
+        animation: keepTextInPlace 3s infinite;
+        width: 250px;
+    }
+    
+    @keyframes mouseMove {
+        0% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+        70% {
+            margin-top: -15px;
+            opacity: 0.5;
+        }
+        100% {
+            margin-top: 0px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes keepTextInPlace {
+        0% {margin-top: 0px;}
+        70% {margin-top: 15px;}
+        100% {margin-top: 0px;}
+    }
+    
+    .mouseImg{
+        height: 40px;
+        animation: mouseMove 3s infinite;
+        /* margin-top: -100px; */
+    }
+    
+    .h2{
+        font-size: 40px;
+        line-height: 40px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        width: 100%;
+        text-align: center;
+    
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+    
+    .productTypesBox{
+        width : 100%;
+        height : auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .productTypeBox{
+        width: 168px;
+        height: 153px;
+    
+        background-image: url("../../public/catalog/parquet.png");
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .productNameWrapper{
+        height: 43px;
+        width: 100%;
+        background-color: white;
+    
+        box-shadow: 0px 4px 7px rgba(255, 255, 255, 0.5);
+    }
+    
+    .productTypeName{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: center;
+        margin-top: 3px;
+    }
+    
+    .productTypeDeg{
+        width: 100%;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: Futura PT custom Book;
+        color: rgb(145, 145, 145);
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .priceBox{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .price{
+        color: #CD9D2F;
+    }
+    
+    .characteristicsWrapper{
+        width: 100%;
+    }
+    
+    .characteristicsBox{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .characteristicsColumn{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .h3{
+        width: 100%;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: Futura PT custom Demi;
+        color: black;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #7E7E89;
+    
+        margin-bottom: 10px;
+    }
+    
+    .accentChar{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .char{
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+    
+    .avantajBox{
+        width: 100%;
+        height: 33px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .avantajImg{
+        height : 100%;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .avantajText{
+        width: 220px;
+        height: auto;
+    
+        font-size: 20px;
+        line-height: 20px;
+        font-family: Futura PT custom Book;
+        color: black;
+        text-align: left;
+    }
+
+    .photoColumnCenter{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .photosBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .sidePhoto{
+        height: 260px;
+        width: 375px;
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+        margin-top: 0px;
+        margin-top: 40px;
+
+        display: none;
+    }
+    
+    .centerPhoto{
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
+    }
+    
+    .changeSlideButton1{
+        position: relative;
+        width: 60px;
+        height: 60px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30);
+        border-radius: 50%;
+    
+        margin-top: -160px;
+        display: none;
+    }
+
+
+    .photosWrapper{
+        padding-bottom: 150px;
+    }
+
+    .mobileButtonsWrapper{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: -240px;
+    }
+
+    .changeSlideButtonTablet{
+        position: relative;
+        width: 40px;
+        height: 40px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: rgba(3, 29, 30);
+        border-radius: 50%;
+    
+        margin-top: 0px;
+        display: block;
+    }
+    
+    .arrowLeft1{
+        width: 40px;
+        height: 40px;
+    
+        transform: rotate(180deg);
+    }
+    
+    .arrowRight1{
+        width: 40px;
+        height: 40px;
+    }
+
+    .currentText{
+        width: 100%;
+    
+        font-size: 24px;
+        line-height: 24px;
+        font-family: Futura PT custom Mediu;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .mobileTypeWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

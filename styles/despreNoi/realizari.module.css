@@ -1,0 +1,168 @@
+.wrapper{
+    height: 620px;
+    width: 100%;
+    padding-top: 100px;
+
+    /* background-image: url("../../public/despreNoi/backgroundRealizari.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background-color: rgba(3, 29, 30, 0.5);;
+}
+
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.realizariRow{
+    height: 140px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.realizareBox{
+    width: 300px;
+    height: 100%;
+}
+
+.realizareNumber{
+    width: 100%;
+
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 52px;
+    line-height: 52px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.realizareText{
+    width: 100%;
+
+    font-family: Futura PT custom Mediu;
+    color: #E5E5E5;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.realizariRowMobile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    display: none;
+}
+
+@media screen and (max-width: 940px){
+
+    .container{
+        max-width: 528px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .realizariRow{
+        display: none;
+    }
+
+    .realizariRowMobile{
+        display: flex;
+    }
+
+    .wrapper{
+        padding-bottom: 150px;
+    }
+
+}
+
+@media screen and (max-width: 528px){
+
+    .container{
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .wrapper{
+        padding-bottom: 60px;
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .h2{
+        width: 100%;
+    
+        font-family: Futura PT custom Demi;
+        color: white;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+    
+        margin-bottom: 50px;
+    }
+    
+    .realizareBox{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .realizareNumber{
+        width: 100%;
+    
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    
+        margin-bottom: 10px;
+    }
+    
+    .realizareText{
+        width: 100%;
+    
+        font-family: Futura PT custom Mediu;
+        color: #E5E5E5;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    .realizariRowMobile{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-bottom: 30px;
+    }
+}

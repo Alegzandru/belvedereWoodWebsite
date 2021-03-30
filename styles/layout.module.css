@@ -1,0 +1,13 @@
+.main{
+    margin-top: -140px;
+}
+
+.mainOpen{
+    margin-top: -240px;
+}
+
+@media screen and (max-width: 940px){
+    .main{
+        margin-top: 0px;
+    }
+}

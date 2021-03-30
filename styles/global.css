@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+#navBar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Mediu';
+    src: url('/fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Demi';
+    src: url('/fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Demi.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Book';
+    src: url('/fonts/subset-FuturaPT-Book.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT custom Light';
+    src: url('/fonts/subset-FuturaPT-Light.woff2') format('woff2'),
+        url('/fonts/subset-FuturaPT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

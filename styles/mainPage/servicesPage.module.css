@@ -1,0 +1,221 @@
+.servicesPageWrapper{
+    height: auto;
+    width: 100%;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.servicesPageSection{
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesPageContainer{
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-bottom: 150px;
+}
+
+.row{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+
+.service{
+    height: auto;
+    width: 300px;
+    border: 2px solid #031D1E;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    text-align: center;
+}
+
+.serviceImg{
+    width: 100%;
+    height: 180px;
+}
+
+.line{
+    width: 60px;
+    height: 2px;
+    background-color: #031D1E;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.serviceName{
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    font-family: Futura PT custom Mediu;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.h2{
+    width: 300px;
+    font-size: 52px;
+    line-height: 58px;
+    color: black;
+    font-family: Futura PT custom Demi;
+    text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.h2Mobile{
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    color: black;
+    font-family: Futura PT custom Demi;
+    text-align: center;
+    display: none;
+}
+
+.rowMobile{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 940px){
+    
+    .servicesPageContainer{
+        width:528px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+    
+    .row{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        margin-top: 20px;
+    }
+    
+    .service{
+        height: 163px;
+        width: 168px;
+    }
+    
+    .serviceImg{
+        width: 100%;
+        height: 120px;
+    }
+    
+    .line{
+        width: 34px;
+        margin-top: 5px;
+    }
+    
+    .serviceName{
+        width: 100%;
+        font-size: 17px;
+        line-height: 17px;
+        color: black;
+        font-family: Futura PT custom Mediu;
+    
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    
+    .h2{
+        width: 168px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+}
+
+@media screen and (max-width: 528px){
+
+    .servicesPageContainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .row{
+        display: none;
+    }
+    
+    .service{
+        height: auto;
+        width: 100%;
+    }
+    
+    .serviceImg{
+        width: 100%;
+        height: auto;
+    }
+    
+    .line{
+        width: 34px;
+        margin-top: 1px;
+    }
+    
+    .serviceName{
+        width: 100%;
+        font-size: 14px;
+        line-height: 14px;
+        color: black;
+        font-family: Futura PT custom Mediu;
+    
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    .h2Mobile{
+        display: block;
+    }
+
+    .rowMobile{
+        display: flex;
+    }
+}

@@ -1,0 +1,249 @@
+.wrapper{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 940px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projectImgLeft{
+    width: 775px;;
+    /* height: 516px; */
+    height: auto;
+
+    margin-left: -225px;
+}
+
+.projectImgRight{
+    width: 775px;;
+    /* height: 516px; */
+    height: auto;
+
+    margin-right: -225px;
+}
+
+.projectRowLeft{
+    width: 100%;
+    height: 516px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.projectRowRight{
+    width: 100%;
+    height: 516px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.textWrapper{
+    width: 360px;
+}
+
+.h2{
+    font-family: Futura PT custom Book;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.subheading{
+    font-family: Futura PT custom Light;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: Futura PT custom Book;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+}
+
+.arrow{
+    height: 14px;
+    width: 14px;
+
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+
+@media screen and (max-width: 940px){
+
+    .wrapper{
+        height: auto;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    .container{
+        max-width: 528px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .projectImgLeft{
+        width: 100%;
+        /* height: 516px; */
+        height: auto;
+    
+        margin-left: 0px;
+    }
+    
+    .projectImgRight{
+        width: 100%;
+        /* height: 516px; */
+        height: auto;
+    
+        margin-right: 0px;
+    }
+    
+    .projectRowLeft{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        margin-bottom: 90px;
+    }
+
+    .projectRowRight{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        margin-bottom: 90px;
+    }
+    
+    .textWrapper{
+        width: 360px;
+        margin-bottom: 30px;
+    }
+    
+
+}
+
+@media screen and (max-width: 528px){
+
+    .wrapper{
+        height: auto;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+        background-color: white;
+        overflow: hidden;
+    }
+    
+    .container{
+        max-width: 100%;
+        height: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .projectImgLeft{
+        width: 100%;
+        /* height: 516px; */
+        height: auto;
+    
+        margin-left: 0px;
+    }
+    
+    .projectImgRight{
+        width: 100%;
+        /* height: 516px; */
+        height: auto;
+    
+        margin-right: 0px;
+    }
+    
+    .projectRowLeft{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        margin-bottom: 90px;
+    }
+
+    .projectRowRight{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        margin-bottom: 90px;
+    }
+    
+    .textWrapper{
+        width: 360px;
+        margin-bottom: 30px;
+    }
+    
+}

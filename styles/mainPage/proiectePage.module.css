@@ -1,0 +1,399 @@
+.proiectePageWrapper{
+    height: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.proiectePageSection{
+    height: 900px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.leftContainer{
+    background-color: black;
+    width: 50%;
+    height: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftContainerText{
+    width: 100%;
+    font-family: Futura PT custom Demi;
+
+    color: white;
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 8px;
+    margin-top: 20px;
+}
+
+.rightContainer{
+    width: 50%;
+    height: 900px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide1{
+    background-image: url("../../public/mainPage/ManucBei2.png");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.slide2{
+    background-image: url("../../public/mainPage/ManucBei2.png");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.slide3{
+    background-image: url("../../public/mainPage/ManucBei2.png");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.slide4{
+    background-image: url("../../public/mainPage/ManucBei2.png");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.slide5{
+    background-image: url("../../public/mainPage/ManucBei2.png");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.empty{
+    background-color: black;
+}
+
+.slideButtonWrapper{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.slideButtonWrapper:hover{
+    background-color: rgb(3, 29, 30, 0.6);
+    transition: 300ms;
+}
+
+.slideButtonWrapper:active{
+    background-color: #031D1E;
+}
+
+.projectWrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.secondArrow{
+    transform: rotate(180deg);
+}
+
+.projectName{
+    width: 100%;
+    text-align: left;
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 55px;
+    line-height: 55px;
+
+    margin-top: 350px;
+    margin-bottom: 0px;
+}
+
+.projectText{
+    width: 100%;
+    text-align: left;
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1{
+    width: 300px;
+    height: 48px;
+    border: 3px solid #031D1E;
+    border-radius: 3px;
+    background-color: white;
+
+    color: #031D1E;
+    font-size: 24px;
+    font-family: Futura PT custom Mediu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color: #031D1E;
+    color: white;
+    border: 3px solid white;
+    transition: 300ms;
+}
+
+.buttonsWrapper{
+    position: relative;
+    margin-top: 250px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideButtonInactive{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #031D1E;
+    box-sizing: border-box;
+    margin-right: 6px;
+
+    background-color: rgb(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.slideButtonInactive:hover{
+    background-color: white;
+    transition: 200ms;
+}
+
+.slideButtonActive{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid #031D1E;
+    margin-right: 6px;
+
+    background-color: #CD9D2F;
+}
+
+@media screen and (max-width: 940px){
+    .proiectePageWrapper{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .proiectePageSection{
+        height: auto;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .leftContainer{
+        background-color: black;
+        width: 100%;
+        height: 300px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leftContainerText{
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    
+    .rightContainer{
+        width: 100%;
+        height: 700px;
+    }
+    
+    .slideButtonWrapper{
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .projectWrapper{
+        width: 100%;
+    }
+    
+    .secondArrow{
+        transform: rotate(180deg);
+    }
+    
+    .projectName{
+        width: 100%;
+        text-align: center;
+
+        margin-top: 250px;
+        margin-bottom: 0px;
+    }
+    
+    .projectText{
+        width: 100%;
+        text-align: center;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .button1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttonsWrapper{
+        position: relative;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 528px){
+    .proiectePageWrapper{
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .proiectePageSection{
+        height: auto;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .leftContainer{
+        background-color: black;
+        width: 100%;
+        height: 160px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leftContainerText{
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    
+    .rightContainer{
+        width: 100%;
+        height: 660px;
+    }
+    
+    .slideButtonWrapper{
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow{
+        width: 40px;
+        height: 40px;
+    }
+
+    .secondArrow{
+        width: 40px;
+        height: 40px;
+        transform: rotate(180deg);
+    }
+
+    .projectWrapper{
+        width: 100%;
+    }
+    
+    .projectName{
+        width: 100%;
+        text-align: center;
+
+        font-size: 32px;
+        margin-top: 230px;
+        margin-bottom: 0px;
+    }
+    
+    .projectText{
+        width: 100%;
+        text-align: center;
+
+        font-size: 18px;
+        line-height: 22px;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .button1{
+
+        width: 220px;
+        height: 40px;
+        font-size: 22px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .buttonsWrapper{
+        position: relative;
+        margin-top: 180px;
+    }
+}

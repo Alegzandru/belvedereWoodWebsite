@@ -1,0 +1,187 @@
+.clientsPageWrapper{
+    height: 512px;
+    width: 100%;
+
+    /* background-image: url("../../public/mainPage/ourClientsBackground.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  */
+
+    background-color: #031D1E;
+    transition: 500ms;
+    overflow: hidden;
+}
+
+.background1{
+    background-image: url("../../public/mainPage/ourClientsBackground.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background2{
+    background-image: url("../../public/proiecte/castelMimi.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background3{
+    background-image: url("../../public/proiecte/muzeulNationalDeArta.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background4{
+    background-image: url("../../public/proiecte/porteryard.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background5{
+    background-image: url("../../public/proiecte/rozmarin.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.clientsPageSection{
+    height: 512px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.clientsPageContainer{
+    width: 940px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.h2{
+    width: 100%;
+
+    font-family: Futura PT custom Demi;
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.whiteLine1{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.whiteLine2{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.clientsScroller{
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    animation: moveScroller 30s linear infinite;
+}
+
+@keyframes moveScroller {
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -980px;
+    }
+}
+
+.clientImg{
+    margin-right: 30px;
+    width: 166px;
+    height: 58px;
+}
+
+@media screen and (max-width: 940px){
+
+    .clientsPageWrapper{
+        height: 460px;
+    }
+
+    .clientsPageContainer{
+        width: 528px;
+    }
+    
+}
+
+@media screen and (max-width: 528px){
+
+    .clientsPageWrapper{
+        height: 400px;
+    }
+
+    .clientsPageContainer{
+        width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .h2{
+        width: 100%;
+    
+        font-family: Futura PT custom Demi;
+        color: white;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .whiteLine1{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+    
+    .whiteLine2{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin-top: 40px;
+    }
+
+    .clientImg{
+        margin-right: 20px;
+        width: 130px;
+        height: auto;
+    }
+}

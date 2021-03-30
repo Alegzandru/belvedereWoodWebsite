@@ -1,0 +1,417 @@
+.footerWrapper{
+    height: auto;
+    width: 100%;
+
+    background-color: #031D1E;
+    overflow: hidden;
+}
+
+.footerSection{
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footerContainer{
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.upperContainer{
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.navDiv{
+    width: 140px;
+}
+
+.footerAccentText{
+    width: 100%;
+    text-align: left;
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.footerText{
+    width: 100%;
+    text-align: left;
+    font-family: Futura PT custom Mediu;
+    color: #9A9A9A;
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+.contactsDiv{
+    width: 140px;
+}
+
+.contactsBox{
+    width: 100%;
+    height: 14px;
+    text-align: left;
+    font-family: Futura PT custom Mediu;
+    color: #9A9A9A;
+    font-size: 14px;
+    line-height: 14px;
+
+    margin-bottom: 6px;
+    margin-top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contactsIcon{
+    margin-right: 4px;
+}
+
+.rightContainer{
+    width: 288px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.button{
+    width: 288px;
+    height: 48px;
+    border: 3px solid white;
+    border-radius: 3px;
+
+    color: white;
+    font-size: 16px;
+    font-family: Futura PT custom Mediu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+
+.button:hover{
+    background-color: white;
+    color: #031D1E;
+    transition: 300ms;
+    font-family: Futura PT custom Demi;
+}
+
+.footerLine{
+    width: 100%;
+    height: 2px;
+    background-color: #9A9A9A;
+
+    margin-top: 50px;
+}
+
+.downTextContainer{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    text-align: left;
+    font-family: Futura PT custom Mediu;
+    color: #9A9A9A;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.desktopLink {
+    height: auto;
+    width: 100%;
+    position: relative;
+    color: #9A9A9A;
+    text-decoration: none;
+}
+  
+.desktopLink:hover {
+    color: #9A9A9A;
+}
+
+.desktopLink::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.desktopLink:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.desktopLink1{
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.desktopLink1:hover{
+    text-decoration: underline;
+    color: #9A9A9A;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 940px){
+    
+    .footerContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .upperContainer{
+        width: 528px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leftContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .navDiv{
+        width: 140px;
+    }
+    
+    .footerAccentText{
+        width: 100%;
+        text-align: left;
+        font-family: Futura PT custom Mediu;
+        color: white;
+        font-size: 16px;
+        line-height: 16px;
+    
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    
+    .footerText{
+        width: 100%;
+        text-align: left;
+        font-family: Futura PT custom Mediu;
+        color: #9A9A9A;
+        font-size: 14px;
+        line-height: 14px;
+    
+        margin-bottom: 6px;
+        margin-top: 0px;
+    }
+    
+    .contactsDiv{
+        width: 140px;
+    }
+    
+    .contactsBox{
+        width: 100%;
+        height: 14px;
+        text-align: left;
+        font-family: Futura PT custom Mediu;
+        color: #9A9A9A;
+        font-size: 14px;
+        line-height: 14px;
+    
+        margin-bottom: 6px;
+        margin-top: 0px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .contactsIcon{
+        margin-right: 4px;
+    }
+    
+    .rightContainer{
+        width: 288px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        display: none;
+    }
+    
+    .button{
+        width: 288px;
+        height: 48px;
+        border: 3px solid white;
+        border-radius: 3px;
+    
+        color: white;
+        font-size: 16px;
+        font-family: Futura PT custom Mediu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        box-sizing: border-box;
+        display: none;
+    }
+    
+    
+    .footerLine{
+        width: 100%;
+        height: 2px;
+        background-color: #9A9A9A;
+    
+        margin-top: 50px;
+    }
+    
+    .downTextContainer{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    
+        text-align: left;
+        font-family: Futura PT custom Mediu;
+        color: #9A9A9A;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 528px){
+    
+    .footerContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .upperContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .leftContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        margin-bottom: 30px;
+    }
+
+    .rightContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .button{
+        width: 100%;
+        height: 40px;
+        border: 3px solid white;
+        border-radius: 3px;
+    
+        color: white;
+        font-size: 15px;
+        font-family: Futura PT custom Mediu;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        box-sizing: border-box;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .navDiv{
+        width: 45%;
+    }
+    
+    .downTextContainer{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        text-align: left;
+        font-family: Futura PT custom Mediu;
+        color: #9A9A9A;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .copyright{
+        margin-bottom: 5px;
+    }
+
+}
