@@ -201,7 +201,7 @@ export function Navbar(){
                                 className={styles.phoneIcon}
                             />
                             <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
-                                Contactati-ne
+                                Contactați-ne
                             </div>
                         </div>
                     </div>
