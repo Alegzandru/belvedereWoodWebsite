@@ -2,6 +2,8 @@ import { useState } from "react"
 import styles from "../../styles/catalog/patrateModule.module.css"
 import {sliderPatrateModuleTop, sliderPatrateModuleBottom} from "./sliderContent"
 import {parchetBradut} from "./prices"
+import Link from 'next/link'
+
 
 export function PatrateModule(){
 
