@@ -14,8 +14,13 @@
 }
 
 .background1{
-    background-image: url("../../public/mainPage/ourClientsBackground.png");
-    background-color: white;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -23,8 +28,13 @@
 }
 
 .background2{
-    background-image: url("../../public/proiecte/castelMimi.jpg");
-    background-color: white;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../../public/catalog/parchetPunte/Aeroport-19.jpg");    
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -32,8 +42,13 @@
 }
 
 .background3{
-    background-image: url("../../public/proiecte/muzeulNationalDeArta.jpg");
-    background-color: white;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../../public/mainPage/KikuRestaurant-12.jpg");    
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -41,8 +56,13 @@
 }
 
 .background4{
-    background-image: url("../../public/proiecte/porteryard.jpg");
-    background-color: white;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -50,8 +70,55 @@
 }
 
 .background5{
-    background-image: url("../../public/proiecte/rozmarin.jpg");
-    background-color: white;
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background6{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background7{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: 500ms;
+}
+
+.background8{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -105,7 +172,7 @@
 }
 
 .clientsScroller{
-    width: 980px;
+    width: 1156.79px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -118,14 +185,18 @@
         margin-left: 0px;
     }
     100%{
-        margin-left: -980px;
+        margin-left: -1156.79px;
     }
 }
 
 .clientImg{
     margin-right: 30px;
-    width: 166px;
-    height: 58px;
+    /* width: 166px;
+    height: 58px; */
+    height: 100px;
+    width: auto;
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 940px){
@@ -143,7 +214,7 @@
 @media screen and (max-width: 528px){
 
     .clientsPageWrapper{
-        height: 400px;
+        height: auto;
     }
 
     .clientsPageContainer{

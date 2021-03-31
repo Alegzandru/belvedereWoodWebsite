@@ -78,6 +78,10 @@
     align-items: flex-start;
 }
 
+.link{
+    width: 220px;
+}
+
 .button1{
     width: 220px;
     height: 48px;
@@ -272,6 +276,10 @@
         align-items: flex-start;
     }
     
+    .link{
+        width: 100%;
+    }
+
     .button1{
         width: 100%;
         height: 48px;

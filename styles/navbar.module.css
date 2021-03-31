@@ -44,9 +44,13 @@
 
 .linksWrapperMobile{
     width: 100%;
-    height: auto;
+    height: calc(100vh - 48px);
 
+    /* border: 2px solid #031D1E;
+    box-sizing: border-box; */
+    background-color: #031D1E;
     transition: 300ms;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .linksWrapperMobileClosed{
@@ -59,16 +63,20 @@
 
 .linkMobile{
     height: 48px;
-    width: 100%;
+    width: calc(100% - 16px);
+    margin-left: 16px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     font-family: Futura PT custom Mediu;
-    color: #031D1E;
-    font-size: 18px;
-    line-height: 48px;
+    color: white;
+    /* font-size: 18px;
+    line-height: 48px; */
+    font-size: 36px;
+    line-height: 36px;
     box-sizing: border-box;
 }
 

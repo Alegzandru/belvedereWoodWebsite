@@ -46,8 +46,26 @@
     justify-content: space-between;
 }
 
+.slide0{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/patrateModule/ManucBei-12.jpg");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 .slide1{
-    background-image: url("../../public/mainPage/ManucBei2.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/patrateModule/ManucBei-12.jpg");
     background-color: white;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -55,7 +73,12 @@
 }
 
 .slide2{
-    background-image: url("../../public/mainPage/ManucBei2.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../../public/mainPage/Aeroport-16.jpg");
     background-color: white;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -63,7 +86,12 @@
 }
 
 .slide3{
-    background-image: url("../../public/mainPage/ManucBei2.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/mainPage/KikuRestaurant-14.jpg");
     background-color: white;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -71,7 +99,12 @@
 }
 
 .slide4{
-    background-image: url("../../public/mainPage/ManucBei2.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/patrateModule/ManucBei-12.jpg");
     background-color: white;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -79,12 +112,31 @@
 }
 
 .slide5{
-    background-image: url("../../public/mainPage/ManucBei2.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/patrateModule/ManucBei-12.jpg");
     background-color: white;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+.slide6{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/patrateModule/ManucBei-12.jpg");
+    background-color: white;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 
 .empty{
     background-color: black;
@@ -268,7 +320,7 @@
         width: 100%;
         text-align: center;
 
-        margin-top: 250px;
+        margin-top: 200px;
         margin-bottom: 0px;
     }
     
@@ -366,7 +418,8 @@
         text-align: center;
 
         font-size: 32px;
-        margin-top: 230px;
+        line-height: 32px;
+        margin-top: 200px;
         margin-bottom: 0px;
     }
     

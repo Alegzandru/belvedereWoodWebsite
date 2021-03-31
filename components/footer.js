@@ -85,11 +85,15 @@ export function Footer(){
                                         height={14}
                                         className={styles.contactsIcon}
                                     />
-                                    <Link href="/contacte">
-                                        <a className={styles.desktopLink}>
-                                            +37379123456
-                                        </a>
-                                    </Link>
+                                    <a 
+                                        className={styles.desktopLink}
+                                        href="tel:37379123456"
+                                        style={{
+                                            textDecoration: "none"
+                                        }}
+                                    >
+                                        +37379123456
+                                    </a>
                                 </div>
                                 <div className={styles.contactsBox}>
                                     <img
@@ -99,11 +103,13 @@ export function Footer(){
                                         height={14}
                                         className={styles.contactsIcon}
                                     />
-                                    <Link href="/contacte">
-                                        <a className={styles.desktopLink}>
-                                            Belvedere Wood
-                                        </a>
-                                    </Link>
+                                    <a 
+                                        className={styles.desktopLink}
+                                        href="https://www.instagram.com/parchet_belvederewood/"
+                                        target="blank"
+                                    >
+                                        Belvedere Wood
+                                    </a>
                                 </div>
                                 <div className={styles.contactsBox}>
                                     <img
@@ -113,18 +119,26 @@ export function Footer(){
                                         height={14}
                                         className={styles.contactsIcon}
                                     />
-                                    <Link href="/contacte">
-                                        <a className={styles.desktopLink}>
-                                            Belvedere Wood
-                                        </a>
-                                    </Link>
+                                    <a 
+                                        className={styles.desktopLink}
+                                        href="https://www.facebook.com/belvedereparquet"
+                                        target="blank"
+                                    >
+                                        Belvedere Wood
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className={styles.rightContainer}>
-                            <div className={styles.button}>
+                            <a 
+                                className={styles.button}
+                                href="tel:37379123456"
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
                                 +373 79 123 456
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.footerLine}></div>

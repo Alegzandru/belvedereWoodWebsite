@@ -1,5 +1,6 @@
 import styles from "../../styles/mainPage/proiectePage.module.css"
 import {useState} from "react"
+import {proiecteSlider} from "./sliderContent"
 
 export function ProiectePage(){
 
@@ -21,17 +22,19 @@ export function ProiectePage(){
                     </p>
                 </div>
                 <div className={`${styles.rightContainer} ${
-                    slide==0? styles.slide1 :
-                    slide==1? styles.slide2 :
-                    slide==2? styles.slide3 :
-                    slide==3? styles.slide4 :
-                    slide==4? styles.slide5 : styles.empty
+                    slide==0? styles.slide0 :
+                    slide==1? styles.slide1 :
+                    slide==2? styles.slide2 :
+                    slide==3? styles.slide3 :
+                    slide==4? styles.slide4 :
+                    slide==5? styles.slide5 :
+                    slide==6? styles.slide6 : styles.empty
                 }`}>
                     <div 
                         className={styles.slideButtonWrapper}
                         onClick={ ()=> {
                             if(slide==0){
-                                setSlide(4)
+                                setSlide(6)
                             }
                             else{
                                 setSlide(slide-1)
@@ -46,10 +49,10 @@ export function ProiectePage(){
                     </div>
                     <div className={styles.projectWrapper}>
                         <p className={styles.projectName}>
-                            Manuc Bei
+                            {proiecteSlider[slide].heading}
                         </p>
                         <p className={styles.projectText}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis.
+                            {proiecteSlider[slide].subheading}
                         </p>
                         <div className={styles.button1}>
                             Descoperă proiectul
@@ -76,13 +79,21 @@ export function ProiectePage(){
                                 className={slide==4? styles.slideButtonActive : styles.slideButtonInactive}
                                 onClick={() => setSlide(4)}
                             ></div>
+                            <div 
+                                className={slide==5? styles.slideButtonActive : styles.slideButtonInactive}
+                                onClick={() => setSlide(5)}
+                            ></div>
+                            <div 
+                                className={slide==6? styles.slideButtonActive : styles.slideButtonInactive}
+                                onClick={() => setSlide(6)}
+                            ></div>
                         </div>
 
                     </div>
                     <div 
                         className={styles.slideButtonWrapper}
                         onClick={ ()=> {
-                            if(slide==4){
+                            if(slide==6){
                                 setSlide(0)
                             }
                             else{

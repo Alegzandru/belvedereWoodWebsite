@@ -4,6 +4,7 @@ import React, {useState, useEffect, useContext} from "react"
 import { useRouter } from 'next/router'
 import {NavbarContext, LanguageContext} from "./context"
 import Link from 'next/link'
+import Fade from 'react-reveal/Fade';
 
 
 function useWindowSize() {
@@ -66,7 +67,7 @@ export function Navbar(){
         <div 
             className={styles.navbarHeightWrapper}
             style={{
-                height: mobile? "auto" : "140px"
+                height: mobile? "auto" : "48px"
             }}
         >
             <div 
@@ -211,13 +212,17 @@ export function Navbar(){
                     className={styles.mobileContainer}
                     style={{display : mobile? "flex" : "none"}}
                 >
+                    <Link href="/">
+                        <a>
+                            <img
+                                src="/mainPage/BWPlogoGold.png"
+                                alt="Logo"
+                                className={styles.mobileLogo}
+                            />
+                        </a>
+                    </Link>
                     <img
-                        src="/mainPage/BWPlogoGold.png"
-                        alt="Logo"
-                        className={styles.mobileLogo}
-                    />
-                    <img
-                        src="/mainPage/hamburgerIcon2.svg"
+                        src={open? "/navbar/closeIcon3.svg":"/mainPage/hamburgerIcon2.svg"}
                         className={styles.mobileIcon}
                         onClick={()=> setOpen(!open)}
                     ></img>
@@ -228,41 +233,51 @@ export function Navbar(){
                     //     display: open? "block" : "none",
                     // }}
                 >
-                    <Link href="/">
-                        <a className={styles.mobileA}>
-                            <div className={styles.linkMobile}>
-                                Principala
-                            </div>
-                        </a>
-                    </Link>  
-                    <Link href="/despre-noi">
-                        <a className={styles.mobileA}>
-                            <div className={styles.linkMobile}>
-                                Despre noi
-                            </div>
-                        </a>
-                    </Link>  
-                    <Link href="/catalog">
-                        <a className={styles.mobileA}>
-                            <div className={styles.linkMobile}>
-                                Catalog
-                            </div>
-                        </a>
-                    </Link>  
-                    <Link href="/proiecte">
-                        <a className={styles.mobileA}>
-                            <div className={styles.linkMobile}>
-                                Proiecte
-                            </div>
-                        </a>
-                    </Link>  
-                    <Link href="/contactePage">
-                        <a className={styles.mobileA}>
-                            <div className={styles.linkMobile}>
-                                Contacte
-                            </div>
-                        </a>
-                    </Link>  
+                    <Fade left>
+                        <Link href="/">
+                            <a className={styles.mobileA}>
+                                <div className={styles.linkMobile}>
+                                    Principala
+                                </div>
+                            </a>
+                        </Link>  
+                    </Fade>
+                    <Fade left>
+                        <Link href="/despre-noi">
+                            <a className={styles.mobileA}>
+                                <div className={styles.linkMobile}>
+                                    Despre noi
+                                </div>
+                            </a>
+                        </Link>  
+                    </Fade>
+                    <Fade left>
+                        <Link href="/catalog">
+                            <a className={styles.mobileA}>
+                                <div className={styles.linkMobile}>
+                                    Catalog
+                                </div>
+                            </a>
+                        </Link>  
+                    </Fade>
+                    <Fade left>
+                        <Link href="/proiecte">
+                            <a className={styles.mobileA}>
+                                <div className={styles.linkMobile}>
+                                    Proiecte
+                                </div>
+                            </a>
+                        </Link>  
+                    </Fade>
+                    <Fade left>
+                        <Link href="/contactePage">
+                            <a className={styles.mobileA}>
+                                <div className={styles.linkMobile}>
+                                    Contacte
+                                </div>
+                            </a>
+                        </Link>  
+                    </Fade>
                 </div>
             </div>
         </div>

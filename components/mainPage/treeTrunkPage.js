@@ -1,5 +1,7 @@
 import styles from "../../styles/mainPage/treeTrunkPage.module.css"
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 export function TreeTrunkPage(){
 
@@ -37,9 +39,13 @@ export function TreeTrunkPage(){
                             doar rafinament și calitate înaltă, dar și abordare inovativă în procesul de
                             prelucrare a plăcii de lemn.
                         </div>
-                        <div className={styles.button1}>
-                            Află mai mult
-                        </div>
+                        <Link href="/despre-noi">
+                            <a style={{textDecoration: "none"}}>
+                                <div className={styles.button1}>
+                                    Află mai mult
+                                </div>
+                            </a>
+                        </Link>
                     </div>
 
                     <div className={styles.treeTrunkWrapper}>

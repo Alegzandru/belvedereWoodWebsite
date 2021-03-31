@@ -156,7 +156,7 @@
 
 .desktopLink {
     height: auto;
-    width: 100%;
+    width: auto;
     position: relative;
     color: #9A9A9A;
     text-decoration: none;

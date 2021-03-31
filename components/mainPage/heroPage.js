@@ -1,6 +1,8 @@
 import styles from "../../styles/mainPage/heroPage.module.css"
 import Image from 'next/image'
 import React, {useState, useEffect} from "react"
+import Link from 'next/link'
+
 
 export function HeroPage(){
 
@@ -34,12 +36,26 @@ export function HeroPage(){
                         din parquet, pereților și scărilor din lemn.                    
                     </p>
                     <div className={styles.buttonsWrapper}>
-                        <div className={styles.button1}>
-                            Produse
-                        </div>
-                        <div className={styles.button2}>
-                            Proiecte
-                        </div>
+                        <Link href="/catalog">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button1}>
+                                    Produse
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href="/proiecte">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button2}>
+                                    Proiecte
+                                </div>
+                            </a>
+                        </Link>
                     </div>
                     
                     <div 
