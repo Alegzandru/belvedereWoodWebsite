@@ -4,7 +4,8 @@ import React, {useState, useEffect, useContext} from "react"
 import { useRouter } from 'next/router'
 import {NavbarContext, LanguageContext} from "./context"
 import Link from 'next/link'
-import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 
 
 function useWindowSize() {
@@ -43,6 +44,7 @@ export function Navbar(){
     const {language, setLanguage} = useContext(LanguageContext)
     const [blackNavbar, setBlackNavbar] = useState(false);
     const [langHovered, setLangHovered] = useState(false)
+    const [langClicked, setLangClicked] = useState(false)
     const router = useRouter();
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
@@ -194,6 +196,7 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>
+                        
                     </div>
                     <div className={navbarOpen? styles.contactUsWrapper : styles.contactUsWrapper}>
                         <div className={navbarOpen? styles.contactUsButton : styles.contactUsButtonClosed}>
@@ -233,7 +236,7 @@ export function Navbar(){
                     //     display: open? "block" : "none",
                     // }}
                 >
-                    <Fade left>
+                    <Slide left>
                         <Link href="/">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -241,8 +244,8 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>  
-                    </Fade>
-                    <Fade left>
+                    </Slide>
+                    <Slide left>
                         <Link href="/despre-noi">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -250,8 +253,8 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>  
-                    </Fade>
-                    <Fade left>
+                    </Slide>
+                    <Slide left>
                         <Link href="/catalog">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -259,8 +262,8 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>  
-                    </Fade>
-                    <Fade left>
+                    </Slide>
+                    <Slide left>
                         <Link href="/proiecte">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -268,8 +271,8 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>  
-                    </Fade>
-                    <Fade left>
+                    </Slide>
+                    <Slide left>
                         <Link href="/contactePage">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -277,7 +280,79 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>  
-                    </Fade>
+                    </Slide>
+                    <Slide left>
+                        <div 
+                            className={styles.linkMobile}
+                            onClick= { () => setLangClicked(!langClicked)}
+                            style={{
+                                alignItems: "flex-start"
+                            }}
+                        >
+                            <div 
+                                className={styles.langWrapperMobile}
+                                style={{
+                                    flexDirection : langClicked ? "column" : "row"
+                                }}
+                            >
+                                <div className={styles.langButtonMobile}>
+                                    <img
+                                        src={language == 0 ? "/navbar/flagRo.svg" : language == 1? "/navbar/flagRu.svg" : language == 2? "/navbar/flagEn.svg" : ""}
+                                        className={styles.flagMobile}
+                                    />
+                                    <div 
+                                        className={styles.langTextMobile}
+                                    >
+                                        {language == 0 ? "Ro" : language == 1? "Ru" : language == 2? "En" : ""}
+                                    </div>
+                                    <img
+                                        src="/navbar/arrowDown.svg"
+                                        className={styles.arrowDownMobile}
+                                    />
+                                </div>
+
+                                <div 
+                                    className={styles.languagesWrapper}
+                                    style={{
+                                        display: langClicked? "block" : "none"
+                                    }}
+                                >
+                                    <div 
+                                        className={styles.langBoxMobile}
+                                        onClick={() => {
+                                            language == 0 ? setLanguage(1) : 
+                                            language == 1 ? setLanguage(2) :
+                                            language == 2 ? setLanguage(0) : ""
+                                        }}
+                                    >
+                                        <img
+                                            src={language == 0 ? "/navbar/flagRu.svg" : language == 1? "/navbar/flagEn.svg" : language == 2? "/navbar/flagRo.svg" : ""}
+                                            className={styles.flagMobile}
+                                        />
+                                        <div className={styles.langTextMobile}>
+                                            {language == 0 ? "Ru" : language == 1? "En" : language == 2? "Ro" : ""}
+                                        </div>
+                                    </div>
+                                    <div 
+                                        className={styles.langBoxMobile}
+                                        onClick={() => {
+                                            language == 0 ? setLanguage(2) : 
+                                            language == 1 ? setLanguage(0) :
+                                            language == 2 ? setLanguage(1) : ""
+                                        }}
+                                    >
+                                        <img
+                                            src={language == 0 ? "/navbar/flagEn.svg" : language == 1? "/navbar/flagRo.svg" : language == 2? "/navbar/flagRu.svg" : ""}
+                                            className={styles.flagMobile}
+                                        />
+                                        <div className={styles.langTextMobile}>
+                                            {language == 0 ? "En" : language == 1? "Ro" : language == 2? "Ru" : ""}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Slide>
                 </div>
             </div>
         </div>

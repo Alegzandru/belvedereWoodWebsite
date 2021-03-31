@@ -144,11 +144,10 @@ export function Footer(){
                     <div className={styles.footerLine}></div>
                     <div className={styles.downTextContainer}>
                         <div className={styles.copyright}>
-                            © 2021 SRL «Belvedere»
+                            © 2021 SRL «RO & TI COLOR»
                         </div>
                         <div>
-                            Представленная на сайте информация, в т.ч. стоимости складов, носит информационный характер и не является публичной офертой. Все права защищены.
-                        </div>
+                            Informația prezentată pe site, inclusiv costul parchetului are doar scop informativ și nu este o ofertă publică. Toate drepturile rezervate.                        </div>
                     </div>
                 </div>
             </section>

@@ -33,7 +33,7 @@ export function TreeTrunkPage(){
                             {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et risus sapien. Vivamus sodales cursus sem, vitae sollicitudin lacus ornare accumsan.  */}
                             Forme, desene și structuri inedite ale lucrărilor, la crearea cărora se întâlnesc
                             arta prelucrării manuale a lemnului cu tehnologiile performante. Inspirată de
-                            tradiția centenară de producere a parchetului din lemn, Compania BWP vine
+                            tradiția centenară de producere a parchetului din lemn, compania BWP vine
                             cu o experiență în crearea lucrărilor sale tocmai din Italia. De unde a adus nu
 
                             doar rafinament și calitate înaltă, dar și abordare inovativă în procesul de

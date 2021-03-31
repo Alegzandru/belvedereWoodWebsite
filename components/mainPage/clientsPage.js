@@ -63,7 +63,7 @@ export function ClientsPage(){
                         </a>
                         <a href="https://www.facebook.com/kikusteakwine/" target="blank">
                             <img
-                                src="/mainPage/Kiku.png"
+                                src="/mainPage/kiku.png"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}
@@ -130,7 +130,7 @@ export function ClientsPage(){
                         </a>
                         <a href="https://www.facebook.com/kikusteakwine/" target="blank">
                             <img
-                                src="/mainPage/Kiku.png"
+                                src="/mainPage/kiku.png"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}

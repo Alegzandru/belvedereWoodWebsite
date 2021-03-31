@@ -41,6 +41,7 @@ export function DescriereaProiectelor(){
 
                     <div 
                         name="muzeul" 
+                        id="muzeul"
                         className={styles.projectRowLeft}
                     >
                         <img
@@ -76,7 +77,11 @@ export function DescriereaProiectelor(){
                         </div>
                     </div>
 
-                    <div name="castelMimi" className={styles.projectRowRight}>
+                    <div 
+                        name="castelMimi" 
+                        id="castelMimi"
+                        className={styles.projectRowRight}
+                    >
                         <div 
                             className={styles.textWrapper}
                             // style={{
@@ -105,7 +110,11 @@ export function DescriereaProiectelor(){
                         />
                     </div>
 
-                    <div name="manucBei" className={styles.projectRowLeft}>
+                    <div 
+                        name="manucBei" 
+                        id="manucBei"
+                        className={styles.projectRowLeft}
+                    >
                         <img
                             src="/proiecte/ManucBei.png"
                             alt="Manuc Bei"
@@ -133,7 +142,11 @@ export function DescriereaProiectelor(){
                         </div>
                     </div>
 
-                    <div name="porteryard" className={styles.projectRowRight}>
+                    <div 
+                        name="porteryard" 
+                        id="porteryard"
+                        className={styles.projectRowRight}
+                    >
                         <div 
                             className={styles.textWrapper}
                             // style={{
@@ -163,7 +176,11 @@ export function DescriereaProiectelor(){
                         />
                     </div>
 
-                    <div name="rozmarin" className={styles.projectRowLeft}>
+                    <div 
+                        name="rozmarin" 
+                        id="rozmarin"
+                        className={styles.projectRowLeft}
+                    >
                         <img
                             src="/proiecte/rozmarin.jpg"
                             alt="Cafe Rozmarin"

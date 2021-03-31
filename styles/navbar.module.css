@@ -80,13 +80,13 @@
     box-sizing: border-box;
 }
 
-.linkMobile:hover{
+/* .linkMobile:hover{
     border: 6px solid #031D1E;
     border-left-width: 6px;
     border-top-width: 0px;
     border-bottom-width: 0px;
     border-right-width: 0px;
-}
+} */
 
 .mobileA{
     text-decoration: none;
@@ -150,6 +150,14 @@
     justify-content: flex-start;
 }
 
+.langWrapperMobile{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 .langWrapperClosed{
     width: 120px;
     height: auto;
@@ -162,6 +170,16 @@
 .langButton{
     width: 120px;
     height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.langButtonMobile{
+    width: auto;
+    height: 36px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -190,10 +208,30 @@
     cursor: pointer;
 }
 
+.langBoxMobile{
+    width: 100%;
+    height: 36px;
+    margin-top: 5px;
+    margin-left: 20px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
 .flag{
     width: 14px;
     height: 10px;
     margin-right: 6px;
+}
+
+.flagMobile{
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .langText{
@@ -204,10 +242,24 @@
     margin-right: 6px;
 }
 
+.langTextMobile{
+    font-family: Futura PT custom Mediu;
+    color: white;
+    font-size: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+
 .arrowDown{
     margin-top: 4px;
     height: 12px;
     width: 12px;
+}
+
+.arrowDownMobile{
+    width: 20px;
+    height: auto;
+    margin-top: 6px;
 }
 
 .contactUsWrapper{

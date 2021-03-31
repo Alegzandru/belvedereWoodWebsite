@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "../../styles/proiecte/toateProiectele.module.css"
 import Link from 'next/link'
+import {Link as LinkScroll} from 'react-scroll'
 
 
 function isInViewport(element) {
@@ -38,17 +39,25 @@ export function ToateProiectele(){
                         interierul acestor încăperi, încât au devenit un tot întreg.
                         </p>
                         <div className={styles.button1}>
-                            Vezi toate proiectele
+                            <LinkScroll 
+                                to="muzeul" 
+                                smooth={true}
+                            >
+                                Vezi toate proiectele
+                            </LinkScroll>
                         </div>
                     </div>
 
                     <div className={styles.photoWrapper}>
                         
-                        <Link href="/proiecte/#muzeul">
-                            <a style={{
+                        <LinkScroll 
+                            to="muzeul"
+                            smooth={true}
+                            style={{
                                 width: "100%",
                                 textDecoration: "none"
-                            }}>
+                            }}
+                        >
                                 <div 
                                     className={styles.photoContainerRight}
                                     onMouseEnter={ ()=> setHovered1(true)}
@@ -81,15 +90,17 @@ export function ToateProiectele(){
                                         className={styles.projectImg}
                                     />
                                 </div>
-                            </a>
-                        </Link>
+                        </LinkScroll>
 
 
-                        <Link href="/proiecte/#castelMimi">
-                            <a style={{
+                        <LinkScroll 
+                            to="castelMimi"
+                            smooth={true}
+                            style={{
                                 width: "100%",
                                 textDecoration: "none"
-                            }}>
+                            }}
+                        >
                                 <div 
                                     className={styles.photoContainerLeft}
                                     onMouseEnter={ ()=> setHovered2(true)}
@@ -122,15 +133,17 @@ export function ToateProiectele(){
                                         Castel Mimi 
                                     </div>
                                 </div>
-                            </a>
-                        </Link>
+                        </LinkScroll>
 
 
-                        <Link href="/proiecte/#manucBei">
-                            <a style={{
+                        <LinkScroll 
+                            to="manucBei"
+                            smooth={true}
+                            style={{
                                 width: "100%",
                                 textDecoration: "none"
-                            }}>
+                            }}
+                        >
                                 <div 
                                     className={styles.photoContainerRight}
                                     onMouseEnter={ ()=> setHovered3(true)}
@@ -163,15 +176,17 @@ export function ToateProiectele(){
                                         className={styles.projectImg}
                                     />
                                 </div>
-                            </a>
-                        </Link>
+                        </LinkScroll>
 
 
-                        <Link href="/proiecte/#porteryard">
-                            <a style={{
+                        <LinkScroll 
+                            to="porteryard"
+                            smooth={true}
+                            style={{
                                 width: "100%",
                                 textDecoration: "none"
-                            }}>
+                            }}
+                        >
                                 <div 
                                     className={styles.photoContainerLeft}
                                     onMouseEnter={ ()=> setHovered4(true)}
@@ -204,15 +219,17 @@ export function ToateProiectele(){
                                         Porteryard
                                     </div>
                                 </div>
-                            </a>
-                        </Link>
+                        </LinkScroll>
 
 
-                        <Link href="/proiecte/#porteryard">
-                            <a style={{
+                        <LinkScroll 
+                            to="rozmarin"
+                            smooth={true}
+                            style={{
                                 width: "100%",
                                 textDecoration: "none"
-                            }}>
+                            }}
+                        >
                                 <div 
                                     className={styles.photoContainerRight}
                                     onMouseEnter={ ()=> setHovered5(true)}
@@ -245,17 +262,19 @@ export function ToateProiectele(){
                                         className={styles.projectImg}
                                     />
                                 </div>
-                            </a>
-                        </Link>
+                        </LinkScroll>
                     </div>
 
                     <div className={styles.photoWrapperMobile}>
                         <div className={styles.photoColumnMobile}>
-                            <Link href="/proiecte/#castelMimi">
-                                <a style={{
-                                    width: "100%",
-                                    textDecoration: "none"
-                                }}>
+                                <LinkScroll 
+                                    to="castelMimi"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
                                     <div className={styles.photoBoxMobile}>
                                         <div className={styles.projectNameMobile}>
                                             Castel Mimi
@@ -267,15 +286,17 @@ export function ToateProiectele(){
                                         >
                                         </img>
                                     </div>
-                                </a>
-                            </Link>
+                                </LinkScroll>
 
 
-                            <Link href="/proiecte/#porteryard">
-                                <a style={{
-                                    width: "100%",
-                                    textDecoration: "none"
-                                }}>
+                                <LinkScroll 
+                                    to="porteryard"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
                                     <div className={styles.photoBoxMobile}>
                                         <div className={styles.projectNameMobile}>
                                             Cafe Porter Yard
@@ -287,16 +308,18 @@ export function ToateProiectele(){
                                         >
                                         </img>
                                     </div>
-                                </a>
-                            </Link>
+                                </LinkScroll>
                         </div>
                         <div className={styles.photoColumnMobile}>
 
-                            <Link href="/proiecte/#muzeul">
-                                <a style={{
-                                    width: "100%",
-                                    textDecoration: "none"
-                                }}>
+                                <LinkScroll 
+                                    to="muzeul"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
                                     <div className={styles.photoBoxMobile}>
                                         <div className={styles.projectNameMobile}>
                                             Muzeul Național de Artă
@@ -308,16 +331,18 @@ export function ToateProiectele(){
                                         >
                                         </img>
                                     </div>
-                                </a>
-                            </Link>
+                                </LinkScroll>
                         </div>
                         <div className={styles.photoColumnMobile}>
 
-                            <Link href="/proiecte/#manucBei">
-                                <a style={{
-                                    width: "100%",
-                                    textDecoration: "none"
-                                }}>
+                                <LinkScroll 
+                                    to="manucBei"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
                                     <div className={styles.photoBoxMobile}>
                                         <div className={styles.projectNameMobile}>
                                             Manuc Bei
@@ -329,14 +354,16 @@ export function ToateProiectele(){
                                         >
                                         </img>
                                     </div>
-                                </a>
-                            </Link>
+                                </LinkScroll>
 
-                            <Link href="/proiecte/#rozmarin">
-                                <a style={{
-                                    width: "100%",
-                                    textDecoration: "none"
-                                }}>
+                                <LinkScroll 
+                                    to="rozmarin"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
                                     <div className={styles.photoBoxMobile}>
                                         <div className={styles.projectNameMobile}>
                                             Cafe Rozmarin
@@ -348,8 +375,7 @@ export function ToateProiectele(){
                                         >
                                         </img>
                                     </div>
-                                </a>
-                            </Link>
+                                </LinkScroll>
                         </div>
                     </div>
                 </div>
