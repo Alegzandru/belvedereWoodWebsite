@@ -19,7 +19,6 @@ export function Contacte(){
         const name = target.name;
         const value = target.value;
         setState({ ...state , [name]: value });
-        console.log(state.name, state.email, state.message)
     }
 
     function sendEmail(e) {
@@ -27,8 +26,6 @@ export function Contacte(){
         setEmailSent(true)
 
         e.preventDefault();
-
-        console.log("Name and email sent:" + state.name +" "+ state.email)
 
         const templateParams = {
             from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
@@ -78,8 +75,14 @@ export function Contacte(){
                                 Număr de telefon
                             </div>
                             <div className={styles.contactsLink}>
-                                <a>
-                                    +37379123456
+                                <a 
+                                    href="tel:37369239184"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "#EDB65C"
+                                    }}
+                                >
+                                    +37369239184
                                 </a>
                             </div>
                         </div>
@@ -94,8 +97,14 @@ export function Contacte(){
                                 Poștă electronică
                             </div>
                             <div className={styles.contactsLink}>
-                                <a>
-                                    emailadress@gmail.com
+                                <a 
+                                    href="mailto:roticolor@mail.ru"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "#EDB65C"
+                                    }}
+                                >
+                                    roticolor@mail.ru
                                 </a>
                             </div>
                         </div>
@@ -110,8 +119,15 @@ export function Contacte(){
                                 Adresă fizică
                             </div>
                             <div className={styles.contactsLink}>
-                                <a>
-                                    strada Malina Mică 88
+                                <a 
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "#EDB65C"
+                                    }}
+                                    target="blank" 
+                                    href="https://www.google.com/maps/dir/47.0414581,28.8280053/47.0140443,28.8749886/@47.0284079,28.8164507,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0"
+                                >
+                                    strada Uzinelor 15/4
                                 </a>
                             </div>
                         </div>

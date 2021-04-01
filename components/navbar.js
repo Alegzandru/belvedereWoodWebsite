@@ -31,7 +31,6 @@ function useWindowSize() {
         return () => window.removeEventListener("resize", handleResize);
       }
     }, []); // Empty array ensures that effect is only run on mount
-    console.log(windowSize)
     return windowSize;
 }
 
@@ -60,7 +59,6 @@ export function Navbar(){
     useEffect(
         () => {
             setBlackNavbar(router.pathname == "/despre-noi" || router.pathname == "/proiecte" ? true : false)
-            // console.log(window.scrollY)
         }
     )
 

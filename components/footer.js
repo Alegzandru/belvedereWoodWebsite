@@ -71,11 +71,13 @@ export function Footer(){
                                         height={14}
                                         className={styles.contactsIcon}
                                     />
-                                    <Link href="/contacte">
-                                        <a className={styles.desktopLink}>
-                                            strada Uzinelor 15/4
-                                        </a>
-                                    </Link>
+                                    <a 
+                                        className={styles.desktopLink}
+                                        target="blank"
+                                        href="https://www.google.com/maps/dir/47.0414581,28.8280053/47.0140443,28.8749886/@47.0284079,28.8164507,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0"
+                                    >
+                                        strada Uzinelor 15/4
+                                    </a>
                                 </div>
                                 <div className={styles.contactsBox}>
                                     <img
@@ -92,7 +94,7 @@ export function Footer(){
                                             textDecoration: "none"
                                         }}
                                     >
-                                        +37379123456
+                                        +37369239184
                                     </a>
                                 </div>
                                 <div className={styles.contactsBox}>
@@ -132,12 +134,12 @@ export function Footer(){
                         <div className={styles.rightContainer}>
                             <a 
                                 className={styles.button}
-                                href="tel:37379123456"
+                                href="tel:37369239184"
                                 style={{
                                     textDecoration: "none"
                                 }}
                             >
-                                +373 79 123 456
+                                +373 69 239 184
                             </a>
                         </div>
                     </div>

@@ -20,7 +20,6 @@ export function PatrateModule(){
         const name = target.name;
         const value = target.value;
         setArea(value)
-        console.log(area)
     }
 
     return(

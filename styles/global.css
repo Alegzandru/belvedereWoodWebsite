@@ -76,3 +76,11 @@ body{
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Futura PT custom Demi3';
+    src: url('/fonts/FuturaNewDemi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

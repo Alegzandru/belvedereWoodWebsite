@@ -32,7 +32,7 @@
 .h1{
     width: 100%;
 
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: white;
     font-size: 60px;
     line-height: 60px;
@@ -46,7 +46,7 @@
 .subheading{
     width: 620px;
 
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: white;
     font-size: 24px;
     line-height: 24px;
@@ -115,7 +115,7 @@
 
 .popupHeading{
     font-size: 32px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -147,7 +147,7 @@
 
 .selectionText{
     font-size: 24px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
 }
 
@@ -161,7 +161,7 @@
     justify-content: flex-start;
 
     font-size: 24px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: black;
 }
 
@@ -172,7 +172,7 @@
     border: 2px solid #031D1E;
 
     font-size: 24px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: #031D1E;
     padding-left: 10px;
     margin-right: 10px;
@@ -213,14 +213,14 @@
 
 .dropdownTextActive{
     font-size: 24px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: white;
     margin-left: 10px;
 }
 
 .dropdownTextInactive{
     font-size: 24px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     margin-left: 10px;
 }
 
@@ -228,7 +228,7 @@
     width: 100%;
     margin-right: 60px;
 
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     font-size: 40px;
     line-height: 40px;
@@ -256,7 +256,7 @@
 
     font-size: 18px;
     line-height: 18px;
-    font-family: Futura PT custom Mediu2; 
+    font-family: Futura PT custom Mediu; 
     color: #54545C;
 
     background-color: white;
@@ -272,7 +272,7 @@
 
     font-size: 18px;
     line-height: 18px;
-    font-family: Futura PT custom Mediu2; 
+    font-family: Futura PT custom Mediu; 
     color: #54545C;
 
     background-color: white;
@@ -288,7 +288,7 @@
     width: 140px;
     height: 35px;
 
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     font-size: 22px;
     line-height: 22px;
     display: flex;
@@ -344,7 +344,7 @@
 
 .priceText{
     font-size: 30px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
     text-decoration: underline;
     margin-right: 20px;
@@ -352,13 +352,13 @@
 
 .price{
     font-size: 30px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: #CD9D2F;
 }
 
 .currency{
     font-size: 30px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
     margin-left: 6px;
 }
@@ -391,7 +391,7 @@
 }
 
 .inactiveLink{
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: black;
     font-size: 16px;
     line-height: 16px;
@@ -426,7 +426,7 @@
 }
 
 .activeLink{
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
 }
 
 .productDescriptionWrapper{
@@ -546,7 +546,7 @@
 .h2Small{
     font-size: 40px;
     line-height: 40px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     width: 100%;
 
@@ -560,7 +560,7 @@
 
     font-size: 20px;
     line-height: 24px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: black;
     text-align: start;
 }
@@ -591,7 +591,7 @@
 
     font-size: 20px;
     line-height: 24px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: #031D1E;
 
     cursor: pointer;
@@ -624,7 +624,7 @@
 }
 
 .scrollText{
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: #031D1E;
     font-size: 18px;
     line-height: 18px;
@@ -664,7 +664,7 @@
 .h2{
     font-size: 50px;
     line-height: 50px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     width: 100%;
     text-align: center;
@@ -721,7 +721,7 @@
     width: 100%;
     font-size: 26px;
     line-height: 26px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     text-align: center;
     margin-top: 5px;
@@ -731,7 +731,7 @@
     width: 100%;
     font-size: 20px;
     line-height: 20px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: rgb(145, 145, 145);
     text-align: center;
     margin-top: 0px;
@@ -742,7 +742,7 @@
     width: 100%;
     font-size: 26px;
     line-height: 26px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     text-align: center;
 }
@@ -773,7 +773,7 @@
     width: 100%;
     font-size: 30px;
     line-height: 30px;
-    font-family: Futura PT custom Demi2;
+    font-family: Futura PT custom Demi;
     color: black;
     text-align: left;
     margin-top: 0px;
@@ -792,7 +792,7 @@
     width: 100%;
     font-size: 20px;
     line-height: 20px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
     text-align: left;
     margin-top: 0px;
@@ -803,7 +803,7 @@
     width: 100%;
     font-size: 20px;
     line-height: 20px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: black;
     text-align: left;
     margin-top: 5px;
@@ -832,7 +832,7 @@
 
     font-size: 20px;
     line-height: 20px;
-    font-family: Futura PT custom Book2;
+    font-family: Futura PT custom Book;
     color: black;
     text-align: left;
 }
@@ -899,7 +899,7 @@
 
     font-size: 28px;
     line-height: 28px;
-    font-family: Futura PT custom Mediu2;
+    font-family: Futura PT custom Mediu;
     color: black;
     text-align: center;
     margin-top: 20px;
@@ -949,7 +949,7 @@
     .h1{
         width: 528px;
     
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: white;
         font-size: 60px;
         line-height: 60px;
@@ -965,7 +965,7 @@
     .subheading{
         width: 528px;
     
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: white;
         font-size: 24px;
         line-height: 24px;
@@ -1021,7 +1021,7 @@
     }
     
     .inactiveLink{
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         font-size: 16px;
         line-height: 16px;
@@ -1036,7 +1036,7 @@
     }
     
     .activeLink{
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
     }
     
     .productDescriptionWrapper{
@@ -1140,7 +1140,7 @@
     .h2Small{
         font-size: 40px;
         line-height: 40px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         width: 100%;
     
@@ -1154,7 +1154,7 @@
     
         font-size: 20px;
         line-height: 24px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: start;
     }
@@ -1186,7 +1186,7 @@
     
         font-size: 20px;
         line-height: 24px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: #031D1E;
     }
     
@@ -1207,7 +1207,7 @@
     }
     
     .scrollText{
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: #031D1E;
         font-size: 18px;
         line-height: 18px;
@@ -1247,7 +1247,7 @@
     .h2{
         font-size: 40px;
         line-height: 40px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         width: 100%;
         text-align: center;
@@ -1296,7 +1296,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: center;
         margin-top: 3px;
@@ -1306,7 +1306,7 @@
         width: 100%;
         font-size: 16px;
         line-height: 16px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: rgb(145, 145, 145);
         text-align: center;
         margin-top: 0px;
@@ -1317,7 +1317,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: center;
     }
@@ -1348,7 +1348,7 @@
         width: 100%;
         font-size: 30px;
         line-height: 30px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: left;
         margin-top: 0px;
@@ -1367,7 +1367,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         text-align: left;
         margin-top: 0px;
@@ -1378,7 +1378,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: left;
         margin-top: 5px;
@@ -1409,7 +1409,7 @@
     
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: left;
     }
@@ -1505,7 +1505,7 @@
     
         font-size: 28px;
         line-height: 28px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         text-align: center;
         margin-top: 20px;
@@ -1532,7 +1532,7 @@
     .h1{
         width: auto;
     
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: white;
         font-size: 40px;
         line-height: 40px;
@@ -1548,7 +1548,7 @@
     .subheading{
         width: auto;
     
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: white;
         font-size: 16px;
         line-height: 16px;
@@ -1595,7 +1595,7 @@
 
     .popupHeading{
         font-size: 24px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -1612,7 +1612,7 @@
     
     .selectionText{
         font-size: 20px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         width: 100px;
     }
@@ -1653,14 +1653,14 @@
     
     .dropdownTextActive{
         font-size: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: white;
         margin-left: 5px;
     }
 
     .dropdownTextInactive{
         font-size: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: #031D1E;
         margin-left: 5px;
     }
@@ -1689,7 +1689,7 @@
     
     .priceText{
         font-size: 24px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         text-decoration: underline;
         margin-right: 20px;
@@ -1698,13 +1698,13 @@
     
     .price{
         font-size: 32px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: #CD9D2F;
     }
     
     .currency{
         font-size: 32px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         margin-left: 6px;
     }
@@ -1730,7 +1730,7 @@
     }
     
     .inactiveLink{
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         font-size: 14px;
         line-height: 14px;
@@ -1745,7 +1745,7 @@
     }
     
     .activeLink{
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         font-size: 14px;
     }
     
@@ -1850,7 +1850,7 @@
     .h2Small{
         font-size: 30px;
         line-height: 30px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         width: 100%;
     
@@ -1864,7 +1864,7 @@
     
         font-size: 18px;
         line-height: 24px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: start;
     }
@@ -1896,7 +1896,7 @@
     
         font-size: 18px;
         line-height: 24px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: #031D1E;
         margin-bottom: 10px;
     }
@@ -1918,7 +1918,7 @@
     }
     
     .scrollText{
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: #031D1E;
         font-size: 18px;
         line-height: 18px;
@@ -1958,7 +1958,7 @@
     .h2{
         font-size: 40px;
         line-height: 40px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         width: 100%;
         text-align: center;
@@ -2007,7 +2007,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: center;
         margin-top: 3px;
@@ -2017,7 +2017,7 @@
         width: 100%;
         font-size: 16px;
         line-height: 16px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: rgb(145, 145, 145);
         text-align: center;
         margin-top: 0px;
@@ -2028,7 +2028,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: center;
         margin-bottom: 20px;
@@ -2061,7 +2061,7 @@
         width: 100%;
         font-size: 30px;
         line-height: 30px;
-        font-family: Futura PT custom Demi2;
+        font-family: Futura PT custom Demi;
         color: black;
         text-align: left;
         margin-top: 0px;
@@ -2080,7 +2080,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         text-align: left;
         margin-top: 0px;
@@ -2091,7 +2091,7 @@
         width: 100%;
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: left;
         margin-top: 5px;
@@ -2122,7 +2122,7 @@
     
         font-size: 20px;
         line-height: 20px;
-        font-family: Futura PT custom Book2;
+        font-family: Futura PT custom Book;
         color: black;
         text-align: left;
     }
@@ -2220,7 +2220,7 @@
     
         font-size: 24px;
         line-height: 24px;
-        font-family: Futura PT custom Mediu2;
+        font-family: Futura PT custom Mediu;
         color: black;
         text-align: center;
         margin-top: 20px;

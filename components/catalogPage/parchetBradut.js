@@ -5,6 +5,7 @@ import {parchetBradut} from "./prices"
 import Link from 'next/link'
 
 
+
 export function ParchetBradut(){
 
     const [slide, setSlide] = useState(0)
@@ -39,7 +40,6 @@ export function ParchetBradut(){
         const name = target.name;
         const value = target.value;
         setState({ ...state , [name]: value });
-        console.log(state.name, state.email, state.message)
     }
 
     function sendEmail(e) {
@@ -48,7 +48,6 @@ export function ParchetBradut(){
 
         e.preventDefault();
 
-        console.log("Name and email sent:" + state.name +" "+ state.email)
 
         const templateParams = {
             from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",

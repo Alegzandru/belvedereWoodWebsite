@@ -8,8 +8,6 @@ export function Realizari(){
 
     const scrollPosition = () => {
         setShowStats(window.scrollY > 1300)
-        // console.log(showStat)
-        // console.log(window.scrollY)
     }
 
     if (typeof window !== "undefined") {
