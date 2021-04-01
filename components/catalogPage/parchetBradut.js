@@ -13,8 +13,9 @@ export function ParchetBradut(){
     const [dropdownHover, setDropdownHover] = useState(false)
     const [selected, setSelected] = useState(0)
     const [area, setArea] = useState(0)
+    const [popUpClicked, setpopUpClicked] = useState(0)
 
-    function handleInputChange(e) {
+    function handleInputChangeArea(e) {
         e.preventDefault();
         const target = e.target;
         const name = target.name;
@@ -23,12 +24,67 @@ export function ParchetBradut(){
         console.log(area)
     }
 
+    const [emailSent, setEmailSent] = useState(false)
+    const [state, setState] = useState({
+        nume: "",
+        prenume: "",
+        email: "",
+        message: "",
+        number: ""
+    })
+
+    function handleInputChange(e) {
+        e.preventDefault();
+        const target = e.target;
+        const name = target.name;
+        const value = target.value;
+        setState({ ...state , [name]: value });
+        console.log(state.name, state.email, state.message)
+    }
+
+    function sendEmail(e) {
+
+        setEmailSent(true)
+
+        e.preventDefault();
+
+        console.log("Name and email sent:" + state.name +" "+ state.email)
+
+        const templateParams = {
+            from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
+            to_name: "Alexandru Codreanu",
+            message: state.message
+        };
+
+        emailjs
+            .send("contact_service_bwp", "contact_form", templateParams, "user_mI8fMO1xh7LRltvIQ3FQk")
+            .then(
+                function(response) {
+                // toast.success("Your message has successfully sent!", {
+                //     position: toast.POSITION.BOTTOM_CENTER
+                // });
+                console.log("SUCCESS!", response.status, response.text);
+                },
+                function(err) {
+                // toast.error("Your message was not able to be sent");
+                }
+            );
+        setState({
+            nume: "",
+            prenume: "",
+            email: "",
+            message: "",
+            number: ""
+        });
+    }
+
     return(
         <div>
             <div 
-                className={styles.popupWrapper}
+                className={`${popUpClicked == 0 ? styles.popupWrapper : styles.popupWrapperForm}`}
                 style={{
                     display : popupOpen ? "block" : "none"
+
                 }}
             >
 
@@ -38,122 +94,202 @@ export function ParchetBradut(){
                     onClick={() => setPopupOpen(false)}
                 />
 
-                <div className={styles.popupHeading}>
-                    Calculează prețul parchetului
-                </div>
-
-                <div className={styles.selectionBox}>
-                    <div 
-                        className={styles.selectionText}
-                    >
-                        Selecteaza modelul
+                <div style={{
+                    display : popUpClicked == 0 ? "block" : "none"
+                }}>
+                    <div className={styles.popupHeading}>
+                        Calculează prețul parchetului
                     </div>
-                    <div 
-                        className={styles.dropdownColumn}
-                        onMouseEnter={ () => setDropdownHover(true)}
-                        onMouseLeave={ () => setDropdownHover(false)}
-                    >
+
+                    <div className={styles.selectionBox}>
                         <div 
-                            className={styles.dropdownBoxActive}
+                            className={styles.selectionText}
                         >
-                            <div className={styles.dropdownTextActive}>
-                                {parchetBradut[selected].name}
-                            </div>
-                            <img 
-                                src={dropdownHover ? 
-                                    "/catalog/downArrow3.svg" :
-                                    "/catalog/rightArrowWhite.svg"
-                                }
-                                className={styles.whiteArrow}
-                            >
-                            </img>
+                            Selecteaza modelul
                         </div>
                         <div 
-                            className={styles.inactiveBox}
-                            style={{
-                                display : dropdownHover ? "block" : "none"
-                            }}
+                            className={styles.dropdownColumn}
+                            onMouseEnter={ () => setDropdownHover(true)}
+                            onMouseLeave={ () => setDropdownHover(false)}
                         >
                             <div 
-                                className={styles.dropdownBoxInactive}
-                                onClick={() =>{
-                                    selected == 0 ? 
-                                    setSelected(1) :
-                                    selected == 1 ? 
-                                    setSelected(2) :
-                                    selected == 2 ? 
-                                    setSelected(0) : setSelected("")
-                                }}
+                                className={styles.dropdownBoxActive}
                             >
-                                <div className={styles.dropdownTextInactive}>
-                                    {
-                                        selected == 0 ? 
-                                        parchetBradut[1].name :
-                                        selected == 1 ? 
-                                        parchetBradut[2].name :
-                                        selected == 2 ? 
-                                        parchetBradut[0].name : ""
-                                    }
+                                <div className={styles.dropdownTextActive}>
+                                    {parchetBradut[selected].name}
                                 </div>
+                                <img 
+                                    src={dropdownHover ? 
+                                        "/catalog/downArrow3.svg" :
+                                        "/catalog/rightArrowWhite.svg"
+                                    }
+                                    className={styles.whiteArrow}
+                                >
+                                </img>
                             </div>
                             <div 
-                                className={styles.dropdownBoxInactive}
-                                onClick={() =>{
-                                    selected == 0 ? 
-                                    setSelected(2) :
-                                    selected == 1 ? 
-                                    setSelected(0) :
-                                    selected == 2 ? 
-                                    setSelected(1) : setSelected("")
+                                className={styles.inactiveBox}
+                                style={{
+                                    display : dropdownHover ? "block" : "none"
                                 }}
                             >
-                                <div className={styles.dropdownTextInactive}>
-                                    {
+                                <div 
+                                    className={styles.dropdownBoxInactive}
+                                    onClick={() =>{
                                         selected == 0 ? 
-                                        parchetBradut[2].name:
+                                        setSelected(1) :
                                         selected == 1 ? 
-                                        parchetBradut[0].name :
+                                        setSelected(2) :
                                         selected == 2 ? 
-                                        parchetBradut[1].name : ""
-                                    }
+                                        setSelected(0) : setSelected("")
+                                    }}
+                                >
+                                    <div className={styles.dropdownTextInactive}>
+                                        {
+                                            selected == 0 ? 
+                                            parchetBradut[1].name :
+                                            selected == 1 ? 
+                                            parchetBradut[2].name :
+                                            selected == 2 ? 
+                                            parchetBradut[0].name : ""
+                                        }
+                                    </div>
                                 </div>
+                                <div 
+                                    className={styles.dropdownBoxInactive}
+                                    onClick={() =>{
+                                        selected == 0 ? 
+                                        setSelected(2) :
+                                        selected == 1 ? 
+                                        setSelected(0) :
+                                        selected == 2 ? 
+                                        setSelected(1) : setSelected("")
+                                    }}
+                                >
+                                    <div className={styles.dropdownTextInactive}>
+                                        {
+                                            selected == 0 ? 
+                                            parchetBradut[2].name:
+                                            selected == 1 ? 
+                                            parchetBradut[0].name :
+                                            selected == 2 ? 
+                                            parchetBradut[1].name : ""
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.selectionBox}>
+                        <div className={styles.selectionText}>
+                            Introdu suprafața
+                        </div>
+                        <div className={styles.inputBox}>
+                            <input
+                                className={styles.surfaceInput}
+                                type="text" 
+                                placeholder="0" 
+                                id="area"
+                                name="area"
+                                onChange={handleInputChangeArea}
+                                required
+                                value={area}
+                            />
+                            m
+                            <sup>2</sup>
+                        </div>
+                    </div>
+
+                    <div className={styles.priceBoxPopup}>
+                        <div className={styles.priceText}>
+                            Preț final:
+                        </div>
+                        <div className={styles.priceInsideBox}>
+                            <div className={styles.price}>
+                                {area * parchetBradut[selected].price}
+                            </div>
+                            <div className={styles.currency}>
+                                &euro;
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className={styles.selectionBox}>
-                    <div className={styles.selectionText}>
-                        Introdu suprafața
-                    </div>
-                    <div className={styles.inputBox}>
-                        <input
-                            className={styles.surfaceInput}
+                <div 
+                    style={{
+                            display : popUpClicked == 1 ? "block" : "none"
+                    }}
+                    className={styles.formWrapper}
+                >
+                    <h2 className={styles.h2Right}>
+                        Lăsați-ne un mesaj
+                    </h2>
+                    <form
+                        onSubmit={sendEmail}
+                        className={styles.form}
+                    >
+                        <div className={styles.nameInputsWrapper}>
+                            <input
+                                type="text" 
+                                placeholder="Nume" 
+                                className={styles.inputSmall}
+                                type="text" 
+                                id="name"
+                                name="nume"
+                                onChange={handleInputChange}
+                                required
+                                value={state.nume}
+                            ></input>
+                            <input 
+                                type="text" 
+                                placeholder="Prenume" 
+                                className={styles.inputSmall}
+                                id="name"
+                                name="prenume"
+                                onChange={handleInputChange}
+                                required
+                                value={state.prenume}
+                            ></input>
+                        </div>
+                        <input 
                             type="text" 
-                            placeholder="0" 
-                            id="area"
-                            name="area"
+                            placeholder="Număr de telefon" 
+                            className={styles.input}
+                            id="name"
+                            name="number"
                             onChange={handleInputChange}
                             required
-                            value={area}
-                        />
-                        m
-                        <sup>2</sup>
-                    </div>
-                </div>
-
-                <div className={styles.priceBoxPopup}>
-                    <div className={styles.priceText}>
-                        Preț final:
-                    </div>
-                    <div className={styles.priceInsideBox}>
-                        <div className={styles.price}>
-                            {area * parchetBradut[selected].price}
-                        </div>
-                        <div className={styles.currency}>
-                            &euro;
-                        </div>
-                    </div>
+                            value={state.number}
+                        ></input>
+                        <input 
+                            type="text" 
+                            placeholder="Adresa electronică" 
+                            className={styles.input}
+                            id="email"
+                            name="email"
+                            onChange={handleInputChange}
+                            required
+                            value={state.email}                        
+                        ></input>
+                        <input 
+                            type="text" 
+                            placeholder="Mesaj" 
+                            className={styles.input} 
+                            style={{height: "120px"}}
+                            id="message"
+                            name="message"
+                            onChange={handleInputChange}
+                            required
+                            value={state.message}                        
+                        ></input>
+                        <input
+                            type="submit"
+                            placeholder="Trimite" 
+                            className={styles.buttonSubmit}
+                        >
+                        </input>
+                    </form>
                 </div>
             </div>
             <div 
@@ -279,11 +415,20 @@ export function ParchetBradut(){
                                 <div className={styles.buttonsWrapper}>
                                     <div 
                                         className={styles.button}
-                                        onClick={ () => setPopupOpen(true) }
+                                        onClick={ () => {
+                                            setPopupOpen(true) 
+                                            setpopUpClicked(0)
+                                        }}
                                     >
                                         Calculează prețul
                                     </div>
-                                    <div className={styles.button}>
+                                    <div 
+                                        className={styles.button}
+                                        onClick={ () => {
+                                            setPopupOpen(true) 
+                                            setpopUpClicked(1)
+                                        }}
+                                    >
                                         Ofertă individuală
                                     </div>
                                 </div>

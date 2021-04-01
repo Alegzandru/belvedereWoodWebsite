@@ -5,7 +5,9 @@ export function ServicesPage(){
     return(
         <div className={styles.servicesPageWrapper}>
             <section className={styles.servicesPageSection}>
-                <div className={styles.servicesPageContainer}>
+                <div 
+                    className={styles.servicesPageContainer}
+                >
 
                     <div className={styles.row}>
 

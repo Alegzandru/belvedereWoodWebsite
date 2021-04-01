@@ -51,7 +51,7 @@ export function Footer(){
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/contacte">
+                                    <Link href="/contactsPage">
                                         <a className={styles.desktopLink}>
                                             Contacte
                                         </a>

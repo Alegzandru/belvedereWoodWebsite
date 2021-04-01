@@ -1,4 +1,6 @@
 import styles from "../../styles/proiecte/parteneri.module.css"
+import Link from 'next/link'
+
 
 export function Parteneri(){
 
@@ -12,86 +14,104 @@ export function Parteneri(){
                     <div className={styles.line1}>
                     </div>
                     <div className={styles.scroller}>
-                        <img
-                            src="/proiecte/logo1.png"
-                            alt="Tover"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo2.png"
-                            alt="Giancol"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo3.png"
-                            alt="Iw parquet"
-                            className={styles.img}
-                        />
-                        {/* <img
-                            src="/proiecte/logo4.png"
-                            alt="R-house Design"
-                            className={styles.img}
-                        /> */}
-                        <img
-                            src="/proiecte/logo5.png"
-                            alt="Ticino Parquet"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo6.png"
-                            alt="Artizana"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo7.png"
-                            alt="Vero ceramics"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo8.png"
-                            alt="Amelyux"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo9.png"
-                            alt="Arutin"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo1.png"
-                            alt="Tover"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo2.png"
-                            alt="Giancol"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo3.png"
-                            alt="Iw parquet"
-                            className={styles.img}
-                        />
-                        {/* <img
-                            src="/proiecte/logo4.png"
-                            alt="R-house Design"
-                            className={styles.img}
-                        /> */}
-                        <img
-                            src="/proiecte/logo5.png"
-                            alt="Ticino Parquet"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo6.png"
-                            alt="Artizana"
-                            className={styles.img}
-                        />
-                        <img
-                            src="/proiecte/logo7.png"
-                            alt="Vero ceramics"
-                            className={styles.img}
-                        />
+                        <a target="blank" href="http://www.tover.com/?lang=en">
+                            <img
+                                src="/proiecte/logo1.png"
+                                alt="Tover"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.giancol.it/">
+                            <img
+                                src="/proiecte/logo2.png"
+                                alt="Giancol"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.iwparquet.it/en/">
+                            <img
+                                src="/proiecte/logo3.png"
+                                alt="Iw parquet"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.ticinoparquet.ch/">
+                            <img
+                                src="/proiecte/logo5.png"
+                                alt="Ticino Parquet"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="http://www.artizana.md/">
+                            <img
+                                src="/proiecte/logo6.png"
+                                alt="Artizana"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://veroceramica.md/">
+                            <img
+                                src="/proiecte/logo7.png"
+                                alt="Vero ceramics"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://amelylux.md/">
+                            <img
+                                src="/proiecte/logo8.png"
+                                alt="Amelyux"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.arutindecor.com/">
+                            <img
+                                src="/proiecte/logo9.png"
+                                alt="Arutin"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="http://www.tover.com/?lang=en">
+                            <img
+                                src="/proiecte/logo1.png"
+                                alt="Tover"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.giancol.it/">
+                            <img
+                                src="/proiecte/logo2.png"
+                                alt="Giancol"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.iwparquet.it/en/">
+                            <img
+                                src="/proiecte/logo3.png"
+                                alt="Iw parquet"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://www.ticinoparquet.ch/">
+                            <img
+                                src="/proiecte/logo5.png"
+                                alt="Ticino Parquet"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="http://www.artizana.md/">
+                            <img
+                                src="/proiecte/logo6.png"
+                                alt="Artizana"
+                                className={styles.img}
+                            />
+                        </a>
+                        <a target="blank" href="https://veroceramica.md/">
+                            <img
+                                src="/proiecte/logo7.png"
+                                alt="Vero ceramics"
+                                className={styles.img}
+                            />
+                        </a>
                     </div>
                     <div className={styles.line2}>
                     </div>
@@ -101,12 +121,20 @@ export function Parteneri(){
                     </h3>
 
                     <div className={styles.buttonsWrapper}>
-                    <div className={styles.button1}>
-                            Deschide Catalog
-                        </div>
-                        <div className={styles.button2}>
-                            Contactează-ne
-                        </div>
+                        <Link target="blank" href="/catalog">
+                            <a style={{textDecoration:"none"}}>
+                                <div className={styles.button1}>
+                                        Deschide Catalog
+                                </div>
+                            </a>
+                        </Link>
+                        <Link target="blank" href="/contactsPage">
+                            <a style={{textDecoration:"none"}}>
+                                <div className={styles.button2}>
+                                    Contactează-ne
+                                </div>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </section>

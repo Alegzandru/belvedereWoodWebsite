@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover; */
 
-    background-color: rgba(3, 29, 30, 0.5);;
+    background-color: rgba(3, 29, 30, 1);;
 }
 
 .container{
@@ -51,7 +51,8 @@
     width: 100%;
 
     font-family: Futura PT custom Mediu;
-    color: white;
+    /* color: white; */
+    color: #fcc84e;
     font-size: 52px;
     line-height: 52px;
     text-align: center;
@@ -63,7 +64,8 @@
     width: 100%;
 
     font-family: Futura PT custom Mediu;
-    color: #E5E5E5;
+    /* color: #E5E5E5; */
+    color: white;
     font-size: 32px;
     line-height: 32px;
     text-align: center;
@@ -138,7 +140,8 @@
         width: 100%;
     
         font-family: Futura PT custom Mediu;
-        color: white;
+        /* color: white; */
+        color: #fcc84e;
         font-size: 32px;
         line-height: 32px;
         text-align: center;
@@ -150,7 +153,8 @@
         width: 100%;
     
         font-family: Futura PT custom Mediu;
-        color: #E5E5E5;
+        /* color: #E5E5E5; */
+        color: white;
         font-size: 24px;
         line-height: 24px;
         text-align: center;

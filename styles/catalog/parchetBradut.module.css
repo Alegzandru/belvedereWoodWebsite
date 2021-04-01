@@ -69,7 +69,6 @@
 .popupWrapper{
     width: 860px;
     height: auto;
-    background-color: white;
 
     position: fixed;
     z-index: 3;
@@ -77,6 +76,41 @@
     left: calc((100% - 940px) / 2);
 
     padding-left: 80px;
+
+    background:
+    linear-gradient(
+        rgb(255, 255, 255, 0.8), 
+        rgb(255, 255, 255, 0.8)
+    ),
+    url("../../public/catalog/Pattern_2.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.popupWrapperForm{
+    width: 780px;
+    height: auto;
+
+    position: fixed;
+    z-index: 3;
+    top: 180px;
+    left: calc((100% - 940px) / 2);
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    background:
+    linear-gradient(
+        rgb(255, 255, 255, 0.8), 
+        rgb(255, 255, 255, 0.8)
+    ),
+    url("../../public/catalog/Pattern_2.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .popupHeading{
@@ -188,6 +222,100 @@
     font-size: 24px;
     font-family: Futura PT custom Book;
     margin-left: 10px;
+}
+
+.h2Right{
+    width: 100%;
+    margin-right: 60px;
+
+    font-family: Futura PT custom Demi;
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form{
+    width: 100%;
+}
+
+.nameInputsWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.inputSmall{
+    width: 48%;
+    height: 30px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: #54545C;
+
+    background-color: white;
+    border: 2px solid #54545C;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: #54545C;
+
+    background-color: white;
+    border: 2px solid #54545C;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.buttonSubmit{
+    width: 140px;
+    height: 35px;
+
+    font-family: Futura PT custom Mediu;
+    font-size: 22px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    /* background: #EDB65C; */
+    background-color: #CD9D2F;
+    border-radius: 2px; 
+
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: none;
+    cursor: pointer;
+}
+
+.buttonSubmit:hover{
+    background-color: #CD9D2F;
+    color: white;
+    border: 3px solid white;
+    transition: 300ms;
+
+    box-shadow: 4px 4px 16px rgb(205, 157, 47, 0.3);
 }
 
 .inactiveBox{
@@ -869,6 +997,17 @@
 
         padding-left: 80px;
     }
+
+    .popupWrapperForm{
+        width: calc(100% - 32px - 80px - 80px);
+        height: auto;
+        background-color: white;
+    
+        position: fixed;
+        z-index: 3;
+        top: 250px;
+        left: 16px;
+    }
     
     .breadcrumbWrapper{
         height: 48px;
@@ -1433,6 +1572,25 @@
         padding-left: 10px;
         padding-right: 10px;
         width: calc(100% - 20px - 32px)
+    }
+
+    .popupWrapperForm{
+        width: calc(100% - 32px - 10px - 10px);
+        height: auto;
+        background-color: white;
+    
+        position: fixed;
+        z-index: 3;
+        top: 180px;
+        left: 16px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .h2Right{
+        font-size: 32px;
+        margin-bottom: 20px;
     }
 
     .popupHeading{

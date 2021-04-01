@@ -186,7 +186,7 @@ export function Navbar(){
                                 </div>
                             </a>
                         </Link>
-                        <Link href="/contactePage">
+                        <Link href="/contactsPage">
                             <a className={navbarOpen? blackNavbar? styles.desktopLinkBlack : styles.desktopLink : styles.desktopLinkClosed}>
                                 <div 
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
@@ -201,12 +201,16 @@ export function Navbar(){
                     <div className={navbarOpen? styles.contactUsWrapper : styles.contactUsWrapper}>
                         <div className={navbarOpen? styles.contactUsButton : styles.contactUsButtonClosed}>
                             <img
-                                src={navbarOpen? "/navbar/phoneIconWhite.svg" : "/navbar/phoneiconGreen.svg"}
+                                src={navbarOpen? "/navbar/phoneIconWhite.svg" : "/navbar/phoneIconGreen.svg"}
                                 className={styles.phoneIcon}
                             />
-                            <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
-                                Contactați-ne
-                            </div>
+                            <Link href="/contactsPage">
+                                <a style={{textDecoration:"none"}}>
+                                    <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
+                                        Contactați-ne
+                                    </div>
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -273,7 +277,7 @@ export function Navbar(){
                         </Link>  
                     </Slide>
                     <Slide left>
-                        <Link href="/contactePage">
+                        <Link href="/contactsPage">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     Contacte

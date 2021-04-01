@@ -95,7 +95,8 @@
     width: 100%;
     font-size: 28px;
     line-height: 30px;
-    color: #54545C;
+    /* color: #54545C; */
+    color: black;
     font-family: Futura PT custom Book;
 }
 
@@ -295,7 +296,8 @@
         width: 100%;
         font-size: 28px;
         line-height: 30px;
-        color: #54545C;
+        /* color: #54545C; */
+        color: black;
         font-family: Futura PT custom Book;
     }
     
@@ -409,7 +411,8 @@
         width: 100%;
         font-size: 20px;
         line-height: 26px;
-        color: #54545C;
+        /* color: #54545C; */
+        color: black;
         font-family: Futura PT custom Book;
     }
     

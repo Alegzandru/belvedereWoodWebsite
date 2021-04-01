@@ -7,7 +7,7 @@ export function Realizari(){
     const [showStats, setShowStats] = useState(false)
 
     const scrollPosition = () => {
-        setShowStats(window.scrollY > 1500)
+        setShowStats(window.scrollY > 1300)
         // console.log(showStat)
         // console.log(window.scrollY)
     }
