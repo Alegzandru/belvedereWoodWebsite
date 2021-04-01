@@ -27,7 +27,7 @@
 .h2{
     width: 100%;
 
-    font-family: Futura PT custom Demi;
+    font-family: Futura PT custom Demi2;
     color: black;
     font-size: 22px;
     line-height: 22px;
@@ -42,7 +42,7 @@
     /* margin-left: auto;
     margin-right: auto; */
 
-    font-family: Futura PT custom Book;
+    font-family: Futura PT custom Book2;
     color: black;
     font-size: 14px;
     line-height: 18px;
@@ -94,7 +94,7 @@
     .h2{
         width: 100%;
     
-        font-family: Futura PT custom Demi;
+        font-family: Futura PT custom Demi2;
         color: black;
         font-size: 16px;
         line-height: 16px;
@@ -109,7 +109,7 @@
         /* margin-left: auto;
         margin-right: auto; */
     
-        font-family: Futura PT custom Book;
+        font-family: Futura PT custom Book2;
         color: black;
         font-size: 12px;
         line-height: 12px;
