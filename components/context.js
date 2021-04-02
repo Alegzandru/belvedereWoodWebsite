@@ -5,6 +5,11 @@ export const NavbarContext = React.createContext({
   setOpen: () => {}
 });
 
+export const MobileNavbarContext = React.createContext({
+  openMobile: false,
+  setOpenMobile: () => {}
+});
+
 export const LanguageContext = React.createContext({
   language: 0,
   setLanguage: () => {}

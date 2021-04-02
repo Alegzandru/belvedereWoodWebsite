@@ -21,6 +21,12 @@ export function FAQ(){
                         FAQ
                     </h2>
 
+                    <img
+                        src="/despreNoi/treeFAQ.png"
+                        alt=""
+                        className={styles.treeImg}
+                    />
+
                     <div 
                         className={styles.questionWrapper}
                         onClick={() => setOpen1(!open1) }
@@ -221,11 +227,6 @@ export function FAQ(){
                         </div>
                     </div>
 
-                    <img
-                        src="/despreNoi/treeFAQ.png"
-                        alt=""
-                        className={styles.treeImg}
-                    />
                 </div>
             </section>
         </div>

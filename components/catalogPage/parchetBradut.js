@@ -83,7 +83,6 @@ export function ParchetBradut(){
                 className={`${popUpClicked == 0 ? styles.popupWrapper : styles.popupWrapperForm}`}
                 style={{
                     display : popupOpen ? "block" : "none"
-
                 }}
             >
 

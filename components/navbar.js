@@ -74,7 +74,7 @@ export function Navbar(){
                 className={mobile ? styles.wrapperMobile : navbarOpen? styles.wrapper : styles.wrapperClosed}
                 style={{
                     height: mobile? "auto" : navbarOpen? "140px" : "48px",
-                    backgroundColor: mobile? "white" : navbarOpen ? "transparent" : "#031D1E",
+                    backgroundColor: mobile? "transparent" : navbarOpen ? "transparent" : "#031D1E",
                     flexDirection: mobile? "column" : "row"
                 }}
             >
@@ -238,7 +238,7 @@ export function Navbar(){
                     //     display: open? "block" : "none",
                     // }}
                 >
-                    <Slide left>
+                    <Slide right>
                         <Link href="/">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -247,7 +247,7 @@ export function Navbar(){
                             </a>
                         </Link>  
                     </Slide>
-                    <Slide left>
+                    <Slide right>
                         <Link href="/despre-noi">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -256,7 +256,7 @@ export function Navbar(){
                             </a>
                         </Link>  
                     </Slide>
-                    <Slide left>
+                    <Slide right>
                         <Link href="/catalog">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -265,7 +265,7 @@ export function Navbar(){
                             </a>
                         </Link>  
                     </Slide>
-                    <Slide left>
+                    <Slide right>
                         <Link href="/proiecte">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -274,7 +274,7 @@ export function Navbar(){
                             </a>
                         </Link>  
                     </Slide>
-                    <Slide left>
+                    <Slide right>
                         <Link href="/contactsPage">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
@@ -283,7 +283,7 @@ export function Navbar(){
                             </a>
                         </Link>  
                     </Slide>
-                    <Slide left>
+                    <Slide right>
                         <div 
                             className={styles.linkMobile}
                             onClick= { () => setLangClicked(!langClicked)}

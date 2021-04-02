@@ -1,13 +1,23 @@
 .main{
     margin-top: -48px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .mainOpen{
-    margin-top: -240px;
+    margin-top: -100vh;
+    /* margin-right: 300px; */
+    /* margin-left: -150px;
+    width: 80%;
+    transform: scale(0.8) */
+}
+
+.mainOpenDarken{
+    filter: brightness(40%);
 }
 
 @media screen and (max-width: 940px){
     .main{
-        margin-top: 0px;
+        margin-top: -48px;
     }
 }

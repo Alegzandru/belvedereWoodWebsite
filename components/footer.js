@@ -11,13 +11,6 @@ export function Footer(){
                 <div className={styles.footerContainer}>
                     <div className={styles.upperContainer}>
                         <div className={styles.leftContainer}>
-                            <img
-                                src="/mainPage/BWPlogoGold.png"
-                                alt="Logo Belvedere Wood"
-                                className={styles.logo}
-                                width={112}
-                                height={112}
-                            />
                             <div className={styles.navDiv}>
                                 <div className={styles.footerAccentText}>
                                     Navigare
@@ -59,6 +52,12 @@ export function Footer(){
                                 </div>
                             </div>
 
+                            <img
+                                src="/mainPage/BWPlogoGold.png"
+                                alt="Logo Belvedere Wood"
+                                className={styles.logo}
+                            />
+
                             <div className={styles.contactsDiv}>
                                 <div className={styles.footerAccentText}>
                                     Contacte
@@ -67,8 +66,6 @@ export function Footer(){
                                     <img
                                         src="/mainPage/PlaceIcon2.svg"
                                         alt="Locația"
-                                        width={14}
-                                        height={14}
                                         className={styles.contactsIcon}
                                     />
                                     <a 
@@ -83,8 +80,6 @@ export function Footer(){
                                     <img
                                         src="/mainPage/PhoneIcon.svg"
                                         alt="Locația"
-                                        width={14}
-                                        height={14}
                                         className={styles.contactsIcon}
                                     />
                                     <a 
@@ -101,8 +96,6 @@ export function Footer(){
                                     <img
                                         src="/mainPage/InstagramIcon2.svg"
                                         alt="Locația"
-                                        width={14}
-                                        height={14}
                                         className={styles.contactsIcon}
                                     />
                                     <a 
@@ -117,8 +110,6 @@ export function Footer(){
                                     <img
                                         src="/mainPage/FacebookIcon2.svg"
                                         alt="Locația"
-                                        width={14}
-                                        height={14}
                                         className={styles.contactsIcon}
                                     />
                                     <a 
