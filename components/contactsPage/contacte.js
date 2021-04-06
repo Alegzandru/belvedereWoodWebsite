@@ -98,13 +98,13 @@ export function Contacte(){
                             </div>
                             <div className={styles.contactsLink}>
                                 <a 
-                                    href="mailto:roticolor@mail.ru"
+                                    href="mailto:Belvederewoodp@gmail.com"
                                     style={{
                                         textDecoration: "none",
                                         color: "#EDB65C"
                                     }}
                                 >
-                                    roticolor@mail.ru
+                                    Belvederewoodp@gmail.com
                                 </a>
                             </div>
                         </div>
