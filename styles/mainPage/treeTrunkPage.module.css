@@ -118,13 +118,36 @@
     height: 603px;
     width: 520px;
     
-    background-image: url("../../public/mainPage/treeTrunk.png");
+    background:
+    linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgba(255, 255, 255, 0)
+    ), url("../../public/mainPage/treeTrunk.png");
     background-color: white;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    transition: 300ms;
     /* margin-right: -200px; */
+}
+
+.treeTrunkWrapperHovered{
+    /* height: 603px;
+    width: 520px;
+
+    background:
+    linear-gradient(
+        rgba(255, 255, 255, 0.25), 
+        rgba(255, 255, 255, 0.25)
+    ), url("../../public/mainPage/treeTrunk.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    filter: blur(2px);
+
+    transition: 300ms;
 }
 
 .circle1{
@@ -215,6 +238,12 @@
     animation-timing-function: linear;
 }
 
+.circleHovered{
+    position: absolute;
+    z-index: 2;
+}
+
+
 @keyframes rotateCircles {
     0% { 
         transform: rotate(0deg);
@@ -235,18 +264,16 @@
 } */
 
 .logoImgTop{
-    position: relative;
+    position: absolute;
     height: 112px;
     width: 112px;
     opacity: 0.68;
-    margin-top: 10px;
+    margin-top: 240px;
+    left: calc( (100vw - 1080px)/2 + 540px + (520px - 112px)/2 );
+    z-index: 2;
 
-    margin-bottom: -250px;
     margin-right: auto;
     margin-left: auto;
-
-    /* animation: rotateLogo 24.1s infinite;
-    animation-timing-function: linear; */
 }
 
 @keyframes rotateLogo {
@@ -369,11 +396,24 @@
         padding-top: 5px;
     }
     
-    .logoImg{
+    /* .logoImg{
         height: 98px;
         width: 98px;
         opacity: 0.68;
         margin-top: 14px;
+    } */
+
+    .logoImgTop{
+        position: absolute;
+        height: 98px;
+        width: 98px;
+        opacity: 0.68;
+        margin-top: 240px;
+        left: calc( (100vw - 528px)/2 + (520px - 112px)/2 );
+        z-index: 2;
+    
+        margin-right: auto;
+        margin-left: auto;
     }
     
 }
@@ -390,7 +430,7 @@
     }
     
     .treeTrunkPageContainer{
-        width: 528px;
+        width: 100%;
     
         display: flex;
         flex-direction: column;
@@ -487,10 +527,23 @@
         padding-top: 5px;
     }
     
-    .logoImg{
+    /* .logoImg{
         height: 78px;
         width: 78px;
         opacity: 0.68;
         margin-top: 0px;
+    } */
+
+    .logoImgTop{
+        position: absolute;
+        height: 78px;
+        width: 78px;
+        opacity: 0.68;
+        margin-top: 140px;
+        left: calc(10px + (100vw - 32px - 343px)/2 + (343px - 78px ) / 2 );
+        z-index: 2;
+    
+        margin-right: auto;
+        margin-left: auto;
     }
 }

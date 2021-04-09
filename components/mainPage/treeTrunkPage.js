@@ -1,9 +1,12 @@
 import styles from "../../styles/mainPage/treeTrunkPage.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
+import {useState} from "react"
 
 
 export function TreeTrunkPage(){
+
+    const [hoveredCircle, setHoveredCircle] = useState(0)
 
     return(
         <div className={styles.treeTrunkPageWrapper}>
@@ -49,7 +52,10 @@ export function TreeTrunkPage(){
                         </Link>
                     </div>
 
-                    <div className={styles.treeTrunkWrapper}>
+                    <div className={`
+                        ${styles.treeTrunkWrapper}
+                        ${hoveredCircle != 0 ? styles.treeTrunkWrapperHovered : ""}
+                    `}>
                         <div className={styles.logoImgTop}>
                             <Image
                                 src="/mainPage/BWPlogoBlack.png"
@@ -58,8 +64,17 @@ export function TreeTrunkPage(){
                                 height={112}
                             />
                         </div>
-                        <div className={styles.circle1}>
-                            Calitate
+                        <div className={`
+                            ${styles.circle1} 
+                            ${hoveredCircle == 1 ? styles.circleHovered : ""}
+                            ${hoveredCircle !=0 ? styles.circleNotHovered : ""}
+                        `}>
+                            <span
+                                onMouseEnter={()=> setHoveredCircle(1)}
+                                onMouseLeave={()=> setHoveredCircle(0)}
+                            >
+                                Calitate    
+                            </span>
                             <div className={styles.circle2}>
                                 Durabilitate
                                 <div className={styles.circle3}>
