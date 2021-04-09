@@ -261,7 +261,7 @@
     background-color: #CD9D2F;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1080px){
     .proiectePageWrapper{
         height: auto;
         width: 100%;

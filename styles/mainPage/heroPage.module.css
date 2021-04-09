@@ -43,7 +43,8 @@
 }
 
 .heroPageContainer{
-    width: 940px;
+    width: 1080px;
+    /* width: 940px; */
 }
 
 .h1{
@@ -141,7 +142,7 @@
 
 .scrollWrapper{
     position: absolute;
-    top: 85vh;
+    top: calc(100vh - 90px);
     left: calc((100vw - 140px) / 2 );
     width: 140px;
     height: 73px;
@@ -250,7 +251,7 @@
     background-color: #CD9D2F;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1080px){
     
     .heroPageContainer{
         width: 528px;

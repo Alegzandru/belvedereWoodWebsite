@@ -1,5 +1,5 @@
 .avantaj{
-    width: 300px;
+    width: 340px;
     height: 160px;
 
     background: #FFFFFF;
@@ -27,7 +27,7 @@
 }
 
 .avantajTextWrapper{
-    width: 160px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@
     margin-bottom: 0px;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1080px){
     .avantaj{
         width: 100%;
         height: 74px;

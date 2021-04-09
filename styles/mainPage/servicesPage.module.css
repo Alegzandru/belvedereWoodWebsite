@@ -17,7 +17,7 @@
 }
 
 .servicesPageContainer{
-    width: 940px;
+    width: 1080px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -128,7 +128,7 @@
     display: none;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1080px){
     
     .servicesPageContainer{
         width:528px;

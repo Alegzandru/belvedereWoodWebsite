@@ -135,7 +135,8 @@
 }
 
 .clientsPageContainer{
-    width: 940px;
+    /* width: 940px; */
+    width: 1080px;
 
     display: flex;
     flex-direction: column;
@@ -199,7 +200,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1080px){
 
     .clientsPageWrapper{
         height: 460px;

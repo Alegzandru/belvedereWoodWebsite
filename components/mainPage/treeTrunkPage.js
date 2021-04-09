@@ -27,6 +27,7 @@ export function TreeTrunkPage(){
 
                     <div className={styles.textWrapper}>
                         <h2 className={styles.h2}>
+                            {/* <div className={styles.h2Line}/> */}
                             Despre noi:
                         </h2>
                         <div className={styles.subheading}>
@@ -49,6 +50,14 @@ export function TreeTrunkPage(){
                     </div>
 
                     <div className={styles.treeTrunkWrapper}>
+                        <div className={styles.logoImgTop}>
+                            <Image
+                                src="/mainPage/BWPlogoBlack.png"
+                                alt="Logo Belvedere Wood"
+                                width={112}
+                                height={112}
+                            />
+                        </div>
                         <div className={styles.circle1}>
                             Calitate
                             <div className={styles.circle2}>
@@ -57,14 +66,14 @@ export function TreeTrunkPage(){
                                     Veridicitate
                                     <div className={styles.circle4}>
                                         Loialitate
-                                        <div className={styles.logoImg}>
+                                        {/* <div className={styles.logoImg}>
                                             <Image
                                                 src="/mainPage/BWPlogoBlack.png"
                                                 alt="Logo Belvedere Wood"
                                                 width={112}
                                                 height={112}
                                             />
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

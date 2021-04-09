@@ -45,6 +45,7 @@ export function Navbar(){
     const [langHovered, setLangHovered] = useState(false)
     const [langClicked, setLangClicked] = useState(false)
     const router = useRouter();
+    const isMainPage = router.pathname == "/";
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
 
@@ -62,7 +63,6 @@ export function Navbar(){
         }
     )
 
-
     return(
         <div 
             className={styles.navbarHeightWrapper}
@@ -78,7 +78,12 @@ export function Navbar(){
                     flexDirection: mobile? "column" : "row"
                 }}
             >
-                <div className={mobile ? styles.containerMobile : navbarOpen? styles.container : styles.containerClosed}>
+                <div 
+                    className={mobile ? styles.containerMobile : navbarOpen? styles.container : styles.containerClosed}
+                    style={{
+                        width: isMainPage ? mobile? "" : "1080px" : ""
+                    }}
+                >
                     <div 
                         className={navbarOpen? styles.langWrapper : styles.langWrapperClosed}
                         onMouseEnter={ () => setLangHovered(true)}

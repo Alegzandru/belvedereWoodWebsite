@@ -2,6 +2,7 @@ import styles from "../../styles/mainPage/heroPage.module.css"
 import Image from 'next/image'
 import React, {useState, useEffect} from "react"
 import Link from 'next/link'
+import Fade from 'react-reveal/Fade';
 
 
 export function HeroPage(){
@@ -10,7 +11,7 @@ export function HeroPage(){
     const [slide, setSlide] = useState(0)
 
     const scrollPosition = () => {
-        setMouseHide(window.scrollY < 100 ? false : true)
+        setMouseHide(window.scrollY < 600 ? false : true)
     }
 
     if (typeof window !== "undefined") {
@@ -58,22 +59,24 @@ export function HeroPage(){
                         </Link>
                     </div>
                     
-                    <div 
-                        className={mouseHide ? styles.scrollWrapperHide : styles.scrollWrapper}
-                    >
-                        <div className={styles.mouseImg}>
-                            <Image
-                                src="/mainPage/mouse.svg"
-                                alt="Mouse"
-                                width={40}
-                                height={40}
-                            />
-                        </div>
+                    <Fade bottom> 
+                        <div 
+                            className={mouseHide ? styles.scrollWrapperHide : styles.scrollWrapper}
+                        >
+                            <div className={styles.mouseImg}>
+                                <Image
+                                    src="/mainPage/mouse.svg"
+                                    alt="Mouse"
+                                    width={40}
+                                    height={40}
+                                />
+                            </div>
 
-                        <div className={styles.scrollText}>
-                            Scroll
+                            <div className={styles.scrollText}>
+                                Scroll
+                            </div>
                         </div>
-                    </div>
+                    </Fade>
 
                     <div className={styles.slideButtonsWrapper}>
                         <div 
