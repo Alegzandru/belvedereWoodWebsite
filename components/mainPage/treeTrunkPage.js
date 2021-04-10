@@ -66,8 +66,9 @@ export function TreeTrunkPage(){
                         </div>
                         <div className={`
                             ${styles.circle1} 
-                            ${hoveredCircle == 1 ? styles.circleHovered : ""}
-                            ${hoveredCircle !=0 ? styles.circleNotHovered : ""}
+                            ${hoveredCircle != 0  && hoveredCircle !=1 ? `${styles.circleHovered} ${styles.circleNotFocus}` : ""}
+                            ${hoveredCircle != 0 ? styles.circleHovered : ""}
+                            ${hoveredCircle == 1 ? styles.circleFocus : ""}
                         `}>
                             <span
                                 onMouseEnter={()=> setHoveredCircle(1)}
@@ -75,20 +76,39 @@ export function TreeTrunkPage(){
                             >
                                 Calitate    
                             </span>
-                            <div className={styles.circle2}>
-                                Durabilitate
-                                <div className={styles.circle3}>
-                                    Veridicitate
-                                    <div className={styles.circle4}>
-                                        Loialitate
-                                        {/* <div className={styles.logoImg}>
-                                            <Image
-                                                src="/mainPage/BWPlogoBlack.png"
-                                                alt="Logo Belvedere Wood"
-                                                width={112}
-                                                height={112}
-                                            />
-                                        </div> */}
+                            <div className={`
+                                ${styles.circle2} 
+                                ${hoveredCircle == 2 ? styles.circleFocus : ""}
+                                ${hoveredCircle != 0  && hoveredCircle !=2 ? styles.circleNotFocus : ""}
+                            `}>
+                                <span
+                                    onMouseEnter={()=> setHoveredCircle(2)}
+                                    onMouseLeave={()=> setHoveredCircle(0)}
+                                >
+                                    Durabilitate    
+                                </span>
+                                <div className={`
+                                    ${styles.circle3} 
+                                    ${hoveredCircle == 3 ? styles.circleFocus : ""}
+                                    ${hoveredCircle != 0  && hoveredCircle !=3 ? styles.circleNotFocus : ""}
+                                `}>
+                                    <span
+                                        onMouseEnter={()=> setHoveredCircle(3)}
+                                        onMouseLeave={()=> setHoveredCircle(0)}
+                                    >
+                                        Veridicitate    
+                                    </span>
+                                    <div className={`
+                                        ${styles.circle4} 
+                                        ${hoveredCircle == 4 ? styles.circleFocus : ""}
+                                        ${hoveredCircle != 0  && hoveredCircle !=4 ? styles.circleNotFocus : ""}
+                                    `}>
+                                        <span
+                                            onMouseEnter={()=> setHoveredCircle(4)}
+                                            onMouseLeave={()=> setHoveredCircle(0)}
+                                        >
+                                            Loialitate    
+                                        </span>
                                     </div>
                                 </div>
                             </div>

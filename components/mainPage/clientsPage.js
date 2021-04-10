@@ -101,14 +101,6 @@ export function ClientsPage(){
                                 onMouseEnter={()=> setClient(7)}
                             />
                         </a>
-                        <a href="https://abandpartners.net/" target="blank">
-                            <img
-                                src="/mainPage/ab.png"
-                                alt="Ab+Partners"
-                                className={styles.clientImg}
-                                onMouseEnter={()=> setClient(8)}
-                            />
-                        </a>
                         <a href="https://www.castelmimi.md/en/" target="blank">
                             <img
                                 src="/mainPage/logoCM.png"
@@ -166,6 +158,17 @@ export function ClientsPage(){
                                 alt="Restaurant Porteryard"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(7)}
+                            />
+                        </a>
+                        <a href="https://www.castelmimi.md/en/" target="blank">
+                            <img
+                                src="/mainPage/logoCM.png"
+                                alt="Castel Mimi"
+                                className={styles.clientImg}
+                                onMouseEnter={()=> setClient(1)}
+                                // onClick={
+                                //     (e, href) => handleClick(e, "https://www.castelmimi.md/en/")
+                                // }
                             />
                         </a>
                     </div>

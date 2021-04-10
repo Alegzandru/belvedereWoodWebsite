@@ -145,8 +145,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    filter: blur(2px);
-
     transition: 300ms;
 }
 
@@ -174,6 +172,8 @@
 
     animation: rotateCircles 50s infinite;
     animation-timing-function: linear;
+
+    transition: 300ms;
 }
 
 .circle2{
@@ -187,6 +187,12 @@
     border-radius: 50%;
     border: 2px solid #031D1E;
 
+    text-align: center;
+    color: #031D1E;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: Futura PT custom Mediu;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -194,6 +200,8 @@
 
     animation: rotateCircles 100s infinite;
     animation-timing-function: linear;
+
+    transition: 300ms;
 }
 
 .circle3{
@@ -209,6 +217,12 @@
     border-radius: 50%;
     border: 2px solid #031D1E;
 
+    text-align: center;
+    color: #031D1E;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: Futura PT custom Mediu;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -216,6 +230,8 @@
 
     animation: rotateCircles 150s infinite;
     animation-timing-function: linear;
+
+    transition: 300ms;
 }
 
 .circle4{
@@ -228,6 +244,12 @@
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     border: 2px solid #031D1E;
+
+    text-align: center;
+    color: #031D1E;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: Futura PT custom Mediu;
     
     display: flex;
     flex-direction: column;
@@ -236,11 +258,32 @@
 
     animation: rotateCircles 200s infinite;
     animation-timing-function: linear;
+
+    transition: 300ms;
 }
 
 .circleHovered{
-    position: absolute;
-    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.circleNotFocus{
+    text-align: center;
+    color: #031D1E;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu;
+    transition: 300ms;
+}
+
+.circleFocus{
+    text-align: center;
+    color: #031D1E;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: Futura PT custom Mediu;
+
+    padding-top: 1px;
+    transition: 300ms;
 }
 
 

@@ -173,7 +173,7 @@
 }
 
 .clientsScroller{
-    width: 1156.79px;
+    width: 1056.79px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -186,7 +186,7 @@
         margin-left: 0px;
     }
     100%{
-        margin-left: -1156.79px;
+        margin-left: -1056.79px;
     }
 }
 
