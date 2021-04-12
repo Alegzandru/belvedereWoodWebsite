@@ -48,7 +48,7 @@ export function DescriereaProiectelor(){
 
 
 
-                    <div 
+                    <a 
                         name="muzeul" 
                         id="muzeul"
                         className={styles.projectRowLeft}
@@ -127,12 +127,12 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
 
 
 
 
-                    <div 
+                    <a 
                         name="castelMimi" 
                         id="castelMimi"
                         className={styles.projectRowRight}
@@ -204,12 +204,12 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
 
 
 
 
-                    <div 
+                    <a 
                         name="manucBei" 
                         id="manucBei"
                         className={styles.projectRowLeft}
@@ -239,12 +239,12 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
 
 
 
 
-                    <div 
+                    <a 
                         name="phiVegan" 
                         id="phiVegan"
                         className={styles.projectRowRight}
@@ -275,13 +275,13 @@ export function DescriereaProiectelor(){
                             alt="Cafe Porter Yard"
                             className={styles.projectImgRight}
                         />
-                    </div>
+                    </a>
 
 
 
 
 
-                    <div 
+                    <a 
                         name="rozmarin" 
                         id="rozmarin"
                         className={styles.projectRowLeft}
@@ -352,11 +352,11 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
                     
 
 
-                    <div 
+                    <a 
                         name="kiku" 
                         id="kiku"
                         className={styles.projectRowRight}
@@ -426,11 +426,11 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
 
 
 
-                    <div 
+                    <a 
                         name="lumecraft" 
                         id="lumencraft"
                         className={styles.projectRowLeft}
@@ -502,7 +502,7 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                    </div>
+                    </a>
 
 
 

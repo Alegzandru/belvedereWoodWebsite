@@ -55,14 +55,17 @@ export function ProiectePage(){
                         <p className={styles.projectText}>
                             {proiecteSlider[slide].subheading}
                         </p>
-                        <LinkScroll 
-                                to={proiecteSlider[slide].href} 
-                                smooth={true}
+                        <a 
+                            href={`/proiecte/#${proiecteSlider[slide].href}`} 
+                            style={{
+                                textDecoration : "none"
+                            }}
+                            // smooth={true}
                         >
                             <div className={styles.button1}>
                                 Descoperă proiectul
                             </div>
-                        </LinkScroll>
+                        </a>
 
                         <div className={styles.buttonsWrapper}>
                             <div 
