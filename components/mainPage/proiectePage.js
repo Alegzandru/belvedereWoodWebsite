@@ -1,6 +1,7 @@
 import styles from "../../styles/mainPage/proiectePage.module.css"
 import {useState} from "react"
 import {proiecteSlider} from "./sliderContent"
+import {Link as LinkScroll} from 'react-scroll'
 
 export function ProiectePage(){
 
@@ -54,9 +55,14 @@ export function ProiectePage(){
                         <p className={styles.projectText}>
                             {proiecteSlider[slide].subheading}
                         </p>
-                        <div className={styles.button1}>
-                            Descoperă proiectul
-                        </div>
+                        <LinkScroll 
+                                to={proiecteSlider[slide].href} 
+                                smooth={true}
+                        >
+                            <div className={styles.button1}>
+                                Descoperă proiectul
+                            </div>
+                        </LinkScroll>
 
                         <div className={styles.buttonsWrapper}>
                             <div 
