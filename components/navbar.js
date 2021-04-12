@@ -2,7 +2,7 @@ import styles from "../styles/navbar.module.css"
 import Image from 'next/image'
 import React, {useState, useEffect, useContext} from "react"
 import { useRouter } from 'next/router'
-import {NavbarContext, LanguageContext} from "./context"
+import {NavbarContext, LanguageContext, WidthContext} from "./context"
 import Link from 'next/link'
 import Slide from 'react-reveal/Slide';
 
@@ -38,16 +38,20 @@ function useWindowSize() {
 export function Navbar(){
 
     const [navbarOpen, setNavbarOpen] = useState(true);
-    const [mobileOpen, setMobileOpen] = useState(false)
     const {open, setOpen} = useContext(NavbarContext)
-    const {language, setLanguage} = useContext(LanguageContext)
+
     const [blackNavbar, setBlackNavbar] = useState(false);
+    
+    const {language, setLanguage} = useContext(LanguageContext)
     const [langHovered, setLangHovered] = useState(false)
     const [langClicked, setLangClicked] = useState(false)
+
     const router = useRouter();
     const isMainPage = router.pathname == "/";
+
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
+    const {width, setWidth} = useContext(WidthContext)
 
     const scrollPosition = () => {
         setNavbarOpen(window.scrollY < 100 ? true : false)
@@ -60,6 +64,7 @@ export function Navbar(){
     useEffect(
         () => {
             setBlackNavbar(router.pathname == "/despre-noi" || router.pathname == "/proiecte" ? true : false)
+            setWidth(size.width)
         }
     )
 

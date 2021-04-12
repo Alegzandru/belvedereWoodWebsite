@@ -1,5 +1,5 @@
 import '../styles/global.css'
-import {LanguageContext} from "../components/context"
+import {LanguageContext, WidthContext} from "../components/context"
 import {useState} from "react"
 import GoogleTagManager from '../components/GoogleTagManager'
 
@@ -10,11 +10,16 @@ export default function App({ Component, pageProps }) {
   const [language, setLanguage] = useState(0);
   const valueLanguage = {language, setLanguage}
 
+  const [width, setWidth] = useState(0)
+  const valueWidth = {width, setWidth}
+
   return (
     <GoogleTagManager>
-      <LanguageContext.Provider value={valueLanguage}>
-        <Component {...pageProps} />
-      </LanguageContext.Provider>
+      <WidthContext.Provider value={valueWidth}>
+        <LanguageContext.Provider value={valueLanguage}>
+          <Component {...pageProps} />
+        </LanguageContext.Provider>
+      </WidthContext.Provider>
     </GoogleTagManager>
   )
 }

@@ -15,11 +15,16 @@
     height: 448px;
     width: 100%;
 
-    background-image: url("../../public/catalog/backgroundParchetBradut.png");
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetBradut/upperPhoto.jpg");
     background-color: black;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mobileTypeWrapper{
@@ -68,7 +73,7 @@
 
 .popupWrapper{
     width: 860px;
-    height: 350px;
+    height: 300px;
 
     position: fixed;
     z-index: 3;
@@ -79,8 +84,8 @@
 
     background:
     linear-gradient(
-        rgb(255, 255, 255, 0.8), 
-        rgb(255, 255, 255, 0.8)
+        rgb(255, 255, 255, 0.75), 
+        rgb(255, 255, 255, 0.75)
     ),
     url("../../public/catalog/Pattern_2.png");
     background-color: white;
@@ -393,7 +398,7 @@
 .inactiveLink{
     font-family: Futura PT custom Book;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 16px;
 
     margin-right: 4px;
@@ -427,6 +432,7 @@
 
 .activeLink{
     font-family: Futura PT custom Mediu;
+    font-size: 20px;
 }
 
 .productDescriptionWrapper{
@@ -447,6 +453,7 @@
 .productImg{
     width: 540px;
     height: 360px;
+    object-fit: cover;
 
     box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
 }
@@ -669,8 +676,8 @@
     width: 100%;
     text-align: center;
 
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 
@@ -688,12 +695,6 @@
     width: 300px;
     height: 200px;
 
-    background-image: url("../../public/catalog/parquet.png");
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -702,6 +703,45 @@
     box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
     transition: 200ms;
     cursor: pointer;
+}
+
+.type1{
+    background:
+    linear-gradient(
+        rgb(0, 0, 0, 0.4), 
+        rgb(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetBradut/productImg3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.type2{
+    background:
+    linear-gradient(
+        rgb(0, 0, 0, 0.4), 
+        rgb(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetBradut/productImg2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.type3{
+    background:
+    linear-gradient(
+        rgb(0, 0, 0, 0.4), 
+        rgb(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetBradut/productImg1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 .productTypeBox:hover{
@@ -1252,8 +1292,8 @@
         width: 100%;
         text-align: center;
     
-        margin-top: 100px;
-        margin-bottom: 60px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     
     .productTypesBox{
@@ -1269,12 +1309,6 @@
     .productTypeBox{
         width: 168px;
         height: 153px;
-    
-        background-image: url("../../public/catalog/parquet.png");
-        background-color: black;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     
         display: flex;
         flex-direction: column;
@@ -1572,7 +1606,7 @@
         padding-left: 10px;
         padding-right: 10px;
         width: calc(100% - 20px - 32px);
-        height: 400px;
+        height: 300px;
     }
 
     .popupWrapperForm{
@@ -1733,8 +1767,8 @@
     .inactiveLink{
         font-family: Futura PT custom Book;
         color: black;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 16px;
     
         margin-right: 4px;
     }
@@ -1747,7 +1781,7 @@
     
     .activeLink{
         font-family: Futura PT custom Mediu;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .productDescriptionWrapper{
@@ -1767,7 +1801,7 @@
     
     .productImg{
         width: 100%;
-        height: auto;
+        height: 300px;
     
         box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
     }
@@ -1781,7 +1815,7 @@
         align-items: center;
         justify-content: space-between;
     
-        margin-top: -155px;
+        margin-top: -190px;
     }
     
     .changeSlideButton{
@@ -1914,7 +1948,7 @@
         text-align: center;
         transition: 500ms;
     
-        margin-top: 150px;
+        margin-top: 200px;
         margin-bottom: 50px;
     }
     
@@ -1964,8 +1998,8 @@
         width: 100%;
         text-align: center;
     
-        margin-top: 100px;
-        margin-bottom: 60px;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
     
     .productTypesBox{
@@ -1981,12 +2015,6 @@
     .productTypeBox{
         width: 168px;
         height: 153px;
-    
-        background-image: url("../../public/catalog/parquet.png");
-        background-color: black;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     
         display: flex;
         flex-direction: column;

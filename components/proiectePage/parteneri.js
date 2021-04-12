@@ -8,9 +8,9 @@ export function Parteneri(){
         <div className={styles.wrapper}>
             <section className={styles.section}>
                 <div className={styles.container}>
-                    <h2 className={styles.h2}>
+                    <h3 className={styles.h3}>
                         Parteneri
-                    </h2>
+                    </h3>
                     <div className={styles.line1}>
                     </div>
                     <div className={styles.scroller}>
@@ -122,17 +122,19 @@ export function Parteneri(){
 
                     <div className={styles.buttonsWrapper}>
                         <Link target="blank" href="/catalog">
-                            <a style={{textDecoration:"none"}}>
-                                <div className={styles.button1}>
-                                        Deschide Catalog
-                                </div>
+                            <a
+                                style={{textDecoration:"none"}}
+                                className={styles.button1}
+                            >
+                                Deschide Catalog
                             </a>
                         </Link>
                         <Link target="blank" href="/contactsPage">
-                            <a style={{textDecoration:"none"}}>
-                                <div className={styles.button2}>
-                                    Contactează-ne
-                                </div>
+                            <a 
+                                style={{textDecoration:"none"}}
+                                className={styles.button2}
+                            >
+                                Contactează-ne
                             </a>
                         </Link>
                     </div>

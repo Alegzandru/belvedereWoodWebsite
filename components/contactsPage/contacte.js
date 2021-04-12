@@ -136,14 +136,18 @@ export function Contacte(){
                             Rețele sociale
                         </div>
                         <div className={styles.socialPhotosWrapper}>
-                            <img 
-                                className={styles.socialImg}
-                                src="/contacte/instagramIcon4.svg"
-                            />
-                            <img 
-                                className={styles.socialImg}
-                                src="/contacte/facebookIcon4.svg"
-                            />
+                            <a href="https://www.instagram.com/parchet_belvederewood/" target="blank">
+                                <img 
+                                    className={styles.socialImg}
+                                    src="/contacte/instagramIcon4.svg"
+                                />
+                            </a>
+                            <a href="https://www.facebook.com/belvedereparquet" target="blank">
+                                <img 
+                                    className={styles.socialImg}
+                                    src="/contacte/facebookIcon4.svg"
+                                />
+                            </a>
                         </div>
 
                     </div>

@@ -1,8 +1,8 @@
 .wrapper{
     height: auto;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     background-color: white;
     overflow: hidden;
@@ -20,19 +20,352 @@
     align-items: flex-start;
 }
 
+.background1_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1_5{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul5.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background1_6{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/muzeul6.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/mimi1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/mimi2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/mimi3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/mimi4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2_5{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/mimi5.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background5_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/rozmarin1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background5_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/rozmarin2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background5_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/rozmarin3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background5_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/rozmarin4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background6_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/kiku1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background6_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/kiku2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft1.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_5{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft5.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background7_6{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/lumencraft6.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideButtonWrapper{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.slideButtonWrapper:hover{
+    background-color: rgb(3, 29, 30, 0.6);
+    transition: 300ms;
+}
+
+.slideButtonWrapper:active{
+    background-color: #031D1E;
+}
+
+.arrowButton{
+}
+
+.secondArrowButton{
+    transform: rotate(180deg);
+}
+
 .projectImgLeft{
-    width: 775px;;
-    /* height: 516px; */
-    height: auto;
+    width: 775px;
+    height: 516px;
 
     margin-left: -225px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projectImgRight{
-    width: 775px;;
-    /* height: 516px; */
-    height: auto;
+    width: 775px;
+    height: 516px;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-right: -225px;
 }
 
@@ -134,7 +467,7 @@
         height: auto;
         width: 100%;
         padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     
         background-color: white;
         overflow: hidden;
@@ -155,7 +488,7 @@
     .projectImgLeft{
         width: 100%;
         /* height: 516px; */
-        height: auto;
+        height: 300px;
     
         margin-left: 0px;
     }
@@ -163,7 +496,7 @@
     .projectImgRight{
         width: 100%;
         /* height: 516px; */
-        height: auto;
+        height: 300px;
     
         margin-right: 0px;
     }
@@ -206,7 +539,7 @@
         height: auto;
         width: 100%;
         padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     
         background-color: white;
         overflow: hidden;
@@ -223,11 +556,42 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    .slideButtonWrapper{
+        width: 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: 300ms;
+        cursor: pointer;
+    }
+    
+    .slideButtonWrapper:hover{
+        background-color: rgb(3, 29, 30, 0.6);
+        transition: 300ms;
+    }
+    
+    .slideButtonWrapper:active{
+        background-color: #031D1E;
+    }
+    
+    .arrowButton{
+        height: 40px;
+        width: 40px;
+    }
+    
+    .secondArrowButton{
+        height: 40px;
+        width: 40px;
+        transform: rotate(180deg);
+    }
     
     .projectImgLeft{
         width: 100%;
         /* height: 516px; */
-        height: auto;
+        height: 250px;
     
         margin-left: 0px;
     }
@@ -235,7 +599,7 @@
     .projectImgRight{
         width: 100%;
         /* height: 516px; */
-        height: auto;
+        height: 250px;
     
         margin-right: 0px;
     }

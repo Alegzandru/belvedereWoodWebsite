@@ -33,21 +33,74 @@ export function DescriereaProiectelor(){
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
 
+    const [slider1, setSlider1] = useState(0)
+    const [slider2, setSlider2] = useState(0)
+    const [slider5, setSlider5] = useState(0)
+    const [slider6, setSlider6] = useState(0)
+    const [slider7, setSlider7]= useState(0)
+
+
     return(
         <div className={styles.wrapper}>
             <section className={styles.section}>
                 <div className={styles.container}>
+
+
+
 
                     <div 
                         name="muzeul" 
                         id="muzeul"
                         className={styles.projectRowLeft}
                     >
-                        <img
-                            src="/proiecte/muzeulNationalDeArta.jpg"
-                            alt="Muzeul Național de Artă"
-                            className={styles.projectImgLeft}
-                        />
+                        <div
+                            className={`
+                                ${styles.projectImgLeft}
+                                ${slider1 == 0? styles.background1_1 : ""}
+                                ${slider1 == 1? styles.background1_2 : ""}
+                                ${slider1 == 2? styles.background1_3 : ""}
+                                ${slider1 == 3? styles.background1_4 : ""}
+                                ${slider1 == 4? styles.background1_5 : ""}
+                                ${slider1 == 5? styles.background1_6 : ""}
+                            `}
+                        >
+                             <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider1==0){
+                                        setSlider1(5)
+                                    }
+                                    else{
+                                        setSlider1(slider1-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider1==5){
+                                        setSlider1(0)
+                                    }
+                                    else{
+                                        setSlider1(slider1+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
+
                         <div 
                             className={styles.textWrapper}
                             // style={{
@@ -76,6 +129,9 @@ export function DescriereaProiectelor(){
                         </div>
                     </div>
 
+
+
+
                     <div 
                         name="castelMimi" 
                         id="castelMimi"
@@ -102,12 +158,56 @@ export function DescriereaProiectelor(){
                                 />
                             </div>
                         </div>
-                        <img
-                            src="/proiecte/castelMimi.jpg"
-                            alt="Castel Mimi"
-                            className={styles.projectImgRight}
-                        />
+                        <div
+                            className={`
+                                ${styles.projectImgRight}
+                                ${slider2 == 0? styles.background2_1 : ""}
+                                ${slider2 == 1? styles.background2_2 : ""}
+                                ${slider2 == 2? styles.background2_3 : ""}
+                                ${slider2 == 3? styles.background2_4 : ""}
+                                ${slider2 == 4? styles.background2_5 : ""}
+                            `}
+                        >
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider2==0){
+                                        setSlider2(4)
+                                    }
+                                    else{
+                                        setSlider2(slider2-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider2==4){
+                                        setSlider2(0)
+                                    }
+                                    else{
+                                        setSlider2(slider2+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
                     </div>
+
+
+
 
                     <div 
                         name="manucBei" 
@@ -141,9 +241,12 @@ export function DescriereaProiectelor(){
                         </div>
                     </div>
 
+
+
+
                     <div 
-                        name="porteryard" 
-                        id="porteryard"
+                        name="phiVegan" 
+                        id="phiVegan"
                         className={styles.projectRowRight}
                     >
                         <div 
@@ -153,11 +256,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Kiku Restaurant
+                                Phi Vegan Restaurant
                             </h2>
                             <p className={styles.subheading}>
-                                Un steak house de excepție cere ca totul să fie la fel de rafinat ca și de la bucatele gătite de chef. 
-                                În colaborare cu o echipă locală de designeri am realizat un proiect de interior modern cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă și care să rețină clientul cât mai mult în local.
+                                Tot ce vine din natură este o artă, de la bucatele de tip raw vegan, până la cele mai fine linii ale plăcii de lemn. Acest restaurant combină aceste aspecte, într-un mod atât de organic și echilibrat, încât este un sentiment constant că te afli în sânul naturii.
                             </p>
                             <div className={styles.button}>
                                 Parchet de stejar
@@ -175,16 +277,60 @@ export function DescriereaProiectelor(){
                         />
                     </div>
 
+
+
+
+
                     <div 
                         name="rozmarin" 
                         id="rozmarin"
                         className={styles.projectRowLeft}
                     >
-                        <img
-                            src="/proiecte/rozmarin.jpg"
-                            alt="Cafe Rozmarin"
-                            className={styles.projectImgLeft}
-                        />
+                        <div
+                            className={`
+                                ${styles.projectImgLeft}
+                                ${slider5 == 0? styles.background5_1 : ""}
+                                ${slider5 == 1? styles.background5_2 : ""}
+                                ${slider5 == 2? styles.background5_3 : ""}
+                                ${slider5 == 3? styles.background5_4 : ""}
+                            `}
+                        >
+                             <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider5==0){
+                                        setSlider5(3)
+                                    }
+                                    else{
+                                        setSlider5(slider5-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider5==3){
+                                        setSlider5(0)
+                                    }
+                                    else{
+                                        setSlider5(slider5+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
                         <div 
                             className={styles.textWrapper}
                             // style={{
@@ -207,6 +353,160 @@ export function DescriereaProiectelor(){
                             </div>
                         </div>
                     </div>
+                    
+
+
+                    <div 
+                        name="kiku" 
+                        id="kiku"
+                        className={styles.projectRowRight}
+                    >
+                        <div 
+                            className={styles.textWrapper}
+                            // style={{
+                            //     marginRight : mobile ? "" : "-100px"
+                            // }}
+                        >
+                            <h2 className={styles.h2}>
+                                Kiku Restaurant
+                            </h2>
+                            <p className={styles.subheading}>
+                                Un steak house de excepție cere ca totul să fie la fel de rafinat ca și de la bucatele gătite de chef. 
+                                În colaborare cu o echipă locală de designeri am realizat un proiect de interior modern cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă și care să rețină clientul cât mai mult în local.
+                            </p>
+                            <div className={styles.button}>
+                                Parchet de stejar
+                                <img
+                                    src="/proiecte/rightArrowProiecte.svg"
+                                    alt=""
+                                    className={styles.arrow}
+                                />
+                            </div>
+                        </div>
+                        <div
+                            className={`
+                                ${styles.projectImgRight}
+                                ${slider6 == 0? styles.background6_1 : ""}
+                                ${slider6 == 1? styles.background6_2 : ""}
+                            `}
+                        >
+                             <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider6==0){
+                                        setSlider6(1)
+                                    }
+                                    else{
+                                        setSlider6(slider6-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider6==1){
+                                        setSlider6(0)
+                                    }
+                                    else{
+                                        setSlider6(slider6+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div 
+                        name="lumecraft" 
+                        id="lumencraft"
+                        className={styles.projectRowLeft}
+                    >
+                        <div
+                            className={`
+                                ${styles.projectImgLeft}
+                                ${slider7 == 0? styles.background7_1 : ""}
+                                ${slider7 == 1? styles.background7_2 : ""}
+                                ${slider7 == 2? styles.background7_3 : ""}
+                                ${slider7 == 3? styles.background7_4 : ""}
+                                ${slider7 == 4? styles.background7_5 : ""}
+                                ${slider7 == 5? styles.background7_6 : ""}
+                            `}
+                        >
+                             <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider7==0){
+                                        setSlider7(3)
+                                    }
+                                    else{
+                                        setSlider7(slider7-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider7==3){
+                                        setSlider7(0)
+                                    }
+                                    else{
+                                        setSlider7(slider7+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
+                        <div 
+                            className={styles.textWrapper}
+                            // style={{
+                            //     marginRight : mobile ? "" : "-100px"
+                            // }}
+                        >
+                            <h2 className={styles.h2}>
+                                Restaurant Lumencraft
+                            </h2>
+                            <p className={styles.subheading}>
+                                În incita unuia dintre cele mai aglomerate locuri din oraș, Aeroportul Internațional Chișinău, restaurantul Lumencraft se evidențiază chiar de la prima vedere, datorită aspectului exterior din lemn natural. Fiecare element din lemn, fie că e podea, perete, plafon sau coloană a fost creat la fabrica BWP, utilizând tehnologii performante.                            </p>
+                            <div className={styles.button}>
+                                Parchet de stejar
+                                <img
+                                    src="/proiecte/rightArrowProiecte.svg"
+                                    alt=""
+                                    className={styles.arrow}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
 
                 </div>
             </section>

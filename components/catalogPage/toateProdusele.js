@@ -38,11 +38,11 @@ export function ToateProdusele(){
                         <Link href="/catalog/parchetBradut">
                             <a
                                 style={{
-                                    textDecoration: "none"
+                                    textDecoration: "none",
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Bradut"
+                                    name="Parchet Brăduț"
                                     imgSrc="/catalog/backgroundParchetBradut.png"
                                     descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
                                 ></Produs>

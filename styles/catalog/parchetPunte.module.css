@@ -163,7 +163,7 @@
 .dropdownBoxActive{
     width: 220px;
     height: 36px;
-    background-color: #031D1E;
+    background-color: #031d1e;
 
     display: flex;
     flex-direction: row;
@@ -281,7 +281,7 @@
 .inactiveLink{
     font-family: Futura PT custom Book;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 16px;
 
     margin-right: 4px;
@@ -315,6 +315,7 @@
 
 .activeLink{
     font-family: Futura PT custom Mediu;
+    font-size: 20px;
 }
 
 .productDescriptionWrapper{
@@ -1577,8 +1578,8 @@
     .inactiveLink{
         font-family: Futura PT custom Book;
         color: black;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 16px;
     
         margin-right: 4px;
     }
@@ -1591,7 +1592,7 @@
     
     .activeLink{
         font-family: Futura PT custom Mediu;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .productDescriptionWrapper{

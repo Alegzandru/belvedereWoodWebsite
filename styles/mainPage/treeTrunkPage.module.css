@@ -518,6 +518,10 @@
         margin-top: 110px;
         margin-bottom: 30px;
     }
+
+    .h2::before{
+        display: none;
+    }
     
     .subheading{
         width: 100%;

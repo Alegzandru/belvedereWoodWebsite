@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "../../styles/proiecte/toateProiectele.module.css"
 import Link from 'next/link'
 import {Link as LinkScroll} from 'react-scroll'
+import Fade from 'react-reveal/Fade';
 
 
 function isInViewport(element) {
@@ -21,6 +22,8 @@ export function ToateProiectele(){
     const [hovered3, setHovered3] = useState(false)
     const [hovered4, setHovered4] = useState(false)
     const [hovered5, setHovered5] = useState(false)
+    const [hovered6, setHovered6] = useState(false)
+    const [hovered7, setHovered7] = useState(false)
     
 
     return(
@@ -38,14 +41,14 @@ export function ToateProiectele(){
                         Vezi cum proiectele marca BWP s-au înscris atât de organic și natural în
                         interierul acestor încăperi, încât au devenit un tot întreg.
                         </p>
-                        <div className={styles.button1}>
                             <LinkScroll 
                                 to="muzeul" 
                                 smooth={true}
                             >
-                                Vezi toate proiectele
+                                <div className={styles.button1}>
+                                    Vezi toate proiectele
+                                </div>
                             </LinkScroll>
-                        </div>
                     </div>
 
                     <div className={styles.photoWrapper}>
@@ -63,14 +66,16 @@ export function ToateProiectele(){
                                     onMouseEnter={ ()=> setHovered1(true)}
                                     onMouseLeave={ ()=> setHovered1(false)}
                                 >
-                                    <div 
-                                        className={styles.projectName}
-                                        style={{
-                                            display: hovered1? "block" : "none"
-                                        }}
-                                    >
-                                        Muzeul Național de Artă 
-                                    </div>
+                                    <Fade left>
+                                        <div
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered1? "block" : "none"
+                                            }}
+                                        >
+                                            Muzeul Național de Artă 
+                                        </div>
+                                    </Fade>
                                     <div 
                                         className={styles.line}
                                         style={{
@@ -85,7 +90,7 @@ export function ToateProiectele(){
                                         }}
                                     ></img>
                                     <img
-                                        src="/proiecte/muzeulNationalDeArta.jpg"
+                                        src="/proiecte/muzeul1.jpg"
                                         alt="Muzeul Național de Artă"
                                         className={styles.projectImg}
                                     />
@@ -120,18 +125,20 @@ export function ToateProiectele(){
                                         }}
                                     ></div>
                                     <img
-                                        src="/proiecte/castelMimi.jpg"
+                                        src="/proiecte/mimi1.jpg"
                                         alt="Castel Mimi"
                                         className={styles.projectImg}
                                     />
-                                    <div 
-                                        className={styles.projectName}
-                                        style={{
-                                            display: hovered2? "block" : "none"
-                                        }}
-                                    >
-                                        Castel Mimi 
-                                    </div>
+                                    <Fade right>
+                                        <div 
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered2? "block" : "none"
+                                            }}
+                                        >
+                                            Castel Mimi 
+                                        </div>
+                                    </Fade>
                                 </div>
                         </LinkScroll>
 
@@ -149,14 +156,16 @@ export function ToateProiectele(){
                                     onMouseEnter={ ()=> setHovered3(true)}
                                     onMouseLeave={ ()=> setHovered3(false)}
                                 >
-                                    <div 
-                                        className={styles.projectName}
-                                        style={{
-                                            display: hovered3? "block" : "none"
-                                        }}
-                                    >
-                                        Manuc Bei
-                                    </div>
+                                    <Fade left>
+                                        <div 
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered3? "block" : "none"
+                                            }}
+                                        >
+                                            Manuc Bei
+                                        </div>
+                                    </Fade>
                                     <img
                                         src="/proiecte/rightArrowProiecte2.svg"
                                         className={styles.arrow}
@@ -180,7 +189,7 @@ export function ToateProiectele(){
 
 
                         <LinkScroll 
-                            to="porteryard"
+                            to="Phi Vegan Restaurant"
                             smooth={true}
                             style={{
                                 width: "100%",
@@ -210,14 +219,16 @@ export function ToateProiectele(){
                                         alt="Porteryard"
                                         className={styles.projectImg}
                                     />
-                                    <div 
-                                        className={styles.projectName}
-                                        style={{
-                                            display: hovered4? "block" : "none"
-                                        }}
-                                    >
-                                        Porteryard
-                                    </div>
+                                    <Fade right>
+                                        <div 
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered4? "block" : "none"
+                                            }}
+                                        >
+                                            Phi Vegan Restaurant
+                                        </div>
+                                    </Fade>
                                 </div>
                         </LinkScroll>
 
@@ -235,14 +246,16 @@ export function ToateProiectele(){
                                     onMouseEnter={ ()=> setHovered5(true)}
                                     onMouseLeave={ ()=> setHovered5(false)}
                                 >
-                                    <div 
-                                        className={styles.projectName}
-                                        style={{
-                                            display: hovered5? "block" : "none"
-                                        }}
-                                    >
-                                        Restaurant Rozmarin
-                                    </div>
+                                    <Fade left>
+                                        <div 
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered5? "block" : "none"
+                                            }}
+                                        >
+                                            Restaurant Rozmarin
+                                        </div>
+                                    </Fade>
                                     <img
                                         src="/proiecte/rightArrowProiecte2.svg"
                                         className={styles.arrow}
@@ -257,12 +270,101 @@ export function ToateProiectele(){
                                         }}
                                     ></div>
                                     <img
-                                        src="/proiecte/rozmarin.jpg"
+                                        src="/proiecte/rozmarin1.jpg"
                                         alt="Restaurant Rozmarin"
                                         className={styles.projectImg}
                                     />
                                 </div>
                         </LinkScroll>
+
+                        <LinkScroll 
+                            to="kiku"
+                            smooth={true}
+                            style={{
+                                width: "100%",
+                                textDecoration: "none"
+                            }}
+                        >
+                                <div 
+                                    className={styles.photoContainerLeft}
+                                    onMouseEnter={ ()=> setHovered6(true)}
+                                    onMouseLeave={ ()=> setHovered6(false)}
+                                >
+                                    <img
+                                        src="/proiecte/rightArrowProiecte2.svg"
+                                        className={styles.arrow}
+                                        style={{
+                                            display: hovered6? "block" : "none"
+                                        }}
+                                    ></img>
+                                    <div 
+                                        className={styles.line}
+                                        style={{
+                                            display: hovered6? "none" : "block"
+                                        }}
+                                    ></div>
+                                    <img
+                                        src="/proiecte/kiku1.jpg"
+                                        alt="Castel Mimi"
+                                        className={styles.projectImg}
+                                    />
+                                    <Fade right>
+                                        <div 
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered6? "block" : "none"
+                                            }}
+                                        >
+                                            Kiku Restaurant 
+                                        </div>
+                                    </Fade>
+                                </div>
+                        </LinkScroll>
+
+                        <LinkScroll 
+                            to="lumencraft"
+                            smooth={true}
+                            style={{
+                                width: "100%",
+                                textDecoration: "none"
+                            }}
+                        >
+                                <div 
+                                    className={styles.photoContainerRight}
+                                    onMouseEnter={ ()=> setHovered7(true)}
+                                    onMouseLeave={ ()=> setHovered7(false)}
+                                >
+                                    <Fade left>
+                                        <div
+                                            className={styles.projectName}
+                                            style={{
+                                                display: hovered7? "block" : "none"
+                                            }}
+                                        >
+                                            Restaurant Lumencraft 
+                                        </div>
+                                    </Fade>
+                                    <div 
+                                        className={styles.line}
+                                        style={{
+                                            display: hovered7? "none" : "block"
+                                        }}
+                                    ></div>
+                                    <img
+                                        src="/proiecte/rightArrowProiecte2.svg"
+                                        className={styles.arrow}
+                                        style={{
+                                            display: hovered7? "block" : "none"
+                                        }}
+                                    ></img>
+                                    <img
+                                        src="/proiecte/lumencraft4.jpg"
+                                        alt="Restaurant lumencraft"
+                                        className={styles.projectImg}
+                                    />
+                                </div>
+                        </LinkScroll>
+
                     </div>
 
                     <div className={styles.photoWrapperMobile}>

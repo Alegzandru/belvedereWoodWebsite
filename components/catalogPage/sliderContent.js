@@ -1,18 +1,18 @@
 export const sliderParchetBradutTop = [
     {
-        src:"/catalog/productImg.png"
+        src:"/catalog/parchetBradut/productImg1.jpg"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/catalog/parchetBradut/productImg2.jpg"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/catalog/parchetBradut/productImg3.jpg"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/catalog/parchetBradut/productImg4.jpeg"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/catalog/parchetBradut/productImg5.jpg"
     }
 ]
 

@@ -7,6 +7,15 @@
     border-radius: 4px;
 
     overflow: hidden;
+
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.1);
+    transition: 300ms;
+}
+
+.produsWrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+    transition: 300ms;
 }
 
 .produsImg{

@@ -1,7 +1,7 @@
 .wrapper{
     height: auto;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: white;
@@ -24,7 +24,7 @@
     line-height: 50px;
     text-align: center;
 
-    margin-bottom: -200px;
+    margin-bottom: -240px;
 
     position: relative;
     z-index: 2;
@@ -53,7 +53,8 @@
 
 .questionWrapper:hover{
     border: 1px solid #031D1E;
-    background-color: rgb(78, 106, 107);
+    /* background-color: rgb(78, 106, 107); */
+    background-color: #031D1E;
     color: white;
 
     transition: 300ms;
@@ -81,6 +82,7 @@
 }
 
 .questionAnswer{
+    font-family: Futura PT custom Book;
     height: auto;
     margin-left: 60px;
     margin-right: 60px;

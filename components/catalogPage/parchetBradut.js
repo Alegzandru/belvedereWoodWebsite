@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import styles from "../../styles/catalog/parchetBradut.module.css"
 import {sliderParchetBradutTop, sliderParchetBradutBottom} from "./sliderContent"
 import {parchetBradut} from "./prices"
 import Link from 'next/link'
-
+import {WidthContext} from "../context"
 
 
 export function ParchetBradut(){
@@ -15,6 +15,7 @@ export function ParchetBradut(){
     const [selected, setSelected] = useState(0)
     const [area, setArea] = useState(0)
     const [popUpClicked, setpopUpClicked] = useState(0)
+    const {width, setWidth} = useContext(WidthContext)
 
     function handleInputChangeArea(e) {
         e.preventDefault();
@@ -99,7 +100,14 @@ export function ParchetBradut(){
                         Calculează prețul parchetului
                     </div>
 
-                    <div className={styles.selectionBox}>
+                    <div 
+                        className={styles.selectionBox}
+                        style={{
+                            position : "absolute",
+                            zIndex : "2",
+                            width: width < 528 ? "calc(100% - 20px)" : ""
+                        }}
+                    >
                         <div 
                             className={styles.selectionText}
                         >
@@ -179,7 +187,12 @@ export function ParchetBradut(){
                         </div>
                     </div>
 
-                    <div className={styles.selectionBox}>
+                    <div 
+                        className={styles.selectionBox}
+                        style={{
+                            marginTop: "80px"
+                        }}
+                    >
                         <div className={styles.selectionText}>
                             Introdu suprafața
                         </div>
@@ -301,7 +314,7 @@ export function ParchetBradut(){
                 >
                     <div className={styles.upperPhotoWrapper}>
                         <h1 className={styles.h1}>
-                            Parchet bradut
+                            Parchet brăduț
                         </h1>
                         <p className={styles.subheading}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis. Nunc quis sollicitudin leo, non commodo lacus.
@@ -330,7 +343,7 @@ export function ParchetBradut(){
                                 className={styles.arrow}
                             />
                             <span className={styles.activeLink}>
-                                Parchet bradut
+                                Parchet brăduț
                             </span>
                         </div>
 
@@ -405,7 +418,7 @@ export function ParchetBradut(){
 
                             <div className={styles.textWrapper}>
                                 <h2 className={styles.h2Small}>
-                                    Parchet bradut
+                                    Parchet brăduț
                                 </h2>
                                 <div className={styles.description}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et risus sapien. Vivamus sodales cursus sem, vitae sollicitudin lacus ornare accumsan. 
@@ -449,15 +462,15 @@ export function ParchetBradut(){
 
                         <div className={styles.productTypesWrapper}>
                             <h2 className={styles.h2}>
-                                Tipuri de parchet bradut
+                                Tipuri de parchet brăduț
                             </h2>
 
                             <div className={styles.productTypesBox}>
                                 <div className={styles.mobileTypeWrapper}>
-                                    <div className={styles.productTypeBox}>
+                                    <div className={`${styles.productTypeBox} ${styles.type1}`}>
                                         <div className={styles.productNameWrapper}>
                                             <div className={styles.productTypeName}>
-                                                Parchet Chevron
+                                                Chevron
                                             </div>
                                             <div className={styles.productTypeDeg}>
                                                 (45 grade)
@@ -466,41 +479,41 @@ export function ParchetBradut(){
                                     </div>
 
                                     <div className={styles.priceBox}>
-                                        Pret : <span className={styles.price}>75 EUR/mp</span>
+                                        Preț : <span className={styles.price}>70-80 EUR/mp</span>
                                     </div>
                                 </div>
 
                                 <div className={styles.mobileTypeWrapper}>
-                                    <div className={styles.productTypeBox}>
+                                    <div className={`${styles.productTypeBox} ${styles.type2}`}>
                                         <div className={styles.productNameWrapper}>
                                             <div className={styles.productTypeName}>
-                                                Parchet Chevron
+                                                Brăduț unguresc
                                             </div>
                                             <div className={styles.productTypeDeg}>
-                                                (45 grade)
+                                                (60 grade)
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <div className={styles.priceBox}>
-                                        Pret : <span className={styles.price}>75 EUR/mp</span>
+                                        Preț : <span className={styles.price}>70-80 EUR/mp</span>
                                     </div>
                                 </div>
 
                                 <div className={styles.mobileTypeWrapper}>
-                                    <div className={styles.productTypeBox}>
+                                    <div className={`${styles.productTypeBox} ${styles.type3}`}>
                                         <div className={styles.productNameWrapper}>
                                             <div className={styles.productTypeName}>
-                                                Parchet Chevron
+                                                Herringbone
                                             </div>
                                             <div className={styles.productTypeDeg}>
-                                                (45 grade)
+                                                (90 grade)
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <div className={styles.priceBox}>
-                                        Pret : <span className={styles.price}>75 EUR/mp</span>
+                                        Preț : <span className={styles.price}>65-80 EUR/mp</span>
                                     </div>
                                 </div>
 
@@ -627,7 +640,7 @@ export function ParchetBradut(){
 
                         <div className={styles.photosWrapper}>
                             <h2 className={styles.h2}>
-                                Lucrarile noastre
+                                Produsele noastre
                             </h2>
                             <div className={styles.photosBox}>
                                 <div className={styles.photoColumn}>

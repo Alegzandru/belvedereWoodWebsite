@@ -1,7 +1,7 @@
 .wrapper{
-    height: 620px;
+    height: auto;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 30px;
 
     /* background-image: url("../../public/despreNoi/backgroundRealizari.png");
@@ -101,7 +101,7 @@
     }
 
     .wrapper{
-        padding-bottom: 150px;
+        padding-bottom: 50px;
     }
 
 }

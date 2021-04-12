@@ -281,7 +281,7 @@
 .inactiveLink{
     font-family: Futura PT custom Book;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 16px;
 
     margin-right: 4px;
@@ -315,6 +315,7 @@
 
 .activeLink{
     font-family: Futura PT custom Mediu;
+    font-size: 20px;
 }
 
 .productDescriptionWrapper{
@@ -1577,8 +1578,8 @@
     .inactiveLink{
         font-family: Futura PT custom Book;
         color: black;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 16px;
     
         margin-right: 4px;
     }
@@ -1591,7 +1592,7 @@
     
     .activeLink{
         font-family: Futura PT custom Mediu;
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .productDescriptionWrapper{
