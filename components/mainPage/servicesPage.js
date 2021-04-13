@@ -56,7 +56,8 @@ export function ServicesPage(){
                                 <div 
                                     className={styles.service}
                                     style={{
-                                        backgroundColor : hovered == 1? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                        // backgroundColor : hovered == 1? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                        backgroundColor : hovered == 1? "rgba(0, 0, 0, 0.5)" : "transparent",
                                         justifyContent : hovered == 1? "center" : "flex-end",
                                         alignItems: hovered == 1? "center" : "flex-start",
                                         fontFamily: hovered == 1? "Futura PT custom Book" : "Futura PT custom Mediu",
@@ -81,7 +82,7 @@ export function ServicesPage(){
                                 <div 
                                     className={styles.service}
                                     style={{
-                                        backgroundColor : hovered == 2? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                        backgroundColor : hovered == 2? "rgba(0, 0, 0, 0.5)" : "transparent",
                                         justifyContent : hovered == 2? "center" : "flex-end",
                                         alignItems: hovered == 2? "center" : "flex-start",
                                         fontFamily: hovered == 2? "Futura PT custom Book" : "Futura PT custom Mediu",
@@ -106,7 +107,7 @@ export function ServicesPage(){
                                 <div 
                                     className={styles.service}
                                     style={{
-                                        backgroundColor : hovered == 3? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                        backgroundColor : hovered == 3? "rgba(0, 0, 0, 0.5)" : "transparent",
                                         justifyContent : hovered == 3? "center" : "flex-end",
                                         alignItems: hovered == 3? "center" : "flex-start",
                                         fontFamily: hovered == 3? "Futura PT custom Book" : "Futura PT custom Mediu",
@@ -131,7 +132,7 @@ export function ServicesPage(){
                                 <div 
                                     className={styles.service}
                                     style={{
-                                        backgroundColor : hovered == 4? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                        backgroundColor : hovered == 4? "rgba(0, 0, 0, 0.5)" : "transparent",
                                         justifyContent : hovered == 4? "center" : "flex-end",
                                         alignItems: hovered == 4? "center" : "flex-start",
                                         fontFamily: hovered == 4? "Futura PT custom Book" : "Futura PT custom Mediu",
@@ -158,7 +159,7 @@ export function ServicesPage(){
                             <div 
                                 className={styles.service}
                                 style={{
-                                    backgroundColor : hovered == 5? "rgba(3, 29, 30, 0.75)" : "transparent",
+                                    backgroundColor : hovered == 5? "rgba(0, 0, 0, 0.5)" : "transparent",
                                     justifyContent : hovered == 5? "center" : "flex-end",
                                     alignItems: hovered == 5? "center" : "flex-start",
                                     fontFamily: hovered == 5? "Futura PT custom Book" : "Futura PT custom Mediu",

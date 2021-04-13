@@ -507,7 +507,6 @@ export function DescriereaProiectelor(){
 
 
 
-
                 </div>
             </section>
         </div>
