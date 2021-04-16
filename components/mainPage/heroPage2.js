@@ -4,11 +4,12 @@ import styles from "../../styles/mainPage/heroPage.module.css"
 import Link from 'next/link'
 
 
-
 // Images
 const slide1 = "/mainPage/slider/slide1.jpg";
 const slide2 = "/mainPage/slider/slide2.jpg";
 const slide3 = "/mainPage/slider/slide3.jpg";
+const slide4 = "/mainPage/slider/slide4.jpg";
+const slide5 = "/mainPage/slider/slide5.jpg";
 
 export const HeroPage2 = () => {
   return (
@@ -88,7 +89,8 @@ export const HeroPage2 = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             filter: "brightness(40%)",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+            backgroundAnimation: "zoom"
         }}
         >
                 <section className={styles.heroPageSection}>
@@ -129,6 +131,96 @@ export const HeroPage2 = () => {
         <Slide
         background={{
             backgroundImage: slide3,
+            backgroundColor: "black",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            filter: "brightness(40%)",
+            backgroundSize: "cover",
+            backgroundAnimation: "zoom"
+        }}>
+                <section className={styles.heroPageSection}>
+                <div className={styles.heroPageContainer}>
+                    <h1 className={styles.h1}>
+                        Confort natural la fiecare pas
+                    </h1>
+                    <p className={styles.subheading}>
+                        Cu noi aveți posibilitatea de a reproduce orice lucrare din domeniul podelelor
+                        din parquet, pereților și scărilor din lemn.                    
+                    </p>
+                    <div className={styles.buttonsWrapper}>
+                        <Link href="/catalog">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button1}>
+                                    Produse
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href="/proiecte">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button2}>
+                                    Proiecte
+                                </div>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </Slide>
+
+        <Slide
+        background={{
+            backgroundImage: slide4,
+            backgroundColor: "black",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            filter: "brightness(40%)",
+            backgroundSize: "cover",
+            backgroundAnimation: "zoom"
+        }}>
+                <section className={styles.heroPageSection}>
+                <div className={styles.heroPageContainer}>
+                    <h1 className={styles.h1}>
+                        Confort natural la fiecare pas
+                    </h1>
+                    <p className={styles.subheading}>
+                        Cu noi aveți posibilitatea de a reproduce orice lucrare din domeniul podelelor
+                        din parquet, pereților și scărilor din lemn.                    
+                    </p>
+                    <div className={styles.buttonsWrapper}>
+                        <Link href="/catalog">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button1}>
+                                    Produse
+                                </div>
+                            </a>
+                        </Link>
+                        <Link href="/proiecte">
+                            <a 
+                                style={{textDecoration: "none"}}
+                                className={styles.link}
+                            >
+                                <div className={styles.button2}>
+                                    Proiecte
+                                </div>
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </Slide>
+
+        <Slide
+        background={{
+            backgroundImage: slide5,
             backgroundColor: "black",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",

@@ -1,5 +1,6 @@
 import styles from "../../styles/proiecte/descriereaProiectelor.module.css"
 import {useState, useEffect} from "react"
+import Link from 'next/link'
 
 function useWindowSize() {
 
@@ -118,14 +119,22 @@ export function DescriereaProiectelor(){
                                 renovarea căreia noi am reușit să aducem aportul nostru, restaurând parchetul din sălile de
                                 expoziție.
                            </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                           <Link href="/catalog/parchetBradut">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Parchet brăduț
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                     </a>
 
@@ -149,14 +158,22 @@ export function DescriereaProiectelor(){
                             <p className={styles.subheading}>
                                 Această destinație turistică a fost inclusă în top 15 cele mai frumoase vinării din lume, prezentând  atât istorie, cât și arhitectură modernă celor 30.000 de vizitatori care vin în fiecare an din peste 80 de țări ale lumii. Iar în restaurantul de fine dining ”Bufnița Albă” vin să se delecteze mii de oaspeți cu bucatele selecte și atmosfera deosebită, care se datorează inclusive parchetului executat la comandă și instalat de BWP.
                             </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                            <Link href="/catalog/parchetPunte">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Parchet punte
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                         <div
                             className={`
@@ -214,11 +231,54 @@ export function DescriereaProiectelor(){
                         id="manucBei"
                         className={styles.projectRowLeft}
                     >
-                        <img
-                            src="/proiecte/ManucBei.png"
-                            alt="Manuc Bei"
-                            className={styles.projectImgLeft}
-                        />
+                        <div
+                            className={`
+                                ${styles.projectImgLeft}
+                                ${slider1 == 0? styles.background3_1 : ""}
+                                ${slider1 == 1? styles.background3_2 : ""}
+                                ${slider1 == 2? styles.background3_3 : ""}
+                                ${slider1 == 3? styles.background3_4 : ""}
+                                ${slider1 == 4? styles.background3_5 : ""}
+                                ${slider1 == 5? styles.background3_6 : ""}
+                            `}
+                        >
+                             <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider1==0){
+                                        setSlider1(5)
+                                    }
+                                    else{
+                                        setSlider1(slider1-1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.arrowButton}
+                                />
+                            </div>
+
+                            <div 
+                                className={styles.slideButtonWrapper}
+                                onClick={ ()=> {
+                                    if(slider1==5){
+                                        setSlider1(0)
+                                    }
+                                    else{
+                                        setSlider1(slider1+1)
+                                    }
+                                }}
+                            >
+                                <img
+                                    src="/mainPage/leftArrow.svg"
+                                    alt="Google"
+                                    className={styles.secondArrowButton}
+                                />
+                            </div>
+                        </div>
+
                         <div 
                             className={styles.textWrapper}
                             // style={{
@@ -229,15 +289,24 @@ export function DescriereaProiectelor(){
                                 Manuc Bei
                             </h2>
                             <p className={styles.subheading}>
-                                Un castel în stil francez de o frumusețea uimitoare, cu o grădină de iarnă, turnuri de pază și un parc imens, care însă nu au trecut neatinse de toate intimperiile istoriei. Cu toate acetea, în 2012 au demarat lucrările de reconstrucție și astăzi el poate fi admirat în toată splendoarea și măreția sa. Compania BWP și-a asumat responsabilitatea de a readuce aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac. Fiecare placă de lemn a avut un design individual și a fost instalată manual, de echipa noastră de meșteri.                             </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                                Un castel în stil francez de o frumusețea uimitoare, cu o grădină de iarnă, turnuri de pază și un parc imens, care însă nu au trecut neatinse de toate intimperiile istoriei. Cu toate acetea, în 2012 au demarat lucrările de reconstrucție și astăzi el poate fi admirat în toată splendoarea și măreția sa. Compania BWP și-a asumat responsabilitatea de a readuce aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac. Fiecare placă de lemn a avut un design individual și a fost instalată manual, de echipa noastră de meșteri.                             
+                            </p>
+                            <Link href="/catalog/parchetPunte">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Parchet punte
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                     </a>
 
@@ -388,13 +457,16 @@ export function DescriereaProiectelor(){
                                 ${styles.projectImgRight}
                                 ${slider6 == 0? styles.background6_1 : ""}
                                 ${slider6 == 1? styles.background6_2 : ""}
+                                ${slider6 == 2? styles.background6_3 : ""}
+                                ${slider6 == 3? styles.background6_4 : ""}
+                                ${slider6 == 4? styles.background6_5 : ""}
                             `}
                         >
                              <div 
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
                                     if(slider6==0){
-                                        setSlider6(1)
+                                        setSlider6(4)
                                     }
                                     else{
                                         setSlider6(slider6-1)
@@ -411,7 +483,7 @@ export function DescriereaProiectelor(){
                             <div 
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
-                                    if(slider6==1){
+                                    if(slider6==4){
                                         setSlider6(0)
                                     }
                                     else{
@@ -450,7 +522,7 @@ export function DescriereaProiectelor(){
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
                                     if(slider7==0){
-                                        setSlider7(3)
+                                        setSlider7(5)
                                     }
                                     else{
                                         setSlider7(slider7-1)
@@ -467,7 +539,7 @@ export function DescriereaProiectelor(){
                             <div 
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
-                                    if(slider7==3){
+                                    if(slider7==5){
                                         setSlider7(0)
                                     }
                                     else{

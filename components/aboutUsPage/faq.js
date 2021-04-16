@@ -28,7 +28,7 @@ export function FAQ(){
                     />
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open1 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen1(!open1) }
                     >
                         <div className={styles.question}>
@@ -53,7 +53,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open2 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen2(!open2) }
                     >
                         <div className={styles.question}>
@@ -118,7 +118,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open3 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen3(!open3) }
                     >
                         <div className={styles.question}>
@@ -143,7 +143,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open4 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen4(!open4) }
                     >
                         <div className={styles.question}>
@@ -168,7 +168,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open5 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen5(!open5) }
                     >
                         <div className={styles.question}>
@@ -193,7 +193,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open6 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen6(!open6) }
                     >
                         <div className={styles.question}>
@@ -218,7 +218,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open7 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen7(!open7) }
                     >
                         <div className={styles.question}>
@@ -243,7 +243,7 @@ export function FAQ(){
                     </div>
 
                     <div 
-                        className={styles.questionWrapper}
+                        className={open8 ? styles.questionWrapperOpen : styles.questionWrapper}
                         onClick={() => setOpen8(!open8) }
                     >
                         <div className={styles.question}>

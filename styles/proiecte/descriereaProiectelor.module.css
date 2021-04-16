@@ -26,7 +26,7 @@
         rgba(0, 0, 0, 0), 
         rgba(0, 0, 0, 0)
     ),
-    url("../../public/proiecte/muzeul1.jpg");
+    url("../../public/mainPage/muzeulClient.jpg");
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,6 +163,84 @@
     background-size: cover;
 }
 
+.background3_1{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/ManucBei.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3_2{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/manucBei2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/manucBei3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/manucBei4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3_5{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/manucBei5.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3_6{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/manucBei6.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .background5_1{
     background:
     linear-gradient(
@@ -235,6 +313,45 @@
         rgba(0, 0, 0, 0)
     ),
     url("../../public/proiecte/kiku2.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background6_3{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/kiku3.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background6_4{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/kiku4.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background6_5{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0)
+    ),
+    url("../../public/proiecte/kiku5.jpg");
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;

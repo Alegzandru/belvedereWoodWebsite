@@ -117,7 +117,7 @@ export function Parteneri(){
                     </div>
 
                     <h3 className={styles.h3}>
-                        Interesat să lucrezi cu noi?
+                        Pentru proiecte de parteneriat :
                     </h3>
 
                     <div className={styles.buttonsWrapper}>
