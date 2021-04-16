@@ -81,6 +81,22 @@
     justify-content: space-between;
 }
 
+.questionOpen{
+    height: auto;
+
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid black;
+}
+
 .questionAnswer{
     font-family: Futura PT custom Book;
     height: auto;
@@ -97,6 +113,11 @@
 
 .questionText{
     width: 100%;
+}
+
+.questionTextOpen{
+    width: 100%;
+    text-decoration: underline;
 }
 
 .questionPlus{

@@ -19,9 +19,9 @@
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
     ),
-    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    url("../../public/mainPage/mimiClient.jpg");    
     background-color: black;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
     background-size: cover; 
     transition: 500ms;
@@ -33,9 +33,9 @@
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
     ),
-    url("../../public/catalog/parchetPunte/Aeroport-19.jpg");    
+    url("../../public/mainPage/lumencraftClient.jpg");    
     background-color: black;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover; 
     transition: 500ms;
@@ -47,7 +47,7 @@
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
     ),
-    url("../../public/mainPage/KikuRestaurant-12.jpg");    
+    url("../../public/mainPage/KikuRestaurant-14.jpg");    
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    url("../../public/mainPage/veganClient.jpg");    
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    url("../../public/mainPage/muzeulClient.jpg");    
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    url("../../public/mainPage/rozmarinClient.jpg");    
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("../../public/catalog/parchetPunte/ManucBei-27.jpg");    
+    url("../../public/mainPage/porteryardClient.jpg");    
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,6 +199,13 @@
     width: auto;
 
     cursor: pointer;
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+.clientImg:hover{
+    filter: grayscale(0%);
+    transition: 300ms;
 }
 
 @media screen and (max-width: 1080px){

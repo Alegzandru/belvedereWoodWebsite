@@ -86,10 +86,11 @@
 .button1{
     width: 220px;
     height: 48px;
-    border: 3px solid #031D1E;
+    border: 3px solid white;
     border-radius: 3px;
 
-    color: rgb(3, 29, 30);
+    /* color: rgb(3, 29, 30); */
+    color: white;
     font-size: 24px;
     font-family: Futura PT custom Mediu;
     display: flex;

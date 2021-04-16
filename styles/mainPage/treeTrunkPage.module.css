@@ -152,9 +152,10 @@
     height: 420px;
     width: 420px;
     margin-top: 85px;
-    margin-left: 40px;
-    padding-top: 5px;
-
+    margin-left: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     border: 2px solid #031D1E;
@@ -179,10 +180,14 @@
 .circle2{
     height: 340px;
     width: 340px;
-    margin-top: 10px;
-    margin-left: 0px;
-    padding-top: 5px;
+    /* margin-top: 10px;
+    margin-left: 0px; */
+    margin-top: -395px;
+    margin-left: 75px;
 
+    padding-top: 10px;
+    padding-left: 10px;
+    
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     border: 2px solid #031D1E;
@@ -198,7 +203,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    animation: rotateCircles 100s infinite;
+    animation: rotateCircles 60s infinite;
     animation-timing-function: linear;
 
     transition: 300ms;
@@ -207,12 +212,15 @@
 .circle3{
     height: 260px;
     width: 260px;
-    /* margin-top: 20px;
+    
+    /* margin-top: 10px;
     margin-left: 0px; */
-    margin-top: 10px;
-    margin-left: 0px;
-    padding-top: 5px;
 
+    margin-top: -315px;
+    margin-left: 115px;
+    padding-top: 10px;
+    padding-left: 10px;
+    
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     border: 2px solid #031D1E;
@@ -228,7 +236,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    animation: rotateCircles 150s infinite;
+    animation: rotateCircles 70s infinite;
     animation-timing-function: linear;
 
     transition: 300ms;
@@ -237,10 +245,14 @@
 .circle4{
     height: 180px;
     width: 180px;
-    margin-top: 10px;
-    margin-left: 0px;
-    padding-top: 5px;
+    /* margin-top: 10px;
+    margin-left: 0px; */
+    margin-top: -235px;
+    margin-left: 155px;
 
+    padding-top: 10px;
+    padding-left: 10px;
+    
     background: rgba(255, 255, 255, 0.25);
     border-radius: 50%;
     border: 2px solid #031D1E;
@@ -256,7 +268,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    animation: rotateCircles 200s infinite;
+    animation: rotateCircles 80s infinite;
     animation-timing-function: linear;
 
     transition: 300ms;
@@ -282,7 +294,7 @@
     line-height: 26px;
     font-family: Futura PT custom Mediu;
 
-    padding-top: 1px;
+    /* padding-top: 1px; */
     transition: 300ms;
 }
 
@@ -409,34 +421,35 @@
     .circle1{
         height: 434px;
         width: 434px;
-        margin-top: 75px;
-        margin-left: 35px;
+        margin-top: 70px;
+        margin-left: 30px;
 
-        padding-top: 5px;
+        /* padding-top: 5px; */
     }
     
     .circle2{
         height: 348px;
         width: 348px;
-        margin-top: 15px;
-        margin-left: 0px;
-        padding-top: 5px;
+        margin-top: -405px;
+        margin-left: 70px;
     }
     
     .circle3{
         height: 261px;
         width: 261px;
-        margin-top: 15px;
-        margin-left: 0px;
-        padding-top: 5px;
+        margin-left: 120px;
+        /* margin-top: 15px;
+        margin-left: 0px; */
+        /* padding-top: 5px; */
     }
     
     .circle4{
         height: 172px;
         width: 172px;
-        margin-top: 15px;
+        margin-left: 165px;
+        /* margin-top: 15px;
         margin-left: 0px;
-        padding-top: 5px;
+        padding-top: 5px; */
     }
     
     /* .logoImg{
@@ -534,7 +547,7 @@
     
     .treeTrunkWrapper{
         width: 343px;
-        height: auto;
+        height: 370px;
         margin-right: auto;
         margin-left: auto;
         padding-bottom: 40px;
@@ -543,35 +556,62 @@
     .circle1{
         height: 290px;
         width: 290px;
-        margin-top: 35px;
+        margin-top: 55px;
         margin-left: 18px;
 
         padding-top: 5px;
+        padding-left: 5px;
+
         font-size: 18px;
     }
     
     .circle2{
         height: 230px;
         width: 230px;
-        margin-top: 0px;
-        margin-left: 0px;
+        margin-top: -270px;
+        margin-left: 48px;
+
         padding-top: 5px;
+        padding-left: 5px;
+
+        font-size: 18px;
     }
     
     .circle3{
-        height: 173px;
-        width: 173px;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding-top: 5px;
+        height: 170px;
+        width: 170px;
+        margin-top: -210px;
+        margin-left: 75px;
+
+        font-size: 18px;
     }
     
     .circle4{
-        height: 116px;
-        width: 116px;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding-top: 5px;
+        height: 110px;
+        width: 110px;
+        margin-top: -155px;
+        margin-left: 105px;
+
+        font-size: 18px;
+    }
+
+    .circleNotFocus{
+        text-align: center;
+        color: #031D1E;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: Futura PT custom Mediu;
+        transition: 300ms;
+    }
+    
+    .circleFocus{
+        text-align: center;
+        color: #031D1E;
+        font-size: 24px;
+        line-height: 24px;
+        font-family: Futura PT custom Mediu;
+    
+        transition: 300ms;
     }
     
     /* .logoImg{
@@ -583,11 +623,11 @@
 
     .logoImgTop{
         position: absolute;
-        height: 78px;
-        width: 78px;
+        height: 60px;
+        width: 60px;
         opacity: 0.68;
-        margin-top: 140px;
-        left: calc(10px + (100vw - 32px - 343px)/2 + (343px - 78px ) / 2 );
+        margin-top: 170px;
+        left: calc(10px + (100vw - 32px - 343px)/2 + (343px - 60px ) / 2 );
         z-index: 2;
     
         margin-right: auto;

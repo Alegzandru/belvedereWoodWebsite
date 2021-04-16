@@ -28,12 +28,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={9}
-                                        duration={5}
+                                        end={11}
+                                        duration={7}
                                     />
                                     :
                                     <span>
-                                        9
+                                        11
                                     </span>
                                 }
                             </div>
@@ -47,12 +47,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={14000}
+                                        end={380000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        14000
+                                        380.000
                                     </span>
                                 }
                             </div>
@@ -96,17 +96,17 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={7500}
+                                        end={400000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        7500
+                                        400.000
                                     </span>
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați exportați
+                                Metri pătrați de parchet produs
                             </div>
                         </div>
 
@@ -115,12 +115,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={2000}
+                                        end={3000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        2000
+                                        3000
                                     </span>
                                 }
                             </div>
@@ -137,12 +137,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={9}
-                                        duration={5}
+                                        end={11}
+                                        duration={7}
                                     />
                                     :
                                     <span>
-                                        9
+                                        11
                                     </span>
                                 }
                             </div>
@@ -156,12 +156,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={14000}
+                                        end={380000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        14000
+                                        380000
                                     </span>
                                 }
                             </div>
@@ -211,17 +211,17 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={7500}
+                                        end={400000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        7500
+                                        400000
                                     </span>
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați exportați
+                                Metri pătrați de parchet produs
                             </div>
                         </div>
 
@@ -230,12 +230,12 @@ export function Realizari(){
                                 {
                                     showStats?
                                     <CountUp
-                                        end={2000}
+                                        end={3000}
                                         duration={10}
                                     />
                                     :
                                     <span>
-                                        2000
+                                        3000
                                     </span>
                                 }
                             </div>

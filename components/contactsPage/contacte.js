@@ -217,6 +217,7 @@ export function Contacte(){
                                 <input
                                     type="submit"
                                     placeholder="Trimite" 
+                                    value="Trimite"
                                     className={styles.button}
                                 >
                                 </input>

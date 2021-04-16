@@ -62,7 +62,7 @@ export function ServicesPage(){
                                         alignItems: hovered == 1? "center" : "flex-start",
                                         fontFamily: hovered == 1? "Futura PT custom Book" : "Futura PT custom Mediu",
                                         fontSize: hovered == 1? mobile? "18px" : "22px" : "30px",
-                                        transition : "500ms"
+                                        transition : "0ms"
                                     }}
                                 >
                                     <Fade bottom>
@@ -87,13 +87,13 @@ export function ServicesPage(){
                                         alignItems: hovered == 2? "center" : "flex-start",
                                         fontFamily: hovered == 2? "Futura PT custom Book" : "Futura PT custom Mediu",
                                         fontSize: hovered == 2? mobile? "18px" : "22px" : "30px",
-                                        transition : "500ms"
+                                        transition : "0ms"
                                     }}
                                 >
                                     <Fade bottom>
                                         {
                                             hovered == 2 ?
-                                            "Un serviciu opțional pentru cei care apreciază calitatea ireproșabilă și confortul natural." :
+                                            "Meșterii noștri instalează plăcile de parchet indiferent de complexitatea formelor și suprafața propusă la 13 EUR/m.p" :
                                             "Montarea parchetului"
                                         }
                                     </Fade>
@@ -112,7 +112,7 @@ export function ServicesPage(){
                                         alignItems: hovered == 3? "center" : "flex-start",
                                         fontFamily: hovered == 3? "Futura PT custom Book" : "Futura PT custom Mediu",
                                         fontSize: hovered == 3? mobile? "18px" : "22px" : "30px",
-                                        transition : "500ms"
+                                        transition : "0ms"
                                     }}
                                 >
                                     <Fade bottom>
@@ -137,7 +137,7 @@ export function ServicesPage(){
                                         alignItems: hovered == 4? "center" : "flex-start",
                                         fontFamily: hovered == 4? "Futura PT custom Book" : "Futura PT custom Mediu",
                                         fontSize: hovered == 4? mobile? "18px" : "22px" : "30px",
-                                        transition : "500ms"
+                                        transition : "0ms"
                                     }}
                                 >
                                     <Fade bottom>
@@ -164,7 +164,7 @@ export function ServicesPage(){
                                     alignItems: hovered == 5? "center" : "flex-start",
                                     fontFamily: hovered == 5? "Futura PT custom Book" : "Futura PT custom Mediu",
                                     fontSize: hovered == 5? mobile? "18px" : "22px" : "30px",
-                                    transition : "500ms"
+                                    transition : "0ms"
                                 }}
                             >
                                 <Fade bottom>
