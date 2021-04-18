@@ -18,55 +18,73 @@ export const sliderParchetBradutTop = [
 
 export const sliderParchetBradutBottom = [
     {
-        src:"/catalog/backgroundParchetBradut.png"
+        src:"/proiecte/muzeul2.jpg",
+        name : "Muzeul Național de Artă"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/proiecte/muzeul3.jpg",
+        name : "Muzeul Național de Artă"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/proiecte/muzeul4.jpg",
+        name : "Muzeul Național de Artă"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/proiecte/muzeul5.jpg",
+        name : "Muzeul Național de Artă"
     },
     {
-        src:"/catalog/productImg.png"
+        src:"/proiecte/muzeul6.jpg",
+        name : "Muzeul Național de Artă"
     }
 ]
 
 export const sliderParchetPunteTop = [
     {
+        src:"/catalog/parchetPunte/Showroom-61.jpg"
+    },
+    {
+        src:"/catalog/parchetPunte/Showroom-82.jpg"
+    },
+    {
+        src:"/catalog/parchetPunte/Showroom-97.jpg"
+    },
+    {
         src:"/catalog/parchetPunte/KikuRestaurant.jpg"
     },
     {
-        src:"/catalog/parchetPunte/Aeroport-12.jpg"
-    },
-    {
-        src:"/catalog/parchetPunte/KikuRestaurant-5.jpg"
-    },
-    {
-        src:"/catalog/parchetPunte/Aeroport-14.jpg"
-    },
-    {
-        src:"/catalog/parchetPunte/KikuRestaurant-9.jpg"
+        src:"/catalog/parchetPunte/KikuRestaurant-3.jpg"
     }
 ]
 
 export const sliderParchetPunteBottom = [
     {
-        src:"/catalog/parchetPunte/Aeroport-3.jpg"
+        src:"/catalog/parchetPunte/Aeroport-13.jpg",
+        name : "Restaurant Lumecraft"
     },
     {
-        src:"/catalog/parchetPunte/Aeroport-8.jpg"
+        src:"/catalog/parchetPunte/Aeroport-14.jpg",
+        name : "Restaurant Lumecraft"
     },
     {
-        src:"/catalog/parchetPunte/KikuRestaurant-15.jpg"
+        src:"/catalog/parchetPunte/Aeroport-19.jpg",
+        name : "Restaurant Lumecraft"
     },
     {
-        src:"/catalog/parchetPunte/ManucBei-38.jpg"
+        src:"/catalog/parchetPunte/Aeroport-21.jpg",
+        name : "Restaurant Lumecraft"
     },
     {
-        src:"/catalog/parchetPunte/ManucBei-32.jpg"
+        src:"/catalog/parchetPunte/KikuRestaurant-12 (1).jpg",
+        name: "Restaurant Kiku"
+    },
+    {
+        src:"/catalog/parchetPunte/ManucBei-46.jpg",
+        name : "Conacul Manuc Bei"
+    },
+    {
+        src:"/catalog/parchetPunte/S Lazo 34-18.jpg",
+        name : ""
     }
 ]
 

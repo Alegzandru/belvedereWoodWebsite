@@ -43,7 +43,7 @@ export function ToateProdusele(){
                             >
                                 <Produs
                                     name="Parchet Brăduț"
-                                    imgSrc="/catalog/backgroundParchetBradut.png"
+                                    imgSrc="/catalog/parchetBradut/productImg1.jpg"
                                     descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
                                 ></Produs>
                             </a>
@@ -57,7 +57,7 @@ export function ToateProdusele(){
                             >
                                 <Produs
                                     name="Parchet Punte"
-                                    imgSrc="/catalog/parchetPunte/Aeroport-8.jpg"
+                                    imgSrc="/catalog/parchetPunte/Showroom-61.jpg"
                                     descriere="Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn."
                                 ></Produs>
                             </a>

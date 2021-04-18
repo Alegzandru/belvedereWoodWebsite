@@ -14,7 +14,22 @@
 .upperPhotoWrapper{
     height: 448px;
     width: 100%;
+}
 
+.backgroundPunte{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("../../public/catalog/parchetPunte/background.jpg");
+    background-color: black;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundBradut{
     background:
     linear-gradient(
         rgba(0, 0, 0, 0.4), 
@@ -77,7 +92,7 @@
 
     position: fixed;
     z-index: 3;
-    top: 250px;
+    top: calc((100vh - 300px)/2);
     left: calc((100% - 940px) / 2);
 
     padding-left: 80px;
@@ -705,7 +720,7 @@
     cursor: pointer;
 }
 
-.type1{
+.bradut1{
     background:
     linear-gradient(
         rgb(0, 0, 0, 0.4), 
@@ -718,7 +733,7 @@
     background-size: cover;
 }
 
-.type2{
+.bradut2{
     background:
     linear-gradient(
         rgb(0, 0, 0, 0.4), 
@@ -731,7 +746,7 @@
     background-size: cover;
 }
 
-.type3{
+.bradut3{
     background:
     linear-gradient(
         rgb(0, 0, 0, 0.4), 
@@ -744,12 +759,43 @@
     background-size: cover;
 }
 
+.punte1{
+    background:
+    linear-gradient(
+        rgb(0, 0, 0, 0.4), 
+        rgb(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetPunte/Showroom-61.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.punte2{
+    background:
+    linear-gradient(
+        rgb(0, 0, 0, 0.4), 
+        rgb(0, 0, 0, 0.4)
+    ),
+    url("../../public/catalog/parchetPunte/Showroom-82.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 .productTypeBox:hover{
     box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.5);
     transition: 200ms;
 }
 
 .productNameWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     height: 56px;
     width: 100%;
     background-color: white;
@@ -859,10 +905,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 10px;
 }
 
 .avantajImg{
-    height : 100%;
+    height : 80%;
     width: auto;
 }
 
@@ -889,11 +937,14 @@
     width: 375px;
     box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
     margin-top: -100px;
+    object-fit: cover;
 }
 
 .centerPhoto{
     height: 414px;
     width: 620px;
+    object-fit: cover;
+
     margin-left: 20px;
     margin-right: 20px;
     box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
@@ -1029,10 +1080,10 @@
         width: calc(100% - 32px - 80px);
         height: 320px;
         background-color: white;
-    
+
         position: fixed;
         z-index: 3;
-        top: 250px;
+        top: calc((100vh - 320px)/2);
         left: 16px;
 
         padding-left: 80px;
@@ -1095,7 +1146,7 @@
     }
     
     .productImg{
-        width: 540px;
+        width: 100%;
         height: 360px;
     
         box-shadow: 4px 4px 16px rgba(3, 29, 30, 0.25);
@@ -1422,7 +1473,7 @@
     
     .avantajBox{
         width: 100%;
-        height: 33px;
+        height: auto;
     
         display: flex;
         flex-direction: row;
@@ -1432,7 +1483,7 @@
     }
     
     .avantajImg{
-        height : 100%;
+        height : 33px;
         width: auto;
         margin-right: 20px;
     }
@@ -1466,10 +1517,11 @@
         box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
         margin-top: 0px;
         margin-top: 40px;
+        display: none;
     }
     
     .centerPhoto{
-        height: auto;
+        height: 300px;
         width: 528px;
         margin-left: 0px;
         margin-right: 0px;
@@ -1493,7 +1545,6 @@
         display: none;
     }
 
-
     .photosWrapper{
         padding-bottom: 50px;
     }
@@ -1502,7 +1553,7 @@
         position: relative;
         display: flex;
         width: 100%;
-        margin-top: -300px;
+        margin-top: -170px;
     }
 
     .changeSlideButtonTablet{
@@ -1542,8 +1593,8 @@
         font-family: Futura PT custom Mediu;
         color: black;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 60px;
+        margin-top: 150px;
+        margin-bottom: -70px;
     }
     
 }
@@ -1607,6 +1658,7 @@
         padding-right: 10px;
         width: calc(100% - 20px - 32px);
         height: 300px;
+        top: calc((100vh - 300px)/2);
     }
 
     .popupWrapperForm{
@@ -2130,7 +2182,7 @@
     
     .avantajBox{
         width: 100%;
-        height: 33px;
+        height: auto;
     
         display: flex;
         flex-direction: row;
@@ -2140,7 +2192,7 @@
     }
     
     .avantajImg{
-        height : 100%;
+        height : 33px;
         width: auto;
         margin-right: 20px;
     }
@@ -2179,7 +2231,7 @@
     }
     
     .centerPhoto{
-        height: auto;
+        height: 300px;
         width: 100%;
         margin-left: 0px;
         margin-right: 0px;
@@ -2212,7 +2264,7 @@
         position: relative;
         display: flex;
         width: 100%;
-        margin-top: -240px;
+        margin-top: -170px;
     }
 
     .changeSlideButtonTablet{
@@ -2252,8 +2304,8 @@
         font-family: Futura PT custom Mediu;
         color: black;
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 60px;
+        margin-top: 150px;
+        margin-bottom: -150px;
     }
     
 }

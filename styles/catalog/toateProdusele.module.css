@@ -15,9 +15,9 @@
         rgba(0, 0, 0, 0.6), 
         rgba(0, 0, 0, 0.6)
     ),
-    url("../../public/catalog/ManucBei-32.jpg");
+    url("../../public/catalog/backgroundCatalog.jpg");
     background-color: black;
-    background-position: bottom; /* Center the image */
+    background-position: top; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }

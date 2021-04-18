@@ -1,15 +1,18 @@
 export const parchetBradut = [
     {
         name: "Chevron",
-        price : 70
+        price1 : 70,
+        price2 : 80
     },
     {
         name: "Heringbone",
-        price : 65
+        price1 : 65,
+        price2 : 80
     },
     {
         name: "Bradut unguresc",
-        price : 70
+        price1 : 70,
+        price2 : 80
     },
 ]
 

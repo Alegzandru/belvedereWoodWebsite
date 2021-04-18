@@ -1,12 +1,12 @@
 import { useContext, useState } from "react"
 import styles from "../../styles/catalog/parchetBradut.module.css"
-import {sliderParchetBradutTop, sliderParchetBradutBottom} from "./sliderContent"
-import {parchetBradut} from "./prices"
+// import {parchetBradut} from "./prices"
 import Link from 'next/link'
 import {WidthContext} from "../context"
+import {Link as LinkScroll} from 'react-scroll'
 
 
-export function ParchetBradut(){
+export function ParchetBradut(props){
 
     const [slide, setSlide] = useState(0)
     const [bottomSlide, setBottomSlide] = useState(0)
@@ -16,6 +16,7 @@ export function ParchetBradut(){
     const [area, setArea] = useState(0)
     const [popUpClicked, setpopUpClicked] = useState(0)
     const {width, setWidth} = useContext(WidthContext)
+    const [chosenChar, setChosenChar] = useState(0)
 
     function handleInputChangeArea(e) {
         e.preventDefault();
@@ -122,7 +123,7 @@ export function ParchetBradut(){
                                 className={styles.dropdownBoxActive}
                             >
                                 <div className={styles.dropdownTextActive}>
-                                    {parchetBradut[selected].name}
+                                    {props.product[selected].name}
                                 </div>
                                 <img 
                                     src={dropdownHover ? 
@@ -133,6 +134,7 @@ export function ParchetBradut(){
                                 >
                                 </img>
                             </div>
+
                             <div 
                                 className={styles.inactiveBox}
                                 style={{
@@ -142,44 +144,58 @@ export function ParchetBradut(){
                                 <div 
                                     className={styles.dropdownBoxInactive}
                                     onClick={() =>{
-                                        selected == 0 ? 
-                                        setSelected(1) :
-                                        selected == 1 ? 
-                                        setSelected(2) :
-                                        selected == 2 ? 
-                                        setSelected(0) : setSelected("")
+                                        if(selected == props.product.length-1){
+                                            setSelected(0)
+                                        }
+                                        else{
+                                            setSelected(selected+1)
+                                        }
                                     }}
                                 >
                                     <div className={styles.dropdownTextInactive}>
                                         {
-                                            selected == 0 ? 
-                                            parchetBradut[1].name :
-                                            selected == 1 ? 
-                                            parchetBradut[2].name :
-                                            selected == 2 ? 
-                                            parchetBradut[0].name : ""
+                                            props.product[
+                                                selected == props.product.length-1 ?
+                                                0 : 
+                                                selected+1
+                                            ].name
                                         }
                                     </div>
                                 </div>
                                 <div 
                                     className={styles.dropdownBoxInactive}
+                                    style={{
+                                        display: props.product.length == 3 ? "block" : "none"
+                                    }}
                                     onClick={() =>{
-                                        selected == 0 ? 
-                                        setSelected(2) :
-                                        selected == 1 ? 
-                                        setSelected(0) :
-                                        selected == 2 ? 
-                                        setSelected(1) : setSelected("")
+                                        if(props.product.length == 3){
+                                            if(selected == props.product.length - 2){
+                                                setSelected(0)
+                                            }
+                                            else if(selected == props.product.length - 1){
+                                                setSelected(1)
+                                            }
+                                            else{
+                                                setSelected(selected+2)
+                                            }
+                                        }
+                                        else{
+                                            
+                                        }
                                     }}
                                 >
                                     <div className={styles.dropdownTextInactive}>
                                         {
-                                            selected == 0 ? 
-                                            parchetBradut[2].name:
-                                            selected == 1 ? 
-                                            parchetBradut[0].name :
-                                            selected == 2 ? 
-                                            parchetBradut[1].name : ""
+                                            props.product.length == 3 ? 
+                                            props.product[
+                                                selected == props.product.length-2 ?
+                                                0 : 
+                                                selected == props.product.length-1 ?
+                                                1 :
+                                                selected+2
+                                            ].name
+                                            :
+                                            ""
                                         }
                                     </div>
                                 </div>
@@ -214,11 +230,13 @@ export function ParchetBradut(){
 
                     <div className={styles.priceBoxPopup}>
                         <div className={styles.priceText}>
-                            Preț final:
+                            Preț estimativ:
                         </div>
                         <div className={styles.priceInsideBox}>
                             <div className={styles.price}>
-                                {area * parchetBradut[selected].price}
+                                {area * props.product[selected].price1}
+                                {"-"}
+                                {area * props.product[selected].price2}
                             </div>
                             <div className={styles.currency}>
                                 &euro;
@@ -312,12 +330,20 @@ export function ParchetBradut(){
                 <section
                     className={styles.section}
                 >
-                    <div className={styles.upperPhotoWrapper}>
+                    <div 
+                        className={
+                            `
+                            ${styles.upperPhotoWrapper}
+                            ${props.name== "Parchet Punte" ? styles.backgroundPunte : ""}
+                            ${props.name== "Parchet Brăduț" ? styles.backgroundBradut : ""}
+                            `
+                        }
+                    >
                         <h1 className={styles.h1}>
-                            Parchet brăduț
+                            {props.name}
                         </h1>
                         <p className={styles.subheading}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis. Nunc quis sollicitudin leo, non commodo lacus.
+                            {props.upperText}
                         </p>
                     </div>
                     <div className={styles.container}>
@@ -343,37 +369,24 @@ export function ParchetBradut(){
                                 className={styles.arrow}
                             />
                             <span className={styles.activeLink}>
-                                Parchet brăduț
+                                {props.name}
                             </span>
                         </div>
-
+                        
                         <div className={styles.productDescriptionWrapper}>
                             <div className={styles.sliderWrapper}>
                                 <img 
                                     className={styles.productImg}
-                                    src={sliderParchetBradutTop[slide].src}
+                                    src={props.sliderTop[slide].src}
                                 />
                                 <div className={styles.slideButtonsWrapper}>
-                                    <div 
-                                        className={slide == 0 ? styles.slideButtonActive : styles.slideButtonInactive}
-                                        onClick={() => setSlide(0)}
-                                    ></div>
-                                    <div 
-                                        className={slide == 1 ? styles.slideButtonActive : styles.slideButtonInactive}
-                                        onClick={() => setSlide(1)}
-                                    ></div>
-                                    <div 
-                                        className={slide == 2 ? styles.slideButtonActive : styles.slideButtonInactive}
-                                        onClick={() => setSlide(2)}
-                                    ></div>
-                                    <div 
-                                        className={slide == 3 ? styles.slideButtonActive : styles.slideButtonInactive}
-                                        onClick={() => setSlide(3)}
-                                    ></div>
-                                    <div 
-                                        className={slide == 4 ? styles.slideButtonActive : styles.slideButtonInactive}
-                                        onClick={() => setSlide(4)}
-                                    ></div>
+                                    {props.sliderTop.map((img, index) => 
+                                        <div 
+                                            className={slide == index ? styles.slideButtonActive : styles.slideButtonInactive}
+                                            onClick={() => setSlide(index)}
+                                            key={img.src}
+                                        ></div>
+                                    )}
                                 </div>
 
                                 <div
@@ -383,7 +396,7 @@ export function ParchetBradut(){
                                         className={styles.changeSlideButton}
                                         onClick={()=>{
                                             if(slide==0){
-                                                setSlide(4)
+                                                setSlide(props.sliderTop.length-1)
                                             }
                                             else{
                                                 setSlide(slide-1)
@@ -399,7 +412,7 @@ export function ParchetBradut(){
                                     <div 
                                         className={styles.changeSlideButton}
                                         onClick={()=>{
-                                            if(slide==4){
+                                            if(slide==props.sliderTop.length-1){
                                                 setSlide(0)
                                             }
                                             else{
@@ -418,10 +431,10 @@ export function ParchetBradut(){
 
                             <div className={styles.textWrapper}>
                                 <h2 className={styles.h2Small}>
-                                    Parchet brăduț
+                                    {props.name}
                                 </h2>
                                 <div className={styles.description}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et risus sapien. Vivamus sodales cursus sem, vitae sollicitudin lacus ornare accumsan. 
+                                    {props.description} 
                                 </div>
                                 <div className={styles.buttonsWrapper}>
                                     <div 
@@ -429,6 +442,9 @@ export function ParchetBradut(){
                                         onClick={ () => {
                                             setPopupOpen(true) 
                                             setpopUpClicked(0)
+                                        }}
+                                        style={{
+                                            display : props.showPriceButton ? "flex" : "none"
                                         }}
                                     >
                                         Calculează prețul
@@ -460,57 +476,115 @@ export function ParchetBradut(){
                             </div>
                         </div>
 
-                        <div className={styles.productTypesWrapper}>
+                        <div 
+                            className={styles.productTypesWrapper}
+                            style={{
+                                display : props.showTypes ? "block" : "none"
+                            }}
+                        >
                             <h2 className={styles.h2}>
-                                Tipuri de parchet brăduț
+                                Tipuri de {props.name}
                             </h2>
 
-                            <div className={styles.productTypesBox}>
-                                <div className={styles.mobileTypeWrapper}>
-                                    <div className={`${styles.productTypeBox} ${styles.type1}`}>
-                                        <div className={styles.productNameWrapper}>
-                                            <div className={styles.productTypeName}>
-                                                Chevron
-                                            </div>
-                                            <div className={styles.productTypeDeg}>
-                                                (45 grade)
+                            <div 
+                                className={styles.productTypesBox}
+                                style={{
+                                    justifyContent : props.product.length == 3 ? "space-between" : "center"
+                                }}
+                            >
+                                <div 
+                                    className={styles.mobileTypeWrapper}
+                                    style={{
+                                        marginRight : props.product.length == 2 ? "20px" : "none"
+                                    }}
+                                >
+
+                                    <LinkScroll
+                                        to="characteristics"
+                                        smooth={true}
+                                    >
+                                        <div 
+                                            className={`
+                                                ${styles.productTypeBox} 
+                                                ${props.name == "Parchet Punte" ? styles.punte1 : ""}
+                                                ${props.name == "Parchet Brăduț" ? styles.bradut1 : ""}
+                                            `}
+                                            onClick={ ()=> setChosenChar(0)}
+                                        >
+                                            <div className={styles.productNameWrapper}>
+                                                <div className={styles.productTypeName}>
+                                                    {props.product[0].name}
+                                                </div>
+                                                <div 
+                                                    className={styles.productTypeDeg}
+                                                    style={{
+                                                        display : props.product[0].description == "" ? "none" : "block"
+                                                    }}
+                                                >
+                                                    {props.product[0].description}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </LinkScroll>
 
                                     <div className={styles.priceBox}>
-                                        Preț : <span className={styles.price}>70-80 EUR/mp</span>
+                                        Preț : <span className={styles.price}>{props.product[0].price}</span>
                                     </div>
                                 </div>
 
                                 <div className={styles.mobileTypeWrapper}>
-                                    <div className={`${styles.productTypeBox} ${styles.type2}`}>
-                                        <div className={styles.productNameWrapper}>
-                                            <div className={styles.productTypeName}>
-                                                Brăduț unguresc
-                                            </div>
-                                            <div className={styles.productTypeDeg}>
-                                                (60 grade)
+                                    <LinkScroll
+                                        to="characteristics"
+                                        smooth={true}
+                                    >
+                                        <div 
+                                            className={`
+                                            ${styles.productTypeBox} 
+                                            ${props.name == "Parchet Punte" ? styles.punte2 : ""}
+                                            ${props.name == "Parchet Brăduț" ? styles.bradut2 : ""}
+                                        `}
+                                            onClick={ ()=> setChosenChar(1)}
+                                        >
+                                            <div className={styles.productNameWrapper}>
+                                                <div className={styles.productTypeName}>
+                                                    {props.product[1].name}
+                                                </div>
+                                                <div className={styles.productTypeDeg}>
+                                                    {props.product[1].description}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </LinkScroll>
                                     
                                     <div className={styles.priceBox}>
-                                        Preț : <span className={styles.price}>70-80 EUR/mp</span>
+                                        Preț : <span className={styles.price}>{props.product[1].price}</span>
                                     </div>
                                 </div>
 
-                                <div className={styles.mobileTypeWrapper}>
-                                    <div className={`${styles.productTypeBox} ${styles.type3}`}>
-                                        <div className={styles.productNameWrapper}>
-                                            <div className={styles.productTypeName}>
-                                                Herringbone
-                                            </div>
-                                            <div className={styles.productTypeDeg}>
-                                                (90 grade)
+                                <div 
+                                    className={styles.mobileTypeWrapper}
+                                    style={{
+                                        display : props.product.length == 3 ? "block" : "none"
+                                    }}
+                                >
+                                    <LinkScroll
+                                        to="characteristics"
+                                        smooth={true}
+                                    >
+                                        <div 
+                                            className={`${styles.productTypeBox} ${styles.bradut3}`}
+                                            onClick={ ()=> setChosenChar(2)}
+                                        >
+                                            <div className={styles.productNameWrapper}>
+                                                <div className={styles.productTypeName}>
+                                                    Herringbone
+                                                </div>
+                                                <div className={styles.productTypeDeg}>
+                                                    (90 grade)
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </LinkScroll>
                                     
                                     <div className={styles.priceBox}>
                                         Preț : <span className={styles.price}>65-80 EUR/mp</span>
@@ -539,102 +613,63 @@ export function ParchetBradut(){
 
                         </div>
 
-                        <div className={styles.characteristicsWrapper}>
+                        <div 
+                            className={styles.characteristicsWrapper}
+                            name="characteristics"
+                        >
                             <h2 className={styles.h2}>
-                                Caracteristicile produsului
+                                Caracteristicile produsului ({props.product[chosenChar].name})
                             </h2>
                             <div className={styles.characteristicsBox}>
+
                                 <div className={styles.characteristicsColumn}>
                                     <h3 className={styles.h3}>Structura</h3>
                                     <div className={styles.line}></div>
-                                    <div className={styles.accentChar}>
-                                        1 strat
+                                    {props.product[chosenChar].caracteristici.structura.map((caracteristica, index)=>
+                                    <div>
+                                        <div className={styles.accentChar}>
+                                            {caracteristica.textBold}
+                                        </div>
+                                        <div className={styles.char}>
+                                            {caracteristica.textSimplu}
+                                        </div>
                                     </div>
-                                    <div className={styles.char}>
-                                        Solid wood.
-                                    </div>
-                                    <div className={styles.accentChar}>
-                                        al 2-lea strat
-                                    </div>
-                                    <div className={styles.char}>
-                                        Birch plywood core.
-                                    </div>
-                                    <div className={styles.accentChar}>
-                                        al 3-lea strat
-                                    </div>
-                                    <div className={styles.char}>
-                                        Solid fir backing orthogonal to 1st Layer.
-                                    </div>
+                                    )}
                                 </div>
 
-                                <div className={styles.characteristicsColumn}>
-                                    <h3 className={styles.h3}>Marime</h3>
-                                    <div className={styles.line}></div>
-                                    <div className={styles.accentChar}>
-                                        Grosime                               
-                                    </div>
-                                    <div className={styles.char}>
-                                        16 mm (± 0,5)
-                                    </div>
-                                    <div 
-                                        className={styles.accentChar}
-                                        style={{fontSize:"22px"}}
-                                    >
-                                        Disponibil in marimile:
-                                    </div>
-                                    <div className={styles.accentChar}>
-                                        small
-                                    </div>
-                                    <div className={styles.char}>
-                                        width 130/140 mm length 10% (600/1200) 40% (1200/1800) 50% (1800/3000) mm 
-                                    </div>
-                                    <div className={styles.accentChar}>
-                                        medium
-                                    </div>
-                                    <div className={styles.char}>
-                                        width 175/185 mm length 10% (600/1200) 40% (1200/1800) 50% (1800/3800) mm 
-                                    </div>
-                                    <div className={styles.accentChar}>
-                                        large
-                                    </div>
-                                    <div className={styles.char}>
-                                        width 270/290 mm length 10% (600/1200) 40% (1200/1800) 50% (1800/3800) mm 
-                                    </div>
-                                </div>
 
                                 <div className={styles.characteristicsColumn}>
                                     <h3 className={styles.h3}>Avantaje</h3>
                                     <div className={styles.line}></div>
-                                    <div className={styles.avantajBox}>
-                                        <img
-                                            className={styles.avantajImg}
-                                            src="/catalog/waterResistant.svg"
-                                        ></img>
-                                        <div className={styles.avantajText}>
-                                            Rezistenta sporita la apa
+                                    {props.product[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
+                                        <div className={styles.avantajBox}>
+                                            <img
+                                                className={styles.avantajImg}
+                                                src={caracteristica.imgSrc}
+                                            ></img>
+                                            <div className={styles.avantajText}>
+                                                {caracteristica.text}
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <div className={styles.avantajBox}>
-                                        <img
-                                            className={styles.avantajImg}
-                                            src="/catalog/waterResistant.svg"
-                                        ></img>
-                                        <div className={styles.avantajText}>
-                                            Rezistenta sporita la apa
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.avantajBox}>
-                                        <img
-                                            className={styles.avantajImg}
-                                            src="/catalog/waterResistant.svg"
-                                        ></img>
-                                        <div className={styles.avantajText}>
-                                            Rezistenta sporita la apa
-                                        </div>
-                                    </div>
+                                    )}
                                 </div>
+
+
+                                <div className={styles.characteristicsColumn}>
+                                    <h3 className={styles.h3}>Mărime</h3>
+                                    <div className={styles.line}></div>
+                                    {props.product[chosenChar].caracteristici.marime.map((caracteristica, index)=>
+                                        <div>
+                                            <div className={styles.accentChar}>
+                                                {caracteristica.textBold}                               
+                                            </div>
+                                            <div className={styles.char}>
+                                                {caracteristica.textSimplu}                               
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+
                             </div>
                         </div>
 
@@ -647,8 +682,8 @@ export function ParchetBradut(){
                                     <img
                                         src={
                                             bottomSlide == 0 ? 
-                                            sliderParchetBradutBottom[sliderParchetBradutBottom.length - 1].src :
-                                            sliderParchetBradutBottom[bottomSlide-1].src
+                                            props.sliderBottom[props.sliderBottom.length - 1].src :
+                                            props.sliderBottom[bottomSlide-1].src
                                         }
                                         className={styles.sidePhoto}
                                     ></img>
@@ -658,7 +693,7 @@ export function ParchetBradut(){
                                         style={{marginLeft: "auto"}}
                                         onClick={()=>{
                                             if(bottomSlide==0){
-                                                setBottomSlide(4)
+                                                setBottomSlide(props.sliderBottom.length-1)
                                             }
                                             else{
                                                 setBottomSlide(bottomSlide-1)
@@ -675,10 +710,10 @@ export function ParchetBradut(){
                                 <div className={styles.photoColumnCenter}>
 
                                     <img
-                                        src={sliderParchetBradutBottom[bottomSlide].src}
+                                        src={props.sliderBottom[bottomSlide].src}
                                         className={styles.centerPhoto}
                                     ></img>
-                                    <div className={styles.currentText}>Castel Mimi</div>
+
 
                                     <div className={styles.mobileButtonsWrapper}>
                                         <div 
@@ -686,7 +721,7 @@ export function ParchetBradut(){
                                             style={{marginRight: "auto"}}
                                             onClick={()=>{
                                                 if(bottomSlide==0){
-                                                    setBottomSlide(4)
+                                                    setBottomSlide(props.sliderBottom.length-1)
                                                 }
                                                 else{
                                                     setBottomSlide(bottomSlide-1)
@@ -702,7 +737,7 @@ export function ParchetBradut(){
                                             className={styles.changeSlideButtonTablet}
                                             style={{marginLeft: "auto"}}
                                             onClick={()=>{
-                                                if(bottomSlide==4){
+                                                if(bottomSlide==props.sliderBottom.length-1){
                                                     setBottomSlide(0)
                                                 }
                                                 else{
@@ -717,14 +752,19 @@ export function ParchetBradut(){
                                         </div>
                                     </div>
 
+
+                                    <div className={styles.currentText}>
+                                        {props.sliderBottom[bottomSlide].name}
+                                    </div>
+
                                 </div>
 
                                 <div className={styles.photoColumn}>
                                     <img
                                         src={
-                                        bottomSlide == sliderParchetBradutBottom.length - 1 ? 
-                                        sliderParchetBradutBottom[0].src :
-                                        sliderParchetBradutBottom[bottomSlide+1].src
+                                        bottomSlide == props.sliderBottom.length - 1 ? 
+                                        props.sliderBottom[0].src :
+                                        props.sliderBottom[bottomSlide+1].src
                                         }
                                         className={styles.sidePhoto}
                                     ></img>
@@ -732,7 +772,7 @@ export function ParchetBradut(){
                                     <div 
                                         className={styles.changeSlideButton1}
                                         onClick={()=>{
-                                            if(bottomSlide==4){
+                                            if(bottomSlide == props.sliderBottom.length-1){
                                                 setBottomSlide(0)
                                             }
                                             else{

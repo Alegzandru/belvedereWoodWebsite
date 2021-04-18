@@ -49,8 +49,8 @@
 .slide0{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/catalog/patrateModule/ManucBei-12.jpg");
     background-color: white;
@@ -62,8 +62,8 @@
 .slide1{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/proiecte/mimi3.jpg");
     background-color: white;
@@ -75,8 +75,8 @@
 .slide2{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/mainPage/Aeroport-16.jpg");
     background-color: white;
@@ -88,8 +88,8 @@
 .slide3{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/mainPage/KikuRestaurant-14.jpg");
     background-color: white;
@@ -101,8 +101,8 @@
 .slide4{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/catalog/patrateModule/ManucBei-12.jpg");
     background-color: white;
@@ -114,8 +114,8 @@
 .slide5{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/proiecte/muzeul2.jpg");
     background-color: white;
@@ -127,8 +127,8 @@
 .slide6{
     background:
     linear-gradient(
-        rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
     ),
     url("../../public/proiecte/rozmarin4.jpg");
     background-color: white;
