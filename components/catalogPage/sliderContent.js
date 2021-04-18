@@ -90,36 +90,133 @@ export const sliderParchetPunteBottom = [
 
 export const sliderPatrateModuleTop = [
     {
+        src:"/catalog/patrateModule/Showroom-5.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-21.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-22.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-93.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-94.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-95.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-96.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-108.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-109.jpg"
+    },
+    {
+        src:"/catalog/patrateModule/Showroom-110.jpg"
+    },
+    {
         src:"/catalog/patrateModule/ManucBei-14.jpg"
-    },
-    {
-        src:"/catalog/patrateModule/ManucBei-15.jpg"
-    },
-    {
-        src:"/catalog/patrateModule/ManucBei-11.jpg"
-    },
-    {
-        src:"/catalog/patrateModule/ManucBei-3.jpg"
-    },
-    {
-        src:"/catalog/patrateModule/ManucBei-6.jpg"
     }
 ]
 
 export const sliderPatrateModuleBottom = [
     {
-        src:"/catalog/patrateModule/ManucBei-16.jpg"
+        src:"/catalog/patrateModule/ManucBei-16.jpg",
+        name : "Conacul Manuc Bei"
     },
     {
-        src:"/catalog/patrateModule/ManucBei-43.jpg"
+        src:"/catalog/patrateModule/ManucBei-43.jpg",
+        name : "Conacul Manuc Bei"
     },
     {
-        src:"/catalog/patrateModule/ManucBei-44.jpg"
+        src:"/catalog/patrateModule/ManucBei-44.jpg",
+        name : "Conacul Manuc Bei"
     },
     {
-        src:"/catalog/patrateModule/ManucBei-4.jpg"
+        src:"/catalog/patrateModule/ManucBei-4.jpg",
+        name : "Conacul Manuc Bei"
     },
     {
-        src:"/catalog/patrateModule/ManucBei-13.jpg"
+        src:"/catalog/patrateModule/ManucBei-13.jpg",
+        name : "Conacul Manuc Bei"
+    }
+]
+
+export const sliderScariTop = [
+    {
+        src : "/catalog/scari/KikuRestaurant-16.jpg"
+    },
+    {
+        src: "/catalog/scari/KikuRestaurant-17 (1).jpg"
+    },
+    {
+        src: "/catalog/scari/scari1.jpg"
+    },
+    {
+        src: "/catalog/scari/scari2.jpg"
+    },
+    {
+        src: "/catalog/scari/scari3.jpg"
+    },
+]
+
+export const sliderScariBottom = [
+    {
+        src : "/catalog/scari/KikuRestaurant-16.jpg",
+        name: "Restaurant Kiku"
+    },
+    {
+        src : "/catalog/scari/KikuRestaurant-11.jpg",
+        name: "Restaurant Kiku"
+    },
+    {
+        src : "/catalog/scari/KikuRestaurant-13.jpg",
+        name: "Restaurant Kiku"
+    },
+    {
+        src : "/catalog/scari/KikuRestaurant-17 (1).jpg",
+        name: "Restaurant Kiku"
+    }
+]
+
+export const sliderPeretiTop = [
+    {
+        src: "/catalog/pereti/pereti1.jpg"
+    },
+    {
+        src: "/catalog/pereti/pereti2.jpg"
+    },
+    {
+        src: "/catalog/pereti/pereti3.jpg"
+    },
+    {
+        src: "/catalog/pereti/pereti4.jpg"
+    },
+    {
+        src: "/catalog/pereti/pereti5.jpg"
+    }
+]
+
+export const sliderPeretiBottom = [
+    {
+        src: "/catalog/pereti/Aeroport.jpg",
+        name: "Restauranet Lumencraft"
+    },
+    {
+        src: "/catalog/pereti/Aeroport-3.jpg",
+        name: "Restaurant Lumencraft"
+    },
+    {
+        src: "/catalog/pereti/Aeroport-9.jpg",
+        name: "Restaurant Lumencraft"
+    },
+    {
+        src: "/catalog/pereti/Aeroport-2.jpg",
+        name: "Restaurant Lumencraft"
     }
 ]

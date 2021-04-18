@@ -71,32 +71,49 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Patrate module"
-                                    imgSrc="/catalog/patrateModule/ManucBei-16.jpg"
+                                    name="Pătrate Module"
+                                    imgSrc="/catalog/patrateModule/Showroom-95.jpg"
                                     descriere="Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual."
                                 ></Produs>
                             </a>
                         </Link>
                     </div>
 
-                    <div className={styles.productRow}>
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                    <div 
+                        className={styles.productRow}
+                        style={{
+                            justifyContent: "flex-start"
+                        }}
+                    >
+                        <Link href="/catalog/scari">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                    marginRight: "20px"
+                                }}
+                            >
+                                <Produs
+                                    name="Scări din lemn masiv"
+                                    imgSrc="/catalog/scari/KikuRestaurant-13.jpg"
+                                    descriere="Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia."
+                                ></Produs>
+                            </a>
+                        </Link>
 
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                        <Link href="/catalog/pereti">
+                            <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
+                                <Produs
+                                    name="Pereți din lemn natural"
+                                    imgSrc="/catalog/pereti/Aeroport.jpg"
+                                    descriere="În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
+                                ></Produs>
+                            </a>
+                        </Link>
 
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
                     </div>
 
                     <div className={styles.productRowMobile}>

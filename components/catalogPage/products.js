@@ -317,5 +317,162 @@ export const products = {
             price1: 50,
             price2: 80
         }
+    ],
+    patrateModule: [
+        {
+            name : "M1",
+            description : "6500x6500 mm",
+            caracteristici : {
+                structura : [
+                    {
+                        textBold : "Strat superior (stejar)",
+                        textSimplu : "3,2 mm / 3,4 mm"
+                    },
+                    {
+                        textBold : "Strat suport (mesteacăn)",
+                        textSimplu : "7 mm"
+                    }
+                ],
+                avantaje : [
+                    {
+                        textBold: "Specii de lemn",
+                        textSimplu : "stejar, nuc, frasin"
+                    },
+                    {
+                        textBold : "Metoda de așezare",
+                        textSimplu: "Adeziv"
+                    },
+                    {
+                        textBold : "Încălzire prin pardoseală",
+                        textSimplu: "Da (până la 28 de grade)"
+                    },
+                    {
+                        textBold: "Încuietoare",
+                        textSimplu: "limbă și canelură"
+                    },
+                    {
+                        textBold: "Acoperire",
+                        textSimplu: "Ulei, lac"
+                    },
+                    {
+                        textBold: "Finisare suplimentară",
+                        textSimplu: "periere (îmbătrânire artificială / butași manuali)"
+                    }
+                ],
+                marime : [
+                    {
+                        textBold : "Suprafața",
+                        textSimplu : "6500x6500 mm"
+                    }
+                ]
+            },
+            price: "120 EUR/mp",
+            price1: 120,
+            price2: 0
+        },
+        {
+            name : "M2",
+            description : "1000x1000 mm",
+            caracteristici : {
+                structura : [
+                    {
+                        textBold : "Strat superior (stejar)",
+                        textSimplu : "3,2 mm / 3,4 mm"
+                    },
+                    {
+                        textBold : "Strat suport (mesteacăn)",
+                        textSimplu : "7 mm"
+                    }
+                ],
+                avantaje : [
+                    {
+                        textBold: "Specii de lemn",
+                        textSimplu : "stejar, nuc, frasin"
+                    },
+                    {
+                        textBold : "Metoda de așezare",
+                        textSimplu: "Adeziv"
+                    },
+                    {
+                        textBold : "Încălzire prin pardoseală",
+                        textSimplu: "Da (până la 28 de grade)"
+                    },
+                    {
+                        textBold: "Încuietoare",
+                        textSimplu: "limbă și canelură"
+                    },
+                    {
+                        textBold: "Acoperire",
+                        textSimplu: "Ulei, lac"
+                    },
+                    {
+                        textBold: "Finisare suplimentară",
+                        textSimplu: "periere (îmbătrânire artificială / butași manuali)"
+                    }
+                ],
+                marime : [
+                    {
+                        textBold : "Suprafața",
+                        textSimplu : "1000x1000 mm"
+                    }
+                ]
+            },
+            price: "120 EUR/mp",
+            price1: 120,
+            price2: 0
+        }
+    ],
+    scari: [
+        {
+            name: "Scări din lemn masiv",
+            description: "",
+            caracteristici : {
+                structura : [
+                    {
+                        textBold : "Strat principal",
+                        textSimplu : "Lemn masiv"
+                    },
+                ],
+                avantaje : [
+                    {
+                        text: "Lemnul este organic și atrăgător în mod natural",
+                        imgSrc : "/catalog/scari/eco.svg"
+                    },
+                    {
+                        text: "Lemnul poate fi șlefuit și refăcut ori de câte ori e necesar",
+                        imgSrc: "/catalog/scari/cutter.svg"
+                    },
+                    {
+                        text: "Lemnul are o textură diversă și interesantă",
+                        imgSrc: "/catalog/scari/floor.svg"
+                    },
+                    {
+                        text: "Lemnul este durabil și ușor de întreținut",
+                        imgSrc: "/catalog/scari/care.svg"
+                    }
+                ],
+                marime : [
+                    {
+                        textBold : "Înălțime",
+                        textSimplu : "1270x2030 mm"
+                    },
+                    {
+                        textBold : "Adâncimea treptei",
+                        textSimplu: "2095-3555 mm"
+                    },
+                    {
+                        textBold: "Lungime",
+                        textSimplu: "7500-15000mm"
+                    }
+                ]
+            },
+            price: "0 EUR/mp",
+            price1: 0,
+            price2: 0
+        },
+        {
+            name: "",
+            description: ""
+        }
     ]
 }
