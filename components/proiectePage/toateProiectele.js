@@ -189,7 +189,7 @@ export function ToateProiectele(){
 
 
                         <LinkScroll 
-                            to="Phi Vegan Restaurant"
+                            to="phiVegan"
                             smooth={true}
                             style={{
                                 width: "100%",
@@ -215,8 +215,8 @@ export function ToateProiectele(){
                                         }}
                                     ></div>
                                     <img
-                                        src="/proiecte/porteryard.jpg"
-                                        alt="Porteryard"
+                                        src="/mainPage/veganClient.jpg"
+                                        alt="Vegan Phi Restaurant"
                                         className={styles.projectImg}
                                     />
                                     <Fade right>
@@ -226,7 +226,7 @@ export function ToateProiectele(){
                                                 display: hovered4? "block" : "none"
                                             }}
                                         >
-                                            Phi Vegan Restaurant
+                                            Phi Vegan
                                         </div>
                                     </Fade>
                                 </div>

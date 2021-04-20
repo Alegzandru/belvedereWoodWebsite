@@ -1,7 +1,8 @@
 import styles from "../../styles/despreNoi/FAQ.module.css"
 import {useState} from "react"
+import {text} from "../text"
 
-export function FAQ(){
+export function FAQ(props){
 
     const [open1, setOpen1] = useState(false)
     const [open2, setOpen2] = useState(false)
@@ -36,7 +37,7 @@ export function FAQ(){
                                 1.
                             </div>
                             <div className={styles.questionText}>
-                                Cât este de rezistent parchetul la umiditate și temperatură?                        
+                                {text.aboutUsPage.faq[props.lang].question1}                        
                             </div>
                             <div className={styles.questionPlus}>
                                 {open1? "-" : "+"}
@@ -48,7 +49,7 @@ export function FAQ(){
                                 display: open1 ? "block" : "none"
                             }}
                         >
-                            Strucura specifică a parchetului nostru îi permite acestuia să reacționeze la orice schimb de temperatură și umiditate, la fel ca plăcile de teracotă. Avantajul major al plăcii de parchet este că aceasta se adaptează la temperatura camerei și nu are scăderi bruște ale temperaturii.
+                            {text.aboutUsPage.faq[props.lang].answer1}
                         </div>
                     </div>
 
@@ -61,7 +62,7 @@ export function FAQ(){
                                 2.
                             </div>
                             <div className={styles.questionText}>
-                                Cine și unde se produce parchetul marca BWP?                      
+                                {text.aboutUsPage.faq[props.lang].question2}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open2? "-" : "+"}
@@ -73,7 +74,7 @@ export function FAQ(){
                                 display: open2 ? "block" : "none"
                             }}
                         >
-                            Orice lucrare expusă în showroom și sau executată a fost produsă în exclusivitate la fabrica BWP de pe str. Uzinelor 90.
+                            {text.aboutUsPage.faq[props.lang].answer2}
                             <div 
                             style={{
                                 position: "relative",
@@ -126,7 +127,7 @@ export function FAQ(){
                                 3.
                             </div>
                             <div className={styles.questionText}>
-                                Ce tip de placă de parchet folositi?                     
+                                {text.aboutUsPage.faq[props.lang].question3}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open3? "-" : "+"}
@@ -138,7 +139,7 @@ export function FAQ(){
                                 display: open3 ? "block" : "none"
                             }}
                         >
-                            Noi utilizăm tipul de parchet ingineresc, care datorită construcției sale dublu- stratificate protejează lemnul împotriva deteriorării sale naturale și firești. Această tehnologie de producere are un avantaj major față de parchetul masiv.                         
+                            {text.aboutUsPage.faq[props.lang].answer3}
                         </div>
                     </div>
 

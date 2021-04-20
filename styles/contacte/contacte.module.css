@@ -166,6 +166,32 @@
     
 }
 
+.succesText{
+    width: 100%;
+    height: auto;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: white;
+
+    background-color: #CD9D2F;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: 4px 4px 20px rgb(205, 157, 47, 0.5);
+}
+
+
 .inputSmall{
     width: 150px;
     height: 30px;

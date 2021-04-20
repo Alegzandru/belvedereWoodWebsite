@@ -1,8 +1,9 @@
 import styles from "../../styles/despreNoi/realizari.module.css"
 import CountUp from 'react-countup';
 import {useState} from "react"
+import {text} from "../text"
 
-export function Realizari(){
+export function Realizari(props){
 
     const [showStats, setShowStats] = useState(false)
 
@@ -19,7 +20,7 @@ export function Realizari(){
             <section className={styles.section}>
                 <div className={styles.container}>
                     <h2 className={styles.h2}>
-                        Realizările companiei
+                        {text.aboutUsPage.realizariPage[props.lang].heading}
                     </h2>
 
                     <div className={styles.realizariRow}>
@@ -38,7 +39,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                ani de activitate
+                                {text.aboutUsPage.realizariPage[props.lang].achievement1}
                             </div>
                         </div>
 
@@ -57,16 +58,16 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați de parchet montați
+                                {text.aboutUsPage.realizariPage[props.lang].achievement2}
                             </div>
                         </div>
 
                         <div className={styles.realizareBox}>
                             <div className={styles.realizareNumber}>
-                                TOȚI
+                                {text.aboutUsPage.realizariPage[props.lang].achievement3Number}
                             </div>
                             <div className={styles.realizareText}>
-                                Clienții - Satisfăcuți
+                                {text.aboutUsPage.realizariPage[props.lang].achievement3}
                             </div>
                         </div>
                     </div>
@@ -87,7 +88,7 @@ export function Realizari(){
                                 } m3
                             </div>
                             <div className={styles.realizareText}>
-                                Volumul de lemn prelucrat
+                                {text.aboutUsPage.realizariPage[props.lang].achievement4}
                             </div>
                         </div>
 
@@ -106,7 +107,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați de parchet produs
+                                {text.aboutUsPage.realizariPage[props.lang].achievement5}
                             </div>
                         </div>
 
@@ -125,7 +126,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri Patrați de parchet restaurați
+                                {text.aboutUsPage.realizariPage[props.lang].achievement6}
                             </div>
                         </div>
                     </div>
@@ -147,7 +148,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                ani de activitate
+                                {text.aboutUsPage.realizariPage[props.lang].achievement1}
                             </div>
                         </div>
 
@@ -166,7 +167,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați de parchet montați
+                                {text.aboutUsPage.realizariPage[props.lang].achievement2}
                             </div>
                         </div>
 
@@ -189,16 +190,16 @@ export function Realizari(){
                                 } m3
                             </div>
                             <div className={styles.realizareText}>
-                                Volumul de lemn prelucrat
+                                {text.aboutUsPage.realizariPage[props.lang].achievement3}
                             </div>
                         </div>
 
                         <div className={styles.realizareBox}>
                             <div className={styles.realizareNumber}>
-                                TOȚI
+                                {text.aboutUsPage.realizariPage[props.lang].achievement4Number}
                             </div>
                             <div className={styles.realizareText}>
-                                Clienții - satifacuți
+                                {text.aboutUsPage.realizariPage[props.lang].achievement4}
                             </div>
                         </div>
 
@@ -221,7 +222,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri pătrați de parchet produs
+                                {text.aboutUsPage.realizariPage[props.lang].achievement5}
                             </div>
                         </div>
 
@@ -240,7 +241,7 @@ export function Realizari(){
                                 }
                             </div>
                             <div className={styles.realizareText}>
-                                Metri Patrați de parchet restaurați
+                                {text.aboutUsPage.realizariPage[props.lang].achievement6}
                             </div>
                         </div>
                         

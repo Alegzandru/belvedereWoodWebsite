@@ -1,9 +1,14 @@
 import styles from "../../styles/catalog/toateProdusele.module.css"
 import {Produs} from "./produs"
 import Link from 'next/link'
+import {WidthContext} from "../context"
+import { useContext } from "react"
 
 
 export function ToateProdusele(){
+
+    const {width, setWidth} = useContext(WidthContext)
+    const mobile = width < 940 ? 1 : 0
 
     return(
         <div className={styles.wrapper}>
@@ -43,7 +48,7 @@ export function ToateProdusele(){
                             >
                                 <Produs
                                     name="Parchet Brăduț"
-                                    imgSrc="/catalog/parchetBradut/productImg1.jpg"
+                                    imgSrc="/catalog/parchetBradut/bradut1.jpg"
                                     descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
                                 ></Produs>
                             </a>
@@ -71,7 +76,7 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Pătrate Module"
+                                    name="Parchet Modular"
                                     imgSrc="/catalog/patrateModule/Showroom-95.jpg"
                                     descriere="Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual."
                                 ></Produs>
@@ -117,31 +122,79 @@ export function ToateProdusele(){
                     </div>
 
                     <div className={styles.productRowMobile}>
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                        <Link href="/catalog/parchetBradut">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                }}
+                            >
+                                <Produs
+                                    name="Parchet Brăduț"
+                                    imgSrc="/catalog/parchetBradut/bradut1.jpg"
+                                    descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
+                                ></Produs>
+                            </a>
+                        </Link>
 
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                        <Link href="/catalog/parchetPunte">
+                            <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
+                                <Produs
+                                    name="Parchet Punte"
+                                    imgSrc="/catalog/parchetPunte/Showroom-61.jpg"
+                                    descriere="Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn."
+                                ></Produs>
+                            </a>
+                        </Link>
                     </div>
 
                     <div className={styles.productRowMobile}>
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                        <Link href="/catalog/patrateModule">
+                            <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
+                                <Produs
+                                    name="Parchet Modular"
+                                    imgSrc="/catalog/patrateModule/Showroom-95.jpg"
+                                    descriere="Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual."
+                                ></Produs>
+                            </a>
+                        </Link>
 
-                        <Produs
-                            name="Parchet"
-                            imgSrc="/mainPage/background1.png"
-                            descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio at est blandit venenatis."
-                        ></Produs>
+                        <Link href="/catalog/scari">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                }}
+                            >
+                                <Produs
+                                    name="Scări din lemn masiv"
+                                    imgSrc="/catalog/scari/KikuRestaurant-13.jpg"
+                                    descriere="Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia."
+                                ></Produs>
+                            </a>
+                        </Link>
+                    </div>
+
+                    <div className={styles.productRowMobile}>
+                        <Link href="/catalog/pereti">
+                            <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
+                                <Produs
+                                    name="Pereți din lemn natural"
+                                    imgSrc="/catalog/pereti/Aeroport.jpg"
+                                    descriere="În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
+                                ></Produs>
+                            </a>
+                        </Link>
                     </div>
 
                 </div>

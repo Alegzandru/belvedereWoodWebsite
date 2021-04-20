@@ -1,11 +1,28 @@
 import styles from "../../styles/mainPage/proiectePage.module.css"
-import {useState} from "react"
+import {useContext, useState} from "react"
 import {proiecteSlider} from "./sliderContent"
 import {Link as LinkScroll} from 'react-scroll'
+import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
+import {WidthContext} from "../context"
+import styled from 'styled-components';
+import {text} from "../text"
 
-export function ProiectePage(){
 
-    const[slide, setSlide] = useState(0)
+export function ProiectePage(props){
+
+    const {width, setWidth} = useContext(WidthContext)
+    const [slide, setSlide] = useState(0)
+    const tablet = width < 1080 ? 1 : 0
+    const mobile = width < 528 ? 1 : 0
+
+    const slide1 = "/catalog/patrateModule/ManucBei-12.jpg";
+    const slide2 = "/proiecte/mimi3.jpg";
+    const slide3 = "/mainPage/Aeroport-16.jpg";
+    const slide4 = "/mainPage/KikuRestaurant-14.jpg";
+    const slide5 = "/catalog/patrateModule/ManucBei-12.jpg";
+    const slide6 = "/proiecte/muzeul2.jpg";
+    const slide7 = "/proiecte/rozmarin4.jpg";
+
 
     return(
         <div className={styles.proiectePageWrapper}>
@@ -19,10 +36,10 @@ export function ProiectePage(){
                         className={styles.logo}
                     />
                     <p className={styles.leftContainerText}>
-                        Proiecte
+                        {text.mainPage.projectsPage[props.lang].heading}
                     </p>
                 </div>
-                <div className={`${styles.rightContainer} ${
+                {/* <div className={`${styles.rightContainer} ${
                     slide==0? styles.slide0 :
                     slide==1? styles.slide1 :
                     slide==2? styles.slide2 :
@@ -116,6 +133,152 @@ export function ProiectePage(){
                             className={styles.secondArrow}
                         />
                     </div>
+                </div> */}
+                <div className={styles.rightContainer}>
+                    <HeroSlider
+                        slidingAnimation="left_to_right"
+                        orientation="horizontal"
+                        initialSlide={1}
+                        // onBeforeChange={
+                        //     (previousSlide, nextSlide) => console.log("onBeforeChange", previousSlide, nextSlide)
+                        // }
+                        onChange={
+                            nextSlide => {
+                                setSlide(nextSlide-1)
+                            }
+                        }
+                        // onAfterChange={
+                        //     nextSlide => console.log("onAfterChange", nextSlide)
+                        // }
+                        style={{
+                            backgroundColor: "rgba(0, 0, 0, 0.33)"
+                        }}
+                        settings={{
+                            slidingDuration: 250,
+                            slidingDelay: 100,
+                            shouldAutoplay: true,
+                            shouldDisplayButtons: true,
+                            autoplayDuration: 5000,
+                            height: mobile ? "670px" : "700px",
+                            width: tablet ? "100vw" : "50vw"
+                        }}
+                    >
+
+                        <OverlayContainer
+                            style={{
+                                width: "80%",
+                                left: "calc( ( 100% - 80% ) / 2 )"
+                            }}
+                        >
+                            <div className={styles.projectWrapper}>
+                                <p className={styles.projectName}>
+                                    {proiecteSlider[props.lang][slide].heading}
+                                </p>
+                                <p className={styles.projectText}>
+                                    {proiecteSlider[props.lang][slide].subheading}
+                                </p>
+                                <a 
+                                    href={`/proiecte/#${proiecteSlider[props.lang][slide].href}`} 
+                                    style={{
+                                        textDecoration : "none"
+                                    }}
+                                    // smooth={true}
+                                >
+                                    <div className={styles.button1}>
+                                        {text.mainPage.projectsPage[props.lang].button}
+                                    </div>
+                                </a>
+                            </div>
+                        </OverlayContainer>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide1,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}>
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide2,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide3,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide4,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide5,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide6,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Slide
+                        background={{
+                            backgroundImage: slide7,
+                            backgroundColor: "black",
+                            backgroundPosition: "center",
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            filter: "brightness(40%)",
+                            backgroundAnimation: "zoom"
+                        }}> 
+                        </Slide>
+
+                        <Nav></Nav>
+
+
+                    </HeroSlider>
                 </div>
             </section>
         </div>

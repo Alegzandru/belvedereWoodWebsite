@@ -23,8 +23,6 @@ export function Contacte(){
 
     function sendEmail(e) {
 
-        setEmailSent(true)
-
         e.preventDefault();
 
         const templateParams = {
@@ -53,6 +51,9 @@ export function Contacte(){
             message: "",
             number: ""
         });
+
+        setEmailSent(true)
+
     }
 
     return(
@@ -160,6 +161,14 @@ export function Contacte(){
                                 onSubmit={sendEmail}
                                 className={styles.form}
                             >
+                                <div 
+                                    className={styles.succesText}
+                                    style={{
+                                        display: emailSent ? "flex" : "none"
+                                    }}
+                                >
+                                    Mesajul Dvs a fost trimis. Vă mulțumim.
+                                </div>
                                 <div className={styles.nameInputsWrapper}>
                                     <input
                                         type="text" 

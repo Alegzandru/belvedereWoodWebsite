@@ -291,14 +291,14 @@ export function DescriereaProiectelor(){
                             <p className={styles.subheading}>
                                 Un castel în stil francez de o frumusețea uimitoare, cu o grădină de iarnă, turnuri de pază și un parc imens, care însă nu au trecut neatinse de toate intimperiile istoriei. Cu toate acetea, în 2012 au demarat lucrările de reconstrucție și astăzi el poate fi admirat în toată splendoarea și măreția sa. Compania BWP și-a asumat responsabilitatea de a readuce aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac. Fiecare placă de lemn a avut un design individual și a fost instalată manual, de echipa noastră de meșteri.                             
                             </p>
-                            <Link href="/catalog/parchetPunte">
+                            <Link href="/catalog/patrateModule">
                                <a
                                 style={{
                                     textDecoration: "none"
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Parchet punte
+                                        Parchet Modular
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -330,18 +330,26 @@ export function DescriereaProiectelor(){
                             <p className={styles.subheading}>
                                 Tot ce vine din natură este o artă, de la bucatele de tip raw vegan, până la cele mai fine linii ale plăcii de lemn. Acest restaurant combină aceste aspecte, într-un mod atât de organic și echilibrat, încât este un sentiment constant că te afli în sânul naturii.
                             </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                            <Link href="/catalog/parchetPunte">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Parchet punte
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                         <img
-                            src="/proiecte/porteryard.jpg"
-                            alt="Cafe Porter Yard"
+                            src="/mainPage/veganClient.jpg"
+                            alt="Phi Vegan Restaurant"
                             className={styles.projectImgRight}
                         />
                     </a>
@@ -412,14 +420,22 @@ export function DescriereaProiectelor(){
                             <p className={styles.subheading}>
                                 Ascuns de angoasa lumii, știut de toți iubitorii de mâncare preparată cu dragoste și dedicație, acest restaurant uimește prin designul său inedit, datorită suprafeței sale restrânse și a spațiului utilizat atât de ingenios. Acest lucru a fost realizat cu ajutorul specialiștilor BWP care au construit un set de scări suspendate și o insula din lemn la nivelul 2. De asemenea, aici s-au instalt plăcile de parchet într-un mod mai puțin obișnuit, pe pereți.
                             </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                            <Link href="/catalog/pereti">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Pereți din lemn
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                     </a>
                     
@@ -443,14 +459,22 @@ export function DescriereaProiectelor(){
                                 Un steak house de excepție cere ca totul să fie la fel de rafinat ca și de la bucatele gătite de chef. 
                                 În colaborare cu o echipă locală de designeri am realizat un proiect de interior modern cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă și care să rețină clientul cât mai mult în local.
                             </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                            <Link href="/catalog/scari">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Scări din lemn
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                         <div
                             className={`
@@ -565,14 +589,22 @@ export function DescriereaProiectelor(){
                             </h2>
                             <p className={styles.subheading}>
                                 În incita unuia dintre cele mai aglomerate locuri din oraș, Aeroportul Internațional Chișinău, restaurantul Lumencraft se evidențiază chiar de la prima vedere, datorită aspectului exterior din lemn natural. Fiecare element din lemn, fie că e podea, perete, plafon sau coloană a fost creat la fabrica BWP, utilizând tehnologii performante.                            </p>
-                            <div className={styles.button}>
-                                Parchet de stejar
-                                <img
-                                    src="/proiecte/rightArrowProiecte.svg"
-                                    alt=""
-                                    className={styles.arrow}
-                                />
-                            </div>
+                                <Link href="/catalog/pereti">
+                               <a
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                               >
+                                    <div className={styles.button}>
+                                        Pereți din lemn
+                                        <img
+                                            src="/proiecte/rightArrowProiecte.svg"
+                                            alt=""
+                                            className={styles.arrow}
+                                        />
+                                    </div>
+                               </a>
+                           </Link>
                         </div>
                     </a>
 

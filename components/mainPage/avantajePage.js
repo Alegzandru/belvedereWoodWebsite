@@ -1,50 +1,51 @@
 import styles from "../../styles/mainPage/avantajePage.module.css"
 import {Avantaj} from './avantaj.js'
+import {text} from "../text"
 
-export function AvantajePage(){
+export function AvantajePage(props){
 
     return(
         <div className={styles.avantajePageWrapper}>
             <section className={styles.avantajePageSection}>
                 <div className={styles.avantajePageContainer}>
                     <h2 className={styles.h2}>
-                        De ce să alegi BWP?
+                        {text.mainPage.avantajePage[props.lang].heading}
                     </h2>
                         <div className={styles.avantajeRow}>
                             <Avantaj
                                 imgSrc="/mainPage/icon.svg"
-                                text="Producători autohtoni și lideri la export"
+                                text={text.mainPage.avantajePage[props.lang].avantaj1}
                                 hoverSrc="/mainPage/icon1White.svg"
                             ></Avantaj>
 
                             <Avantaj
                                 imgSrc="/mainPage/avantaj2.svg"
-                                text="Echipă de meșteri experimentată"
+                                text={text.mainPage.avantajePage[props.lang].avantaj2}
                                 hoverSrc="/mainPage/icon2White.svg"
                             ></Avantaj>
 
                             <Avantaj
                                 imgSrc="/mainPage/avantaj3.svg"
-                                text="Responsabilitate față de mediu"
+                                text={text.mainPage.avantajePage[props.lang].avantaj3}
                                 hoverSrc="/mainPage/icon3White.svg"
                             ></Avantaj>
                         </div>
                         <div className={styles.avantajeRow}>
                             <Avantaj
                                 imgSrc="/mainPage/avantaj4.svg"
-                                text="Tehnică performantă și utilaje italiene"
+                                text={text.mainPage.avantajePage[props.lang].avantaj4}
                                 hoverSrc="/mainPage/icon4White.svg"
                             ></Avantaj>
                             
                             <Avantaj
                                 imgSrc="/mainPage/avantaj5.svg"
-                                text="Flexibilitate la elaborarea ofertei"
+                                text={text.mainPage.avantajePage[props.lang].avantaj5}
                                 hoverSrc="/mainPage/icon5White.svg"
                             ></Avantaj>
 
                             <Avantaj
                                 imgSrc="/mainPage/avantaj6.svg"
-                                text="Calitate certificată la nivel european"
+                                text={text.mainPage.avantajePage[props.lang].avantaj6}
                                 hoverSrc="/mainPage/icon6White.svg"
                             ></Avantaj>
                         </div>

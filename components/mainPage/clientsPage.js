@@ -1,9 +1,10 @@
 import { useState } from "react"
 import styles from "../../styles/mainPage/clientsPage.module.css"
 import { useRouter } from 'next/router'
+import {text} from "../text"
 
 
-export function ClientsPage(){
+export function ClientsPage(props){
 
     const router = useRouter()
     const [client, setClient] = useState(0)
@@ -37,7 +38,7 @@ export function ClientsPage(){
                     // }}
                 >
                     <h2 className={styles.h2}>
-                        Clienții noștri
+                        {text.mainPage.clientsPage[props.lang].heading}
                     </h2>
                     <div className={styles.whiteLine1}>
                     </div>

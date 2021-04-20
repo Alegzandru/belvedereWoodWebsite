@@ -3,9 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from "react"
 import Fade from "react-reveal"
+import {text} from "../text"
 
 
-export function TreeTrunkPage(){
+
+export function TreeTrunkPage(props){
 
     const [hoveredCircle, setHoveredCircle] = useState(0)
 
@@ -16,23 +18,15 @@ export function TreeTrunkPage(){
 
                     <div className={styles.textWrapper}>
                         <h2 className={styles.h2}>
-                            {/* <div className={styles.h2Line}/> */}
-                            Despre noi:
+                            {text.mainPage.treeTrunkPage[props.lang].heading}
                         </h2>
                         <div className={styles.subheading}>
-                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et risus sapien. Vivamus sodales cursus sem, vitae sollicitudin lacus ornare accumsan.  */}
-                            Forme, desene și structuri inedite ale lucrărilor, la crearea cărora se întâlnesc
-                            arta prelucrării manuale a lemnului cu tehnologiile performante. Inspirată de
-                            tradiția centenară de producere a parchetului din lemn, compania BWP vine
-                            cu o experiență în crearea lucrărilor sale tocmai din Italia. De unde a adus nu
-
-                            doar rafinament și calitate înaltă, dar și abordare inovativă în procesul de
-                            prelucrare a plăcii de lemn.
+                            {text.mainPage.treeTrunkPage[props.lang].subheading}
                         </div>
                         <Link href="/despre-noi">
                             <a style={{textDecoration: "none"}}>
                                 <div className={styles.button1}>
-                                    Află mai mult
+                                    {text.mainPage.treeTrunkPage[props.lang].button}
                                 </div>
                             </a>
                         </Link>
@@ -61,7 +55,7 @@ export function TreeTrunkPage(){
                                 onMouseEnter={()=> setHoveredCircle(1)}
                                 onMouseLeave={()=> setHoveredCircle(0)}
                             >
-                                Calitate    
+                                {text.mainPage.treeTrunkPage[props.lang].value1}
                             </span>
                         </div>
                         
@@ -74,7 +68,7 @@ export function TreeTrunkPage(){
                                 onMouseEnter={()=> setHoveredCircle(2)}
                                 onMouseLeave={()=> setHoveredCircle(0)}
                             >
-                                Durabilitate    
+                                {text.mainPage.treeTrunkPage[props.lang].value2}
                             </span>
                         </div>
                         
@@ -87,7 +81,7 @@ export function TreeTrunkPage(){
                                 onMouseEnter={()=> setHoveredCircle(3)}
                                 onMouseLeave={()=> setHoveredCircle(0)}
                             >
-                                Veridicitate    
+                                {text.mainPage.treeTrunkPage[props.lang].value3}
                             </span>
                         </div>
 
@@ -100,7 +94,7 @@ export function TreeTrunkPage(){
                                 onMouseEnter={()=> setHoveredCircle(4)}
                                 onMouseLeave={()=> setHoveredCircle(0)}
                             >
-                                Loialitate    
+                                {text.mainPage.treeTrunkPage[props.lang].value4}
                             </span>
                         </div>
                     </div>

@@ -74,7 +74,7 @@
         rgba(0, 0, 0, 0.5), 
         rgba(0, 0, 0, 0.5)
     ),
-    url("../../public/catalog/pereti/Aeroport-9.jpg");
+    url("../../public/catalog/pereti/pereti5.jpg");
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
@@ -127,11 +127,12 @@
 
 .popupWrapper{
     width: 860px;
-    height: 300px;
+    height: 330px;
+    padding-bottom: 30px;
 
     position: fixed;
     z-index: 3;
-    top: calc((100vh - 300px)/2);
+    top: calc((100vh - 330px)/2);
     left: calc((100% - 940px) / 2);
 
     padding-left: 80px;
@@ -296,6 +297,31 @@
     text-align: center;
 }
 
+.succesText{
+    width: 100%;
+    height: auto;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: Futura PT custom Mediu; 
+    color: white;
+
+    background-color: #CD9D2F;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: 4px 4px 20px rgb(205, 157, 47, 0.5);
+}
+
 .form{
     width: 100%;
 }
@@ -398,7 +424,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .priceText{
@@ -765,7 +791,7 @@
         rgb(0, 0, 0, 0.4), 
         rgb(0, 0, 0, 0.4)
     ),
-    url("../../public/catalog/parchetBradut/productImg3.jpg");
+    url("../../public/catalog/parchetBradut/bradut1.jpg");
     background-color: black;
     background-position: center;
     background-repeat: repeat;
@@ -778,7 +804,7 @@
         rgb(0, 0, 0, 0.4), 
         rgb(0, 0, 0, 0.4)
     ),
-    url("../../public/catalog/parchetBradut/productImg2.jpg");
+    url("../../public/catalog/parchetBradut/bradut5.jpg");
     background-color: black;
     background-position: center;
     background-repeat: repeat;
@@ -791,7 +817,7 @@
         rgb(0, 0, 0, 0.4), 
         rgb(0, 0, 0, 0.4)
     ),
-    url("../../public/catalog/parchetBradut/productImg1.jpg");
+    url("../../public/catalog/parchetBradut/bradut3.jpg");
     background-color: black;
     background-position: center;
     background-repeat: repeat;
@@ -1143,12 +1169,12 @@
 
     .popupWrapper{
         width: calc(100% - 32px - 80px);
-        height: 320px;
+        height: 340px;
         background-color: white;
 
         position: fixed;
         z-index: 3;
-        top: calc((100vh - 320px)/2);
+        top: calc((100vh - 340px)/2);
         left: 16px;
 
         padding-left: 80px;
@@ -1722,8 +1748,8 @@
         padding-left: 10px;
         padding-right: 10px;
         width: calc(100% - 20px - 32px);
-        height: 300px;
-        top: calc((100vh - 300px)/2);
+        height: 420px;
+        top: calc((100vh - 420px)/2);
     }
 
     .popupWrapperForm{
@@ -1836,7 +1862,7 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .priceText{
@@ -1972,21 +1998,22 @@
     }
     
     .slideButtonInactive{
-        height: 14px;
-        width: 14px;
+        height: 8px;
+        width: 8px;
     
         background-color: rgba(3, 29, 30, 0.1);
         border-radius: 50%;
-        margin-right: 6px;
+        margin-right: 4px;
     }
     
     .slideButtonActive{
-        height: 14px;
-        width: 14px;
+        height: 12px;
+        width: 12px;
     
         background: #031D1E;
         border-radius: 50%;
-        margin-right: 6px;
+        margin-right: 4px;
+        margin-top: -2px;
     }
     
     .textWrapper{

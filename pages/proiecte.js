@@ -5,7 +5,7 @@ import {Parteneri} from "../components/proiectePage/parteneri"
 
 function Proiecte() {
     return(
-        <Layout>
+        <Layout title={"Proiectele noastre | Belvedere Wood Parquet"}>
             <ToateProiectele></ToateProiectele>
             <DescriereaProiectelor></DescriereaProiectelor>
             <Parteneri></Parteneri>

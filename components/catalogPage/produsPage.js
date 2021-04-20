@@ -45,11 +45,7 @@ export function ProdusPage(props){
     }
 
     function sendEmail(e) {
-
-        setEmailSent(true)
-
         e.preventDefault();
-
 
         const templateParams = {
             from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
@@ -77,6 +73,8 @@ export function ProdusPage(props){
             message: "",
             number: ""
         });
+
+        setEmailSent(true)
     }
 
     return(
@@ -247,6 +245,28 @@ export function ProdusPage(props){
                             </div>
                         </div>
                     </div>
+
+                    <div className={styles.priceBoxPopup}>
+                        <div className={styles.priceText}>
+                            Preț pentru montare:
+                        </div>
+                        <div className={styles.priceInsideBox}>
+                            <div className={styles.price}>
+                                {area * 13}
+                            </div>
+                            <div className={styles.currency}>
+                                &euro;
+                            </div>
+                        </div>
+                    </div>
+                    <div 
+                        className={styles.selectionText}
+                        style={{
+                            width: "100%"
+                        }}
+                    >
+                        * Prețul pentru montare include: montarea, materialele și transportarea
+                    </div>
                 </div>
 
                 <div 
@@ -262,6 +282,14 @@ export function ProdusPage(props){
                         onSubmit={sendEmail}
                         className={styles.form}
                     >
+                        <div 
+                            className={styles.succesText}
+                            style={{
+                                display : emailSent ? "flex" : "none"
+                            }}
+                        >
+                            Mesajul Dvs. a fost trimis. Vă mulțumim.
+                        </div>
                         <div className={styles.nameInputsWrapper}>
                             <input
                                 type="text" 
@@ -318,7 +346,7 @@ export function ProdusPage(props){
                         ></input>
                         <input
                             type="submit"
-                            placeholder="Trimite" 
+                            value="Trimite" 
                             className={styles.buttonSubmit}
                         >
                         </input>
@@ -340,7 +368,7 @@ export function ProdusPage(props){
                             ${styles.upperPhotoWrapper}
                             ${props.name== "Parchet Punte" ? styles.backgroundPunte : ""}
                             ${props.name== "Parchet Brăduț" ? styles.backgroundBradut : ""}
-                            ${props.name== "Pătrate Module" ? styles.backgroundModule : ""}
+                            ${props.name== "Parchet Modular" ? styles.backgroundModule : ""}
                             ${props.name== "Scări din lemn masiv" ? styles.backgroundScari : ""}
                             ${props.name== "Pereți din lemn natural" ? styles.backgroundPereti : ""}
                             `
@@ -386,8 +414,8 @@ export function ProdusPage(props){
                                     className={styles.productImg}
                                     src={props.sliderTop[slide].src}
                                     style={{
-                                        objectFit : props.name == "Pătrate Module" ? "contain" : "cover",
-                                        boxShadow : props.name == "Pătrate Module" ? "none" : ""
+                                        objectFit : props.name == "Parchet Modular" ? "contain" : "cover",
+                                        boxShadow : props.name == "Parchet Modular" ? "none" : ""
                                     }}
                                 />
                                 <div className={styles.slideButtonsWrapper}>
@@ -526,7 +554,7 @@ export function ProdusPage(props){
                                                 ${styles.productTypeBox} 
                                                 ${props.name == "Parchet Punte" ? styles.punte1 : ""}
                                                 ${props.name == "Parchet Brăduț" ? styles.bradut1 : ""}
-                                                ${props.name == "Pătrate Module" ? styles.patrat1 : ""}
+                                                ${props.name == "Parchet Modular" ? styles.patrat1 : ""}
                                             `}
                                             onClick={ ()=> setChosenChar(0)}
                                         >
@@ -561,7 +589,7 @@ export function ProdusPage(props){
                                             ${styles.productTypeBox} 
                                             ${props.name == "Parchet Punte" ? styles.punte2 : ""}
                                             ${props.name == "Parchet Brăduț" ? styles.bradut2 : ""}
-                                            ${props.name == "Pătrate Module" ? styles.patrat2 : ""}
+                                            ${props.name == "Parchet Modular" ? styles.patrat2 : ""}
                                         `}
                                             onClick={ ()=> setChosenChar(1)}
                                         >
@@ -663,14 +691,14 @@ export function ProdusPage(props){
 
                                 <div className={styles.characteristicsColumn}>
                                     <h3 className={styles.h3}>
-                                        {props.name == "Pătrate Module" ? 
+                                        {props.name == "Parchet Modular" ? 
                                             "Caracteristici tehnice"
                                             :
                                             "Avantaje"
                                         }
                                     </h3>
                                     <div className={styles.line}></div>
-                                    {props.name == "Pătrate Module" ?
+                                    {props.name == "Parchet Modular" ?
                                         props.product[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
                                         <div>
                                             <div className={styles.accentChar}>

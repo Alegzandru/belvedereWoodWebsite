@@ -1,18 +1,19 @@
 import styles from "../../styles/despreNoi/istoria.module.css"
 import Fade from 'react-reveal/Fade';
+import {text} from "../text"
 
 
-export function Istoria(){
+export function Istoria(props){
 
     return(
         <div className={styles.wrapper}>
             <section className={styles.section}>
                 <div className={styles.container}>
                     <h2 className={styles.h2}>
-                        Istoria Companiei
+                        {text.aboutUsPage.istoriaPage[props.lang].heading}
                     </h2>
                     <div className={styles.subheading}>
-                        Fondat în :
+                        {text.aboutUsPage.istoriaPage[props.lang].subheading}
                     </div>
                     <div className={styles.line}>
                     </div>

@@ -6,7 +6,7 @@ import {products} from "../../components/catalogPage/products"
 
 function ParchetPuntePage() {
     return(
-        <Layout>
+        <Layout title={"Parchet Punte | Belvedere Wood Parquet"}>
             <ProdusPage
                 sliderTop={sliderParchetPunteTop}
                 sliderBottom={sliderParchetPunteBottom}

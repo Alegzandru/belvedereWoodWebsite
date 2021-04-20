@@ -34,7 +34,10 @@
 
 .heroPageSection{
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
     
     display: flex;
     flex-direction: row;
@@ -44,6 +47,10 @@
 
 .heroPageContainer{
     width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 348px;
+    margin-top: calc( (100vh - 348px)/2 )
     /* width: 940px; */
 }
 
@@ -253,8 +260,17 @@
 }
 
 @media screen and (max-width: 1080px){
+
+    .heroPageSection{
+        width: 528px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     .heroPageContainer{
+        height: 411px;
+        margin-top: calc( (100vh - 411px)/2 );
+
         width: 528px;
     }
     
@@ -299,7 +315,17 @@
         margin-left: 16px;
         margin-right: 16px;
         margin-top: -50px;
+
+        height: 343px;
+        margin-top: calc( (100vh - 343px)/2 );
+
         width: auto;
+    }
+
+    .heroPageSection{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
     .h1{

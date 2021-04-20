@@ -63,7 +63,7 @@
 @media screen and (max-width: 940px){
     .produsWrapper{
         width: 254px;
-        height: 346px;
+        height: 370px;
     }
     
     .produsImg{
@@ -76,8 +76,8 @@
 @media screen and (max-width: 528px){
 
     .produsWrapper{
-        width: 48%;
-        height: auto;
+        width: calc(100vw / 100 * 44);
+        height: 300px;
     
         border: 2px solid #031D1E;
         box-sizing: border-box;
@@ -88,7 +88,7 @@
     
     .produsImg{
         width: 100%;
-        height: auto;
+        height: 130px;
         margin-top: -4px;
     
         /* background-image: url("../../public/mainPage/background1.png");
@@ -105,11 +105,11 @@
     
         font-family: Futura PT custom Demi;
         color: black;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 18px;
         text-align: center;
     
-        margin-bottom: 6px;
+        margin-bottom: 10px;
         margin-top: 10px;
     }
     
@@ -120,8 +120,10 @@
     
         font-family: Futura PT custom Book;
         color: black;
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 16px;
+        line-height: 16px;
+
+        text-align: center;
     
         margin-left: 10px;
         margin-right: 10px;

@@ -1,6 +1,8 @@
 import styles from "../../styles/mainPage/servicesPage.module.css"
 import {useState, useEffect} from "react"
 import Fade from 'react-reveal/Fade';
+import {text} from "../text"
+
 
 function useWindowSize() {
 
@@ -28,7 +30,7 @@ function useWindowSize() {
     return windowSize;
 }
 
-export function ServicesPage(){
+export function ServicesPage(props){
 
     const [hovered, setHovered] = useState(0)
     const size = useWindowSize();
@@ -41,7 +43,7 @@ export function ServicesPage(){
                     className={styles.servicesPageContainer}
                 >
                     <h2 className={styles.h2}>
-                        Serviciile noastre
+                        {text.mainPage.servicesPage[props.lang].heading}
                     </h2>
                     <div className={styles.gridBox}>
                         <div className={styles.gridContainer}>
@@ -68,8 +70,8 @@ export function ServicesPage(){
                                     <Fade bottom>
                                         {
                                             hovered == 1 ?
-                                            "Noi vă oferim posibilitatea de a alege oricare model de placă de parchet și orice DESIGN, pe care îl realizăm conform cerințelor dvs la fabrica noastră." :
-                                            "Producerea parchetului"
+                                            text.mainPage.servicesPage[props.lang].service1Hovered :
+                                            text.mainPage.servicesPage[props.lang].service1
                                         }
                                     </Fade>
                                 </div>
@@ -93,8 +95,8 @@ export function ServicesPage(){
                                     <Fade bottom>
                                         {
                                             hovered == 2 ?
-                                            "Meșterii noștri instalează plăcile de parchet indiferent de complexitatea formelor și suprafața propusă la 13 EUR/m.p" :
-                                            "Montarea parchetului"
+                                            text.mainPage.servicesPage[props.lang].service2Hovered :
+                                            text.mainPage.servicesPage[props.lang].service2
                                         }
                                     </Fade>
                                 </div>
@@ -118,8 +120,8 @@ export function ServicesPage(){
                                     <Fade bottom>
                                         {
                                             hovered == 3 ?
-                                            "Scările din lemn amortizează pașii și oferă o comoditate aparte, mai ales atunci când trebuie să te deplasezi de la un etaj la altul." :
-                                            "Scări din lemn masiv"
+                                            text.mainPage.servicesPage[props.lang].service3Hovered :
+                                            text.mainPage.servicesPage[props.lang].service3
                                         }
                                     </Fade>
                                 </div>
@@ -143,8 +145,8 @@ export function ServicesPage(){
                                     <Fade bottom>
                                         {
                                             hovered == 4 ?
-                                            "Pentru a readuce luciul și aspectul nou al parchetului, acesta are nevoie de îngrijire specială. Parchetul BWP se recomandă a fi restaurat o dată la 5 ani." :
-                                            "Restaurarea parchetului"
+                                            text.mainPage.servicesPage[props.lang].service4Hovered :
+                                            text.mainPage.servicesPage[props.lang].service4
                                         }
                                     </Fade>
                                 </div>
@@ -170,8 +172,8 @@ export function ServicesPage(){
                                 <Fade bottom>
                                     {
                                         hovered == 5 ?
-                                        "Noi ieșim din tipare și oferim clienților nu doar produsele clasice din lemn enumerate mai sus, dar și pereți și chiar plafoane din forme geometrice îndrăznețe." :
-                                        "Pereți din lemn natural"
+                                        text.mainPage.servicesPage[props.lang].service5Hovered :
+                                        text.mainPage.servicesPage[props.lang].service5
                                     }
                                 </Fade>
                             </div>

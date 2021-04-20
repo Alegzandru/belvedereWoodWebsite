@@ -5,6 +5,7 @@ function ContactePage() {
     return(
         <Layout
             noFooter = {true}
+            title={"Contacte | Belvedere Wood Parquet"}
         >
             <Contacte></Contacte>
         </Layout>

@@ -6,7 +6,7 @@ import {products} from "../../components/catalogPage/products"
 
 function ScariPage() {
     return(
-        <Layout>
+        <Layout title={"Scări din lemn masiv | Belvedere Wood Parquet"}>
             <ProdusPage
                 sliderTop={sliderScariTop}
                 sliderBottom={sliderScariBottom}

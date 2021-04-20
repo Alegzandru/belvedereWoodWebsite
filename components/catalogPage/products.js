@@ -321,7 +321,7 @@ export const products = {
     patrateModule: [
         {
             name : "M1",
-            description : "6500x6500 mm",
+            description : "650x650 mm",
             caracteristici : {
                 structura : [
                     {
@@ -362,7 +362,7 @@ export const products = {
                 marime : [
                     {
                         textBold : "Suprafața",
-                        textSimplu : "6500x6500 mm"
+                        textSimplu : "650x650 mm"
                     }
                 ]
             },

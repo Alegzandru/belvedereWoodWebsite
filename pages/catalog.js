@@ -3,7 +3,7 @@ import {ToateProdusele} from "../components/catalogPage/toateProdusele"
 
 function Catalog() {
     return(
-        <Layout>
+        <Layout title={"Toate produsele | Belvedere Wood Parquet"}>
             <ToateProdusele></ToateProdusele>
         </Layout>
     )

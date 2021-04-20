@@ -6,7 +6,7 @@ import {products} from "../../components/catalogPage/products"
 
 function PeretiPage() {
     return(
-        <Layout>
+        <Layout title={"Pereți din lemn natural | Belvedere Wood Parquet"}>
             <ProdusPage
                 sliderTop={sliderPeretiTop}
                 sliderBottom={sliderPeretiBottom}

@@ -5,16 +5,21 @@ import {AvantajePage} from "../components/mainPage/avantajePage.js"
 import {ProiectePage} from "../components/mainPage/proiectePage.js"
 import {ServicesPage} from "../components/mainPage/servicesPage.js"
 import Layout from "../components/layout"
+import {LanguageContext} from "../components/context"
+import {useContext} from "react"
 
 function HomePage() {
+
+    const {language, setLanguage} = useContext(LanguageContext)
+
     return(
-        <Layout>
-            <HeroPage2></HeroPage2>
-            <TreeTrunkPage></TreeTrunkPage>
-            <ServicesPage></ServicesPage>
-            <ClientsPage></ClientsPage>
-            <AvantajePage></AvantajePage>
-            <ProiectePage></ProiectePage>
+        <Layout title={"Pagina principală | Belvedere Wood Parquet"}>
+            <HeroPage2 lang={language}></HeroPage2>
+            <TreeTrunkPage lang={language}></TreeTrunkPage>
+            <ServicesPage lang={language}></ServicesPage>
+            <ClientsPage lang={language}></ClientsPage>
+            <AvantajePage lang={language}></AvantajePage>
+            <ProiectePage lang={language}></ProiectePage>
         </Layout>
     )
 }
