@@ -152,7 +152,7 @@ export function FAQ(props){
                                 4.
                             </div>
                             <div className={styles.questionText}>
-                                Ce gamă de culori poate avea parchetul?                   
+                                {text.aboutUsPage.faq[props.lang].question4}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open4? "-" : "+"}
@@ -164,7 +164,7 @@ export function FAQ(props){
                                 display: open4 ? "block" : "none"
                             }}
                         >
-                            Parchetul marca BW este produs la fabrica noastră și poate fi vopsit cu orice culoare, conform preferinței clientului. Avem și plăci de parchet poleite cu aur. Orice nuanță poate fi executată la dorința clientului.                        
+                            {text.aboutUsPage.faq[props.lang].answer3}
                         </div>
                     </div>
 
@@ -177,7 +177,7 @@ export function FAQ(props){
                                 5.
                             </div>
                             <div className={styles.questionText}>
-                                Este vizibilă trecerea de la parchet la teracotă?                            
+                                {text.aboutUsPage.faq[props.lang].question5}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open5? "-" : "+"}
@@ -189,7 +189,7 @@ export function FAQ(props){
                                 display: open5 ? "block" : "none"
                             }}
                         >
-                            Linia de trecere de la parchet la teracotă este camuflată în așa fel încât aceasta arată extrem de estetică, datorită faptului că placa de parchet poate fi tăiată după forma teracotei, care poate fi de orice complexitate.                        
+                            {text.aboutUsPage.faq[props.lang].answer5}
                         </div>
                     </div>
 
@@ -202,7 +202,7 @@ export function FAQ(props){
                                 6.
                             </div>
                             <div className={styles.questionText}>
-                                Ce clei utilizați la instalare?                     
+                                {text.aboutUsPage.faq[props.lang].question6}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open6? "-" : "+"}
@@ -214,7 +214,7 @@ export function FAQ(props){
                                 display: open6 ? "block" : "none"
                             }}
                         >
-                            La instalare meșterii noștri utilizează clei adeziv, care odată cu întărirea lui se transformă în cauciuc. Nu conține solvenți, nu miroase și nu e toxic. Acest tip de clei nu permite pătrunderea apei în crăpături, reține apa, iar aceasta nu ajunge la beton.                        
+                            {text.aboutUsPage.faq[props.lang].answer6}
                         </div>
                     </div>
 
@@ -227,7 +227,7 @@ export function FAQ(props){
                                 7.
                             </div>
                             <div className={styles.questionText}>
-                                Parchetul poate fi instalat în baie?                            
+                                {text.aboutUsPage.faq[props.lang].question7}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open7? "-" : "+"}
@@ -239,7 +239,7 @@ export function FAQ(props){
                                 display: open7 ? "block" : "none"
                             }}
                         >
-                            Datorită calității și proprietăților sale tehnice, parchetul BW poate fi instalat în orice odaie a casei, inclusiv în baie. Însă, pentru aceasta e necesară o aerisire corespunzătoare, preferabil geam.                        
+                            {text.aboutUsPage.faq[props.lang].answer7}
                         </div>
                     </div>
 
@@ -252,7 +252,7 @@ export function FAQ(props){
                                 8.
                             </div>
                             <div className={styles.questionText}>
-                                Parchetul poate fi restaurat?                            
+                                {text.aboutUsPage.faq[props.lang].question8}
                             </div>
                             <div className={styles.questionPlus}>
                                 {open8? "-" : "+"}
@@ -264,7 +264,7 @@ export function FAQ(props){
                                 display: open8 ? "block" : "none"
                             }}
                         >
-                            Noi oferim o garanție de 10 ani la instalarea parchetului BW de către meșterii noștri. Pentru a readuce luciul natural al lemnului și a îl împrospăta, el poate fi restaurat prin șlefuire de până la 5 ori.                         
+                            {text.aboutUsPage.faq[props.lang].answer8}
                         </div>
                     </div>
 

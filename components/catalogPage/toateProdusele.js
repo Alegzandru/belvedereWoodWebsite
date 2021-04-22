@@ -3,9 +3,10 @@ import {Produs} from "./produs"
 import Link from 'next/link'
 import {WidthContext} from "../context"
 import { useContext } from "react"
+import {text} from "../text"
 
 
-export function ToateProdusele(){
+export function ToateProdusele(props){
 
     const {width, setWidth} = useContext(WidthContext)
     const mobile = width < 940 ? 1 : 0
@@ -15,20 +16,17 @@ export function ToateProdusele(){
             <section className={styles.section}>
                 <div className={styles.upperPhotoWrapper}>
                     <h1 className={styles.h1}>
-                        Toate produsele
+                        {text.catalogPage.toateProdusele[props.lang].heading}
                     </h1>
                     <p className={styles.subheading}>
-                        BWP valorifică unicitatea fiecărui arbore și îi alege doar pe cei care prin finisare
-                        produc cea mai frumoasă placă de parchet, treaptă sau decor pentru perete.
-                        {/* Fiecare etapă este atent supravegheată pentru a putea oferi o gamă largă de
-                        produse, conform proiectului de design și preferințelor individuale ale clientului.*/}
+                        {text.catalogPage.toateProdusele[props.lang].description}
                     </p>
                 </div>
                 <div className={styles.container}>
                     <div className={styles.breadcrumbWrapper}>
                         <Link href="/">
                             <a className={styles.inactiveLink}>
-                                Principala
+                                {text.catalogPage.toateProdusele[props.lang].link1}
                             </a>
                         </Link>
                         <img
@@ -36,7 +34,9 @@ export function ToateProdusele(){
                             alt=""
                             className={styles.arrow}
                         />
-                        <span className={styles.activeLink}>Catalog</span>
+                        <span className={styles.activeLink}>
+                            {text.catalogPage.toateProdusele[props.lang].link2}
+                        </span>
                     </div>
 
                     <div className={styles.productRow}>
@@ -47,9 +47,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Brăduț"
+                                    name={text.catalogPage.toateProdusele[props.lang].product1}
                                     imgSrc="/catalog/parchetBradut/bradut1.jpg"
-                                    descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product1Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -61,9 +61,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Punte"
+                                    name={text.catalogPage.toateProdusele[props.lang].product2}
                                     imgSrc="/catalog/parchetPunte/Showroom-61.jpg"
-                                    descriere="Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product2Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -76,9 +76,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Modular"
+                                    name={text.catalogPage.toateProdusele[props.lang].product3}
                                     imgSrc="/catalog/patrateModule/Showroom-95.jpg"
-                                    descriere="Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product3Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -98,9 +98,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Scări din lemn masiv"
+                                    name={text.catalogPage.toateProdusele[props.lang].product4}
                                     imgSrc="/catalog/scari/KikuRestaurant-13.jpg"
-                                    descriere="Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product4Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -112,9 +112,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Pereți din lemn natural"
+                                    name={text.catalogPage.toateProdusele[props.lang].product5}
                                     imgSrc="/catalog/pereti/Aeroport.jpg"
-                                    descriere="În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product5Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -129,9 +129,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Brăduț"
+                                    name={text.catalogPage.toateProdusele[props.lang].product1}
                                     imgSrc="/catalog/parchetBradut/bradut1.jpg"
-                                    descriere="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product1Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -143,9 +143,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Punte"
+                                    name={text.catalogPage.toateProdusele[props.lang].product2}
                                     imgSrc="/catalog/parchetPunte/Showroom-61.jpg"
-                                    descriere="Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product2Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -159,9 +159,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Parchet Modular"
+                                    name={text.catalogPage.toateProdusele[props.lang].product3}
                                     imgSrc="/catalog/patrateModule/Showroom-95.jpg"
-                                    descriere="Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product3Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -173,9 +173,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Scări din lemn masiv"
+                                    name={text.catalogPage.toateProdusele[props.lang].product4}
                                     imgSrc="/catalog/scari/KikuRestaurant-13.jpg"
-                                    descriere="Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product4Description}
                                 ></Produs>
                             </a>
                         </Link>
@@ -189,9 +189,9 @@ export function ToateProdusele(){
                                 }}
                             >
                                 <Produs
-                                    name="Pereți din lemn natural"
+                                    name={text.catalogPage.toateProdusele[props.lang].product5}
                                     imgSrc="/catalog/pereti/Aeroport.jpg"
-                                    descriere="În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
+                                    descriere={text.catalogPage.toateProdusele[props.lang].product5Description}
                                 ></Produs>
                             </a>
                         </Link>

@@ -57,19 +57,20 @@ export function DescriereaProiectelor(){
                         <div
                             className={`
                                 ${styles.projectImgLeft}
-                                ${slider1 == 0? styles.background1_1 : ""}
-                                ${slider1 == 1? styles.background1_2 : ""}
-                                ${slider1 == 2? styles.background1_3 : ""}
-                                ${slider1 == 3? styles.background1_4 : ""}
-                                ${slider1 == 4? styles.background1_5 : ""}
-                                ${slider1 == 5? styles.background1_6 : ""}
+                                ${slider1 == 0? styles.background1_2 : ""}
+                                ${slider1 == 1? styles.background1_3 : ""}
+                                ${slider1 == 2? styles.background1_4 : ""}
+                                ${slider1 == 3? styles.background1_5 : ""}
+                                ${slider1 == 4? styles.background1_6 : ""}
+                                ${slider1 == 5? styles.background1_7 : ""}
+                                ${slider1 == 6? styles.background1_8 : ""}
                             `}
                         >
                              <div 
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
                                     if(slider1==0){
-                                        setSlider1(5)
+                                        setSlider1(6)
                                     }
                                     else{
                                         setSlider1(slider1-1)
@@ -86,7 +87,7 @@ export function DescriereaProiectelor(){
                             <div 
                                 className={styles.slideButtonWrapper}
                                 onClick={ ()=> {
-                                    if(slider1==5){
+                                    if(slider1==6){
                                         setSlider1(0)
                                     }
                                     else{

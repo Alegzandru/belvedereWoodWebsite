@@ -4,6 +4,7 @@ import styles from "../../styles/catalog/parchetBradut.module.css"
 import Link from 'next/link'
 import {WidthContext} from "../context"
 import {Link as LinkScroll} from 'react-scroll'
+import { text } from "../text"
 
 
 export function ProdusPage(props){
@@ -96,7 +97,7 @@ export function ProdusPage(props){
                     display : popUpClicked == 0 ? "block" : "none"
                 }}>
                     <div className={styles.popupHeading}>
-                        Calculează prețul parchetului
+                        {text.catalogPage.produsPage[props.lang].popupHeading}
                     </div>
 
                     <div 
@@ -110,7 +111,7 @@ export function ProdusPage(props){
                         <div 
                             className={styles.selectionText}
                         >
-                            Selecteaza modelul
+                            {text.catalogPage.produsPage[props.lang].selectionText}
                         </div>
                         <div 
                             className={styles.dropdownColumn}
@@ -121,7 +122,7 @@ export function ProdusPage(props){
                                 className={styles.dropdownBoxActive}
                             >
                                 <div className={styles.dropdownTextActive}>
-                                    {props.product[selected].name}
+                                    {props.product.types[selected].name}
                                 </div>
                                 <img 
                                     src={dropdownHover ? 
@@ -142,7 +143,7 @@ export function ProdusPage(props){
                                 <div 
                                     className={styles.dropdownBoxInactive}
                                     onClick={() =>{
-                                        if(selected == props.product.length-1){
+                                        if(selected == props.product.types.length-1){
                                             setSelected(0)
                                         }
                                         else{
@@ -152,8 +153,8 @@ export function ProdusPage(props){
                                 >
                                     <div className={styles.dropdownTextInactive}>
                                         {
-                                            props.product[
-                                                selected == props.product.length-1 ?
+                                            props.product.types[
+                                                selected == props.product.types.length-1 ?
                                                 0 : 
                                                 selected+1
                                             ].name
@@ -163,14 +164,14 @@ export function ProdusPage(props){
                                 <div 
                                     className={styles.dropdownBoxInactive}
                                     style={{
-                                        display: props.product.length == 3 ? "block" : "none"
+                                        display: props.product.types.length == 3 ? "block" : "none"
                                     }}
                                     onClick={() =>{
-                                        if(props.product.length == 3){
-                                            if(selected == props.product.length - 2){
+                                        if(props.product.types.length == 3){
+                                            if(selected == props.product.types.length - 2){
                                                 setSelected(0)
                                             }
-                                            else if(selected == props.product.length - 1){
+                                            else if(selected == props.product.types.length - 1){
                                                 setSelected(1)
                                             }
                                             else{
@@ -184,11 +185,11 @@ export function ProdusPage(props){
                                 >
                                     <div className={styles.dropdownTextInactive}>
                                         {
-                                            props.product.length == 3 ? 
-                                            props.product[
-                                                selected == props.product.length-2 ?
+                                            props.product.types.length == 3 ? 
+                                            props.product.types[
+                                                selected == props.product.types.length-2 ?
                                                 0 : 
-                                                selected == props.product.length-1 ?
+                                                selected == props.product.types.length-1 ?
                                                 1 :
                                                 selected+2
                                             ].name
@@ -208,7 +209,7 @@ export function ProdusPage(props){
                         }}
                     >
                         <div className={styles.selectionText}>
-                            Introdu suprafața
+                            {text.catalogPage.produsPage[props.lang].surface}
                         </div>
                         <div className={styles.inputBox}>
                             <input
@@ -228,16 +229,16 @@ export function ProdusPage(props){
 
                     <div className={styles.priceBoxPopup}>
                         <div className={styles.priceText}>
-                            Preț estimativ:
+                            {text.catalogPage.produsPage[props.lang].aproxPrice}
                         </div>
                         <div className={styles.priceInsideBox}>
                             <div className={styles.price}>
-                                {area * props.product[selected].price1}
+                                {area * props.product.types[selected].price1}
                                 {
-                                    props.product[selected].price2 == 0 ? 
+                                    props.product.types[selected].price2 == 0 ? 
                                     ""
                                     :
-                                    ` - ${area * props.product[selected].price2}`
+                                    ` - ${area * props.product.types[selected].price2}`
                                 }
                             </div>
                             <div className={styles.currency}>
@@ -248,7 +249,7 @@ export function ProdusPage(props){
 
                     <div className={styles.priceBoxPopup}>
                         <div className={styles.priceText}>
-                            Preț pentru montare:
+                            {text.catalogPage.produsPage[props.lang].montarePrice}
                         </div>
                         <div className={styles.priceInsideBox}>
                             <div className={styles.price}>
@@ -265,7 +266,7 @@ export function ProdusPage(props){
                             width: "100%"
                         }}
                     >
-                        * Prețul pentru montare include: montarea, materialele și transportarea
+                        {text.catalogPage.produsPage[props.lang].montareInfo}
                     </div>
                 </div>
 
@@ -276,7 +277,7 @@ export function ProdusPage(props){
                     className={styles.formWrapper}
                 >
                     <h2 className={styles.h2Right}>
-                        Lăsați-ne un mesaj
+                        {text.catalogPage.produsPage[props.lang].messageText}
                     </h2>
                     <form
                         onSubmit={sendEmail}
@@ -288,7 +289,7 @@ export function ProdusPage(props){
                                 display : emailSent ? "flex" : "none"
                             }}
                         >
-                            Mesajul Dvs. a fost trimis. Vă mulțumim.
+                            {text.catalogPage.produsPage[props.lang].messageReceived}
                         </div>
                         <div className={styles.nameInputsWrapper}>
                             <input
@@ -346,7 +347,7 @@ export function ProdusPage(props){
                         ></input>
                         <input
                             type="submit"
-                            value="Trimite" 
+                            value={text.catalogPage.produsPage[props.lang].sendButton}
                             className={styles.buttonSubmit}
                         >
                         </input>
@@ -366,7 +367,7 @@ export function ProdusPage(props){
                         className={
                             `
                             ${styles.upperPhotoWrapper}
-                            ${props.name== "Parchet Punte" ? styles.backgroundPunte : ""}
+                            ${props.name== "Parchet Punte"? styles.backgroundPunte : ""}
                             ${props.name== "Parchet Brăduț" ? styles.backgroundBradut : ""}
                             ${props.name== "Parchet Modular" ? styles.backgroundModule : ""}
                             ${props.name== "Scări din lemn masiv" ? styles.backgroundScari : ""}
@@ -375,17 +376,17 @@ export function ProdusPage(props){
                         }
                     >
                         <h1 className={styles.h1}>
-                            {props.name}
+                            {props.product.name}
                         </h1>
                         <p className={styles.subheading}>
-                            {props.upperText}
+                            {props.product.descriptionShort}
                         </p>
                     </div>
                     <div className={styles.container}>
                         <div className={styles.breadcrumbWrapper}>
                             <Link href="/">
                                 <a className={styles.inactiveLink}>
-                                    Principala
+                                    {props.product.link1}
                                 </a>
                             </Link>
                             <img
@@ -395,7 +396,7 @@ export function ProdusPage(props){
                             />
                             <Link href="/catalog">
                                 <a className={styles.inactiveLink}>
-                                    Catalog
+                                    {props.product.link2}
                                 </a>
                             </Link>
                             <img
@@ -404,7 +405,7 @@ export function ProdusPage(props){
                                 className={styles.arrow}
                             />
                             <span className={styles.activeLink}>
-                                {props.name}
+                                {props.product.name}
                             </span>
                         </div>
                         
@@ -470,10 +471,10 @@ export function ProdusPage(props){
 
                             <div className={styles.textWrapper}>
                                 <h2 className={styles.h2Small}>
-                                    {props.name}
+                                    {props.product.name}
                                 </h2>
                                 <div className={styles.description}>
-                                    {props.description} 
+                                    {props.product.descriptionLong} 
                                 </div>
                                 <div className={styles.buttonsWrapper}>
                                     <div 
@@ -486,7 +487,7 @@ export function ProdusPage(props){
                                             display : props.showPriceButton ? "flex" : "none"
                                         }}
                                     >
-                                        Calculează prețul
+                                        {text.catalogPage.produsPage[props.lang].button1}
                                     </div>
                                     <div 
                                         className={styles.button}
@@ -495,7 +496,7 @@ export function ProdusPage(props){
                                             setpopUpClicked(1)
                                         }}
                                     >
-                                        Ofertă individuală
+                                        {text.catalogPage.produsPage[props.lang].button2}
                                     </div>
                                 </div>
                             </div>
@@ -518,7 +519,7 @@ export function ProdusPage(props){
                             </div>
 
                             <div className={styles.scrollText}>
-                                Scroll pentru a vedea tipurile de parchet
+                                {text.catalogPage.produsPage[props.lang].scrollText}
                             </div>
                         </div>
 
@@ -529,19 +530,19 @@ export function ProdusPage(props){
                             }}
                         >
                             <h2 className={styles.h2}>
-                                Tipuri de {props.name}
+                                {text.catalogPage.produsPage[props.lang].typesText} {props.product.name}
                             </h2>
 
                             <div 
                                 className={styles.productTypesBox}
                                 style={{
-                                    justifyContent : props.product.length == 3 ? "space-between" : "center"
+                                    justifyContent : props.product.types.length == 3 ? "space-between" : "center"
                                 }}
                             >
                                 <div 
                                     className={styles.mobileTypeWrapper}
                                     style={{
-                                        marginRight : props.product.length == 2 ? "20px" : "none"
+                                        marginRight : props.product.types.length == 2 ? "20px" : "none"
                                     }}
                                 >
 
@@ -560,22 +561,22 @@ export function ProdusPage(props){
                                         >
                                             <div className={styles.productNameWrapper}>
                                                 <div className={styles.productTypeName}>
-                                                    {props.product[0].name}
+                                                    {props.product.types[0].name}
                                                 </div>
                                                 <div 
                                                     className={styles.productTypeDeg}
                                                     style={{
-                                                        display : props.product[0].description == "" ? "none" : "block"
+                                                        display : props.product.types[0].description == "" ? "none" : "block"
                                                     }}
                                                 >
-                                                    {props.product[0].description}
+                                                    {props.product.types[0].description}
                                                 </div>
                                             </div>
                                         </div>
                                     </LinkScroll>
 
                                     <div className={styles.priceBox}>
-                                        Preț : <span className={styles.price}>{props.product[0].price}</span>
+                                        {text.catalogPage.produsPage[props.lang].price} <span className={styles.price}>{props.product.types[0].price}</span>
                                     </div>
                                 </div>
 
@@ -595,24 +596,24 @@ export function ProdusPage(props){
                                         >
                                             <div className={styles.productNameWrapper}>
                                                 <div className={styles.productTypeName}>
-                                                    {props.product[1].name}
+                                                    {props.product.types[1].name}
                                                 </div>
                                                 <div className={styles.productTypeDeg}>
-                                                    {props.product[1].description}
+                                                    {props.product.types[1].description}
                                                 </div>
                                             </div>
                                         </div>
                                     </LinkScroll>
                                     
                                     <div className={styles.priceBox}>
-                                        Preț : <span className={styles.price}>{props.product[1].price}</span>
+                                        {text.catalogPage.produsPage[props.lang].price} <span className={styles.price}>{props.product.types[1].price}</span>
                                     </div>
                                 </div>
 
                                 <div 
                                     className={styles.mobileTypeWrapper}
                                     style={{
-                                        display : props.product.length == 3 ? "block" : "none"
+                                        display : props.product.types.length == 3 ? "block" : "none"
                                     }}
                                 >
                                     <LinkScroll
@@ -625,17 +626,23 @@ export function ProdusPage(props){
                                         >
                                             <div className={styles.productNameWrapper}>
                                                 <div className={styles.productTypeName}>
-                                                    Herringbone
+                                                    {
+                                                        props.product.types.length == 3 ?
+                                                        props.product.types[2].name : ""
+                                                    }
                                                 </div>
                                                 <div className={styles.productTypeDeg}>
-                                                    (90 grade)
+                                                    {
+                                                        props.product.types.length == 3 ?
+                                                        props.product.types[2].description : ""
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
                                     </LinkScroll>
                                     
                                     <div className={styles.priceBox}>
-                                        Preț : <span className={styles.price}>65-80 EUR/mp</span>
+                                        {text.catalogPage.produsPage[props.lang].price} : <span className={styles.price}>65-80 EUR/mp</span>
                                     </div>
                                 </div>
 
@@ -655,7 +662,7 @@ export function ProdusPage(props){
                                 </div>
 
                                 <div className={styles.scrollText}>
-                                    Click pe unul dintre tipuri pentru a vedea caracteristicile                            
+                                    {text.catalogPage.produsPage[props.lang].clickType}
                                 </div>
                             </div>
 
@@ -669,14 +676,16 @@ export function ProdusPage(props){
                             }}
                         >
                             <h2 className={styles.h2}>
-                                Caracteristicile produsului ({props.product[chosenChar].name})
+                                {text.catalogPage.produsPage[props.lang].characteristics} ({props.product.types[chosenChar].name})
                             </h2>
                             <div className={styles.characteristicsBox}>
 
                                 <div className={styles.characteristicsColumn}>
-                                    <h3 className={styles.h3}>Structura</h3>
+                                    <h3 className={styles.h3}>
+                                        {text.catalogPage.produsPage[props.lang].structure}
+                                    </h3>
                                     <div className={styles.line}></div>
-                                    {props.product[chosenChar].caracteristici.structura.map((caracteristica, index)=>
+                                    {props.product.types[chosenChar].caracteristici.structura.map((caracteristica, index)=>
                                     <div>
                                         <div className={styles.accentChar}>
                                             {caracteristica.textBold}
@@ -692,14 +701,14 @@ export function ProdusPage(props){
                                 <div className={styles.characteristicsColumn}>
                                     <h3 className={styles.h3}>
                                         {props.name == "Parchet Modular" ? 
-                                            "Caracteristici tehnice"
+                                            text.catalogPage.produsPage[props.lang].technichalCharacteristics
                                             :
-                                            "Avantaje"
+                                            text.catalogPage.produsPage[props.lang].advantages
                                         }
                                     </h3>
                                     <div className={styles.line}></div>
                                     {props.name == "Parchet Modular" ?
-                                        props.product[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
+                                        props.product.types[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
                                         <div>
                                             <div className={styles.accentChar}>
                                                 {caracteristica.textBold}
@@ -710,7 +719,7 @@ export function ProdusPage(props){
                                         </div>
                                         )
                                         :
-                                        props.product[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
+                                        props.product.types[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
                                             <div className={styles.avantajBox}>
                                                 <img
                                                     className={styles.avantajImg}
@@ -726,9 +735,11 @@ export function ProdusPage(props){
 
 
                                 <div className={styles.characteristicsColumn}>
-                                    <h3 className={styles.h3}>Mărime</h3>
+                                    <h3 className={styles.h3}>
+                                        {text.catalogPage.produsPage[props.lang].size}
+                                    </h3>
                                     <div className={styles.line}></div>
-                                    {props.product[chosenChar].caracteristici.marime.map((caracteristica, index)=>
+                                    {props.product.types[chosenChar].caracteristici.marime.map((caracteristica, index)=>
                                         <div>
                                             <div className={styles.accentChar}>
                                                 {caracteristica.textBold}                               
@@ -745,7 +756,7 @@ export function ProdusPage(props){
 
                         <div className={styles.photosWrapper}>
                             <h2 className={styles.h2}>
-                                Produsele noastre
+                                {text.catalogPage.produsPage[props.lang].ourProducts}                            
                             </h2>
                             <div className={styles.photosBox}>
                                 <div className={styles.photoColumn}>
