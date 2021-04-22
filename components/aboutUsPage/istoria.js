@@ -47,7 +47,7 @@ export function Istoria(props){
                                     2011
                                 </div>
                                 <div className={styles.eventText}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed rutrum augue. Aenean tincidunt.
+                                    Crearea primului atelier improvizat în subsolul școlii muzicale, unde au fost elaborate primele mostre și s-a născut dragostea față de structurile naturale ale lemnului.
                                 </div>
                             </div>
                         </div>
