@@ -5,19 +5,25 @@
 }
 
 .mainOpen{
-    margin-top: -100vh;
+    margin-top: calc(-100vh + 48px);
+    filter: brightness(40%);
     /* margin-right: 300px; */
     /* margin-left: -150px;
     width: 80%;
     transform: scale(0.8) */
 }
 
-.mainOpenDarken{
+.mainOpenMainPage{
+    margin-top: -100vh;
     filter: brightness(40%);
+}
+
+.mainPageMobile{
+    margin-top: -48px;
 }
 
 @media screen and (max-width: 940px){
     .main{
-        margin-top: -48px;
+        margin-top: 0px;
     }
 }

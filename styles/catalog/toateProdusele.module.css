@@ -142,12 +142,6 @@
     .upperPhotoWrapper{
         height: 400px;
         width: 100%;
-    
-        background-image: url("../../public/mainPage/background1.png");
-        background-color: black;
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
     }
     
     
@@ -245,12 +239,6 @@
     .upperPhotoWrapper{
         height: 222px;
         width: 100%;
-    
-        background-image: url("../../public/mainPage/background1.png");
-        background-color: black;
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
     }
     
     

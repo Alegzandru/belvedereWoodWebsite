@@ -19,7 +19,7 @@ export function ProiectePage(props){
     const slide2 = "/proiecte/mimi3.jpg";
     const slide3 = "/mainPage/Aeroport-16.jpg";
     const slide4 = "/mainPage/KikuRestaurant-14.jpg";
-    const slide5 = "/catalog/patrateModule/ManucBei-12.jpg";
+    const slide5 = "/mainPage/veganClient.jpg";
     const slide6 = "/proiecte/muzeul2.jpg";
     const slide7 = "/proiecte/rozmarin4.jpg";
 
@@ -159,7 +159,7 @@ export function ProiectePage(props){
                             shouldAutoplay: true,
                             shouldDisplayButtons: true,
                             autoplayDuration: 5000,
-                            height: mobile ? "670px" : "700px",
+                            height: mobile ? "500px" : tablet ? "600px" : "700px",
                             width: tablet ? "100vw" : "50vw"
                         }}
                     >

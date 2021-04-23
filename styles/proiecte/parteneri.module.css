@@ -223,6 +223,14 @@
         font-size: 40px;
     }
 
+    .h3{
+        margin-top: 0px;
+    }
+
+    .line2{
+        margin-bottom: 60px;
+    }
+
     .buttonsWrapper{
         flex-direction: column;
         width: 100%;

@@ -542,7 +542,7 @@ export function ProdusPage(props){
                                 <div 
                                     className={styles.mobileTypeWrapper}
                                     style={{
-                                        marginRight : props.product.types.length == 2 ? "20px" : "none"
+                                        marginRight : width < 528 ? "0px" : props.product.types.length == 2 ? "20px" : "0px"
                                     }}
                                 >
 
@@ -613,7 +613,7 @@ export function ProdusPage(props){
                                 <div 
                                     className={styles.mobileTypeWrapper}
                                     style={{
-                                        display : props.product.types.length == 3 ? "block" : "none"
+                                        display : props.product.types.length == 3 ? "flex" : "none"
                                     }}
                                 >
                                     <LinkScroll
@@ -686,7 +686,7 @@ export function ProdusPage(props){
                                     </h3>
                                     <div className={styles.line}></div>
                                     {props.product.types[chosenChar].caracteristici.structura.map((caracteristica, index)=>
-                                    <div>
+                                    <div key={index*10}>
                                         <div className={styles.accentChar}>
                                             {caracteristica.textBold}
                                         </div>
@@ -709,7 +709,7 @@ export function ProdusPage(props){
                                     <div className={styles.line}></div>
                                     {props.name == "Parchet Modular" ?
                                         props.product.types[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
-                                        <div>
+                                        <div key={index*11}>
                                             <div className={styles.accentChar}>
                                                 {caracteristica.textBold}
                                             </div>
@@ -720,7 +720,7 @@ export function ProdusPage(props){
                                         )
                                         :
                                         props.product.types[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
-                                            <div className={styles.avantajBox}>
+                                            <div className={styles.avantajBox} key={index*12}>
                                                 <img
                                                     className={styles.avantajImg}
                                                     src={caracteristica.imgSrc}
@@ -740,7 +740,7 @@ export function ProdusPage(props){
                                     </h3>
                                     <div className={styles.line}></div>
                                     {props.product.types[chosenChar].caracteristici.marime.map((caracteristica, index)=>
-                                        <div>
+                                        <div key={index*13}>
                                             <div className={styles.accentChar}>
                                                 {caracteristica.textBold}                               
                                             </div>

@@ -43,7 +43,7 @@ export function ClientsPage(props){
                     <div className={styles.whiteLine1}>
                     </div>
                     <div className={styles.clientsScroller}>
-                        <a href="https://www.castelmimi.md/en/" target="blank">
+                        {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
                                 src="/mainPage/logoCM.png"
                                 alt="Castel Mimi"
@@ -53,56 +53,56 @@ export function ClientsPage(props){
                                 //     (e, href) => handleClick(e, "https://www.castelmimi.md/en/")
                                 // }
                             />
-                        </a>
-                        <a href="https://lumencraft.md/#home" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://lumencraft.md/#home" target="blank"> */}
                             <img
                                 src="/mainPage/lumenCraft.jpg"
                                 alt="Restaurant Lumencraft"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(2)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/kikusteakwine/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/kikusteakwine/" target="blank"> */}
                             <img
                                 src="/mainPage/kiku.png"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}
                             />
-                        </a>
-                        <a href="https://www.instagram.com/veganphi/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.instagram.com/veganphi/" target="blank"> */}
                             <img
                                 src="/mainPage/veganPhi.png"
                                 alt="Restaurant Vegan Phi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(4)}
                             />
-                        </a>
-                        <a href="https://www.mnam.md/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.mnam.md/" target="blank"> */}
                             <img
                                 src="/mainPage/mnam.png"
                                 alt="Muzeul Național de Artă"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(5)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/caferozmarin/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/caferozmarin/" target="blank"> */}
                             <img
                                 src="/mainPage/rozmarin.png"
                                 alt="Cafe Rozmarin"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(6)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/porteryard/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/porteryard/" target="blank"> */}
                             <img
                                 src="/mainPage/porteryard.png"
                                 alt="Restaurant Porteryard"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(7)}
                             />
-                        </a>
-                        <a href="https://www.castelmimi.md/en/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
                                 src="/mainPage/logoCM.png"
                                 alt="Castel Mimi"
@@ -112,56 +112,56 @@ export function ClientsPage(props){
                                 //     (e, href) => handleClick(e, "https://www.castelmimi.md/en/")
                                 // }
                             />
-                        </a>
-                        <a href="https://lumencraft.md/#home" target="blank">
+                        {/*</a>*/}
+                        {/* <a href="https://lumencraft.md/#home" target="blank"> */}
                             <img
                                 src="/mainPage/lumenCraft.jpg"
                                 alt="Restaurant Lumencraft"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(2)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/kikusteakwine/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/kikusteakwine/" target="blank"> */}
                             <img
                                 src="/mainPage/kiku.png"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}
                             />
-                        </a>
-                        <a href="https://www.instagram.com/veganphi/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.instagram.com/veganphi/" target="blank"> */}
                             <img
                                 src="/mainPage/veganPhi.png"
                                 alt="Restaurant Vegan Phi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(4)}
                             />
-                        </a>
-                        <a href="https://www.mnam.md/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.mnam.md/" target="blank"> */}
                             <img
                                 src="/mainPage/mnam.png"
                                 alt="Muzeul Național de Artă"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(5)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/caferozmarin/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/caferozmarin/" target="blank"> */}
                             <img
                                 src="/mainPage/rozmarin.png"
                                 alt="Cafe Rozmarin"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(6)}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/porteryard/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.facebook.com/porteryard/" target="blank"> */}
                             <img
                                 src="/mainPage/porteryard.png"
                                 alt="Restaurant Porteryard"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(7)}
                             />
-                        </a>
-                        <a href="https://www.castelmimi.md/en/" target="blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
                                 src="/mainPage/logoCM.png"
                                 alt="Castel Mimi"
@@ -171,7 +171,7 @@ export function ClientsPage(props){
                                 //     (e, href) => handleClick(e, "https://www.castelmimi.md/en/")
                                 // }
                             />
-                        </a>
+                        {/* </a> */}
                     </div>
                     <div className={styles.whiteLine2}>
                     </div>

@@ -3,7 +3,8 @@ import Head from 'next/head';
 import {Navbar} from './navbar.js'
 import {Footer} from "./footer.js"
 import styles from "../styles/layout.module.css"
-import { NavbarContext, LanguageContext} from "./context"
+import { NavbarContext, LanguageContext, WidthContext} from "./context"
+import { useRouter } from 'next/router'
 
 
 export default function Layout (props) {
@@ -13,9 +14,11 @@ export default function Layout (props) {
     
     const [open, setOpen] = useState(false);
     const valueNavbar = { open, setOpen };
-    
-    // const [language, setLanguage] = useState(0);
-    // const valueLanguage = {language, setLanguage}
+
+    const {width, setWidth} = useContext(WidthContext)
+    const router = useRouter()
+    const onMainPage = router.pathname == "/" ? 1 : 0
+
     
     return (
         <NavbarContext.Provider value={valueNavbar}>
@@ -34,10 +37,12 @@ export default function Layout (props) {
                 </header>
 
                 <main 
-                    className={open ? `${styles.mainOpen} ${styles.mainOpenDarken}` : styles.main}
-                    // style={{
-                    //     marginTop: open? "-240px" : navbarOpen ? "" : "0px"
-                    // }}
+                    className={
+                        open && onMainPage ? styles.mainOpenMainPage : 
+                        open ? styles.mainOpen : 
+                        width < 940 && onMainPage ? styles.mainPageMobile :
+                        styles.main
+                    }
                 >{children}
                 </main>
                 
