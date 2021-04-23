@@ -1,6 +1,7 @@
 import styles from "../../styles/despreNoi/FAQ.module.css"
 import {useState} from "react"
 import {text} from "../text"
+import Image from 'next/image'
 
 export function FAQ(props){
 
@@ -22,11 +23,13 @@ export function FAQ(props){
                         FAQ
                     </h2>
 
-                    <img
-                        src="/despreNoi/treeFAQ.png"
-                        alt=""
-                        className={styles.treeImg}
-                    />
+                    <div className={styles.treeImg}>
+                        <Image
+                            src="/despreNoi/treeFAQ.png"
+                            alt=""
+                            layout="fill"
+                        />
+                    </div>
 
                     <div 
                         className={open1 ? styles.questionWrapperOpen : styles.questionWrapper}

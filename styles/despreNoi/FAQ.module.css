@@ -133,7 +133,7 @@
 
 .treeImg{
     height: 1000px;
-    width: auto;
+    width: 1000px;
 
     position: relative;
     margin-bottom: -700px;
@@ -161,11 +161,11 @@
     
     .treeImg{
         height: 900px;
-        width: auto;
+        width: 900px;
     
         position: relative;
         z-index: 1;
-        margin-top: -800px;
+        margin-top: -200px;
         margin-left: 200px;
     }
 
@@ -225,9 +225,13 @@
     
         font-family: Futura PT custom Mediu;
         color: black;
-        font-size: 16px;
+        font-size: 18px;
     }
-    
+
+    .questionWrapperOpen{
+        font-size: 18px;
+    }
+
     .questionNumber{
         width: 42px;
         text-align: left;
@@ -244,7 +248,7 @@
 
     .treeImg{
         height: 800px;
-        width: auto;
+        width: 800px;
     
         position: relative;
         z-index: 1;

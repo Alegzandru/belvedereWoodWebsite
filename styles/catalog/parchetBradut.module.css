@@ -505,6 +505,7 @@
 }
 
 .arrow{
+    position: relative;
     height: 14px;
     width: 14px;
     margin-right: 4px;
@@ -531,6 +532,8 @@
 }
 
 .productImg{
+    position: relative;
+    z-index: 0;
     width: 540px;
     height: 360px;
     object-fit: cover;
@@ -539,6 +542,9 @@
 }
 
 .changeSlideWrapper{
+    position: relative;
+    z-index: 1;
+
     width: 100%;
     height: 60px;
 
@@ -572,6 +578,7 @@
 }
 
 .arrowLeft{
+    position: relative;
     width: 60px;
     height: 60px;
 
@@ -579,6 +586,7 @@
 }
 
 .arrowRight{
+    position: relative;
     width: 60px;
     height: 60px;
 }
@@ -743,7 +751,9 @@
 }
 
 .mouseImg{
+    position: relative;
     height: 40px;
+    width: 40px;
     animation: mouseMove 3s infinite;
     /* margin-top: -100px; */
 }
@@ -1001,8 +1011,9 @@
 }
 
 .avantajImg{
+    position: relative;
     height : 80%;
-    width: auto;
+    width: 20%;
 }
 
 .avantajText{
@@ -1024,6 +1035,7 @@
 }
 
 .sidePhoto{
+    position: relative;
     height: 260px;
     width: 375px;
     box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);
@@ -1032,6 +1044,7 @@
 }
 
 .centerPhoto{
+    position: relative;
     height: 414px;
     width: 620px;
     object-fit: cover;
@@ -1072,6 +1085,7 @@
 }
 
 .arrowRight1{
+    position: relative;
     width: 60px;
     height: 60px;
 }
@@ -1567,8 +1581,8 @@
     }
     
     .avantajImg{
-        height : 33px;
-        width: auto;
+        height : 50px;
+        width: 50px;
         margin-right: 20px;
     }
     
@@ -2272,7 +2286,7 @@
     
     .avantajImg{
         height : 33px;
-        width: auto;
+        width: 33px;
         margin-right: 20px;
     }
     
@@ -2290,6 +2304,7 @@
     .photoColumnCenter{
         margin-left: 0px;
         margin-right: 0px;
+        width: 100%;
     }
     
     .photosBox{
@@ -2312,6 +2327,7 @@
     .centerPhoto{
         height: 300px;
         width: 100%;
+
         margin-left: 0px;
         margin-right: 0px;
         box-shadow : 4px 4px 16px rgba(3, 29, 30, 0.25);

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import {WidthContext} from "../context"
 import {Link as LinkScroll} from 'react-scroll'
 import { text } from "../text"
+import Image from 'next/image'
 
 
 export function ProdusPage(props){
@@ -87,11 +88,15 @@ export function ProdusPage(props){
                 }}
             >
 
-                <img
-                    src="/catalog/closeIcon2.svg"
+                <div 
                     className={styles.closeIcon}
                     onClick={() => setPopupOpen(false)}
-                />
+                >
+                    <Image
+                        src="/catalog/closeIcon2.svg"
+                        layout="fill"
+                    />
+                </div>
 
                 <div style={{
                     display : popUpClicked == 0 ? "block" : "none"
@@ -389,21 +394,25 @@ export function ProdusPage(props){
                                     {props.product.link1}
                                 </a>
                             </Link>
-                            <img
-                                src="/proiecte/rightArrowProiecte.svg"
-                                alt=""
-                                className={styles.arrow}
-                            />
+                            <div className={styles.arrow}>
+                                <Image
+                                    src="/proiecte/rightArrowProiecte.svg"
+                                    alt=""
+                                    layout="fill"
+                                />
+                            </div>
                             <Link href="/catalog">
                                 <a className={styles.inactiveLink}>
                                     {props.product.link2}
                                 </a>
                             </Link>
-                            <img
-                                src="/proiecte/rightArrowProiecte.svg"
-                                alt=""
-                                className={styles.arrow}
-                            />
+                            <div className={styles.arrow}>
+                                <Image
+                                    src="/proiecte/rightArrowProiecte.svg"
+                                    alt=""
+                                    layout="fill"
+                                />
+                            </div>
                             <span className={styles.activeLink}>
                                 {props.product.name}
                             </span>
@@ -411,14 +420,20 @@ export function ProdusPage(props){
                         
                         <div className={styles.productDescriptionWrapper}>
                             <div className={styles.sliderWrapper}>
-                                <img 
+                                <div
                                     className={styles.productImg}
-                                    src={props.sliderTop[slide].src}
                                     style={{
-                                        objectFit : props.name == "Parchet Modular" ? "contain" : "cover",
                                         boxShadow : props.name == "Parchet Modular" ? "none" : ""
                                     }}
-                                />
+                                >
+                                    <Image
+                                        src={props.sliderTop[slide].src}
+                                        alt={`Poza ${props.name}`}
+                                        layout="fill"
+                                        objectFit = {props.name == "Parchet Modular" ? "contain" : "cover"}
+                                    />
+                                </div>
+
                                 <div className={styles.slideButtonsWrapper}>
                                     {props.sliderTop.map((img, index) => 
                                         <div 
@@ -443,10 +458,13 @@ export function ProdusPage(props){
                                             }
                                         }}
                                     >
-                                        <img
-                                            className={styles.arrowLeft}
-                                            src="/catalog/whiteArrowRight.svg"
-                                        />
+                                        <div className={styles.arrowLeft}>
+                                            <Image
+                                                src="/catalog/whiteArrowRight.svg"
+                                                alt=""
+                                                layout="fill"
+                                            />
+                                        </div>
                                     </div>
 
                                     <div 
@@ -460,10 +478,13 @@ export function ProdusPage(props){
                                             }
                                         }}
                                     >
-                                        <img
-                                            className={styles.arrowRight}
-                                            src="/catalog/whiteArrowRight.svg"
-                                        />
+                                        <div className={styles.arrowRight}>
+                                            <Image
+                                                src="/catalog/whiteArrowRight.svg"
+                                                alt=""
+                                                layout="fill"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
@@ -512,9 +533,10 @@ export function ProdusPage(props){
                             }}
                         >
                             <div className={styles.mouseImg}>
-                                <img
+                                <Image
                                     src="/mainPage/mouse.svg"
                                     alt="Mouse"
+                                    layout="fill"
                                 />
                             </div>
 
@@ -655,9 +677,10 @@ export function ProdusPage(props){
                                 }}
                             >
                                 <div className={styles.mouseImg}>
-                                    <img
+                                    <Image
                                         src="/catalog/clickIcon2.svg"
-                                        alt="Mouse"
+                                        alt="Click"
+                                        layout="fill"
                                     />
                                 </div>
 
@@ -721,10 +744,13 @@ export function ProdusPage(props){
                                         :
                                         props.product.types[chosenChar].caracteristici.avantaje.map((caracteristica, index)=>
                                             <div className={styles.avantajBox} key={index*12}>
-                                                <img
-                                                    className={styles.avantajImg}
-                                                    src={caracteristica.imgSrc}
-                                                ></img>
+                                                <div className={styles.avantajImg}>
+                                                    <Image
+                                                        src={caracteristica.imgSrc}    
+                                                        alt="Avantajul parchetului Belvedere Wood"
+                                                        layout="fill"                                                
+                                                    />
+                                                </div>
                                                 <div className={styles.avantajText}>
                                                     {caracteristica.text}
                                                 </div>
@@ -760,14 +786,25 @@ export function ProdusPage(props){
                             </h2>
                             <div className={styles.photosBox}>
                                 <div className={styles.photoColumn}>
-                                    <img
+                                    <div
                                         src={
                                             bottomSlide == 0 ? 
                                             props.sliderBottom[props.sliderBottom.length - 1].src :
                                             props.sliderBottom[bottomSlide-1].src
                                         }
                                         className={styles.sidePhoto}
-                                    ></img>
+                                    >
+                                        <Image
+                                            src={
+                                                bottomSlide == 0 ? 
+                                                props.sliderBottom[props.sliderBottom.length - 1].src :
+                                                props.sliderBottom[bottomSlide-1].src
+                                            }
+                                            alt="Produs marca Belvedere Wood Parquet"
+                                            layout="fill"
+                                            objectFit="cover"
+                                        />
+                                    </div>
 
                                     <div 
                                         className={styles.changeSlideButton1}
@@ -781,19 +818,25 @@ export function ProdusPage(props){
                                             }
                                         }}
                                     >
-                                        <img
+                                        <Image
                                             className={styles.arrowLeft1}
                                             src="/catalog/whiteArrowRight.svg"
+                                            alt=""
+                                            layout="fill"
                                         />
                                     </div>
                                 </div>
 
                                 <div className={styles.photoColumnCenter}>
 
-                                    <img
-                                        src={props.sliderBottom[bottomSlide].src}
-                                        className={styles.centerPhoto}
-                                    ></img>
+                                    <div className={styles.centerPhoto}>
+                                        <Image
+                                            src={props.sliderBottom[bottomSlide].src}
+                                            alt="Produs marca Belvedere Wood Parquet"
+                                            layout="fill"
+                                            objectFit="cover"
+                                        />
+                                    </div>
 
 
                                     <div className={styles.mobileButtonsWrapper}>
@@ -809,10 +852,13 @@ export function ProdusPage(props){
                                                 }
                                             }}
                                         >
-                                            <img
-                                                className={styles.arrowLeft1}
-                                                src="/catalog/whiteArrowRight.svg"
-                                            />
+                                            <div className={styles.arrowLeft1}>
+                                                <Image
+                                                    src="/catalog/whiteArrowRight.svg"
+                                                    alt=""
+                                                    layout="fill"
+                                                />
+                                            </div>
                                         </div>
                                         <div 
                                             className={styles.changeSlideButtonTablet}
@@ -826,10 +872,13 @@ export function ProdusPage(props){
                                                 }
                                             }}
                                         >
-                                            <img
-                                                className={styles.arrowRight1}
-                                                src="/catalog/whiteArrowRight.svg"
-                                            />
+                                            <div className={styles.arrowRight1}>
+                                                <Image
+                                                    src="/catalog/whiteArrowRight.svg"
+                                                    alt=""
+                                                    layout="fill"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
 
@@ -841,14 +890,18 @@ export function ProdusPage(props){
                                 </div>
 
                                 <div className={styles.photoColumn}>
-                                    <img
-                                        src={
-                                        bottomSlide == props.sliderBottom.length - 1 ? 
-                                        props.sliderBottom[0].src :
-                                        props.sliderBottom[bottomSlide+1].src
-                                        }
-                                        className={styles.sidePhoto}
-                                    ></img>
+                                    <div className={styles.sidePhoto}>
+                                        <Image
+                                            src={
+                                                bottomSlide == props.sliderBottom.length - 1 ? 
+                                                props.sliderBottom[0].src :
+                                                props.sliderBottom[bottomSlide+1].src
+                                            }
+                                            alt=""
+                                            layout="fill"
+                                            objectFit="cover"
+                                        />
+                                    </div>
 
                                     <div 
                                         className={styles.changeSlideButton1}
