@@ -167,19 +167,19 @@ export const sliderParchetPunteTop = [
 export const sliderParchetPunteBottom = [
     {
         src:"/catalog/parchetPunte/Aeroport-13.jpg",
-        name : "Restaurant Lumecraft"
+        name : "Restaurant Lumencraft"
     },
     {
         src:"/catalog/parchetPunte/Aeroport-14.jpg",
-        name : "Restaurant Lumecraft"
+        name : "Restaurant Lumencraft"
     },
     {
         src:"/catalog/parchetPunte/Aeroport-19.jpg",
-        name : "Restaurant Lumecraft"
+        name : "Restaurant Lumencraft"
     },
     {
         src:"/catalog/parchetPunte/Aeroport-21.jpg",
-        name : "Restaurant Lumecraft"
+        name : "Restaurant Lumencraft"
     },
     {
         src:"/catalog/parchetPunte/KikuRestaurant-12 (1).jpg",
@@ -383,7 +383,7 @@ export const sliderPeretiTop = [
 export const sliderPeretiBottom = [
     {
         src: "/catalog/pereti/Aeroport.jpg",
-        name: "Restauranet Lumencraft"
+        name: "Restaurant Lumencraft"
     },
     {
         src: "/catalog/pereti/Aeroport-3.jpg",

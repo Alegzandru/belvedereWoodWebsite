@@ -1341,8 +1341,8 @@ export const products = {
     scari: [
         {
             name : "Scări din lemn masiv",
-            descriptionShort : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia.",
-            descriptionLong : "Aceasta se datorează căldurii și aspectului primitor al lemnului, iar mai nou, datorită tehnologiilor performante, care ne permit o prelucrare profundă a acestui material, putem scoate în evidență toate calitățile unei plăci de lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate sunt valorificate și accentuate la crearea treptelor din lemn.",
+            descriptionShort : "Scările din lemn sunt nu doar funcționale, dar și un element estetic valoros al unei case.",
+            descriptionLong : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia. Aceasta se datorează căldurii și aspectului primitor al lemnului, iar mai nou, datorită tehnologiilor performante, care ne permit o prelucrare profundă a acestui material, putem scoate în evidență toate calitățile unei plăci de lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate sunt valorificate și accentuate la crearea treptelor din lemn.",
             link1 : "Principala",
             link2 : "Catalog",
             types : [
@@ -1401,8 +1401,8 @@ export const products = {
         },
         {
             name : "Лестница из натурального дерева",
-            descriptionShort : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи.",
-            descriptionLong : "Это происходит благодаря теплому и привлекательному виду дерева, а в последнее время, благодаря высококачественным технологиям, позволяющим глубоко перерабатывать этот материал, мы можем раскрыть все качества плиты из натурального дерева. При создании деревянных ступеней используются и акцентируются структура, волокна, клинки, узлы, оставленные с течением времени.",
+            descriptionShort : "Деревянные лестницы - это не только функциональный, но и ценный эстетический элемент дома.",
+            descriptionLong : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи. Это происходит благодаря теплому и привлекательному виду дерева, а в последнее время, благодаря высококачественным технологиям, позволяющим глубоко перерабатывать этот материал, мы можем раскрыть все качества плиты из натурального дерева. При создании деревянных ступеней используются и акцентируются структура, волокна, клинки, узлы, оставленные с течением времени.",
             link1 : "Главная",
             link2 : "Каталог",
             types : [
@@ -1461,8 +1461,8 @@ export const products = {
         },
         {
             name : "Natural wood staircase",
-            descriptionShort : "Wooden stairs are a particularly inspiring choice, complementing the design of any home and marrying its floors.",
-            descriptionLong : "Due to the warm and attractive shapes of wood, including the high quality technology we are allowed to deeply process this material. So, we can bring out all the qualities of a natural wood panel. When creating wooden steps, the structure, fibers, blades as symbols of time passing are used and accentuated.",
+            descriptionShort : "Wooden stairs are not only functional, but also a valuable aesthetic element of a house.",
+            descriptionLong : "Wooden stairs are a particularly inspiring choice, complementing the design of any home and marrying its floors. Due to the warm and attractive shapes of wood, including the high quality technology we are allowed to deeply process this material. So, we can bring out all the qualities of a natural wood panel. When creating wooden steps, the structure, fibers, blades as symbols of time passing are used and accentuated.",
             link1 : "Home",
             link2 : "Catalog",
             types : [

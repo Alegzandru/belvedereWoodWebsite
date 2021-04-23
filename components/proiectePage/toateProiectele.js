@@ -302,7 +302,7 @@ export function ToateProiectele(props){
                                     ></div>
                                     <img
                                         src="/proiecte/kiku1.jpg"
-                                        alt="Castel Mimi"
+                                        alt="Restaurant Kiku"
                                         className={styles.projectImg}
                                     />
                                     <Fade right>
@@ -356,7 +356,7 @@ export function ToateProiectele(props){
                                     ></img>
                                     <img
                                         src="/proiecte/lumencraft4.jpg"
-                                        alt="Restaurant lumencraft"
+                                        alt="Restaurant Lumencraft"
                                         className={styles.projectImg}
                                     />
                                 </div>
@@ -365,53 +365,8 @@ export function ToateProiectele(props){
                     </div>
 
                     <div className={styles.photoWrapperMobile}>
-                        <div className={styles.photoColumnMobile}>
-                                <LinkScroll 
-                                    to="castelMimi"
-                                    smooth={true}
-                                    style={{
-                                        width: "100%",
-                                        textDecoration: "none"
-                                    }}
-                                >
-                                    <div className={styles.photoBoxMobile}>
-                                        <div className={styles.projectNameMobile}>
-                                            Castel Mimi
-                                        </div>
-                                        <img
-                                            src="/proiecte/castelMimi.jpg"
-                                            alt="Castel Mimi"
-                                            className={styles.projectImgMobile}
-                                        >
-                                        </img>
-                                    </div>
-                                </LinkScroll>
-
-
-                                <LinkScroll 
-                                    to="porteryard"
-                                    smooth={true}
-                                    style={{
-                                        width: "100%",
-                                        textDecoration: "none"
-                                    }}
-                                >
-                                    <div className={styles.photoBoxMobile}>
-                                        <div className={styles.projectNameMobile}>
-                                            Cafe Porter Yard
-                                        </div>
-                                        <img
-                                            src="/proiecte/porteryard.jpg"
-                                            alt="Cafe Porter Yard"
-                                            className={styles.projectImgMobile}
-                                        >
-                                        </img>
-                                    </div>
-                                </LinkScroll>
-                        </div>
-                        <div className={styles.photoColumnMobile}>
-
-                                <LinkScroll 
+                        <div className={styles.row2}>
+                            <LinkScroll 
                                     to="muzeul"
                                     smooth={true}
                                     style={{
@@ -419,62 +374,148 @@ export function ToateProiectele(props){
                                         textDecoration: "none"
                                     }}
                                 >
-                                    <div className={styles.photoBoxMobile}>
-                                        <div className={styles.projectNameMobile}>
-                                            Muzeul Național de Artă
-                                        </div>
-                                        <img
-                                            src="/proiecte/muzeulNationalDeArta.jpg"
-                                            alt="Muzeul Național de Artă"
-                                            className={styles.projectImgMobile}
-                                        >
-                                        </img>
+                                <div className={styles.photoBoxMobile}>
+                                    <div className={styles.projectNameMobile}>
+                                        {text.proiectePage[props.lang].project1} 
                                     </div>
-                                </LinkScroll>
+                                    <img
+                                        src="/proiecte/muzeul1.jpg"
+                                        alt="Muzeul National de Art"
+                                        className={styles.projectImgMobile}
+                                    >
+                                    </img>
+                                </div>
+                            </LinkScroll>
+
+                            <LinkScroll 
+                                    to="castelMimi"
+                                    smooth={true}
+                                    style={{
+                                        width: "100%",
+                                        textDecoration: "none"
+                                    }}
+                                >
+                                <div className={styles.photoBoxMobile}>
+                                    <div className={styles.projectNameMobile}>
+                                        {text.proiectePage[props.lang].project2} 
+                                    </div>
+                                    <img
+                                        src="/proiecte/mimi1.jpg"
+                                        alt="Castel Mimi"
+                                        className={styles.projectImgMobile}
+                                    >
+                                    </img>
+                                </div>
+                            </LinkScroll>
                         </div>
-                        <div className={styles.photoColumnMobile}>
 
-                                <LinkScroll 
-                                    to="manucBei"
-                                    smooth={true}
-                                    style={{
-                                        width: "100%",
-                                        textDecoration: "none"
-                                    }}
+                        <div className={styles.row3}>
+                        <LinkScroll 
+                                to="manucBei"
+                                smooth={true}
+                                style={{
+                                    width: "100%",
+                                    textDecoration: "none"
+                                }}
+                            >
+                            <div className={styles.photoBoxMobile}>
+                                <div className={styles.projectNameMobile}>
+                                    {text.proiectePage[props.lang].project3} 
+                                </div>
+                                <img
+                                    src="/proiecte/ManucBei.png"
+                                    alt="Manuc Bei"
+                                    className={styles.projectImgMobile}
                                 >
-                                    <div className={styles.photoBoxMobile}>
-                                        <div className={styles.projectNameMobile}>
-                                            Manuc Bei
-                                        </div>
-                                        <img
-                                            src="/proiecte/ManucBei.png"
-                                            alt="Manuc Bei"
-                                            className={styles.projectImgMobile}
-                                        >
-                                        </img>
-                                    </div>
-                                </LinkScroll>
+                                </img>
+                            </div>
+                        </LinkScroll>
 
-                                <LinkScroll 
-                                    to="rozmarin"
-                                    smooth={true}
-                                    style={{
-                                        width: "100%",
-                                        textDecoration: "none"
-                                    }}
+                        <LinkScroll 
+                                to="phiVegan"
+                                smooth={true}
+                                style={{
+                                    width: "100%",
+                                    textDecoration: "none"
+                                }}
+                            >
+                            <div className={styles.photoBoxMobile}>
+                                <div className={styles.projectNameMobile}>
+                                    {text.proiectePage[props.lang].project4} 
+                                </div>
+                                <img
+                                    src="/mainPage/veganClient.jpg"
+                                    alt="Vegan Phi"
+                                    className={styles.projectImgMobile}
                                 >
-                                    <div className={styles.photoBoxMobile}>
-                                        <div className={styles.projectNameMobile}>
-                                            Cafe Rozmarin
-                                        </div>
-                                        <img
-                                            src="/proiecte/rozmarin.jpg"
-                                            alt="Cafe Rozmarin"
-                                            className={styles.projectImgMobile}
-                                        >
-                                        </img>
-                                    </div>
-                                </LinkScroll>
+                                </img>
+                            </div>
+                        </LinkScroll>
+
+                        <LinkScroll 
+                                to="rozmarin"
+                                smooth={true}
+                                style={{
+                                    width: "100%",
+                                    textDecoration: "none"
+                                }}
+                            >
+                            <div className={styles.photoBoxMobile}>
+                                <div className={styles.projectNameMobile}>
+                                    {text.proiectePage[props.lang].project5} 
+                                </div>
+                                <img
+                                    src="/proiecte/rozmarin1.jpg"
+                                    alt="Rstaurant Rozmarin"
+                                    className={styles.projectImgMobile}
+                                >
+                                </img>
+                            </div>
+                        </LinkScroll>
+                        </div>
+
+                        <div className={styles.row2}>
+                        <LinkScroll 
+                                to="kiku"
+                                smooth={true}
+                                style={{
+                                    width: "100%",
+                                    textDecoration: "none"
+                                }}
+                            >
+                            <div className={styles.photoBoxMobile}>
+                                <div className={styles.projectNameMobile}>
+                                    {text.proiectePage[props.lang].project6} 
+                                </div>
+                                <img
+                                    src="/proiecte/kiku1.jpg"
+                                    alt="Restaurant Kiku"
+                                    className={styles.projectImgMobile}
+                                >
+                                </img>
+                            </div>
+                        </LinkScroll>
+
+                        <LinkScroll 
+                                to="castelMimi"
+                                smooth={true}
+                                style={{
+                                    width: "100%",
+                                    textDecoration: "none"
+                                }}
+                            >
+                            <div className={styles.photoBoxMobile}>
+                                <div className={styles.projectNameMobile}>
+                                    {text.proiectePage[props.lang].project7} 
+                                </div>
+                                <img
+                                    src="/proiecte/lumencraft4.jpg"
+                                    alt="Restaurant Lumencraft"
+                                    className={styles.projectImgMobile}
+                                >
+                                </img>
+                            </div>
+                        </LinkScroll>
                         </div>
                     </div>
                 </div>

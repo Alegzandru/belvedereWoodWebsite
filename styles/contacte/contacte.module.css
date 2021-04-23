@@ -285,7 +285,13 @@
         min-width: 528px;
         height: 930px;
 
-        background-image: url("../../public/contacte/backgroundContacte.png");
+        background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../../public/contacte/kiku.jpg");
+
         background-color: white;
         background-position: 0px -27%;
         background-repeat: no-repeat;
@@ -504,7 +510,6 @@
         min-width: 0px;
         height: auto;
 
-        background-image: url("../../public/contacte/backgroundContacte.png");
         background-color: white;
         background-position: 0px -150px;
         background-repeat: no-repeat;

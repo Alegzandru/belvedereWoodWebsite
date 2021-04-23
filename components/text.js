@@ -375,7 +375,7 @@ export const text = {
     proiectePage : [
             {
                 heading : "Proiectele noastre",
-                subheading : "Lucrările executate de noi pot asigura, atât confortul din casa dvs și a vecinilor tăi, cât și luxul și confortul din destinațiile de importanță națională sau restaurantele îndrăgite. Vezi cum proiectele marca BWP s-au înscris atât de organic și natural în interierul acestor încăperi, încât au devenit un tot întreg.",
+                subheading : "Lucrările executate de noi pot asigura, atât confortul din casa dvs și a vecinilor, cât și luxul și confortul din destinațiile de importanță națională sau restaurantele îndrăgite. Vezi cum proiectele marca BWP s-au înscris atât de organic și natural în interierul acestor încăperi, încât au devenit un tot întreg.",
                 button : "Vezi toate proiectele",
                 project1 : "Muzeul Național de Artă",
                 project1Description : "Mirosul uleiului pe pânză, culorile ce contrastează cu pereții albi și ecoul talentelor artiștilor și a pașilor în sălile de expoziție, așa arată o vizită obișnuită în incita Muzeului Național de Istorie. Așa putem scrie și noi istoria noastră, într-un spațiu de o semnificație culturală națională unică de felul său, vizitată de iubitorii de frumos și evident de artă. Aceasta mai este o destinație la renovarea căreia noi am reușit să aducem aportul nostru, restaurând parchetul din sălile de expoziție.",
