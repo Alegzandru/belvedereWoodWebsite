@@ -1,15 +1,16 @@
 import styles from "../../styles/proiecte/parteneri.module.css"
 import Link from 'next/link'
+import {text} from "../text"
 
 
-export function Parteneri(){
+export function Parteneri(props){
 
     return(
         <div className={styles.wrapper}>
             <section className={styles.section}>
                 <div className={styles.container}>
                     <h3 className={styles.h3}>
-                        Parteneri
+                        {text.proiectePage[props.lang].parteneri}
                     </h3>
                     <div className={styles.line1}>
                     </div>
@@ -117,7 +118,7 @@ export function Parteneri(){
                     </div>
 
                     <h3 className={styles.h3}>
-                        Pentru proiecte de parteneriat :
+                        {text.proiectePage[props.lang].ctaHeading}
                     </h3>
 
                     <div className={styles.buttonsWrapper}>
@@ -126,7 +127,7 @@ export function Parteneri(){
                                 style={{textDecoration:"none"}}
                                 className={styles.button1}
                             >
-                                Deschide Catalog
+                                {text.proiectePage[props.lang].button1}
                             </a>
                         </Link>
                         <Link target="blank" href="/contactsPage">
@@ -134,7 +135,7 @@ export function Parteneri(){
                                 style={{textDecoration:"none"}}
                                 className={styles.button2}
                             >
-                                Contactează-ne
+                                {text.proiectePage[props.lang].button2}
                             </a>
                         </Link>
                     </div>

@@ -3,6 +3,7 @@ import styles from "../../styles/proiecte/toateProiectele.module.css"
 import Link from 'next/link'
 import {Link as LinkScroll} from 'react-scroll'
 import Fade from 'react-reveal/Fade';
+import {text} from "../text"
 
 
 function isInViewport(element) {
@@ -15,7 +16,7 @@ function isInViewport(element) {
     );
 }
 
-export function ToateProiectele(){
+export function ToateProiectele(props){
 
     const [hovered1, setHovered1] = useState(false)
     const [hovered2, setHovered2] = useState(false)
@@ -32,21 +33,17 @@ export function ToateProiectele(){
                 <div className={styles.container}>
                     <div className={styles.textWrapper}>
                         <h1 className={styles.h1}>
-                            Proiectele noastre
+                            {text.proiectePage[props.lang].heading}
                         </h1>
                         <p className={styles.subheading}>
-                        Lucrările executate de noi pot asigura, atât confortul din casa dvs și a
-                        vecinilor tăi, cât și luxul și confortul din destinațiile de importanță națională
-                        sau restaurantele îndrăgite.
-                        Vezi cum proiectele marca BWP s-au înscris atât de organic și natural în
-                        interierul acestor încăperi, încât au devenit un tot întreg.
+                            {text.proiectePage[props.lang].subheading}
                         </p>
                             <LinkScroll 
                                 to="muzeul" 
                                 smooth={true}
                             >
                                 <div className={styles.button1}>
-                                    Vezi toate proiectele
+                                    {text.proiectePage[props.lang].button}
                                 </div>
                             </LinkScroll>
                     </div>
@@ -73,7 +70,7 @@ export function ToateProiectele(){
                                                 display: hovered1? "block" : "none"
                                             }}
                                         >
-                                            Muzeul Național de Artă 
+                                            {text.proiectePage[props.lang].project1} 
                                         </div>
                                     </Fade>
                                     <div 
@@ -136,7 +133,7 @@ export function ToateProiectele(){
                                                 display: hovered2? "block" : "none"
                                             }}
                                         >
-                                            Castel Mimi 
+                                            {text.proiectePage[props.lang].project2} 
                                         </div>
                                     </Fade>
                                 </div>
@@ -163,7 +160,7 @@ export function ToateProiectele(){
                                                 display: hovered3? "block" : "none"
                                             }}
                                         >
-                                            Manuc Bei
+                                            {text.proiectePage[props.lang].project3} 
                                         </div>
                                     </Fade>
                                     <img
@@ -226,7 +223,7 @@ export function ToateProiectele(){
                                                 display: hovered4? "block" : "none"
                                             }}
                                         >
-                                            Phi Vegan
+                                            {text.proiectePage[props.lang].project4} 
                                         </div>
                                     </Fade>
                                 </div>
@@ -253,7 +250,7 @@ export function ToateProiectele(){
                                                 display: hovered5? "block" : "none"
                                             }}
                                         >
-                                            Restaurant Rozmarin
+                                            {text.proiectePage[props.lang].project5} 
                                         </div>
                                     </Fade>
                                     <img
@@ -315,7 +312,7 @@ export function ToateProiectele(){
                                                 display: hovered6? "block" : "none"
                                             }}
                                         >
-                                            Kiku Restaurant 
+                                            {text.proiectePage[props.lang].project6} 
                                         </div>
                                     </Fade>
                                 </div>
@@ -341,7 +338,7 @@ export function ToateProiectele(){
                                                 display: hovered7? "block" : "none"
                                             }}
                                         >
-                                            Restaurant Lumencraft 
+                                            {text.proiectePage[props.lang].project7} 
                                         </div>
                                     </Fade>
                                     <div 

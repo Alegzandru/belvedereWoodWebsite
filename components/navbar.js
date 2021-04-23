@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import {NavbarContext, LanguageContext, WidthContext} from "./context"
 import Link from 'next/link'
 import Slide from 'react-reveal/Slide';
+import {text} from "./text"
 
 
 
@@ -35,7 +36,7 @@ function useWindowSize() {
 }
 
   
-export function Navbar(){
+export function Navbar(props){
 
     const [navbarOpen, setNavbarOpen] = useState(true);
     const {open, setOpen} = useContext(NavbarContext)
@@ -160,7 +161,7 @@ export function Navbar(){
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
                                     style={{color: navbarOpen? blackNavbar ? "black" : "white" : "white"}}
                                 >
-                                    Despre noi
+                                    {text.layout[props.lang].aboutUs}
                                 </div>
                             </a>
                         </Link>
@@ -170,7 +171,7 @@ export function Navbar(){
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
                                     style={{color: navbarOpen? blackNavbar ? "black" : "white" : "white"}}
                                 >
-                                    Catalog
+                                    {text.layout[props.lang].catalog}
                                 </div>
                             </a>
                         </Link>
@@ -190,7 +191,7 @@ export function Navbar(){
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
                                     style={{color: navbarOpen? blackNavbar ? "black" : "white" : "white"}}
                                 >
-                                    Proiecte
+                                    {text.layout[props.lang].proiecte}
                                 </div>
                             </a>
                         </Link>
@@ -200,7 +201,7 @@ export function Navbar(){
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
                                     style={{color: navbarOpen? blackNavbar ? "black" : "white" : "white"}}
                                 >
-                                    Contacte
+                                    {text.layout[props.lang].contacte}
                                 </div>
                             </a>
                         </Link>
@@ -215,7 +216,7 @@ export function Navbar(){
                             <Link href="/contactsPage">
                                 <a style={{textDecoration:"none"}}>
                                     <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
-                                        Contactați-ne
+                                        {text.layout[props.lang].contactUs}
                                     </div>
                                 </a>
                             </Link>
@@ -252,7 +253,7 @@ export function Navbar(){
                         <Link href="/">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
-                                    Principala
+                                    {text.layout[props.lang].mainPage}
                                 </div>
                             </a>
                         </Link>  
@@ -261,7 +262,7 @@ export function Navbar(){
                         <Link href="/despre-noi">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
-                                    Despre noi
+                                    {text.layout[props.lang].aboutUs}
                                 </div>
                             </a>
                         </Link>  
@@ -270,7 +271,7 @@ export function Navbar(){
                         <Link href="/catalog">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
-                                    Catalog
+                                    {text.layout[props.lang].catalog}
                                 </div>
                             </a>
                         </Link>  
@@ -279,7 +280,7 @@ export function Navbar(){
                         <Link href="/proiecte">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
-                                    Proiecte
+                                    {text.layout[props.lang].proiecte}
                                 </div>
                             </a>
                         </Link>  
@@ -288,7 +289,7 @@ export function Navbar(){
                         <Link href="/contactsPage">
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
-                                    Contacte
+                                    {text.layout[props.lang].contacte}
                                 </div>
                             </a>
                         </Link>  

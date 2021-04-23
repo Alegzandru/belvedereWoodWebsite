@@ -1,9 +1,10 @@
 import styles from "../styles/footer.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
+import {text} from "./text"
 
 
-export function Footer(){
+export function Footer(props){
 
     return(
         <div className={styles.footerWrapper}>
@@ -13,40 +14,40 @@ export function Footer(){
                         <div className={styles.leftContainer}>
                             <div className={styles.navDiv}>
                                 <div className={styles.footerAccentText}>
-                                    Navigare
+                                    {text.layout[props.lang].navigation}
                                 </div>
                                 <div className={styles.footerText}>
                                     <Link href="/">
                                         <a className={styles.desktopLink}>
-                                            Principala
+                                            {text.layout[props.lang].mainPage}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
                                     <Link href="/despre-noi">
                                         <a className={styles.desktopLink}>
-                                            Despre noi
+                                            {text.layout[props.lang].aboutUs}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
                                     <Link href="/catalog">
                                         <a className={styles.desktopLink}>
-                                            Catalog
+                                            {text.layout[props.lang].catalog}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
                                     <Link href="/proiecte">
                                         <a className={styles.desktopLink}>
-                                            Proiecte
+                                            {text.layout[props.lang].proiecte}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
                                     <Link href="/contactsPage">
                                         <a className={styles.desktopLink}>
-                                            Contacte
+                                            {text.layout[props.lang].contacte}
                                         </a>
                                     </Link>
                                 </div>
@@ -60,7 +61,7 @@ export function Footer(){
 
                             <div className={styles.contactsDiv}>
                                 <div className={styles.footerAccentText}>
-                                    Contacte
+                                    {text.layout[props.lang].contacte}
                                 </div>
                                 <div className={styles.contactsBox}>
                                     <img
@@ -140,7 +141,8 @@ export function Footer(){
                             © 2021 SRL «RO & TI COLOR»
                         </div>
                         <div>
-                            Informația prezentată pe site, inclusiv costul parchetului are doar scop informativ și nu este o ofertă publică. Toate drepturile rezervate.                        </div>
+                            {text.layout[props.lang].footerText}
+                        </div>
                     </div>
                 </div>
             </section>

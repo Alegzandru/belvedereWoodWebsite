@@ -1,8 +1,9 @@
 import styles from "../../styles/contacte/contacte.module.css"
 import emailjs from 'emailjs-com';
 import {useState} from "react"
+import {text} from "../text"
 
-export function Contacte(){
+export function Contacte(props){
 
     const [emailSent, setEmailSent] = useState(false)
     const [state, setState] = useState({
@@ -63,7 +64,7 @@ export function Contacte(){
                     <div className={styles.dirrectContactsWrapper}>
 
                         <h2 className={styles.h2Left}>
-                            Contacte
+                            {text.contactsPage[props.lang].heading1}
                         </h2>
 
                         <div className={styles.contactsBox}>
@@ -72,8 +73,7 @@ export function Contacte(){
                                     className={styles.contactsNameImg}
                                     src="/contacte/phoneIcon2.svg"
                                 />
-
-                                Număr de telefon
+                                {text.contactsPage[props.lang].teleNumber}
                             </div>
                             <div className={styles.contactsLink}>
                                 <a 
@@ -95,7 +95,7 @@ export function Contacte(){
                                     src="/contacte/emailIcon2.svg"
                                 />
 
-                                Poștă electronică
+                                {text.contactsPage[props.lang].email}
                             </div>
                             <div className={styles.contactsLink}>
                                 <a 
@@ -116,8 +116,7 @@ export function Contacte(){
                                     className={styles.contactsNameImg}
                                     src="/contacte/locationIcon.svg"
                                 />
-
-                                Adresă fizică
+                                {text.contactsPage[props.lang].address}
                             </div>
                             <div className={styles.contactsLink}>
                                 <a 
@@ -134,7 +133,7 @@ export function Contacte(){
                         </div>
 
                         <div className={styles.contactsNameWrapper2}>
-                            Rețele sociale
+                            {text.contactsPage[props.lang].social}
                         </div>
                         <div className={styles.socialPhotosWrapper}>
                             <a href="https://www.instagram.com/parchet_belvederewood/" target="blank">
@@ -155,7 +154,7 @@ export function Contacte(){
 
                     <div className={styles.backwardContactsWrapper}>
                         <h2 className={styles.h2Right}>
-                            Lăsați-ne un mesaj
+                            {text.contactsPage[props.lang].heading2}
                         </h2>
                             <form
                                 onSubmit={sendEmail}
@@ -167,12 +166,12 @@ export function Contacte(){
                                         display: emailSent ? "flex" : "none"
                                     }}
                                 >
-                                    Mesajul Dvs a fost trimis. Vă mulțumim.
+                                    {text.contactsPage[props.lang].messageReceived}
                                 </div>
                                 <div className={styles.nameInputsWrapper}>
                                     <input
                                         type="text" 
-                                        placeholder="Nume" 
+                                        placeholder = {text.contactsPage[props.lang].nume}
                                         className={styles.inputSmall}
                                         type="text" 
                                         id="name"
@@ -183,7 +182,7 @@ export function Contacte(){
                                     ></input>
                                     <input 
                                         type="text" 
-                                        placeholder="Prenume" 
+                                        placeholder = {text.contactsPage[props.lang].prenume} 
                                         className={styles.inputSmall}
                                         id="name"
                                         name="prenume"
@@ -194,7 +193,7 @@ export function Contacte(){
                                 </div>
                                 <input 
                                     type="text" 
-                                    placeholder="Număr de telefon" 
+                                    placeholder={text.contactsPage[props.lang].teleNumber}
                                     className={styles.input}
                                     id="name"
                                     name="number"
@@ -204,7 +203,7 @@ export function Contacte(){
                                 ></input>
                                 <input 
                                     type="text" 
-                                    placeholder="Adresa electronică" 
+                                    placeholder={text.contactsPage[props.lang].emailAddress}
                                     className={styles.input}
                                     id="email"
                                     name="email"
@@ -214,7 +213,7 @@ export function Contacte(){
                                 ></input>
                                 <input 
                                     type="text" 
-                                    placeholder="Mesaj" 
+                                    placeholder={text.contactsPage[props.lang].message}
                                     className={styles.input} 
                                     style={{height: "120px"}}
                                     id="message"
@@ -226,7 +225,7 @@ export function Contacte(){
                                 <input
                                     type="submit"
                                     placeholder="Trimite" 
-                                    value="Trimite"
+                                    value={text.contactsPage[props.lang].send}
                                     className={styles.button}
                                 >
                                 </input>

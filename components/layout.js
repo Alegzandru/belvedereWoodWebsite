@@ -9,13 +9,13 @@ import { NavbarContext, LanguageContext} from "./context"
 export default function Layout (props) {
           
     const { children, title, style, className } = props;
+    const {language, setLanguage} = useContext(LanguageContext)
     
     const [open, setOpen] = useState(false);
     const valueNavbar = { open, setOpen };
     
     // const [language, setLanguage] = useState(0);
     // const valueLanguage = {language, setLanguage}
-    
     
     return (
         <NavbarContext.Provider value={valueNavbar}>
@@ -30,7 +30,7 @@ export default function Layout (props) {
                 </Head>
 
                 <header id="navBar">
-                    <Navbar></Navbar>
+                    <Navbar lang={language}></Navbar>
                 </header>
 
                 <main 
@@ -46,7 +46,7 @@ export default function Layout (props) {
                         display: props.noFooter? "none" : "block"
                     }}
                 >
-                    <Footer></Footer>
+                    <Footer lang={language}></Footer>
                 </footer>
             </div>
         </NavbarContext.Provider>

@@ -1,6 +1,7 @@
 import styles from "../../styles/proiecte/descriereaProiectelor.module.css"
 import {useState, useEffect} from "react"
 import Link from 'next/link'
+import {text} from "../text"
 
 function useWindowSize() {
 
@@ -29,7 +30,7 @@ function useWindowSize() {
 }
 
 
-export function DescriereaProiectelor(){
+export function DescriereaProiectelor(props){
 
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
@@ -110,15 +111,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Muzeul Național de Artă
+                                {text.proiectePage[props.lang].project1}
                             </h2>
                             <p className={styles.subheading}>
-                                Mirosul uleiului pe pânză, culorile ce contrastează cu pereții albi și ecoul talentelor artiștilor și a
-                                pașilor în sălile de expoziție, așa arată o vizită obișnuită în incita Muzeului Național de Istorie.
-                                Așa putem scrie și noi istoria noastră, într-un spațiu de o semnificație culturală națională unică
-                                de felul său, vizitată de iubitorii de frumos și evident de artă. Aceasta mai este o destinație la
-                                renovarea căreia noi am reușit să aducem aportul nostru, restaurând parchetul din sălile de
-                                expoziție.
+                                {text.proiectePage[props.lang].project1Description}
                            </p>
                            <Link href="/catalog/parchetBradut">
                                <a
@@ -127,7 +123,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Parchet brăduț
+                                        {text.proiectePage[props.lang].project1Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -154,10 +150,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Castel Mimi
+                                {text.proiectePage[props.lang].project2}
                             </h2>
                             <p className={styles.subheading}>
-                                Această destinație turistică a fost inclusă în top 15 cele mai frumoase vinării din lume, prezentând  atât istorie, cât și arhitectură modernă celor 30.000 de vizitatori care vin în fiecare an din peste 80 de țări ale lumii. Iar în restaurantul de fine dining ”Bufnița Albă” vin să se delecteze mii de oaspeți cu bucatele selecte și atmosfera deosebită, care se datorează inclusive parchetului executat la comandă și instalat de BWP.
+                                {text.proiectePage[props.lang].project2Description}
                             </p>
                             <Link href="/catalog/parchetPunte">
                                <a
@@ -166,7 +162,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Parchet punte
+                                        {text.proiectePage[props.lang].project2Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -287,10 +283,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Manuc Bei
+                                {text.proiectePage[props.lang].project3}
                             </h2>
                             <p className={styles.subheading}>
-                                Un castel în stil francez de o frumusețea uimitoare, cu o grădină de iarnă, turnuri de pază și un parc imens, care însă nu au trecut neatinse de toate intimperiile istoriei. Cu toate acetea, în 2012 au demarat lucrările de reconstrucție și astăzi el poate fi admirat în toată splendoarea și măreția sa. Compania BWP și-a asumat responsabilitatea de a readuce aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac. Fiecare placă de lemn a avut un design individual și a fost instalată manual, de echipa noastră de meșteri.                             
+                                {text.proiectePage[props.lang].project3Description}
                             </p>
                             <Link href="/catalog/patrateModule">
                                <a
@@ -299,7 +295,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Parchet Modular
+                                        {text.proiectePage[props.lang].project3Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -326,10 +322,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Phi Vegan Restaurant
+                                {text.proiectePage[props.lang].project4}
                             </h2>
                             <p className={styles.subheading}>
-                                Tot ce vine din natură este o artă, de la bucatele de tip raw vegan, până la cele mai fine linii ale plăcii de lemn. Acest restaurant combină aceste aspecte, într-un mod atât de organic și echilibrat, încât este un sentiment constant că te afli în sânul naturii.
+                                {text.proiectePage[props.lang].project4Description}
                             </p>
                             <Link href="/catalog/parchetPunte">
                                <a
@@ -338,7 +334,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Parchet punte
+                                        {text.proiectePage[props.lang].project4Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -416,10 +412,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Cafe Rozmarin
+                                {text.proiectePage[props.lang].project5}
                             </h2>
                             <p className={styles.subheading}>
-                                Ascuns de angoasa lumii, știut de toți iubitorii de mâncare preparată cu dragoste și dedicație, acest restaurant uimește prin designul său inedit, datorită suprafeței sale restrânse și a spațiului utilizat atât de ingenios. Acest lucru a fost realizat cu ajutorul specialiștilor BWP care au construit un set de scări suspendate și o insula din lemn la nivelul 2. De asemenea, aici s-au instalt plăcile de parchet într-un mod mai puțin obișnuit, pe pereți.
+                                {text.proiectePage[props.lang].project5Description}
                             </p>
                             <Link href="/catalog/pereti">
                                <a
@@ -428,7 +424,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Pereți din lemn
+                                        {text.proiectePage[props.lang].project5Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -454,11 +450,10 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Kiku Restaurant
+                                {text.proiectePage[props.lang].project6}
                             </h2>
                             <p className={styles.subheading}>
-                                Un steak house de excepție cere ca totul să fie la fel de rafinat ca și de la bucatele gătite de chef. 
-                                În colaborare cu o echipă locală de designeri am realizat un proiect de interior modern cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă și care să rețină clientul cât mai mult în local.
+                                {text.proiectePage[props.lang].project6Description}
                             </p>
                             <Link href="/catalog/scari">
                                <a
@@ -467,7 +462,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Scări din lemn
+                                        {text.proiectePage[props.lang].project6Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
@@ -586,10 +581,11 @@ export function DescriereaProiectelor(){
                             // }}
                         >
                             <h2 className={styles.h2}>
-                                Restaurant Lumencraft
+                                {text.proiectePage[props.lang].project7}
                             </h2>
                             <p className={styles.subheading}>
-                                În incita unuia dintre cele mai aglomerate locuri din oraș, Aeroportul Internațional Chișinău, restaurantul Lumencraft se evidențiază chiar de la prima vedere, datorită aspectului exterior din lemn natural. Fiecare element din lemn, fie că e podea, perete, plafon sau coloană a fost creat la fabrica BWP, utilizând tehnologii performante.                            </p>
+                                {text.proiectePage[props.lang].project7Description}
+                            </p>
                                 <Link href="/catalog/pereti">
                                <a
                                 style={{
@@ -597,7 +593,7 @@ export function DescriereaProiectelor(){
                                 }}
                                >
                                     <div className={styles.button}>
-                                        Pereți din lemn
+                                        {text.proiectePage[props.lang].project7Button}
                                         <img
                                             src="/proiecte/rightArrowProiecte.svg"
                                             alt=""
