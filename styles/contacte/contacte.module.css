@@ -99,6 +99,7 @@
 }
 
 .contactsNameImg{
+    position: relative;
     height: 24px;
     width: 24px;
 
@@ -146,6 +147,7 @@
 }
 
 .socialImg{
+    position: relative;
     height: 30px;
     width: 30px;
     margin-right: 12px;

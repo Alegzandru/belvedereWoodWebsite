@@ -4,6 +4,12 @@
     overflow: hidden;
 }
 
+.logo{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
 .proiectePageSection{
     height: 700px;
     width: 100%;

@@ -2,6 +2,8 @@ import styles from "../../styles/proiecte/descriereaProiectelor.module.css"
 import {useState, useEffect} from "react"
 import Link from 'next/link'
 import {text} from "../text"
+import Image from 'next/image'
+
 
 function useWindowSize() {
 
@@ -78,11 +80,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -96,11 +100,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
 
@@ -193,11 +199,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -211,11 +219,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -250,11 +260,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -268,11 +280,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
 
@@ -380,11 +394,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -398,11 +414,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div 
@@ -493,11 +511,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -511,11 +531,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -549,11 +571,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.arrowButton}
-                                />
+                                <div className={styles.arrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
 
                             <div 
@@ -567,11 +591,13 @@ export function DescriereaProiectelor(props){
                                     }
                                 }}
                             >
-                                <img
-                                    src="/mainPage/leftArrow.svg"
-                                    alt="Google"
-                                    className={styles.secondArrowButton}
-                                />
+                                <div className={styles.secondArrowButton}>
+                                    <Image
+                                        src="/mainPage/leftArrow.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div 

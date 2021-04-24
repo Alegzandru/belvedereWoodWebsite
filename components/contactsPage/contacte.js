@@ -2,6 +2,8 @@ import styles from "../../styles/contacte/contacte.module.css"
 import emailjs from 'emailjs-com';
 import {useState} from "react"
 import {text} from "../text"
+import Image from 'next/image'
+
 
 export function Contacte(props){
 
@@ -69,10 +71,13 @@ export function Contacte(props){
 
                         <div className={styles.contactsBox}>
                             <div className={styles.contactsNameWrapper}>
-                                <img 
-                                    className={styles.contactsNameImg}
-                                    src="/contacte/phoneIcon2.svg"
-                                />
+                                <div className={styles.contactsNameImg}>
+                                    <Image
+                                        src="/contacte/phoneIcon2.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                                 {text.contactsPage[props.lang].teleNumber}
                             </div>
                             <div className={styles.contactsLink}>
@@ -90,10 +95,13 @@ export function Contacte(props){
 
                         <div className={styles.contactsBox}>
                             <div className={styles.contactsNameWrapper}>
-                                <img 
-                                    className={styles.contactsNameImg}
-                                    src="/contacte/emailIcon2.svg"
-                                />
+                                <div className={styles.contactsNameImg}>
+                                    <Image
+                                        src="/contacte/emailIcon2.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
 
                                 {text.contactsPage[props.lang].email}
                             </div>
@@ -112,10 +120,13 @@ export function Contacte(props){
 
                         <div className={styles.contactsBox}>
                             <div className={styles.contactsNameWrapper}>
-                                <img 
-                                    className={styles.contactsNameImg}
-                                    src="/contacte/locationIcon.svg"
-                                />
+                                <div className={styles.contactsNameImg}>
+                                    <Image
+                                        src="/contacte/locationIcon.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                                 {text.contactsPage[props.lang].address}
                             </div>
                             <div className={styles.contactsLink}>
@@ -137,16 +148,22 @@ export function Contacte(props){
                         </div>
                         <div className={styles.socialPhotosWrapper}>
                             <a href="https://www.instagram.com/parchet_belvederewood/" target="blank">
-                                <img 
-                                    className={styles.socialImg}
-                                    src="/contacte/instagramIcon4.svg"
-                                />
+                                <div className={styles.socialImg}>
+                                    <Image
+                                        src="/contacte/instagramIcon4.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </a>
                             <a href="https://www.facebook.com/belvedereparquet" target="blank">
-                                <img 
-                                    className={styles.socialImg}
-                                    src="/contacte/facebookIcon4.svg"
-                                />
+                                <div className={styles.socialImg}>
+                                    <Image
+                                        src="/contacte/facebookIcon4.svg"
+                                        alt=""
+                                        layout="fill"
+                                    />
+                                </div>
                             </a>
                         </div>
 

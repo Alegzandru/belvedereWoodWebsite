@@ -6,6 +6,7 @@ import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
 import {WidthContext} from "../context"
 import styled from 'styled-components';
 import {text} from "../text"
+import Image from 'next/image'
 
 
 export function ProiectePage(props){
@@ -28,13 +29,13 @@ export function ProiectePage(props){
         <div className={styles.proiectePageWrapper}>
             <section className={styles.proiectePageSection}>
                 <div className={styles.leftContainer}>
-                    <img
-                        src="/mainPage/BWPlogoGold.png"
-                        alt="Google"
-                        width={150}
-                        height={150}
-                        className={styles.logo}
-                    />
+                    <div className={styles.logo}>
+                        <Image
+                            src="/mainPage/BWPlogoGold.png"
+                            alt="Logo Belvedere Wood Parquet"
+                            layout="fill"
+                        />
+                    </div>
                     <p className={styles.leftContainerText}>
                         {text.mainPage.projectsPage[props.lang].heading}
                     </p>

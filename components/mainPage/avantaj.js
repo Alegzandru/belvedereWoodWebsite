@@ -12,13 +12,13 @@ export function Avantaj(props){
             onMouseEnter={ ()=> setHovered(true)}
             onMouseLeave={ ()=> setHovered(false)}
         >
-            <img
-                src={hovered ? props.hoverSrc : props.imgSrc}
-                alt="Google"
-                width={100}
-                height={100}
-                className={styles.avantajImg}
-            />
+            <div className={styles.avantajImg}>
+                <Image
+                    src={hovered ? props.hoverSrc : props.imgSrc}
+                    alt="Avantaj al companiei Belvedere Wood Parquet"
+                    layout="fill"
+                />
+            </div>
             <div className={styles.avantajTextWrapper}>
                 <p className={styles.avantajText}>
                     {props.text}
