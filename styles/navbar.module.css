@@ -65,14 +65,15 @@
 .linkMobile{
     height: 48px;
     width: calc(100% - 16px);
-    margin-left: 16px;
+    margin-left: 30px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 
-    font-family: Futura PT custom Mediu;
+    font-family: Futura PT custom Book;
+    letter-spacing: 2px;
     color: white;
     /* font-size: 18px;
     line-height: 48px; */
@@ -244,7 +245,7 @@
 }
 
 .langTextMobile{
-    font-family: Futura PT custom Mediu;
+    font-family: Futura PT custom Book;
     color: white;
     font-size: 36px;
     line-height: 36px;
@@ -311,6 +312,7 @@
 }
 
 .phoneIcon{
+    position: relative;
     width: 12px;
     height: 12px;
     margin-right: 6px;
@@ -438,6 +440,7 @@
 
 
 .logo{
+    position: relative;
     height: 112px;
     width: 112px;
 
@@ -446,6 +449,7 @@
 }
 
 .logoClosed{
+    position: relative;
     height:48px;
     width: 48px;
 
@@ -467,15 +471,20 @@
 }
 
 .mobileLogo{
+    position: relative;
     height: 48px;
     width: 48px;
     margin-left: 16px;
 }
 
 .mobileIcon{
+    position: relative;
     height: 48px;
     width: 48px;
     margin-right: 16px;
+
+    cursor: pointer;
+    transition: 300ms;
 }
 
 @media screen and (max-width: 940px){

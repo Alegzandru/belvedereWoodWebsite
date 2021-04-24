@@ -6,6 +6,7 @@ import {NavbarContext, LanguageContext, WidthContext} from "./context"
 import Link from 'next/link'
 import Slide from 'react-reveal/Slide';
 import {text} from "./text"
+import { Divide as Hamburger } from 'hamburger-react'
 
 
 
@@ -177,12 +178,13 @@ export function Navbar(props){
                         </Link>
                         <Link href="/">
                             <a>
-                                <img
-                                    src={navbarOpen? blackNavbar? "/mainPage/BWPlogoBlack.png" : "/mainPage/BWPlogoGold.png" :  "/mainPage/BWPlogoGold.png"}
-                                    alt="Logo Belvedere Wood" 
-                                    className={navbarOpen? styles.logo : styles.logoClosed}
-                                >
-                                </img>
+                                <div className={navbarOpen? styles.logo : styles.logoClosed}>
+                                    <Image
+                                        src={navbarOpen? blackNavbar? "/mainPage/BWPlogoBlack.png" : "/mainPage/BWPlogoGold.png" :  "/mainPage/BWPlogoGold.png"}
+                                        alt="Logo Belvedere Wood Parquet" 
+                                        layout="fill"
+                                    />
+                                </div>
                             </a>
                         </Link>
                         <Link href="/proiecte">
@@ -209,10 +211,13 @@ export function Navbar(props){
                     </div>
                     <div className={navbarOpen? styles.contactUsWrapper : styles.contactUsWrapper}>
                         <div className={navbarOpen? styles.contactUsButton : styles.contactUsButtonClosed}>
-                            <img
-                                src={navbarOpen? "/navbar/phoneIconWhite.svg" : "/navbar/phoneIconGreen.svg"}
-                                className={styles.phoneIcon}
-                            />
+                            <div className={styles.phoneIcon}>
+                                <Image
+                                    src={navbarOpen? "/navbar/phoneIconWhite.svg" : "/navbar/phoneIconGreen.svg"}
+                                    alt=""
+                                    layout="fill"
+                                />
+                            </div>
                             <Link href="/contactsPage">
                                 <a style={{textDecoration:"none"}}>
                                     <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
@@ -230,18 +235,18 @@ export function Navbar(props){
                 >
                     <Link href="/">
                         <a>
-                            <img
-                                src="/mainPage/BWPlogoGold.png"
-                                alt="Logo"
-                                className={styles.mobileLogo}
-                            />
+                            <div className={styles.mobileLogo}>
+                                <Image
+                                    src="/mainPage/BWPlogoGold.png"
+                                    alt="Logo Belvedere Wood Parquet"
+                                    layout="fill"
+                                />
+                            </div>
                         </a>
                     </Link>
-                    <img
-                        src={open? "/navbar/closeIcon3.svg":"/mainPage/hamburgerIcon2.svg"}
-                        className={styles.mobileIcon}
-                        onClick={()=> setOpen(!open)}
-                    ></img>
+                    <div className={styles.mobileIcon}>
+                        <Hamburger toggled={open} toggle={setOpen} size={36} duration={0.5} color="white"/>
+                    </div>
                 </div>
                 <div 
                     className={open ? styles.linksWrapperMobile : styles.linksWrapperMobileClosed}

@@ -53,11 +53,13 @@ export function Footer(props){
                                 </div>
                             </div>
 
-                            <img
-                                src="/mainPage/BWPlogoGold.png"
-                                alt="Logo Belvedere Wood"
-                                className={styles.logo}
-                            />
+                            <div className={styles.logo}>
+                                <Image
+                                    src="/mainPage/BWPlogoGold.png"
+                                    alt="Logo Belvedere Wood Parquet"
+                                    layout="fill"
+                                />
+                            </div>
 
                             <div className={styles.contactsDiv}>
                                 <div className={styles.footerAccentText}>
