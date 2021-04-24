@@ -45,7 +45,7 @@ export function ClientsPage(props){
                     <div className={styles.clientsScroller}>
                         {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
-                                src="/mainPage/logoCM.png"
+                                src="/mainPage/logoCM.jpg"
                                 alt="Castel Mimi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(1)}
@@ -64,7 +64,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/kikusteakwine/" target="blank"> */}
                             <img
-                                src="/mainPage/kiku.png"
+                                src="/mainPage/kiku.jpg"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}
@@ -72,7 +72,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.instagram.com/veganphi/" target="blank"> */}
                             <img
-                                src="/mainPage/veganPhi.png"
+                                src="/mainPage/veganPhi.jpg"
                                 alt="Restaurant Vegan Phi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(4)}
@@ -80,7 +80,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.mnam.md/" target="blank"> */}
                             <img
-                                src="/mainPage/mnam.png"
+                                src="/mainPage/mnam.jpg"
                                 alt="Muzeul Național de Artă"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(5)}
@@ -88,7 +88,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/caferozmarin/" target="blank"> */}
                             <img
-                                src="/mainPage/rozmarin.png"
+                                src="/mainPage/rozmarin.jpg"
                                 alt="Cafe Rozmarin"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(6)}
@@ -96,7 +96,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/porteryard/" target="blank"> */}
                             <img
-                                src="/mainPage/porteryard.png"
+                                src="/mainPage/porteryard.jpg"
                                 alt="Restaurant Porteryard"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(7)}
@@ -104,7 +104,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
-                                src="/mainPage/logoCM.png"
+                                src="/mainPage/logoCM.jpg"
                                 alt="Castel Mimi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(1)}
@@ -123,7 +123,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/kikusteakwine/" target="blank"> */}
                             <img
-                                src="/mainPage/kiku.png"
+                                src="/mainPage/kiku.jpg"
                                 alt="Restaurant Kiku"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(3)}
@@ -131,7 +131,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.instagram.com/veganphi/" target="blank"> */}
                             <img
-                                src="/mainPage/veganPhi.png"
+                                src="/mainPage/veganPhi.jpg"
                                 alt="Restaurant Vegan Phi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(4)}
@@ -139,7 +139,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.mnam.md/" target="blank"> */}
                             <img
-                                src="/mainPage/mnam.png"
+                                src="/mainPage/mnam.jpg"
                                 alt="Muzeul Național de Artă"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(5)}
@@ -147,7 +147,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/caferozmarin/" target="blank"> */}
                             <img
-                                src="/mainPage/rozmarin.png"
+                                src="/mainPage/rozmarin.jpg"
                                 alt="Cafe Rozmarin"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(6)}
@@ -155,7 +155,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.facebook.com/porteryard/" target="blank"> */}
                             <img
-                                src="/mainPage/porteryard.png"
+                                src="/mainPage/porteryard.jpg"
                                 alt="Restaurant Porteryard"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(7)}
@@ -163,7 +163,7 @@ export function ClientsPage(props){
                         {/* </a> */}
                         {/* <a href="https://www.castelmimi.md/en/" target="blank"> */}
                             <img
-                                src="/mainPage/logoCM.png"
+                                src="/mainPage/logoCM.jpg"
                                 alt="Castel Mimi"
                                 className={styles.clientImg}
                                 onMouseEnter={()=> setClient(1)}
