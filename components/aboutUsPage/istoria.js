@@ -25,10 +25,10 @@ export function Istoria(props){
                         <div className={styles.eventWrapperLeft}>
                             <div className={styles.eventBoxLeft}>
                                 <div className={styles.eventText}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed rutrum augue. Aenean tincidunt.
+                                    {text.aboutUsPage.istoriaPage[props.lang].year1Event}
                                 </div>
                                 <div className={styles.eventYear}>
-                                    2011
+                                    {text.aboutUsPage.istoriaPage[props.lang].year1}
                                 </div>
                             </div>
                             <div className={styles.eventLine}>
@@ -44,10 +44,10 @@ export function Istoria(props){
                             </div>
                             <div className={styles.eventBoxRight}>
                                 <div className={styles.eventYear}>
-                                    2011
+                                    {text.aboutUsPage.istoriaPage[props.lang].year2}
                                 </div>
                                 <div className={styles.eventText}>
-                                    Crearea primului atelier improvizat în subsolul școlii muzicale, unde au fost elaborate primele mostre și s-a născut dragostea față de structurile naturale ale lemnului.
+                                    {text.aboutUsPage.istoriaPage[props.lang].year2Event}
                                 </div>
                             </div>
                         </div>
@@ -56,11 +56,11 @@ export function Istoria(props){
                     <Fade left>
                         <div className={styles.eventWrapperLeft}>
                             <div className={styles.eventBoxLeft}>
-                                <div className={styles.eventText}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed rutrum augue. Aenean tincidunt.
+                            <div className={styles.eventText}>
+                                    {text.aboutUsPage.istoriaPage[props.lang].year3Event}
                                 </div>
                                 <div className={styles.eventYear}>
-                                    2011
+                                    {text.aboutUsPage.istoriaPage[props.lang].year3}
                                 </div>
                             </div>
                             <div className={styles.eventLine}>
@@ -76,10 +76,10 @@ export function Istoria(props){
                             </div>
                             <div className={styles.eventBoxRight}>
                                 <div className={styles.eventYear}>
-                                    2011
+                                    {text.aboutUsPage.istoriaPage[props.lang].year4}
                                 </div>
                                 <div className={styles.eventText}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed rutrum augue. Aenean tincidunt.
+                                    {text.aboutUsPage.istoriaPage[props.lang].year4Event}
                                 </div>
                             </div>
                         </div>
@@ -89,10 +89,10 @@ export function Istoria(props){
                         <div className={styles.eventWrapperLeft}>
                             <div className={styles.eventBoxLeft}>
                                 <div className={styles.eventText}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed rutrum augue. Aenean tincidunt.
+                                    {text.aboutUsPage.istoriaPage[props.lang].year5Event}
                                 </div>
                                 <div className={styles.eventYear}>
-                                    2011
+                                    {text.aboutUsPage.istoriaPage[props.lang].year5}
                                 </div>
                             </div>
                             <div className={styles.eventLine}>

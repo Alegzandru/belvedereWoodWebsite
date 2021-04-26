@@ -15,11 +15,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Strat superior (stejar)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Strat suport (mesteacăn)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depinde de grosimea parchetului"
                             }
                         ],
                         avantaje : [
@@ -78,11 +78,11 @@ export const products = {
                             structura : [
                                 {
                                     textBold : "Strat superior (stejar)",
-                                    textSimplu : "3,2 mm / 3,4 mm"
+                                    textSimplu : "4,2 mm / 4,5 mm"
                                 },
                                 {
                                     textBold : "Strat suport (mesteacăn)",
-                                    textSimplu : "7 mm"
+                                    textSimplu : "Depinde de grosimea parchetului"
                                 }
                             ],
                             avantaje : [
@@ -141,11 +141,11 @@ export const products = {
                             structura : [
                                 {
                                     textBold : "Strat superior (stejar)",
-                                    textSimplu : "3,2 mm / 3,4 mm"
+                                    textSimplu : "4,2 mm / 4,5 mm"
                                 },
                                 {
                                     textBold : "Strat suport (mesteacăn)",
-                                    textSimplu : "7 mm"
+                                    textSimplu : "Depinde de grosimea parchetului"
                                 }
                             ],
                             avantaje : [
@@ -213,11 +213,11 @@ export const products = {
                     structura : [
                         {
                             textBold : "Верхний слой (дуб)",
-                            textSimplu : "3,2 mm / 3,4 mm"
+                            textSimplu : "4,2 mm / 4,5 mm"
                         },
                         {
                             textBold : "Опорный слой (береза)",
-                            textSimplu : "7 mm"
+                            textSimplu : "Зависит от толщины паркета"
                         }
                     ],
                     avantaje : [
@@ -276,11 +276,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толщины паркета"
                             }
                         ],
                         avantaje : [
@@ -339,11 +339,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толщины паркета"
                             }
                         ],
                         avantaje : [
@@ -411,11 +411,11 @@ export const products = {
                     structura : [
                         {
                             textBold : "Upper layer (oak)",
-                            textSimplu : "3,2 mm / 3,4 mm"
+                            textSimplu : "4,2 mm / 4,5 mm"
                         },
                         {
                             textBold : "Support layer (birch)",
-                            textSimplu : "7 mm"
+                            textSimplu : "Depends on the thickness of the parquet"
                         }
                     ],
                     avantaje : [
@@ -474,11 +474,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [
@@ -537,11 +537,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [
@@ -611,11 +611,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Strat superior (stejar)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Strat suport (mesteacăn)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depinde de grosimea parchetului"
                             }
                         ],
                         avantaje : [
@@ -674,11 +674,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Strat superior (stejar)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Strat suport (mesteacăn)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depinde de grosimea parchetului"
                             }
                         ],
                         avantaje : [
@@ -746,11 +746,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толшины паркета"
                             }
                         ],
                         avantaje : [
@@ -809,11 +809,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толшины паркета"
                             }
                         ],
                         avantaje : [
@@ -881,11 +881,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [
@@ -944,11 +944,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [
@@ -1018,11 +1018,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Strat superior (stejar)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Strat suport (mesteacăn)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depinde de grosimea parchetului"
                             }
                         ],
                         avantaje : [
@@ -1069,11 +1069,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Strat superior (stejar)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Strat suport (mesteacăn)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depinde de grosimea parchetului"
                             }
                         ],
                         avantaje : [
@@ -1129,11 +1129,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толшины паркета"
                             }
                         ],
                         avantaje : [
@@ -1180,11 +1180,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Верхний слой (дуб)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Опорный слой (береза)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Зависит от толшины паркета"
                             }
                         ],
                         vantaje : [
@@ -1240,11 +1240,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [
@@ -1291,11 +1291,11 @@ export const products = {
                         structura : [
                             {
                                 textBold : "Upper layer (oak)",
-                                textSimplu : "3,2 mm / 3,4 mm"
+                                textSimplu : "4,2 mm / 4,5 mm"
                             },
                             {
                                 textBold : "Support layer (birch)",
-                                textSimplu : "7 mm"
+                                textSimplu : "Depends on the thickness of the parquet"
                             }
                         ],
                         avantaje : [

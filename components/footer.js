@@ -2,6 +2,7 @@ import styles from "../styles/footer.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {text} from "./text"
+import Fade from 'react-reveal/Fade';
 
 
 export function Footer(props){
@@ -146,6 +147,24 @@ export function Footer(props){
                             {text.layout[props.lang].footerText}
                         </div>
                     </div>
+                    <Fade bottom>
+                        <div className={styles.devContainer}>
+                            <img 
+                                src="/devImg.svg"
+                                className={styles.devImg}
+                            ></img>
+                            <a 
+                                href="https://lira.md/"
+                                target="blank"
+                                style={{
+                                    textDecoration: "underline",
+                                    color : "#9A9A9A"
+                                }}
+                            >
+                                {text.layout[props.lang].devText}
+                            </a>
+                        </div>
+                    </Fade>
                 </div>
             </section>
         </div>

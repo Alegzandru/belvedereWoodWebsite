@@ -149,15 +149,45 @@ export const text = {
         istoriaPage : [
             {
                 heading : "Istoria companiei",
-                subheading : "Fondată în"
+                subheading : "Fondată în",
+                year1 : "2011",
+                year1Event : "Crearea primului atelier improvizat în subsolul școlii muzicale, unde au fost elaborate primele mostre și s-a născut dragostea față de structurile naturale ale lemnului",
+                year2 : "2012",
+                year2Event : "Călătorii pe teritoriul Europei la expoziții de profil, pentru perfecționarea tehnicii de prelucrare a plăcii de lemn.",
+                year3 : "2014",
+                year3Event : "Semnarea primului contract de colaborare cu partenerii străini. La ziua de astăzi aceștia numără peste 20 de designeri individuali cu renume european și saloane de decor interior pe teritoriul Italiei.",
+                year4 : "2016",
+                year4Event : "Fondarea fabricii cu tehnologii de ultimă generație și mărirea sortimentului de produse marca BWP. Astăzi avem o gama de peste 500 de produse, care crește zilnic, la cererea clienților noștri.",
+                year5 : "2018",
+                year5Event : "Deschiderea show-room-ului de pe str. Uzinelor 15/4. Aici sunteți așteptați cu drag pentru a aduce în casa dvs Confortul natural la fiecare pas"
             },
             {
                 heading : "История компании",
-                subheading : "Основана в"
+                subheading : "Основана в",
+                year1 : "2011",
+                year1Event : "Создание первой импровизированной мастерской в ​​подвале музыкальной школы, где были изготовлены первые образцы и зародилась любовь к натуральным структурам дерева",
+                year2 : "2012",
+                year2Event : "Поездки по территории Европы на профильные выставки, для совершенствования техники обработки древесных плит.",
+                year3 : "2014",
+                year3Event : "Подписание первого договора о сотрудничестве с зарубежными партнерами. Сегодня среди них более 20 высоко оцененных Европейских дизайнеров и салоны дизайна интерьера по всей Италии.",
+                year4 : "2016",
+                year4Event : "Основание фабрики оборудованной новейшими технологиями для диверсификации продукции марки BWP.",
+                year5 : "2018",
+                year5Event : "Открытие шоу-рума на улице Узинелор 15/4. Здесь вас с нетерпением ждут, чтобы привнести в ваш дом естественный комфорт на каждом шагу."
             },
             {
                 heading : "Company history",
-                subheading : "Founded in"
+                subheading : "Founded in",
+                year1 : "2011",
+                year1Event : "Creation of the first improvised workshop in the basement of a music school, where the first samples were made and the love for the natural structures of wood was born.",
+                year2 : "2012",
+                year2Event : "Travels on the territory of Europe to profile exhibitions, for the improvement of the wood board processing technique.",
+                year3 : "2014",
+                year3Event : "Signing the first collaboration contract with foreign partners. Today they represent more than 20 individual designers with European reputation and interior design salons in Italy.",
+                year4 : "2016",
+                year4Event : "Foundation of the factory with high-end technologies used to diversify the range of BWP brand products. Today we have a range of over 500 products, which grows daily, at the request of our customers.",
+                year5 : "2018",
+                year5Event : "Opening of the showroom on 15/4 Uzinelor Street.Here you are eagerly awaited to bring to your home the natural comfort at every step"
             }
         ],
         realizariPage : [
@@ -517,6 +547,7 @@ export const text = {
             contactUs : "Contactați-ne",
             mainPage : "Principala",
             navigation : "Navigare",
+            devText: "Site-ul a fost creat de compania Lira Digital",
             footerText : "Informația prezentată pe site, inclusiv costul parchetului are doar scop informativ și nu este o ofertă publică. Toate drepturile rezervate."
         },
         {
@@ -527,6 +558,7 @@ export const text = {
             contactUs : "Свяжитесь с нами",
             mainPage : "Главная",
             navigation : "Навигация",
+            devText : "Сайт создан Lira Digital",
             footerText : "Информация, представленная на сайте, включая стоимость паркета, носит ознакомительный характер и не является публичной офертой. Все права защищены."
         },
         {
@@ -537,6 +569,7 @@ export const text = {
             contactUs : "Contact us",
             mainPage : "Home Page",
             navigation : "Navigation",
+            devText : "Web-site developed by Lira Digital",
             footerText : "The information presented on the site, including the cost of the parquet, is for informational purposes only and is not a public offer. All rights reserved."
         }
     ]
