@@ -33,6 +33,7 @@ export default function Layout (props) {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     <meta name="description" content={props.description}/>
+                    <meta name="google-site-verification" content="google812162229c1cb17a.html" />
                 </Head>
 
                 <header id="navBar">
