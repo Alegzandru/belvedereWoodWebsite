@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://www.belvederewood.md/</loc>
-        <loc>https://www.belvederewood.md/despre-noi</loc>
-        <loc>https://www.belvederewood.md/catalog</loc>
-        <loc>https://www.belvederewood.md/catalog/parchetBradut</loc>
-        <loc>https://www.belvederewood.md/catalog/parchetPunte</loc>
-        <loc>https://www.belvederewood.md/catalog/patrateModule</loc>
-        <loc>https://www.belvederewood.md/catalog/scari</loc>
-        <loc>https://www.belvederewood.md/catalog/pereti</loc>
-        <loc>https://www.belvederewood.md/proiecte</loc>
-        <loc>https://www.belvederewood.md/contactsPage</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 
+    <url>
+        <loc>https://www.belvederewood.md/despre-noi</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog/parchetBradut</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog/parchetPunte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog/patrateModule</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog/scari</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/catalog/pereti</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/proiecte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/contactsPage</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
 </urlset>
