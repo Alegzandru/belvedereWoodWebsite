@@ -24,6 +24,7 @@ export default function Layout (props) {
         <NavbarContext.Provider value={valueNavbar}>
             <div>
                 <Head>
+                    <meta name="google-site-verification" content="YbfA3OWaFEkoD51ke7utzLuy3TByDlAUaDB9n90_6vU" />
                     {process.env.NODE_ENV !== 'production' && (
                         <link rel="stylesheet" type="text/css" href={'/_next/static/css/styles.chunk.css?v=' + Date.now()} />
                     )}
@@ -33,7 +34,6 @@ export default function Layout (props) {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     <meta name="description" content={props.description}/>
-                    <meta name="google-site-verification" content="google812162229c1cb17a.html" />
                 </Head>
 
                 <header id="navBar">
