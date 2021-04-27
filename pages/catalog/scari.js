@@ -11,7 +11,10 @@ function ScariPage() {
     const {language, setLanguage} = useContext(LanguageContext)
 
     return(
-        <Layout title={"Scări din lemn masiv | Belvedere Wood Parquet"}>
+        <Layout 
+            title={"Scări din lemn masiv | Belvedere Wood Parquet"}
+            description="Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia. Aceasta se datorează căldurii și aspectului primitor al lemnului, iar mai nou, datorită tehnologiilor performante, care permit Belvedere Wood Parquet o prelucrare profundă a acestui material. Astfel putem scoate în evidență toate calitățile unei plăci de lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate sunt valorificate și accentuate la crearea treptelor din lemn."
+        >
             <ProdusPage
                 sliderTop={sliderScariTop}
                 sliderBottom={sliderScariBottom}

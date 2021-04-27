@@ -4,7 +4,7 @@ import { GTM_ID } from '../lib/gtm'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="ro">
         <Head>
           {/* Google Tag Manager - Global base code */}
           <script

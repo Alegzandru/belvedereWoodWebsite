@@ -29,7 +29,10 @@ export default function Layout (props) {
                     )}
                     <link rel="shortcut icon" href="/BWP.ico" />
                     <title>{props.title}</title>
+
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="description" content={props.description}/>
                 </Head>
 
                 <header id="navBar">

@@ -11,7 +11,10 @@ function ParchetPuntePage() {
     const {language, setLanguage} = useContext(LanguageContext)
 
     return(
-        <Layout title={"Parchet Punte | Belvedere Wood Parquet"}>
+        <Layout 
+            title={"Parchet Punte | Belvedere Wood Parquet"}
+            description="Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn. Astăzi, acest tip de parchet este foarte des întâlnit în diverse proiecte marca Belvedere Wood Parquet, datorită caracteristicilor întunecate rectilinii, care se vor combina minunat cu stilul minimalist, una din tendințele majore ale ultimilor 2 ani."
+        >
             <ProdusPage
                 sliderTop={sliderParchetPunteTop}
                 sliderBottom={sliderParchetPunteBottom}

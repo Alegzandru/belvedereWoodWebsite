@@ -11,7 +11,10 @@ function ParchetBradutPage() {
     const {language, setLanguage} = useContext(LanguageContext)
 
     return(
-        <Layout title={`${products.parchetBradut[language].name} | Belvedere Wood Parquet`}>
+        <Layout 
+            title={`${products.parchetBradut[language].name} | Belvedere Wood Parquet`}
+            description="Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale. Belvedere Wood Parquet propune 3 unghiuri diferite de de aranjare a plăcilor de parchet: 45 grade (Chevron), 60 (Brăduț Unguresc) grade si 90 de grade (Heringbone), în dependență de nota de stil pe care doriți să o aduceți interiorului."
+        >
             <ProdusPage
                 sliderTop={sliderParchetBradutTop}
                 sliderBottom={sliderParchetBradutBottom}

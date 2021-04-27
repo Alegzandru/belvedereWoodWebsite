@@ -11,7 +11,10 @@ function PatrateModulePage() {
     const {language, setLanguage} = useContext(LanguageContext)
 
     return(
-        <Layout title={"Parchet Modular | Belvedere Wood Parquet"}>
+        <Layout 
+            title={"Parchet Modular | Belvedere Wood Parquet"}
+            description="Parchetul din colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual. Belvedere Wood Parquet a realizat modele care pun în valoare și sunt inspirate de elemente naturale, modele geometrice și decoruri tradiționale sugestive. Noi propunem 2 dimensiuni ale plăcilor pătrate cele mai populare, însă susținem orice design individual pe care doriți să îl elaborăm."
+        >
             <ProdusPage
                 sliderTop={sliderPatrateModuleTop}
                 sliderBottom={sliderPatrateModuleBottom}

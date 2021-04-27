@@ -152,6 +152,7 @@ export function Footer(props){
                             <img 
                                 src="/devImg.svg"
                                 className={styles.devImg}
+                                alt=""
                             ></img>
                             <a 
                                 href="https://lira.md/"

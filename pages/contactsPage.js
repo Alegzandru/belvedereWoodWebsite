@@ -11,6 +11,7 @@ function ContactePage() {
         <Layout
             noFooter = {true}
             title={"Contacte | Belvedere Wood Parquet"}
+            description="Contactați Belvedere Wood Parquet pentru a discuta detalii cu privință la serviciile noastre/proiecte de parteneriat."
         >
             <Contacte lang={language}></Contacte>
         </Layout>
