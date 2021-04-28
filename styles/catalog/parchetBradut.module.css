@@ -1127,6 +1127,10 @@
     margin-top: 0px;
 }
 
+.firstType{
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 940px){
     .upperPhotoWrapper{
         height: 400px;
@@ -1701,7 +1705,7 @@
 
 @media screen and (max-width: 528px){
     .upperPhotoWrapper{
-        height: 222px;
+        height: 240px;
         width: 100%;
     }
     
@@ -2401,6 +2405,10 @@
         text-align: center;
         margin-top: 150px;
         margin-bottom: -150px;
+    }
+
+    .firstType{
+        margin-right: 0px;
     }
     
 }

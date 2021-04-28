@@ -56,10 +56,10 @@ export const text = {
                 service1Hovered: "Noi vă oferim posibilitatea de a alege oricare model de placă de parchet și orice DESIGN, pe care îl realizăm conform cerințelor dvs la fabrica noastră.",
                 service2 : "Montarea plăcilor de parchet",
                 service2Hovered : "Meșterii noștri instalează plăcile de parchet indiferent de complexitatea formelor și suprafața propusă. 13 €/m.p",
-                service3: "Restaurarea parchetului",
-                service3Hovered : "Pentru a readuce luciul și aspectul nou al parchetului, acesta are nevoie de îngrijire specială. Parchetul BWP se recomandă a fi restaurat o dată la 5 ani.",
-                service4 : "Realizarea scărilor din lemn masiv",
-                service4Hovered : "Scările din lemn amortizează pașii și oferă o comoditate aparte, mai ales atunci când trebuie să te deplasezi de la un etaj la altul.",
+                service4: "Restaurarea parchetului",
+                service4Hovered : "Pentru a readuce luciul și aspectul nou al parchetului, acesta are nevoie de îngrijire specială. Parchetul BWP se recomandă a fi restaurat o dată la 5 ani.",
+                service3 : "Realizarea scărilor din lemn masiv",
+                service3Hovered : "Scările din lemn amortizează pașii și oferă o comoditate aparte, mai ales atunci când trebuie să te deplasezi de la un etaj la altul.",
                 service5: "Executarea pereților din lemn natural",
                 service5Hovered : "Noi ieșim din tipare și oferim clienților nu doar produsele clasice din lemn enumerate mai sus, dar și pereți și chiar plafoane din forme geometrice îndrăznețe."
             },
@@ -69,10 +69,10 @@ export const text = {
                 service1Hovered : "Мы предоставляем Вам возможность выбрать любую модель паркета и любой дизайн, который мы производим на нашем заводе в соответствии с Вашими требованиями.",
                 service2 : "Установка паркета",
                 service2Hovered : "Наши мастера устанавливают паркет независимо от сложности форм и предлагаемой поверхности. 13 €/кв.м.",
-                service3: "Реставрация пола",
-                service3Hovered : "Чтобы вернуть паркету блеск и новый вид, он нуждается в особом уходе. BWP полы рекомендуется реставрировать каждые 5 лет.",
-                service4: "Изготовление лестниц из твердого дерева",
-                service4Hovered : "Деревянные лестницы амортизируют ваши ступеньки и обеспечивают дополнительное удобство, особенно когда вам нужно перейти с одного этажа на другой.",
+                service4: "Реставрация пола",
+                service4Hovered : "Чтобы вернуть паркету блеск и новый вид, он нуждается в особом уходе. BWP полы рекомендуется реставрировать каждые 5 лет.",
+                service3: "Изготовление лестниц из твердого дерева",
+                service3Hovered : "Деревянные лестницы амортизируют ваши ступеньки и обеспечивают дополнительное удобство, особенно когда вам нужно перейти с одного этажа на другой.",
                 service5 : "Изготовление стен из натурального дерева",
                 service5Hovered: "Мы ломаем шаблон и предлагаем клиентам не только классические деревянные изделия, перечисленные выше, но и стены и даже потолки в смелых геометрических формах."
             },
@@ -82,10 +82,10 @@ export const text = {
                 service1Hovered : "We give you the opportunity to choose any model and design of parquet that we produce in our factory, according to your requirements.",
                 service2 : "Parquet installation",
                 service2Hovered : "Our masters install parquet regardless of the complexity of the forms and proposed surface. 13 €/sq.m.",
-                service3 : "Floor renovation",
-                service3Hovered : "To bring back the shine and new look of your parquet, it needs special care. BWP floors should be restored every 5 years.",
-                service4 : "Producing stairs from hardwood",
-                service4Hovered : "Wooden stairs cushion your steps and provide added comfort, especially when you need to go from one floor to another.",
+                service4 : "Floor renovation",
+                service4Hovered : "To bring back the shine and new look of your parquet, it needs special care. BWP floors should be restored every 5 years.",
+                service3 : "Producing stairs from hardwood",
+                service3Hovered : "Wooden stairs cushion your steps and provide added comfort, especially when you need to go from one floor to another.",
                 service5 : "Producing natural wood walls",
                 service5Hovered : "We break the pattern and offer clients not only the classic wood products listed above, but also walls and even ceilings in bold geometric shapes."
             }
@@ -295,7 +295,7 @@ export const text = {
                 product4 : "Scări din lemn masiv",
                 product4Description : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia.",
                 product5 : "Pereți din lemn natural",
-                product5Description : "În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
+                product5Description : "În colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn."
             },
             {
                 heading : "Все продукты",
@@ -311,7 +311,7 @@ export const text = {
                 product4 : "Лестница из натурального дерева",
                 product4Description : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи.",
                 product5 : "Стены из натурального дерева",
-                product5Description : "В поисках оригинального подхода к созданию уникального интерьера, в сотрудничестве с международными дизайнерами, мы предлагаем нашим клиентам деревянные стены и потолки."
+                product5Description : "В сотрудничестве с международными дизайнерами, мы предлагаем нашим клиентам деревянные стены и потолки."
             },
             {
                 heading : "All products",
@@ -327,7 +327,7 @@ export const text = {
                 product4: "Natural wood staircase",
                 product4Description : "Wooden stairs are a particularly inspiring choice, complementing the design of any home and marrying its floors.",
                 product5 : "Natural wood walls",
-                product5Description : "In search of an original approach to create a unique interior, in collaboration with international designers, we offer our customers wooden walls and ceilings solutions."
+                product5Description : "In collaboration with international designers, we offer our customers wooden walls and ceilings solutions."
             }
         ],
         produsPage : [
@@ -365,7 +365,7 @@ export const text = {
                 messageReceived : "Ваше сообщение отправлено. Спасибо.",
                 sendButton : "Отправить",
                 button1 : "Рассчитать цену",
-                button2 : "Индивидуальное предложение",
+                button2 : "Инд. предложение",
                 scrollText : "Прокрутите, чтобы увидеть типы паркета",
                 typesText : "Виды ",
                 price: "Цена",
@@ -381,8 +381,8 @@ export const text = {
                 popupHeading : "Calculate the price of the parquet",
                 selectionText : "Select the model",
                 surface : "Enter the surface",
-                aproxPrice : "Preț estimativ",
-                montarePrice : "Estimated price:",
+                aproxPrice : "Estimated price :",
+                montarePrice : "Installation price:",
                 montareInfo : "* The price for installation includes: assembly, materials and transportation",
                 messageText : "Leave us a message",
                 messageReceived : "Your message has been sent. Thank you.",
@@ -437,8 +437,8 @@ export const text = {
                 heading : "Наши проекты",
                 subheading : "Работа, которую мы выполняем, может обеспечить как комфорт в вашем доме и домах ваших соседей, так и роскошь и удобство национальных достопримечательностей или любимых ресторанов. Посмотрите, как проекты бренда BWP стали настолько органично и естественно интегрированы в интерьеры этих помещений, что они стали единым целым.",
                 button : "Посмотреть все проекты",
-                project1 : "Национальный художественный музей",
-                project1Description : "Запах масла на холсте, цвета, контрастирующие с белыми стенами, эхо талантов и шагов художников в выставочных залах - вот что такое регулярное посещение Национального исторического музея. Так мы можем написать свою историю, в пространстве уникального национального культурного значения, которое посещают любители красоты и, очевидно, искусства. Это еще одно направление, в которое мы смогли внести свой вклад, восстановив полы в выставочных залах.",
+                project1 : "Нац. художеств. музей",
+                project1Description : "Запах масла на холсте, цвета, контрастирующие с белыми стенами, эхо талантов и шагов художников в выставочных залах - вот что такое регулярное посещение Национального художественого музея. Так мы можем написать свою историю, в пространстве уникального национального культурного значения, которое посещают любители красоты и, очевидно, искусства. Это еще одно направление, в которое мы смогли внести свой вклад, восстановив полы в выставочных залах.",
                 project1Button : "Паркет Елочка",
                 project2 : "Замок Мими",
                 project2Description : `Это туристическое направление был включен в списке “15 самых красивых винодельческих заводов мира”, демонстрируя как историю, так и современную архитектуру 30.000 посетителям, которые ежегодно приезжают из более чем 80 стран мира. А в ресторане изысканной кухни "Белая сова" тысячи гостей приезжают насладиться изысканной кухней и особой атмосферой, что также связано с заказным паркетным полом, установленным компанией BWP.`,
@@ -455,7 +455,7 @@ export const text = {
                 project6 : "Ресторан Кику",
                 project6Description : "Уникальный стейк-хаус требует, чтобы все было так же изысканно, как и приготовленные шеф-поваром блюда. В сотрудничестве с местной командой дизайнеров мы создали современный дизайн интерьера с элементами из натурального дерева для обеспечения спокойной, теплой атмосферы, которая удерживает клиента как можно дольше в ресторане.",
                 project6Button : "Лестница из дерева",
-                project7 : "Lumencraft(Аэропорт)",
+                project7 : "Lumencraft (Аэропорт)",
                 project7Description : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи. Это происходит благодаря теплому и привлекательному виду дерева, а в последнее время, благодаря высококачественным технологиям, позволяющим глубоко перерабатывать этот материал, мы можем раскрыть все качества плиты из натурального дерева. При создании деревянных ступеней используются и акцентируются структура, волокна, клинки, узлы, оставленные с течением времени.",
                 project7Button : "Стены из дерева",
                 parteneri : "Партнёры :",

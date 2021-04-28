@@ -1058,7 +1058,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/modul",
                     price1: 120,
                     price2: 0
                 },
@@ -1109,7 +1109,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/modul",
                     price1: 120,
                     price2: 0
                 }
@@ -1169,7 +1169,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/модуль",
                     price1: 120,
                     price2: 0
                 },
@@ -1220,7 +1220,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/модуль",
                     price1: 120,
                     price2: 0
                 }
@@ -1280,7 +1280,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/module",
                     price1: 120,
                     price2: 0
                 },
@@ -1331,7 +1331,7 @@ export const products = {
                             }
                         ]
                     },
-                    price: "120 EUR/mp",
+                    price: "120 EUR/module",
                     price1: 120,
                     price2: 0
                 }
@@ -1341,7 +1341,7 @@ export const products = {
     scari: [
         {
             name : "Scări din lemn masiv",
-            descriptionShort : "Scările din lemn sunt nu doar funcționale, dar și un element estetic valoros al unei case.",
+            // descriptionShort : "Scările din lemn sunt nu doar funcționale, dar și un element estetic valoros al unei case.",
             descriptionLong : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia. Aceasta se datorează căldurii și aspectului primitor al lemnului, iar mai nou, datorită tehnologiilor performante, care ne permit o prelucrare profundă a acestui material, putem scoate în evidență toate calitățile unei plăci de lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate sunt valorificate și accentuate la crearea treptelor din lemn.",
             link1 : "Principala",
             link2 : "Catalog",
@@ -1401,7 +1401,7 @@ export const products = {
         },
         {
             name : "Лестница из натурального дерева",
-            descriptionShort : "Деревянные лестницы - это не только функциональный, но и ценный эстетический элемент дома.",
+            // descriptionShort : "Деревянные лестницы - это не только функциональный, но и ценный эстетический элемент дома.",
             descriptionLong : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи. Это происходит благодаря теплому и привлекательному виду дерева, а в последнее время, благодаря высококачественным технологиям, позволяющим глубоко перерабатывать этот материал, мы можем раскрыть все качества плиты из натурального дерева. При создании деревянных ступеней используются и акцентируются структура, волокна, клинки, узлы, оставленные с течением времени.",
             link1 : "Главная",
             link2 : "Каталог",
@@ -1461,7 +1461,7 @@ export const products = {
         },
         {
             name : "Natural wood staircase",
-            descriptionShort : "Wooden stairs are not only functional, but also a valuable aesthetic element of a house.",
+            // descriptionShort : "Wooden stairs are not only functional, but also a valuable aesthetic element of a house.",
             descriptionLong : "Wooden stairs are a particularly inspiring choice, complementing the design of any home and marrying its floors. Due to the warm and attractive shapes of wood, including the high quality technology we are allowed to deeply process this material. So, we can bring out all the qualities of a natural wood panel. When creating wooden steps, the structure, fibers, blades as symbols of time passing are used and accentuated.",
             link1 : "Home",
             link2 : "Catalog",
@@ -1523,7 +1523,7 @@ export const products = {
     pereti : [
         {
             name : "Pereți din lemn natural",
-            descriptionShort: "În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn.",
+            // descriptionShort: "În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn.",
             descriptionLong : "Modele de astfel de lucrări pot fi văzute și în showroom-ul nostru, unde deja am expus pentru comoditatea dvs. unele din lucrările executate de noi.",
             link1 : "Principala",
             link2 : "Catalog",
@@ -1626,7 +1626,7 @@ export const products = {
         },
         {
             name : "Стены из натурального дерева",
-            descriptionShort: "В поисках оригинального подхода к созданию уникального интерьера, в сотрудничестве с международными дизайнерами, мы предлагаем нашим клиентам деревянные стены и потолки.",
+            // descriptionShort: "В поисках оригинального подхода к созданию уникального интерьера, в сотрудничестве с международными дизайнерами, мы предлагаем нашим клиентам деревянные стены и потолки.",
             descriptionLong : "Модели таких работ также можно увидеть в нашем выставочном зале, где мы уже выставили некоторые из наших работ для вашего удобства.",
             link1 : "Главная",
             link2 : "Каталог",
@@ -1729,7 +1729,7 @@ export const products = {
         },
         {
             name : "Natural wood walls",
-            descriptionShort: "In search of an original approach to create a unique interior, in collaboration with international designers, we offer our customers wooden walls and ceilings solutions.",
+            // descriptionShort: "In search of an original approach to create a unique interior, in collaboration with international designers, we offer our customers wooden walls and ceilings solutions.",
             descriptionLong : "Models of such works also can be seen in our showroom, where we have already displayed some of our works for your convenience.",
             link1 : "Home",
             link2 : "Catalog",

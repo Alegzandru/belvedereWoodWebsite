@@ -64,10 +64,10 @@ export function Realizari(props){
 
                         <div className={styles.realizareBox}>
                             <div className={styles.realizareNumber}>
-                                {text.aboutUsPage.realizariPage[props.lang].achievement3Number}
+                                {text.aboutUsPage.realizariPage[props.lang].achievement4Number}
                             </div>
                             <div className={styles.realizareText}>
-                                {text.aboutUsPage.realizariPage[props.lang].achievement3}
+                                {text.aboutUsPage.realizariPage[props.lang].achievement4}
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export function Realizari(props){
                                 } m3
                             </div>
                             <div className={styles.realizareText}>
-                                {text.aboutUsPage.realizariPage[props.lang].achievement4}
+                                {text.aboutUsPage.realizariPage[props.lang].achievement3}
                             </div>
                         </div>
 

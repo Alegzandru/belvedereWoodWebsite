@@ -2,6 +2,7 @@ import styles from "../../styles/mainPage/avantajePage.module.css"
 import {Avantaj} from './avantaj.js'
 import {text} from "../text"
 
+
 export function AvantajePage(props){
 
     return(

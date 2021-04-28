@@ -6,6 +6,7 @@ import {WidthContext} from "../context"
 import {Link as LinkScroll} from 'react-scroll'
 import { text } from "../text"
 import Image from 'next/image'
+import {Fade} from "react-reveal"
 
 
 export function ProdusPage(props){
@@ -81,284 +82,287 @@ export function ProdusPage(props){
 
     return(
         <div>
-            <div 
-                className={`${popUpClicked == 0 ? styles.popupWrapper : styles.popupWrapperForm}`}
-                style={{
-                    display : popupOpen ? "block" : "none"
-                }}
-            >
+            <Fade bottom>
 
                 <div 
-                    className={styles.closeIcon}
-                    onClick={() => setPopupOpen(false)}
-                >
-                    <Image
-                        src="/catalog/closeIcon2.svg"
-                        layout="fill"
-                    />
-                </div>
-
-                <div style={{
-                    display : popUpClicked == 0 ? "block" : "none"
-                }}>
-                    <div className={styles.popupHeading}>
-                        {text.catalogPage.produsPage[props.lang].popupHeading}
-                    </div>
-
-                    <div 
-                        className={styles.selectionBox}
-                        style={{
-                            position : "absolute",
-                            zIndex : "2",
-                            width: width < 528 ? "calc(100% - 20px)" : ""
-                        }}
-                    >
-                        <div 
-                            className={styles.selectionText}
-                        >
-                            {text.catalogPage.produsPage[props.lang].selectionText}
-                        </div>
-                        <div 
-                            className={styles.dropdownColumn}
-                            onMouseEnter={ () => setDropdownHover(true)}
-                            onMouseLeave={ () => setDropdownHover(false)}
-                        >
-                            <div 
-                                className={styles.dropdownBoxActive}
-                            >
-                                <div className={styles.dropdownTextActive}>
-                                    {props.product.types[selected].name}
-                                </div>
-                                <img 
-                                    src={dropdownHover ? 
-                                        "/catalog/downArrow3.svg" :
-                                        "/catalog/rightArrowWhite.svg"
-                                    }
-                                    className={styles.whiteArrow}
-                                >
-                                </img>
-                            </div>
-
-                            <div 
-                                className={styles.inactiveBox}
-                                style={{
-                                    display : dropdownHover ? "block" : "none"
-                                }}
-                            >
-                                <div 
-                                    className={styles.dropdownBoxInactive}
-                                    onClick={() =>{
-                                        if(selected == props.product.types.length-1){
-                                            setSelected(0)
-                                        }
-                                        else{
-                                            setSelected(selected+1)
-                                        }
-                                    }}
-                                >
-                                    <div className={styles.dropdownTextInactive}>
-                                        {
-                                            props.product.types[
-                                                selected == props.product.types.length-1 ?
-                                                0 : 
-                                                selected+1
-                                            ].name
-                                        }
-                                    </div>
-                                </div>
-                                <div 
-                                    className={styles.dropdownBoxInactive}
-                                    style={{
-                                        display: props.product.types.length == 3 ? "block" : "none"
-                                    }}
-                                    onClick={() =>{
-                                        if(props.product.types.length == 3){
-                                            if(selected == props.product.types.length - 2){
-                                                setSelected(0)
-                                            }
-                                            else if(selected == props.product.types.length - 1){
-                                                setSelected(1)
-                                            }
-                                            else{
-                                                setSelected(selected+2)
-                                            }
-                                        }
-                                        else{
-                                            
-                                        }
-                                    }}
-                                >
-                                    <div className={styles.dropdownTextInactive}>
-                                        {
-                                            props.product.types.length == 3 ? 
-                                            props.product.types[
-                                                selected == props.product.types.length-2 ?
-                                                0 : 
-                                                selected == props.product.types.length-1 ?
-                                                1 :
-                                                selected+2
-                                            ].name
-                                            :
-                                            ""
-                                        }
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div 
-                        className={styles.selectionBox}
-                        style={{
-                            marginTop: "80px"
-                        }}
-                    >
-                        <div className={styles.selectionText}>
-                            {text.catalogPage.produsPage[props.lang].surface}
-                        </div>
-                        <div className={styles.inputBox}>
-                            <input
-                                className={styles.surfaceInput}
-                                type="text" 
-                                placeholder="0" 
-                                id="area"
-                                name="area"
-                                onChange={handleInputChangeArea}
-                                required
-                                value={area}
-                            />
-                            m
-                            <sup>2</sup>
-                        </div>
-                    </div>
-
-                    <div className={styles.priceBoxPopup}>
-                        <div className={styles.priceText}>
-                            {text.catalogPage.produsPage[props.lang].aproxPrice}
-                        </div>
-                        <div className={styles.priceInsideBox}>
-                            <div className={styles.price}>
-                                {area * props.product.types[selected].price1}
-                                {
-                                    props.product.types[selected].price2 == 0 ? 
-                                    ""
-                                    :
-                                    ` - ${area * props.product.types[selected].price2}`
-                                }
-                            </div>
-                            <div className={styles.currency}>
-                                &euro;
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.priceBoxPopup}>
-                        <div className={styles.priceText}>
-                            {text.catalogPage.produsPage[props.lang].montarePrice}
-                        </div>
-                        <div className={styles.priceInsideBox}>
-                            <div className={styles.price}>
-                                {area * 13}
-                            </div>
-                            <div className={styles.currency}>
-                                &euro;
-                            </div>
-                        </div>
-                    </div>
-                    <div 
-                        className={styles.selectionText}
-                        style={{
-                            width: "100%"
-                        }}
-                    >
-                        {text.catalogPage.produsPage[props.lang].montareInfo}
-                    </div>
-                </div>
-
-                <div 
+                    className={`${popUpClicked == 0 ? styles.popupWrapper : styles.popupWrapperForm}`}
                     style={{
-                            display : popUpClicked == 1 ? "block" : "none"
+                        display : popupOpen ? "block" : "none"
                     }}
-                    className={styles.formWrapper}
                 >
-                    <h2 className={styles.h2Right}>
-                        {text.catalogPage.produsPage[props.lang].messageText}
-                    </h2>
-                    <form
-                        onSubmit={sendEmail}
-                        className={styles.form}
+
+                    <div 
+                        className={styles.closeIcon}
+                        onClick={() => setPopupOpen(false)}
                     >
+                        <Image
+                            src="/catalog/closeIcon2.svg"
+                            layout="fill"
+                        />
+                    </div>
+
+                    <div style={{
+                        display : popUpClicked == 0 ? "block" : "none"
+                    }}>
+                        <div className={styles.popupHeading}>
+                            {text.catalogPage.produsPage[props.lang].popupHeading}
+                        </div>
+
                         <div 
-                            className={styles.succesText}
+                            className={styles.selectionBox}
                             style={{
-                                display : emailSent ? "flex" : "none"
+                                position : "absolute",
+                                zIndex : "2",
+                                width: width < 528 ? "calc(100% - 20px)" : ""
                             }}
                         >
-                            {text.catalogPage.produsPage[props.lang].messageReceived}
+                            <div 
+                                className={styles.selectionText}
+                            >
+                                {text.catalogPage.produsPage[props.lang].selectionText}
+                            </div>
+                            <div 
+                                className={styles.dropdownColumn}
+                                onMouseEnter={ () => setDropdownHover(true)}
+                                onMouseLeave={ () => setDropdownHover(false)}
+                            >
+                                <div 
+                                    className={styles.dropdownBoxActive}
+                                >
+                                    <div className={styles.dropdownTextActive}>
+                                        {props.product.types[selected].name}
+                                    </div>
+                                    <img 
+                                        src={dropdownHover ? 
+                                            "/catalog/downArrow3.svg" :
+                                            "/catalog/rightArrowWhite.svg"
+                                        }
+                                        className={styles.whiteArrow}
+                                    >
+                                    </img>
+                                </div>
+
+                                <div 
+                                    className={styles.inactiveBox}
+                                    style={{
+                                        display : dropdownHover ? "block" : "none"
+                                    }}
+                                >
+                                    <div 
+                                        className={styles.dropdownBoxInactive}
+                                        onClick={() =>{
+                                            if(selected == props.product.types.length-1){
+                                                setSelected(0)
+                                            }
+                                            else{
+                                                setSelected(selected+1)
+                                            }
+                                        }}
+                                    >
+                                        <div className={styles.dropdownTextInactive}>
+                                            {
+                                                props.product.types[
+                                                    selected == props.product.types.length-1 ?
+                                                    0 : 
+                                                    selected+1
+                                                ].name
+                                            }
+                                        </div>
+                                    </div>
+                                    <div 
+                                        className={styles.dropdownBoxInactive}
+                                        style={{
+                                            display: props.product.types.length == 3 ? "block" : "none"
+                                        }}
+                                        onClick={() =>{
+                                            if(props.product.types.length == 3){
+                                                if(selected == props.product.types.length - 2){
+                                                    setSelected(0)
+                                                }
+                                                else if(selected == props.product.types.length - 1){
+                                                    setSelected(1)
+                                                }
+                                                else{
+                                                    setSelected(selected+2)
+                                                }
+                                            }
+                                            else{
+                                                
+                                            }
+                                        }}
+                                    >
+                                        <div className={styles.dropdownTextInactive}>
+                                            {
+                                                props.product.types.length == 3 ? 
+                                                props.product.types[
+                                                    selected == props.product.types.length-2 ?
+                                                    0 : 
+                                                    selected == props.product.types.length-1 ?
+                                                    1 :
+                                                    selected+2
+                                                ].name
+                                                :
+                                                ""
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className={styles.nameInputsWrapper}>
-                            <input
+
+                        <div 
+                            className={styles.selectionBox}
+                            style={{
+                                marginTop: "80px"
+                            }}
+                        >
+                            <div className={styles.selectionText}>
+                                {text.catalogPage.produsPage[props.lang].surface}
+                            </div>
+                            <div className={styles.inputBox}>
+                                <input
+                                    className={styles.surfaceInput}
+                                    type="text" 
+                                    placeholder="0" 
+                                    id="area"
+                                    name="area"
+                                    onChange={handleInputChangeArea}
+                                    required
+                                    value={area}
+                                />
+                                m
+                                <sup>2</sup>
+                            </div>
+                        </div>
+
+                        <div className={styles.priceBoxPopup}>
+                            <div className={styles.priceText}>
+                                {text.catalogPage.produsPage[props.lang].aproxPrice}
+                            </div>
+                            <div className={styles.priceInsideBox}>
+                                <div className={styles.price}>
+                                    {area * props.product.types[selected].price1}
+                                    {
+                                        props.product.types[selected].price2 == 0 ? 
+                                        ""
+                                        :
+                                        ` - ${area * props.product.types[selected].price2}`
+                                    }
+                                </div>
+                                <div className={styles.currency}>
+                                    &euro;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={styles.priceBoxPopup}>
+                            <div className={styles.priceText}>
+                                {text.catalogPage.produsPage[props.lang].montarePrice}
+                            </div>
+                            <div className={styles.priceInsideBox}>
+                                <div className={styles.price}>
+                                    {area * 13}
+                                </div>
+                                <div className={styles.currency}>
+                                    &euro;
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                            className={styles.selectionText}
+                            style={{
+                                width: "100%"
+                            }}
+                        >
+                            {text.catalogPage.produsPage[props.lang].montareInfo}
+                        </div>
+                    </div>
+
+                    <div 
+                        style={{
+                                display : popUpClicked == 1 ? "block" : "none"
+                        }}
+                        className={styles.formWrapper}
+                    >
+                        <h2 className={styles.h2Right}>
+                            {text.catalogPage.produsPage[props.lang].messageText}
+                        </h2>
+                        <form
+                            onSubmit={sendEmail}
+                            className={styles.form}
+                        >
+                            <div 
+                                className={styles.succesText}
+                                style={{
+                                    display : emailSent ? "flex" : "none"
+                                }}
+                            >
+                                {text.catalogPage.produsPage[props.lang].messageReceived}
+                            </div>
+                            <div className={styles.nameInputsWrapper}>
+                                <input
+                                    type="text" 
+                                    placeholder="Nume" 
+                                    className={styles.inputSmall}
+                                    type="text" 
+                                    id="name"
+                                    name="nume"
+                                    onChange={handleInputChange}
+                                    required
+                                    value={state.nume}
+                                ></input>
+                                <input 
+                                    type="text" 
+                                    placeholder="Prenume" 
+                                    className={styles.inputSmall}
+                                    id="name"
+                                    name="prenume"
+                                    onChange={handleInputChange}
+                                    required
+                                    value={state.prenume}
+                                ></input>
+                            </div>
+                            <input 
                                 type="text" 
-                                placeholder="Nume" 
-                                className={styles.inputSmall}
-                                type="text" 
+                                placeholder="Număr de telefon" 
+                                className={styles.input}
                                 id="name"
-                                name="nume"
+                                name="number"
                                 onChange={handleInputChange}
                                 required
-                                value={state.nume}
+                                value={state.number}
                             ></input>
                             <input 
                                 type="text" 
-                                placeholder="Prenume" 
-                                className={styles.inputSmall}
-                                id="name"
-                                name="prenume"
+                                placeholder="Adresa electronică" 
+                                className={styles.input}
+                                id="email"
+                                name="email"
                                 onChange={handleInputChange}
                                 required
-                                value={state.prenume}
+                                value={state.email}                        
                             ></input>
-                        </div>
-                        <input 
-                            type="text" 
-                            placeholder="Număr de telefon" 
-                            className={styles.input}
-                            id="name"
-                            name="number"
-                            onChange={handleInputChange}
-                            required
-                            value={state.number}
-                        ></input>
-                        <input 
-                            type="text" 
-                            placeholder="Adresa electronică" 
-                            className={styles.input}
-                            id="email"
-                            name="email"
-                            onChange={handleInputChange}
-                            required
-                            value={state.email}                        
-                        ></input>
-                        <input 
-                            type="text" 
-                            placeholder="Mesaj" 
-                            className={styles.input} 
-                            style={{height: "120px"}}
-                            id="message"
-                            name="message"
-                            onChange={handleInputChange}
-                            required
-                            value={state.message}                        
-                        ></input>
-                        <input
-                            type="submit"
-                            value={text.catalogPage.produsPage[props.lang].sendButton}
-                            className={styles.buttonSubmit}
-                        >
-                        </input>
-                    </form>
+                            <input 
+                                type="text" 
+                                placeholder="Mesaj" 
+                                className={styles.input} 
+                                style={{height: "120px"}}
+                                id="message"
+                                name="message"
+                                onChange={handleInputChange}
+                                required
+                                value={state.message}                        
+                            ></input>
+                            <input
+                                type="submit"
+                                value={text.catalogPage.produsPage[props.lang].sendButton}
+                                className={styles.buttonSubmit}
+                            >
+                            </input>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </Fade>
             <div 
                 className={styles.wrapper}
                 style={{
@@ -562,9 +566,9 @@ export function ProdusPage(props){
                                 }}
                             >
                                 <div 
-                                    className={styles.mobileTypeWrapper}
+                                    className={`${styles.mobileTypeWrapper} ${styles.firstType}`}
                                     style={{
-                                        marginRight : width < 528 ? "0px" : props.product.types.length == 2 ? "20px" : "0px"
+                                        // marginRight : width < 528 ? "0px" : props.product.types.length == 2 ? "20px" : "0px"
                                     }}
                                 >
 
@@ -602,7 +606,7 @@ export function ProdusPage(props){
                                     </div>
                                 </div>
 
-                                <div className={styles.mobileTypeWrapper}>
+                                <div className={`${styles.mobileTypeWrapper} ${styles.firstType}`}>
                                     <LinkScroll
                                         to="characteristics"
                                         smooth={true}

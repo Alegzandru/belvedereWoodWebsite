@@ -167,7 +167,7 @@ export function FAQ(props){
                                 display: open4 ? "block" : "none"
                             }}
                         >
-                            {text.aboutUsPage.faq[props.lang].answer3}
+                            {text.aboutUsPage.faq[props.lang].answer4}
                         </div>
                     </div>
 

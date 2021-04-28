@@ -202,7 +202,7 @@
         align-items: center;
         justify-content: flex-start;
     
-        margin-top: -60px;
+        margin-top: -40px;
     }
     
     .eventWrapperRight{
@@ -218,7 +218,7 @@
     }
     
     .eventBoxLeft{
-        width: 140px;
+        width: 170px;
         height: auto;
         background: #FFFFFF;
     
@@ -235,7 +235,7 @@
     }
 
     .eventBoxRight{
-        width: 140px;
+        width: 170px;
         height: auto;
         background: #FFFFFF;
     
@@ -309,7 +309,7 @@
     }
     
     .eventLine{
-        width: 94px;
+        width: 64px;
         height: 3px;
     
         background-color: #031D1E;
@@ -393,7 +393,7 @@
     }
     
     .eventBoxLeft{
-        width: 110px;
+        width: 130px;
         height: auto;
         background: #FFFFFF;
     
@@ -410,7 +410,7 @@
     }
 
     .eventBoxRight{
-        width: 110px;
+        width: 130px;
         height: auto;
         background: #FFFFFF;
     
@@ -485,7 +485,7 @@
     }
     
     .eventLine{
-        width: calc( 45vw - 16px - 10px - 110px);
+        width: calc( 45vw - 16px - 10px - 130px);
         height: 3px;
     
         background-color: #031D1E;

@@ -6,6 +6,7 @@ import Fade from "react-reveal"
 import {text} from "../text"
 
 
+
 export function TreeTrunkPage(props){
 
     const [hoveredCircle, setHoveredCircle] = useState(0)
