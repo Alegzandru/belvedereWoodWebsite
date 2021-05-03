@@ -3,8 +3,8 @@ export const products = {
     [
         {
             name : "Parchet Brăduț",
-            descriptionShort : "Rafinamentul și stilul clasic mereu au definit acest tip de parchet, preferat de monarhii europeni pentru a decora dormitoarele și curțile regale.",
-            descriptionLong : "Noi propunem 3 unghiuri diferite de de aranjare a plăcilor de parchet: 45 grade (Chevron), 60 (Brăduț Unguresc) grade si 90 de grade (Heringbone), în dependență de nota de stil pe care doriți să o aduceți interiorului. Oricare stil de amenajare a plăcuțelor de parchet veți alege, în casa dvs va fi prezentă o atmosferă aristocratică.",
+            descriptionShort : "Rafinamentul și stilul clasic au definit dintotdeauna acest tip de parchet, preferat de monarhii europeni pentru a-și decora dormitoarele și curțile regale.",
+            descriptionLong : "Noi vă propunem 3 unghiuri diferite de aranjare a plăcilor de parchet: 45 de grade (Chevron), 60 de grade (Brăduț Unguresc) și 90 de grade (Heringbone), în dependență de nota de stil pe care doriți să o adăugați interiorului. Oricare va fi stilul ales de amenajare a plăcuțelor de parchet, în casa Dvs. va fi trona o atmosferă aristocratică",
             link1 : "Principala",
             link2 : "Catalog",
             types : [
@@ -201,13 +201,13 @@ export const products = {
             },
         {
             name : "Паркет Ёлочка",
-            descriptionShort : "Изысканность и классический стиль всегда определяли этот тип паркета, предпочитаемый европейскими монархами для украшения спален и королевских дворов.",
-            descriptionLong : "Мы предлагаем 3 различных ракурса расположения досок паркета: 45 градусов (Шеврон), 60 градусов ( Венгерская Ёлочка) и 90 градусов ( Герингбон ), в зависимости от стиля, который  вы хотите привнести в ваш интерьер. Какой бы стиль напольных покрытий Вы ни выбрали, в Вашем доме будет царить аристократическая атмосфера.",
+            descriptionShort : "Утонченность и классический стиль всегда определяли этот вид паркета, которым европейские монархи предпочитали украшать спальни и королевские дворы.",
+            descriptionLong : "Мы предлагаем 3 разных угла укладки паркетных досок: 45 градусов (шеврон), 60 (венгерская елка) и 90 градусов (херингбон), в зависимости от стиля, который вы хотите придать интерьеру. Какой бы стиль паркета вы ни выбрали, в вашем доме будет присутствовать аристократическая атмосфера.",
             link1 : "Главная",
             link2 : "Каталог",
             types : [
                 {
-                name: "Chevron",
+                name: "Шеврон ",
                 description: "(45 градусов)",
                 caracteristici : {
                     structura : [
@@ -270,7 +270,7 @@ export const products = {
                 price2 : 80
                 },
                 {
-                    name: "Unguresc",
+                    name: "Венгерская елка",
                     description: "(60 градусов)",
                     caracteristici : {
                         structura : [
@@ -333,7 +333,7 @@ export const products = {
                     price2 : 80
                 },
                 {
-                    name: "Herringbone",
+                    name: "Херингбон ",
                     description: "(90 градусов)",
                     caracteristici : {
                         structura : [
@@ -599,8 +599,8 @@ export const products = {
     parchetPunte : [
         {
             name : "Parchet Punte",
-            descriptionShort : "Modelul acestui tip de parchet vine încă din frumoasă perioadă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn.",
-            descriptionLong : "Astăzi, acest tip de parchet este foarte des întâlnit în diverse proiecte de design interior, datorită caracteristicilor întunecate rectilinii, care se vor combina minunat cu stilul minimalist, una din tendințele majore ale ultimilor 2 ani.",
+            descriptionShort : "Modelul acestui tip de parchet vine tocmai din perioada remarcabilă a expedițiilor marine și a corăbiilor din lemn, la puntea cărora erau montate plăci din lemn.",
+            descriptionLong : "Astăzi, acest tip de parchet este adesea întâlnit în diverse proiecte de design interior, datorită caracteristicilor întunecoase rectilinii, care se combină excelent cu un stil minimalist, unul dintre tendințele majore ale ultimilor 2 ani.",
             link1 : "Principala",
             link2 : "Catalog",
             types: [
@@ -733,14 +733,14 @@ export const products = {
             ]
         },
         {
-            name : "Паркетные палубы:",
-            descriptionShort : "Узор этого типа напольных покрытий до сих пор восходит к прекрасному периоду морских экспедиций и деревянных кораблей, на палубах которых были установлены деревянные доски.",
-            descriptionLong : "Сегодня этот тип напольных покрытий очень распространен в различных дизайнерских проектах интерьеров, благодаря своим тёмным прямолинейным характеристикам, которые прекрасно сочетаются с минималистичным стилем, одним из основных трендов последних 10-и лет.",
+            name : "Палубный паркет:",
+            descriptionShort : "Модель этого вида паркета появилась из прекрасного периода морских экспедиций и деревянных кораблей, на палубе которых были установлены деревянные доски.",
+            descriptionLong : "Сегодня этот вид паркета очень распространен в различных проектах интерьера благодаря темным прямолинейным чертам, которые прекрасно сочетаются с минималистским стилем, одним из главных трендов последних двух лет.",
             link1 : "Главная",
             link2 : "Каталог",
             types: [
                     {
-                    name: "Eco Seria",
+                    name: "Серия Эко",
                     description: "",
                     caracteristici : {
                         structura : [
@@ -803,7 +803,7 @@ export const products = {
                     price2 : 50
                 },
                 {
-                    name: "Seria BWP",
+                    name: "Серия BWP",
                     description: "",
                     caracteristici : {
                         structura : [
@@ -1006,8 +1006,8 @@ export const products = {
     patrateModule: [
         {
             name : "Parchet Modular",
-            descriptionShort : "Colecția „Module” combină tradiția artistică a pardoselii încrustate și expresivitatea designului individual.",
-            descriptionLong : "BWP a realizat modele care pun în valoare și sunt inspirate de elemente naturale, modele geometrice și decoruri tradiționale sugestive. Noi propunem 2 dimensiuni ale plăcilor pătrate cele mai populare, însă susținem orice design individual pe care doriți să îl elaborăm.",
+            descriptionShort : "Colecția „Module” combină tradiția artistică a pardoselii încrustate și originalitatea designului individual.",
+            descriptionLong : "BWP a realizat câteva modele care valorifică elementul natural și sunt inspirate din modele geometrice și decoruri tradiționale sugestive. Noi vă punem la dispoziție 2 dimensiuni ale plăcilor pătrate, cele mai populare modele, cu toate acestea susținem și elaborăm orice design individual, la preferințele clienților noștri.",
             link1 : "Principala",
             link2 : "Catalog",
             types:[
@@ -1117,8 +1117,8 @@ export const products = {
         },
         {
             name : "Модульный паркет",
-            descriptionShort : `Коллекция " Module " сочетает в себе художественную традицию инкрустированного пола и выразительность индивидуального дизайна.`,
-            descriptionLong : "BWP создала дизайны, которые подчеркивают и вдохновляются природными элементами, геометрическими узорами и выразительными традиционными украшениями. Мы предлагаем 2 размера самых популярных квадратных плиток, но мы поддерживаем любой индивидуальный дизайн, который вы хотите разработать.",
+            descriptionShort : `Коллекция «Модуль» сочетает в себе художественные традиции мозаичного паркета и выразительность индивидуального дизайна.`,
+            descriptionLong : "Компания BWP создала модели, которые подчеркивают природные элементы, геометрические узоры и впечатляющие традиционные декоры и вдохновляются ими. Мы предлагаем 2 размера самой популярной квадратной плитки, но также мы поддерживаем любой индивидуальный дизайн, который вы захотите.",
             link1 : "Главная",
             link2 : "Каталог",
             types:[
@@ -1342,7 +1342,7 @@ export const products = {
         {
             name : "Scări din lemn masiv",
             // descriptionShort : "Scările din lemn sunt nu doar funcționale, dar și un element estetic valoros al unei case.",
-            descriptionLong : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia. Aceasta se datorează căldurii și aspectului primitor al lemnului, iar mai nou, datorită tehnologiilor performante, care ne permit o prelucrare profundă a acestui material, putem scoate în evidență toate calitățile unei plăci de lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate sunt valorificate și accentuate la crearea treptelor din lemn.",
+            descriptionLong : "Scările din lemn sunt o alegere deosebit de inspirată pentru a completa aspectul interior al casei și definesc o trăsătură fină dintre etajele acesteia. Datorită căldurii, aspectului îmbietor al suprafeței lemnoase, dar și mai nou, cu ajutorul tehnologiilor performante, prelucrăm atent acest material și reușim să evidențiem calitățile unei plăci din lemn masiv. Structura, fibrele, lamelele, nodurile lăsate de trecerea anilor, toate acestea sunt valorificate și accentuate în procesul de creație a treptelor din lemn.",
             link1 : "Principala",
             link2 : "Catalog",
             types : [
@@ -1400,9 +1400,9 @@ export const products = {
             ]
         },
         {
-            name : "Лестница из натурального дерева",
+            name : "Лестницы из массива дерева",
             // descriptionShort : "Деревянные лестницы - это не только функциональный, но и ценный эстетический элемент дома.",
-            descriptionLong : "Деревянные лестницы являются особенно вдохновляющим выбором, дополняющим дизайн любого дома и объединяющим его этажи. Это происходит благодаря теплому и привлекательному виду дерева, а в последнее время, благодаря высококачественным технологиям, позволяющим глубоко перерабатывать этот материал, мы можем раскрыть все качества плиты из натурального дерева. При создании деревянных ступеней используются и акцентируются структура, волокна, клинки, узлы, оставленные с течением времени.",
+            descriptionLong : "Деревянные лестницы - очень вдохновляющий выбор для завершения дизайна любого дома и объединения его этажей. Это связано с теплом и приятным внешним видом древесины, а в последнее время, благодаря высокоэффективным технологиям, которые позволяют нам углубленно обрабатывать этот материал, мы можем подчеркнуть все качества массивной древесной плиты. Структура, волокна, пластины, сучки, оставленные годами, - все это подчеркивается и выделяется при создании деревянных ступеней.",
             link1 : "Главная",
             link2 : "Каталог",
             types : [
@@ -1524,7 +1524,7 @@ export const products = {
         {
             name : "Pereți din lemn natural",
             // descriptionShort: "În căutarea unei abordări originale pentru un décor de interior inedit, în colaborare cu designeri internaționali, noi propunem clienților noștri pereți și tavane din lemn.",
-            descriptionLong : "Modele de astfel de lucrări pot fi văzute și în showroom-ul nostru, unde deja am expus pentru comoditatea dvs. unele din lucrările executate de noi.",
+            descriptionLong : "În căutarea unei abordări originale pentru un decor de interior deosebit, colaborând cu designeri internaționali, propunem clienților noștri să opteze pentru pereți și tavane din lemn. Pentru comoditatea Dvs. și pentru a vă ajuta să alegi ușor un model după placul Dvs., vă invităm să vedeți câteva astfel de modele în showroom-ul nostru, de pe str. Uzinelor 15/4.",
             link1 : "Principala",
             link2 : "Catalog",
             types : [
@@ -1627,7 +1627,7 @@ export const products = {
         {
             name : "Стены из натурального дерева",
             // descriptionShort: "В поисках оригинального подхода к созданию уникального интерьера, в сотрудничестве с международными дизайнерами, мы предлагаем нашим клиентам деревянные стены и потолки.",
-            descriptionLong : "Модели таких работ также можно увидеть в нашем выставочном зале, где мы уже выставили некоторые из наших работ для вашего удобства.",
+            descriptionLong : "В поисках оригинального подхода к уникальному декору интерьера, в сотрудничестве с международными дизайнерами мы предлагаем нашим клиентам деревянные стены и потолки. Макеты таких работ также можно увидеть в нашем выставочном зале, где для вашего удобства мы уже выставили некоторые из выполненных нами работ.",
             link1 : "Главная",
             link2 : "Каталог",
             types : [

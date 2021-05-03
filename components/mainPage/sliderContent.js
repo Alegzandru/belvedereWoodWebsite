@@ -16,74 +16,74 @@ export const proiecteSlider = [
     [
         {
             heading : "Manuc Bei",
-            subheading : "Compania BWP și-a asumat responsabilitatea de a readuce Conacului Manuc Bei aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac",
+            subheading : "Compania BWP și-a asumat responsabilitatea de a-i readuce Conacului lui Manuc Bei aspectul veritabil al secolului trecut, renovând parchetul din toate camerele din conac",
             href: "manucBei"
         },
         {
             heading : "Castel Mimi",
-            subheading: "De atmosfera intimă a culorilor închise a parchetului marca BWP se bucură mii de turiști și iubitori ai bucătării de tip fine dining din cadrul restaurantului ”Bufnița Albă”, Castelul Mimi.",
+            subheading: "Nuanțele închise a parchetului marca BWP creează o atmosferă intimă de care se bucură mii de turiști și iubitori ai bucătării de tip fine dining, din cadrul restaurantului „Bufnița Albă” a Castelului Mimi.",
             href: "castelMimi"
         },
         {
             heading: "Lumencraft",
-            subheading: "Fiecare element din lemn, fie că e podea, perete, plafon sau coloană a fost creat la fabrica BWP, utilizând tehnologii performante.",
+            subheading: "Fiecare element din lemn, fie că e podea, perete, plafon sau coloană a fost creat la fabrica BWP, utilizând tehnologii de ultimă generație.",
             href: "lumencraft"
         },
         {
             heading: "Kiku Restaurant",
-            subheading: "În colaborare cu o echipă locală de designeri am realizat un proiect de interior modern cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă și care să rețină clientul cât mai mult în local.",
+            subheading: "În colaborare cu o echipă locală de designeri, am realizat un proiect de design interior modern, cu elemente naturale din lemn, pentru a asigura o atmosferă calmă, călduroasă, iar oaspeții să-și dorească să prelungească vizita la Kiku Restaurant.",
             href: "kiku"
         },
         {
             heading: "Phi Vegan Restaurant",
-            subheading: "O combinație elegantă între liniile fine ale plăcii de lemn și bucătăria raw vegan, într-un singur loc.",
+            subheading: "O combinație elegantă între liniile fine ale plăcilor de lemn și bucătăria raw vegan – într-un  singur loc.",
             href: "phiVegan"
         },
         {
             heading: "Muzeul Național de Artă",
-            subheading: "”Muzeul Național de Artă”- încă o destinație de semnificație  destinație la renovarea căreia noi am reușit să aducem aportul nostru, restaurând parchetul din sălile de expoziție.",
+            subheading: "„Muzeul Național de Artă” o destinație semnificativă, la renovarea căreia am reușit cu succes să aplicăm experiența echipei BWP, restaurând parchetul din sălile de expoziție.",
             href: "muzeul"
         },
         {
             heading: "Restaurantul Rozmarin",
-            subheading: "Un interior utilizat ingenios și la potențialul său maxim, datorită scărilor suspendate și pereților îmbrăcați cu plăci de parchet.",
+            subheading: "Spațiu interior utilizat ingenios și valorificat, datorită scărilor suspendate și pereților decorați cu plăci de parchet.",
             href: "rozmarin"
         }
     ],
     [
         {
-            heading : "«Manuc Bei»",
-            subheading : "Компания BWP взяла на себя ответственность за восстановление усадьбы «Manuc Bei» до подлинного облика прошлых веков, отремонтировав полы во всех комнатах усадьбы.",
+            heading : "Манук-бей",
+            subheading : "Компания BWP взяла на себя ответственность вернуть в особняк Манук Бей истинный облик прошлого века, обновив паркет во всех комнатах усадьбы.",
             href: "manucBei"
         },
         {
             heading : "Замок Мими",
-            subheading: `Тысячи туристов и любителей вкусной кухни в ресторане White Owl в замке Мими (Mimi Castle) наслаждаются проникновенной атмосферой темных цветов напольных покрытий марки BWP.`,
+            subheading: `Тысячи туристов и ценителей высокой кухни в ресторане «Белая сова» в замке Мими наслаждаются интимной атмосферой темных тонов паркета BWP.`,
             href: "castelMimi"
         },
         {
             heading: "Lumencraft(Аэропорт)",
-            subheading: "Каждый деревянный элемент, будь то пол, стена, потолок или колонна, был создан на заводе BWP с использованием высококачественных технологий.",
+            subheading: "Каждый деревянный элемент, будь то пол, стена, потолок или колонна, был создан на фабрике BWP с использованием передовых технологий.",
             href: "lumencraft"
         },
         {
             heading: "Ресторан Кику",
-            subheading: "В сотрудничестве с местной командой дизайнеров мы создали современный дизайн интерьера с элементами из натурального дерева, для обеспечения спокойной, теплой атмосферы, чтобы клиенту захотелось задержаться как можно дольше.",
+            subheading: "В сотрудничестве с местной командой дизайнеров мы создали современный проект интерьера с элементами из натурального дерева, чтобы обеспечить спокойную, теплую атмосферу и задержать клиента как можно дольше в заведении.",
             href: "kiku"
         },
         {
             heading: "Ресторан Фи-Веган",
-            subheading: "Элегантное сочетание изысканных линий деревянной доски и сырой вегетарианской кухни в одном месте.",
+            subheading: "Элегантное сочетание тонких деревянных панелей и сыроедческой веганской кухни в одном месте.",
             href: "phiVegan"
         },
         {
             heading: "Национальный художественный музей",
-            subheading: `"Национальный художественный музей" - еще одно важное достопримечательность, в реконструкцию которого нам удалось внести свой вклад, восстановив полы в выставочных залах.`,
+            subheading: `«Национальный художественный музей» - еще одно важное направление, в реставрацию которого нам удалось внести свой вклад, восстановив пол в выставочных залах`,
             href: "muzeul"
         },
         {
             heading: "Ресторан Розмарин",
-            subheading: "Интерьер, использованный гениально и в меру своих возможностей, благодаря подвесным лестницам и стенам, облицованным досками пола.",
+            subheading: "Интерьер, использованный с умом и с максимальным потенциалом, благодаря подвесной лестнице и стенам, покрытым паркетной плиткой.",
             href: "rozmarin"
         }
     ],
