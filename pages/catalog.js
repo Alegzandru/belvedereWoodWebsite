@@ -11,9 +11,14 @@ function Catalog() {
     return(
         <Layout 
             title={"Toate produsele | Belvedere Wood Parquet"}
-            description="Belvedere Wood Parquet valorifică unicitatea fiecărui arbore și îi alege doar pe cei care prin finisare produc cea mai frumoasă placă de parchet, treaptă sau decor pentru perete. Fiecare etapă este atent supravegheată pentru a putea oferi o gamă largă de produse, conform proiectului de design și preferințelor individuale ale clientului."
+            description="Diferite tipuri de parchet, pereți și scări din lemn - toate acestea fac parte din asortimentul bogat de produse al companiei Belvedere Wood Parchet"
+            lang={0}
+            langStr=""
         >
-            <ToateProdusele lang={language}></ToateProdusele>
+            <ToateProdusele 
+                lang={0}
+                langStr=""
+            ></ToateProdusele>
         </Layout>
     )
 }

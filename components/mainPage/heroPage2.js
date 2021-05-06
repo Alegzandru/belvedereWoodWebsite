@@ -2,9 +2,7 @@ import React from "react";
 import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
 import styles from "../../styles/mainPage/heroPage.module.css"
 import Link from 'next/link'
-React.useLayoutEffect = React.useEffect 
 import {text} from "../text"
-
 
 // Images
 const slide1 = "/mainPage/slider/slide1.jpg";
@@ -53,7 +51,7 @@ export const HeroPage2 = (props) => {
                     {text.mainPage.heroPage[props.lang].description}
                 </p>
                 <div className={styles.buttonsWrapper}>
-                    <Link href="/catalog">
+                    <Link href={`${props.langStr}/catalog`}>
                         <a 
                             style={{textDecoration: "none"}}
                             className={styles.link}
@@ -63,7 +61,7 @@ export const HeroPage2 = (props) => {
                             </div>
                         </a>
                     </Link>
-                    <Link href="/proiecte">
+                    <Link href={`${props.langStr}/proiecte`}>
                         <a 
                             style={{textDecoration: "none"}}
                             className={styles.link}

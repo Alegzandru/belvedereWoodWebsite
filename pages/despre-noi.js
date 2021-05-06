@@ -13,13 +13,13 @@ function DespreNoi() {
     return(
         <Layout 
             title={"Despre noi | Belvedere Wood Parquet"}
-            description="Forme, desene și structuri inedite ale lucrărilor, la crearea cărora se întâlnesc arta prelucrării manuale a lemnului cu tehnologiile performante. 
-            Inspirată de tradiția centenară de producere a parchetului din lemn, Compania Belvedere Wood Parquet vine cu o experiență în crearea lucrărilor sale tocmai din Italia. De unde a adus nu doar rafinament și calitate înaltă, dar și abordare inovativă în procesul de prelucrare a plăcii de lemn.
-            Cu noi aveți posibilitatea de a reproduce orice lucrare din domeniul podelelor din parchet, pereților și scărilor din lemn."
+            description="Istoria companiei Belvedere Wood Parchet - fondată în 2011, BWP are o experiență vastă în producerea, instalarea și restaurarea parchetului , precum și a pereților și scărilor din lemn."
+            lang={0}
+            langStr=""
         >
-            <Istoria lang={language}></Istoria>
-            <Realizari lang={language}></Realizari>
-            <FAQ lang={language}></FAQ>
+            <Istoria lang={0}></Istoria>
+            <Realizari lang={0}></Realizari>
+            <FAQ lang={0}></FAQ>
         </Layout>
     )
 }

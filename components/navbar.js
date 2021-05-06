@@ -8,8 +8,6 @@ import Slide from 'react-reveal/Slide';
 import {text} from "./text"
 import { Divide as Hamburger } from 'hamburger-react'
 
-
-
 function useWindowSize() {
 
     const [windowSize, setWindowSize] = useState({
@@ -49,7 +47,8 @@ export function Navbar(props){
     const [langClicked, setLangClicked] = useState(false)
 
     const router = useRouter();
-    const isMainPage = router.pathname == "/";
+
+    const isMainPage = router.pathname == "/" || router.pathname == "/ru" || router.pathname == "/en";
 
     const size = useWindowSize();
     const mobile = size.width < 940 ? true : false;
@@ -63,10 +62,22 @@ export function Navbar(props){
         window.addEventListener("scroll", scrollPosition);
     }
 
+    const route1 = 
+    props.lang == 0 ? `/ru${router.pathname}` : 
+    props.lang == 1 ? `/en${router.pathname.replace("/ru", "")}` :
+    props.lang == 2 ? `${isMainPage ? "/" : ""}${router.pathname.replace("/en", "")}` : ""
+
+    const route2 = 
+    props.lang == 0 ? `/en${router.pathname}` : 
+    props.lang == 1 ? `${isMainPage ? "/" : ""}${router.pathname.replace("/ru", "")}` :
+    props.lang == 2 ? `/ru${router.pathname.replace("/en", "")}` : ""
+
     useEffect(
         () => {
-            setBlackNavbar(router.pathname == "/despre-noi" || router.pathname == "/proiecte" ? true : false)
+            setBlackNavbar(router.pathname == `${props.langStr}/despre-noi` || router.pathname == `${props.langStr}/proiecte` ? true : false)
             setWidth(size.width)
+            console.log(route1)
+            console.log(route2)
         }
     )
 
@@ -101,14 +112,14 @@ export function Navbar(props){
                     >
                         <div className={styles.langButton}>
                             <img
-                                src={language == 0 ? "/navbar/flagRo.svg" : language == 1? "/navbar/flagRu.svg" : language == 2? "/navbar/flagEn.svg" : ""}
+                                src={props.lang == 0 ? "/navbar/flagRo.svg" : props.lang == 1? "/navbar/flagRu.svg" : props.lang == 2? "/navbar/flagEn.svg" : ""}
                                 className={styles.flag}
                             />
                             <div 
                                 className={styles.langText}
                                 style={{color: navbarOpen? blackNavbar ? "black" : "white" : "white"}}
                             >
-                                {language == 0 ? "Ro" : language == 1? "Ru" : language == 2? "En" : ""}
+                                {props.lang == 0 ? "Ro" : props.lang == 1? "Ru" : props.lang == 2? "En" : ""}
                             </div>
                             <img
                                 src={ navbarOpen? blackNavbar ? "/navbar/arrowDownBlack.svg" : "/navbar/arrowDown.svg" : "/navbar/arrowDown.svg" }
@@ -124,39 +135,35 @@ export function Navbar(props){
                             <div 
                                 className={styles.langBox}
                                 onClick={() => {
-                                    language == 0 ? setLanguage(1) : 
-                                    language == 1 ? setLanguage(2) :
-                                    language == 2 ? setLanguage(0) : ""
+                                    router.push(route1)
                                 }}
                             >
                                 <img
-                                    src={language == 0 ? "/navbar/flagRu.svg" : language == 1? "/navbar/flagEn.svg" : language == 2? "/navbar/flagRo.svg" : ""}
+                                    src={props.lang == 0 ? "/navbar/flagRu.svg" : props.lang == 1? "/navbar/flagEn.svg" : props.lang == 2? "/navbar/flagRo.svg" : ""}
                                     className={styles.flag}
                                 />
                                 <div className={styles.langText}>
-                                    {language == 0 ? "Ru" : language == 1? "En" : language == 2? "Ro" : ""}
+                                    {props.lang == 0 ? "Ru" : props.lang == 1? "En" : props.lang == 2? "Ro" : ""}
                                 </div>
                             </div>
                             <div 
                                 className={styles.langBox}
                                 onClick={() => {
-                                    language == 0 ? setLanguage(2) : 
-                                    language == 1 ? setLanguage(0) :
-                                    language == 2 ? setLanguage(1) : ""
+                                    router.push(route2)
                                 }}
                             >
                                 <img
-                                    src={language == 0 ? "/navbar/flagEn.svg" : language == 1? "/navbar/flagRo.svg" : language == 2? "/navbar/flagRu.svg" : ""}
+                                    src={props.lang == 0 ? "/navbar/flagEn.svg" : props.lang == 1? "/navbar/flagRo.svg" : props.lang == 2? "/navbar/flagRu.svg" : ""}
                                     className={styles.flag}
                                 />
                                 <div className={styles.langText}>
-                                    {language == 0 ? "En" : language == 1? "Ro" : language == 2? "Ru" : ""}
+                                    {props.lang == 0 ? "En" : props.lang == 1? "Ro" : props.lang == 2? "Ru" : ""}
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={navbarOpen? styles.navContainer :styles.navContainerClosed}>
-                        <Link href="/despre-noi">
+                        <Link href={`${props.langStr}/despre-noi`}>
                             <a className={navbarOpen? blackNavbar? styles.desktopLinkBlack : styles.desktopLink : styles.desktopLinkClosed}>
                                 <div 
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
@@ -166,7 +173,7 @@ export function Navbar(props){
                                 </div>
                             </a>
                         </Link>
-                        <Link href="/catalog">
+                        <Link href={`${props.langStr}/catalog`}>
                             <a className={navbarOpen? blackNavbar? styles.desktopLinkBlack : styles.desktopLink : styles.desktopLinkClosed}>
                                 <div 
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
@@ -176,7 +183,7 @@ export function Navbar(props){
                                 </div>
                             </a>
                         </Link>
-                        <Link href="/">
+                        <Link href={`${props.langStr}/`}>
                             <a>
                                 <div className={navbarOpen? styles.logo : styles.logoClosed}>
                                     <Image
@@ -187,7 +194,7 @@ export function Navbar(props){
                                 </div>
                             </a>
                         </Link>
-                        <Link href="/proiecte">
+                        <Link href={`${props.langStr}/proiecte`}>
                             <a className={navbarOpen? blackNavbar? styles.desktopLinkBlack : styles.desktopLink : styles.desktopLinkClosed}>
                                 <div 
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
@@ -197,7 +204,7 @@ export function Navbar(props){
                                 </div>
                             </a>
                         </Link>
-                        <Link href="/contactsPage">
+                        <Link href={`${props.langStr}/contacte`}>
                             <a className={navbarOpen? blackNavbar? styles.desktopLinkBlack : styles.desktopLink : styles.desktopLinkClosed}>
                                 <div 
                                     className={navbarOpen ? styles.navLink : styles.navLinkClosed}
@@ -218,7 +225,7 @@ export function Navbar(props){
                                     layout="fill"
                                 />
                             </div>
-                            <Link href="/contactsPage">
+                            <Link href={`${props.langStr}/contacte`}>
                                 <a style={{textDecoration:"none"}}>
                                     <div className={navbarOpen? styles.contactUsText : styles.contactUsTextClosed}>
                                         {text.layout[props.lang].contactUs}
@@ -233,7 +240,7 @@ export function Navbar(props){
                     className={styles.mobileContainer}
                     style={{display : mobile? "flex" : "none"}}
                 >
-                    <Link href="/">
+                    <Link href={`${props.langStr}/`}>
                         <a>
                             <div className={styles.mobileLogo}>
                                 <Image
@@ -255,7 +262,7 @@ export function Navbar(props){
                     // }}
                 >
                     <Slide right>
-                        <Link href="/">
+                        <Link href={`${props.langStr}/`}>
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     {text.layout[props.lang].mainPage}
@@ -264,7 +271,7 @@ export function Navbar(props){
                         </Link>  
                     </Slide>
                     <Slide right>
-                        <Link href="/despre-noi">
+                        <Link href={`${props.langStr}/despre-noi`}>
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     {text.layout[props.lang].aboutUs}
@@ -273,7 +280,7 @@ export function Navbar(props){
                         </Link>  
                     </Slide>
                     <Slide right>
-                        <Link href="/catalog">
+                        <Link href={`${props.langStr}/catalog`}>
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     {text.layout[props.lang].catalog}
@@ -282,7 +289,7 @@ export function Navbar(props){
                         </Link>  
                     </Slide>
                     <Slide right>
-                        <Link href="/proiecte">
+                        <Link href={`${props.langStr}/proiecte`}>
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     {text.layout[props.lang].proiecte}
@@ -291,7 +298,7 @@ export function Navbar(props){
                         </Link>  
                     </Slide>
                     <Slide right>
-                        <Link href="/contactsPage">
+                        <Link href={`${props.langStr}/contacte`}>
                             <a className={styles.mobileA}>
                                 <div className={styles.linkMobile}>
                                     {text.layout[props.lang].contacte}
@@ -315,13 +322,13 @@ export function Navbar(props){
                             >
                                 <div className={styles.langButtonMobile}>
                                     <img
-                                        src={language == 0 ? "/navbar/flagRo.svg" : language == 1? "/navbar/flagRu.svg" : language == 2? "/navbar/flagEn.svg" : ""}
+                                        src={props.lang == 0 ? "/navbar/flagRo.svg" : props.lang == 1? "/navbar/flagRu.svg" : props.lang == 2? "/navbar/flagEn.svg" : ""}
                                         className={styles.flagMobile}
                                     />
                                     <div 
                                         className={styles.langTextMobile}
                                     >
-                                        {language == 0 ? "Ro" : language == 1? "Ru" : language == 2? "En" : ""}
+                                        {props.lang == 0 ? "Ro" : props.lang == 1? "Ru" : props.lang == 2? "En" : ""}
                                     </div>
                                     <img
                                         src="/navbar/arrowDown.svg"
@@ -338,33 +345,29 @@ export function Navbar(props){
                                     <div 
                                         className={styles.langBoxMobile}
                                         onClick={() => {
-                                            language == 0 ? setLanguage(1) : 
-                                            language == 1 ? setLanguage(2) :
-                                            language == 2 ? setLanguage(0) : ""
+                                            router.push(route1)
                                         }}
                                     >
                                         <img
-                                            src={language == 0 ? "/navbar/flagRu.svg" : language == 1? "/navbar/flagEn.svg" : language == 2? "/navbar/flagRo.svg" : ""}
+                                            src={props.lang == 0 ? "/navbar/flagRu.svg" : props.lang == 1? "/navbar/flagEn.svg" : props.lang == 2? "/navbar/flagRo.svg" : ""}
                                             className={styles.flagMobile}
                                         />
                                         <div className={styles.langTextMobile}>
-                                            {language == 0 ? "Ru" : language == 1? "En" : language == 2? "Ro" : ""}
+                                            {props.lang == 0 ? "Ru" : props.lang == 1? "En" : props.lang == 2? "Ro" : ""}
                                         </div>
                                     </div>
                                     <div 
                                         className={styles.langBoxMobile}
                                         onClick={() => {
-                                            language == 0 ? setLanguage(2) : 
-                                            language == 1 ? setLanguage(0) :
-                                            language == 2 ? setLanguage(1) : ""
+                                            router.push(route2)
                                         }}
                                     >
                                         <img
-                                            src={language == 0 ? "/navbar/flagEn.svg" : language == 1? "/navbar/flagRo.svg" : language == 2? "/navbar/flagRu.svg" : ""}
+                                            src={props.lang == 0 ? "/navbar/flagEn.svg" : props.lang == 1? "/navbar/flagRo.svg" : props.lang == 2? "/navbar/flagRu.svg" : ""}
                                             className={styles.flagMobile}
                                         />
                                         <div className={styles.langTextMobile}>
-                                            {language == 0 ? "En" : language == 1? "Ro" : language == 2? "Ru" : ""}
+                                            {props.lang == 0 ? "En" : props.lang == 1? "Ro" : props.lang == 2? "Ru" : ""}
                                         </div>
                                     </div>
                                 </div>

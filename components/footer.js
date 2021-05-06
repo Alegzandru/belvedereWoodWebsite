@@ -18,35 +18,35 @@ export function Footer(props){
                                     {text.layout[props.lang].navigation}
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/">
+                                    <Link href={`${props.langStr}/`}>
                                         <a className={styles.desktopLink}>
                                             {text.layout[props.lang].mainPage}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/despre-noi">
+                                    <Link href={`${props.langStr}/despre-noi`}>
                                         <a className={styles.desktopLink}>
                                             {text.layout[props.lang].aboutUs}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/catalog">
+                                    <Link href={`${props.langStr}/catalog`}>
                                         <a className={styles.desktopLink}>
                                             {text.layout[props.lang].catalog}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/proiecte">
+                                    <Link href={`${props.langStr}/proiecte`}>
                                         <a className={styles.desktopLink}>
                                             {text.layout[props.lang].proiecte}
                                         </a>
                                     </Link>
                                 </div>
                                 <div className={styles.footerText}>
-                                    <Link href="/contactsPage">
+                                    <Link href={`${props.langStr}/contacte`}>
                                         <a className={styles.desktopLink}>
                                             {text.layout[props.lang].contacte}
                                         </a>

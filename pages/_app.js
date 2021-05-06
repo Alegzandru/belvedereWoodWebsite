@@ -1,3 +1,4 @@
+import React from "react";
 import '../styles/global.css'
 import {LanguageContext, WidthContext} from "../components/context"
 import {useState} from "react"

@@ -122,7 +122,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project1Description}
                            </p>
-                           <Link href="/catalog/parchetBradut">
+                           <Link href={`${props.langStr}/catalog/parchetBradut`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -161,7 +161,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project2Description}
                             </p>
-                            <Link href="/catalog/parchetPunte">
+                            <Link href={`${props.langStr}/catalog/parchetPunte`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -302,7 +302,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project3Description}
                             </p>
-                            <Link href="/catalog/patrateModule">
+                            <Link href={`${props.langStr}/catalog/patrateModule`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -341,7 +341,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project4Description}
                             </p>
-                            <Link href="/catalog/parchetPunte">
+                            <Link href={`${props.langStr}/catalog/parchetPunte`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -435,7 +435,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project5Description}
                             </p>
-                            <Link href="/catalog/pereti">
+                            <Link href={`${props.langStr}/catalog/pereti`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -473,7 +473,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project6Description}
                             </p>
-                            <Link href="/catalog/scari">
+                            <Link href={`${props.langStr}/catalog/scari`}>
                                <a
                                 style={{
                                     textDecoration: "none"
@@ -612,7 +612,7 @@ export function DescriereaProiectelor(props){
                             <p className={styles.subheading}>
                                 {text.proiectePage[props.lang].project7Description}
                             </p>
-                                <Link href="/catalog/pereti">
+                            <Link href={`${props.langStr}/catalog/pereti`}>
                                <a
                                 style={{
                                     textDecoration: "none"

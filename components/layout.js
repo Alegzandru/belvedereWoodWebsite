@@ -17,7 +17,7 @@ export default function Layout (props) {
 
     const {width, setWidth} = useContext(WidthContext)
     const router = useRouter()
-    const onMainPage = router.pathname == "/" ? 1 : 0
+    const onMainPage = router.pathname == "/" || router.pathname == "/ru" || router.pathname == "/en"? 1 : 0
 
     
     return (
@@ -37,7 +37,10 @@ export default function Layout (props) {
                 </Head>
 
                 <header id="navBar">
-                    <Navbar lang={language}></Navbar>
+                    <Navbar 
+                        lang={props.lang}
+                        langStr={props.langStr}
+                    ></Navbar>
                 </header>
 
                 <main 
@@ -55,7 +58,10 @@ export default function Layout (props) {
                         display: props.noFooter? "none" : "block"
                     }}
                 >
-                    <Footer lang={language}></Footer>
+                    <Footer 
+                        lang={props.lang}
+                        langStr={props.langStr}
+                    ></Footer>
                 </footer>
             </div>
         </NavbarContext.Provider>

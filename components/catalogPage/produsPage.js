@@ -393,7 +393,7 @@ export function ProdusPage(props){
                     </div>
                     <div className={styles.container}>
                         <div className={styles.breadcrumbWrapper}>
-                            <Link href="/">
+                            <Link href={`${props.lang == 0 ? "/" : ""}${props.langStr}`}>
                                 <a className={styles.inactiveLink}>
                                     {props.product.link1}
                                 </a>
@@ -405,7 +405,7 @@ export function ProdusPage(props){
                                     layout="fill"
                                 />
                             </div>
-                            <Link href="/catalog">
+                            <Link href={`${props.langStr}/catalog`}>
                                 <a className={styles.inactiveLink}>
                                     {props.product.link2}
                                 </a>

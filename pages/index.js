@@ -15,16 +15,34 @@ function HomePage() {
     return(
         <Layout 
             title={"Pagina principală | Belvedere Wood Parquet"}
-            description="Forme, desene și structuri inedite ale lucrărilor, la crearea cărora se întâlnesc arta prelucrării manuale a lemnului cu tehnologiile performante. 
-            Inspirată de tradiția centenară de producere a parchetului din lemn, Compania Belvedere Wood Parquet vine cu o experiență în crearea lucrărilor sale tocmai din Italia. De unde a adus nu doar rafinament și calitate înaltă, dar și abordare inovativă în procesul de prelucrare a plăcii de lemn.
-            Cu noi aveți posibilitatea de a reproduce orice lucrare din domeniul podelelor din parchet, pereților și scărilor din lemn."
+            description="Belvedere Wood Parchet - producerea, instalarea, restaurarea parchetului, pereților și scărilor din lemn în Chișinău, Moldova. Puteți vedea exemple ale parchetului și lucrărior noastre din lemn la showroomul de pe strada Uzinelor 15/4, Chișinău, Moldova"
+            lang={0}
+            langStr=""
         >
-            <HeroPage2 lang={language}></HeroPage2>
-            <TreeTrunkPage lang={language}></TreeTrunkPage>
-            <ServicesPage lang={language}></ServicesPage>
-            <ClientsPage lang={language}></ClientsPage>
-            <AvantajePage lang={language}></AvantajePage>
-            <ProiectePage lang={language}></ProiectePage>
+            <HeroPage2 
+                lang={0}
+                langStr=""
+            ></HeroPage2>
+            <TreeTrunkPage 
+                lang={0}
+                langStr=""
+            ></TreeTrunkPage>
+            <ServicesPage 
+                lang={0}
+                langStr=""
+            ></ServicesPage>
+            <ClientsPage 
+                lang={0}
+                langStr=""
+            ></ClientsPage>
+            <AvantajePage 
+                lang={0}
+                langStr=""
+            ></AvantajePage>
+            <ProiectePage 
+                lang={language}
+                langStr=""
+            ></ProiectePage>
         </Layout>
     )
 }

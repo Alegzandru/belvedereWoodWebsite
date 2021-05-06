@@ -24,7 +24,7 @@ export function ToateProdusele(props){
                 </div>
                 <div className={styles.container}>
                     <div className={styles.breadcrumbWrapper}>
-                        <Link href="/">
+                        <Link href={`${props.lang == 0 ? "/" : ""}${props.langStr}`}>
                             <a className={styles.inactiveLink}>
                                 {text.catalogPage.toateProdusele[props.lang].link1}
                             </a>
@@ -40,7 +40,7 @@ export function ToateProdusele(props){
                     </div>
 
                     <div className={styles.productRow}>
-                        <Link href="/catalog/parchetBradut">
+                        <Link href={`${props.langStr}/catalog/parchetBradut`}>
                             <a
                                 style={{
                                     textDecoration: "none",
@@ -54,7 +54,7 @@ export function ToateProdusele(props){
                             </a>
                         </Link>
 
-                        <Link href="/catalog/parchetPunte">
+                        <Link href={`${props.langStr}/catalog/parchetPunte`}>
                             <a
                                 style={{
                                     textDecoration: "none"
@@ -69,7 +69,7 @@ export function ToateProdusele(props){
                         </Link>
 
 
-                        <Link href="/catalog/patrateModule">
+                        <Link href={`${props.langStr}/catalog/patrateModule`}>
                             <a
                                 style={{
                                     textDecoration: "none"
@@ -90,7 +90,7 @@ export function ToateProdusele(props){
                             justifyContent: "flex-start"
                         }}
                     >
-                        <Link href="/catalog/scari">
+                        <Link href={`${props.langStr}/catalog/scari`}>
                             <a
                                 style={{
                                     textDecoration: "none",
@@ -105,7 +105,7 @@ export function ToateProdusele(props){
                             </a>
                         </Link>
 
-                        <Link href="/catalog/pereti">
+                        <Link href={`${props.langStr}/catalog/pereti`}>
                             <a
                                 style={{
                                     textDecoration: "none"
@@ -122,7 +122,7 @@ export function ToateProdusele(props){
                     </div>
 
                     <div className={styles.productRowMobile}>
-                        <Link href="/catalog/parchetBradut">
+                        <Link href={`${props.langStr}/catalog/parchetBradut`}>
                             <a
                                 style={{
                                     textDecoration: "none",
@@ -136,7 +136,7 @@ export function ToateProdusele(props){
                             </a>
                         </Link>
 
-                        <Link href="/catalog/parchetPunte">
+                        <Link href={`${props.langStr}/catalog/parchetPunte`}>
                             <a
                                 style={{
                                     textDecoration: "none"
@@ -152,7 +152,7 @@ export function ToateProdusele(props){
                     </div>
 
                     <div className={styles.productRowMobile}>
-                        <Link href="/catalog/patrateModule">
+                        <Link href={`${props.langStr}/catalog/patrateModule`}>
                             <a
                                 style={{
                                     textDecoration: "none"
@@ -166,7 +166,7 @@ export function ToateProdusele(props){
                             </a>
                         </Link>
 
-                        <Link href="/catalog/scari">
+                        <Link href={`${props.langStr}/catalog/scari`}>
                             <a
                                 style={{
                                     textDecoration: "none",
@@ -182,7 +182,7 @@ export function ToateProdusele(props){
                     </div>
 
                     <div className={styles.productRowMobile}>
-                        <Link href="/catalog/pereti">
+                        <Link href={`${props.langStr}/catalog/pereti`}>
                             <a
                                 style={{
                                     textDecoration: "none"

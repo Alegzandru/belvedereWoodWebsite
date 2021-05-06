@@ -23,7 +23,7 @@ export function TreeTrunkPage(props){
                         <div className={styles.subheading}>
                             {text.mainPage.treeTrunkPage[props.lang].subheading}
                         </div>
-                        <Link href="/despre-noi">
+                        <Link href={`${props.langStr}/despre-noi`}>
                             <a style={{textDecoration: "none"}}>
                                 <div className={styles.button1}>
                                     {text.mainPage.treeTrunkPage[props.lang].button}

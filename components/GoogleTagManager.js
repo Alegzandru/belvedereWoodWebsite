@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import React from "react"
 import { useRouter } from 'next/router'
 import * as gtm from '../lib/gtm'
 

@@ -179,7 +179,7 @@ export function ProiectePage(props){
                                     {proiecteSlider[props.lang][slide].subheading}
                                 </p>
                                 <a 
-                                    href={`/proiecte/#${proiecteSlider[props.lang][slide].href}`} 
+                                    href={`${props.langStr}/proiecte/#${proiecteSlider[props.lang][slide].href}`} 
                                     style={{
                                         textDecoration : "none"
                                     }}

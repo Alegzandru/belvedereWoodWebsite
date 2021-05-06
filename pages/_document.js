@@ -1,5 +1,7 @@
+import React from "react"
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { GTM_ID } from '../lib/gtm'
+React.useLayoutEffect = React.useEffect 
 
 export default class MyDocument extends Document {
   render() {

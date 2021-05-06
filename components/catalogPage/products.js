@@ -733,7 +733,7 @@ export const products = {
             ]
         },
         {
-            name : "Палубный паркет:",
+            name : "Палубный паркет",
             descriptionShort : "Модель этого вида паркета появилась из прекрасного периода морских экспедиций и деревянных кораблей, на палубе которых были установлены деревянные доски.",
             descriptionLong : "Сегодня этот вид паркета очень распространен в различных проектах интерьера благодаря темным прямолинейным чертам, которые прекрасно сочетаются с минималистским стилем, одним из главных трендов последних двух лет.",
             link1 : "Главная",
@@ -868,7 +868,7 @@ export const products = {
             ]
         },
         {
-            name : "Parquet decks:",
+            name : "Parquet decks",
             descriptionShort : "The pattern of this type of flooring still goes back to the beautiful period of sea expeditions and wooden ships with wooden planks on their decks.",
             descriptionLong : "Today, this type of flooring is very common in various interior design projects, thanks to its dark straight characteristics that combine wonderfully with the minimalist style, one of the major trends of the last 2 years.",
             link1 : "Home",

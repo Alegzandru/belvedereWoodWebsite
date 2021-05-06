@@ -122,7 +122,7 @@ export function Parteneri(props){
                     </h3>
 
                     <div className={styles.buttonsWrapper}>
-                        <Link target="blank" href="/catalog">
+                        <Link target="blank" href={`${props.langStr}/catalog`}>
                             <a
                                 style={{textDecoration:"none"}}
                                 className={styles.button1}
@@ -130,7 +130,7 @@ export function Parteneri(props){
                                 {text.proiectePage[props.lang].button1}
                             </a>
                         </Link>
-                        <Link target="blank" href="/contactsPage">
+                        <Link target="blank"  href={`${props.langStr}/contacte`}>
                             <a 
                                 style={{textDecoration:"none"}}
                                 className={styles.button2}
