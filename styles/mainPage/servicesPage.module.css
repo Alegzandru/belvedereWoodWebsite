@@ -14,7 +14,7 @@
 .servicesPageContainer{
     width: 1080px;
 
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +27,7 @@
     color: black;
     font-family: Futura PT custom Demi;
 
-    margin-top: 0px;
+    margin-top: 60px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -124,9 +124,18 @@
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
 
     width: 100%;
+    transition: 400ms;
+}
+
+.producere:hover{
+    background-size: 110%;
+    box-shadow: 0px 10px 10px rgb(3, 29, 30, 0.40);
+
+    transition: 400ms;
 }
 
 .montare{
@@ -139,7 +148,17 @@
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 155%;
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+
+    transition: 400ms;
+}
+
+.montare:hover{
+    background-size: 170%;
+    box-shadow: 0px 10px 10px rgb(3, 29, 30, 0.40);
+
+    transition: 400ms;
 }
 
 .scari{
@@ -152,7 +171,17 @@
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 180%;
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+
+    transition: 400ms;
+}
+
+.scari:hover{
+    background-size: 200%;
+    box-shadow: 0px 10px 10px rgb(3, 29, 30, 0.40);
+
+    transition: 400ms;
 }
 
 .restaurare{
@@ -165,7 +194,17 @@
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 180%;
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+
+    transition: 400ms;
+}
+
+.restaurare:hover{
+    background-size: 200%;
+    box-shadow: 0px 10px 10px rgb(3, 29, 30, 0.40);
+
+    transition: 400ms;
 }
 
 .pereti{
@@ -181,7 +220,17 @@
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 120%;
+    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+
+    transition: 400ms;
+}
+
+.pereti:hover{
+    background-size: 130%;
+    box-shadow: 0px 10px 10px rgb(3, 29, 30, 0.40);
+
+    transition: 400ms;
 }
 
 @media screen and (max-width: 1080px){
@@ -234,6 +283,12 @@
     .pereti{
         width: 166px;
         height: 528px;
+
+        background-size : 180%;
+    }
+
+    .pereti:hover{
+        background-size: 200%;
     }
 }
 
@@ -321,6 +376,11 @@
         height: 166px;
 
         margin-top: 15px;
+        background-size: 120%;
+    }
+
+    .pereti:hover{
+        background-size: 130%;
     }
 
 }
