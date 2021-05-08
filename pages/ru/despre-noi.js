@@ -12,7 +12,7 @@ function DespreNoi() {
 
     return(
         <Layout 
-            title={"О нас | Belvedere Wood Parquet"}
+            title={"О нас | Belvedere Wood Паркет"}
             description="История компании Belvedere Wood Паркет - основанная в 2011 году компания BWP имеет большой опыт в производстве, установке и реставрации паркета, а также деревянных стен и лестниц."
             lang={1}
             langStr="/ru"

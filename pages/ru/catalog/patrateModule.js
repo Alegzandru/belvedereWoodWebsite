@@ -12,7 +12,7 @@ function PatrateModulePage() {
 
     return(
         <Layout 
-            title={`${products.patrateModule[1].name} | Belvedere Wood Parquet`}
+            title={`${products.patrateModule[1].name} | Belvedere Wood Паркет`}
             description="Для паркета из коллекции «Модуль» Belvedere Wood Паркет предлагает 2 размера наиболее популярных квадратных плиток, но мы поддерживаем любой индивидуальный дизайн, который вы захотите разработать."
             lang={1}
             langStr="/ru"

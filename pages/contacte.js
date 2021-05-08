@@ -10,7 +10,7 @@ function ContactePage() {
     return(
         <Layout
             noFooter = {true}
-            title={"Contacte | Belvedere Wood Parquet"}
+            title={"Contacte | Belvedere Wood Parchet"}
             description="Contactați Belvedere Wood Parchet la numărul '+37369239184' sau vizitați showroom-ul nostru pe adresa 'strada Uzinelor 15/4' pentru a discuta detalii cu privință la serviciile noastre/proiecte de parteneriat."
             lang={0}
             langStr=""

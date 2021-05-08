@@ -11,7 +11,7 @@ function Proiecte() {
 
     return(
         <Layout 
-            title="Proiectele noastre | Belvedere Wood Parquet"
+            title="Proiectele noastre | Belvedere Wood Parchet"
             description="Proiecte : Vedeți cum parchetul marca Belvedere Wood Parchet s-a înscris atât de organic și natural în interierul destinațiilor de importanță națională și a restaurantelor îndrăgite"
             lang={0}
             langStr=""

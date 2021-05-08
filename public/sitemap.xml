@@ -56,7 +56,130 @@
     </url>
 
     <url>
-        <loc>https://www.belvederewood.md/contactsPage</loc>
+        <loc>https://www.belvederewood.md/contactePage</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+
+    <url>
+        <loc>https://www.belvederewood.md/ru</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/despre-noi</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog/parchetBradut</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog/parchetPunte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog/patrateModule</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog/scari</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/catalog/pereti</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/proiecte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/ru/contactePage</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+    <url>
+        <loc>https://www.belvederewood.md/en</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/despre-noi</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog/parchetBradut</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog/parchetPunte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog/patrateModule</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog/scari</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/catalog/pereti</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/proiecte</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.belvederewood.md/en/contactePage</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>

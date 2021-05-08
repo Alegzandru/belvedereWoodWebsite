@@ -12,7 +12,7 @@ function ParchetBradutPage() {
 
     return(
         <Layout 
-            title={`${products.parchetBradut[1].name} | Belvedere Wood Parquet`}
+            title={`${products.parchetBradut[1].name} | Belvedere Wood Паркет`}
             description="Belvedere Wood Паркет предлагает 3 различных угла укладки паркетной доски из колекций ”Паркет Ёлочка” : 45 градусов (Шеврон), 60 (венгерская ель) и 90 градусов (Герингбон)."
             lang={1}
             langStr="/ru"

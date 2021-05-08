@@ -11,7 +11,7 @@ function Proiecte() {
 
     return(
         <Layout 
-            title="Проекты | Belvedere Wood Parquet"
+            title="Проекты | Belvedere Wood Паркет"
             description="Проекты: узнайте, как паркетный пол Belvedere Wood Паркет стал настолько органичным и естественным в интерьерах объектов национального значения и любимых ресторанов."
             lang={1}
             langStr="/ru"

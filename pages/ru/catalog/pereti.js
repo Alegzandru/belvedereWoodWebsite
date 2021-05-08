@@ -12,7 +12,7 @@ function PeretiPage() {
 
     return(
         <Layout 
-            title={`${products.pereti[1].name} | Belvedere Wood Parquet`}
+            title={`${products.pereti[1].name} | Belvedere Wood Паркет`}
             description="В сотрудничестве с международными дизайнерами Belvedere Wood Паркет предлагает клиентам деревянные стены и потолки. Макеты таких работ также можно увидеть в нашем выставочном зале."
             lang={1}
             langStr="/ru"

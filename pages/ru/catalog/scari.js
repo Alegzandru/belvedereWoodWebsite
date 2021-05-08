@@ -12,7 +12,7 @@ function ScariPage() {
 
     return(
         <Layout 
-            title={`${products.scari[1].name} | Belvedere Wood Parquet`}
+            title={`${products.scari[1].name} | Belvedere Wood Паркет`}
             description="Деревянные лестницы Belvedere Wood Паркет - это очень вдохновляющий выбор для завершения дизайна любого дома и объединения его этажей."
             lang={1}
             langStr="/ru"

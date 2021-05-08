@@ -12,7 +12,7 @@ function DespreNoi() {
 
     return(
         <Layout 
-            title={"Despre noi | Belvedere Wood Parquet"}
+            title={"Despre noi | Belvedere Wood Parchet"}
             description="Istoria companiei Belvedere Wood Parchet - fondată în 2011, BWP are o experiență vastă în producerea, instalarea și restaurarea parchetului , precum și a pereților și scărilor din lemn."
             lang={0}
             langStr=""

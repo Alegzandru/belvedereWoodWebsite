@@ -12,7 +12,7 @@ function ParchetPuntePage() {
 
     return(
         <Layout 
-            title={"Parchet Punte | Belvedere Wood Parquet"}
+            title={"Parchet Punte | Belvedere Wood Parchet"}
             description="Parchetul Punte este foarte des întâlnit în diverse proiecte marca Belvedere Wood Parchet, datorită caracteristicilor întunecate rectilinii, care se vor combina minunat cu stilul minimalist, una din tendințele majore ale ultimilor 2 ani."
             lang={0}
             langStr=""

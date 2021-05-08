@@ -76,8 +76,6 @@ export function Navbar(props){
         () => {
             setBlackNavbar(router.pathname == `${props.langStr}/despre-noi` || router.pathname == `${props.langStr}/proiecte` ? true : false)
             setWidth(size.width)
-            console.log(route1)
-            console.log(route2)
         }
     )
 

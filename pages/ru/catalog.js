@@ -10,7 +10,7 @@ function Catalog() {
 
     return(
         <Layout 
-            title={"Каталог | Belvedere Wood Parquet"}
+            title={"Каталог | Belvedere Wood Паркет"}
             description="Различные виды паркета, деревянные стены и лестницы - все это часть богатого ассортимента продукции Belvedere Wood Паркет."
             lang={1}
             langStr="/ru"

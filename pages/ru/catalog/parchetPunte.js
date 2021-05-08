@@ -12,7 +12,7 @@ function ParchetPuntePage() {
 
     return(
         <Layout 
-            title={`${products.parchetPunte[1].name} | Belvedere Wood Parquet`}
+            title={`${products.parchetPunte[1].name} | Belvedere Wood Паркет`}
             description="Паркетные палубы очень часто используется в различных проектах Belvedere Wood Паркет из-за темных прямолинейных характеристик, которые прекрасно сочетаются с минималистским стилем, одним из основных трендов последних двух лет."
             lang={1}
             langStr="/ru"

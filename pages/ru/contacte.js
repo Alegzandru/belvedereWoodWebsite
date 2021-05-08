@@ -10,7 +10,7 @@ function ContactePage() {
     return(
         <Layout
             noFooter = {true}
-            title={"Контакты | Belvedere Wood Parquet"}
+            title={"Контакты | Belvedere Wood Паркет"}
             description="Свяжитесь с Belvedere Wood Parquet по телефону +37369239184 или посетите наш выставочный зал на улице Узинелор 15/4, чтобы обсудить детали наших услуг / партнерских проектов."
             lang={1}
             langStr="/ru"
