@@ -20,11 +20,10 @@ export default function App({ Component, pageProps }) {
       <WidthContext.Provider value={valueWidth}>
         <LanguageContext.Provider value={valueLanguage}>
           <Component {...pageProps} />
-          {/* <MessengerCustomerChat
-            pageId="<PAGE_ID>"
-            appId="<APP_ID>"
-            htmlRef="<REF_STRING>"
-          /> */}
+          <MessengerCustomerChat
+            pageId="1702839073333694"
+            appId="1221952348222595"
+          />
         </LanguageContext.Provider>
       </WidthContext.Provider>
     </GoogleTagManager>
