@@ -14,7 +14,7 @@ function HomePage() {
 
     return(
         <Layout 
-            title={"Pagina principală | Belvedere Wood Parchet"}
+            title={"Belvedere Wood Parchet"}
             description="Belvedere Wood Parchet - producerea, instalarea, restaurarea parchetului, pereților și scărilor din lemn în Chișinău, Moldova. Puteți vedea exemple ale parchetului și lucrărior noastre din lemn la showroomul de pe strada Uzinelor 15/4, Chișinău, Moldova"
             lang={0}
             langStr=""

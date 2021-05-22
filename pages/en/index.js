@@ -14,7 +14,7 @@ function HomePage() {
 
     return(
         <Layout 
-            title={"Main Page | Belvedere Wood Parquet"}
+            title={"Belvedere Wood Parquet"}
             description="Belvedere Wood Parquet - production, installation, restoration of parquet, wooden walls and stairs in Chisinau, Moldova. You can see examples of our parquet and woodwork at the showroom on '15/4 Uzinelor Street', Chisinau, Moldova"
             lang={2}
             langStr="/en"

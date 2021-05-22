@@ -125,7 +125,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    box-shadow: 4px 4px 10px rgb(3, 29, 30, 0.25);
+    box-shadow: 4px 4px 10px rgba(3, 29, 30, 0.25);
 
     width: 100%;
     transition: 400ms;
