@@ -7,6 +7,8 @@ import {Link as LinkScroll} from 'react-scroll'
 import { text } from "../text"
 import Image from 'next/image'
 import {Fade} from "react-reveal"
+import emailjs from 'emailjs-com';
+
 
 
 export function ProdusPage(props){
@@ -57,18 +59,18 @@ export function ProdusPage(props){
         };
 
         emailjs
-        .send("contact_bwp", "contact_bwp_template", templateParams, "user_EqOBrPF8rtgBDhkZe8vcW")
-        .then(
-                function(response) {
-                // toast.success("Your message has successfully sent!", {
-                //     position: toast.POSITION.BOTTOM_CENTER
-                // });
-                console.log("SUCCESS!", response.status, response.text);
-                },
-                function(err) {
-                // toast.error("Your message was not able to be sent");
-                }
-            );
+            .send("contact_bwp", "contact_bwp_template", templateParams, "user_EqOBrPF8rtgBDhkZe8vcW")
+            .then(
+                    function(response) {
+                    // toast.success("Your message has successfully sent!", {
+                    //     position: toast.POSITION.BOTTOM_CENTER
+                    // });
+                    console.log("SUCCESS!", response.status, response.text);
+                    },
+                    function(err) {
+                    // toast.error("Your message was not able to be sent");
+                    }
+                );
         setState({
             nume: "",
             prenume: "",
