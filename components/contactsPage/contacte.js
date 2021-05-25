@@ -30,12 +30,12 @@ export function Contacte(props){
 
         const templateParams = {
             from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
-            to_name: "Alexandru Codreanu",
+            to_name: "Belvedere Wood Parquet",
             message: state.message
         };
 
         emailjs
-            .send("contact_service_bwp", "contact_form", templateParams, "user_mI8fMO1xh7LRltvIQ3FQk")
+            .send("contact_bwp", "contact_bwp_template", templateParams, "user_EqOBrPF8rtgBDhkZe8vcW")
             .then(
                 function(response) {
                 // toast.success("Your message has successfully sent!", {
