@@ -29,7 +29,7 @@ export function Contacte(props){
         e.preventDefault();
 
         const templateParams = {
-            from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
+            from_name: state.nume + state.prenume + " ( Email : " + state.email + ", telefon : " + state.number + ")",
             to_name: "Belvedere Wood Parquet",
             message: state.message
         };
