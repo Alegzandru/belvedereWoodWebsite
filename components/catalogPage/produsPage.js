@@ -51,14 +51,14 @@ export function ProdusPage(props){
         e.preventDefault();
 
         const templateParams = {
-            from_name: state.nume + state.prenume + " (" + state.email + " " + state.number + ")",
-            to_name: "Alexandru Codreanu",
+            from_name: state.nume + state.prenume + " ( Email : " + state.email + ", telefon : " + state.number + ")",
+            to_name: "Belvedere Wood Parquet",
             message: state.message
         };
 
         emailjs
-            .send("contact_service_bwp", "contact_form", templateParams, "user_mI8fMO1xh7LRltvIQ3FQk")
-            .then(
+        .send("contact_bwp", "contact_bwp_template", templateParams, "user_EqOBrPF8rtgBDhkZe8vcW")
+        .then(
                 function(response) {
                 // toast.success("Your message has successfully sent!", {
                 //     position: toast.POSITION.BOTTOM_CENTER
