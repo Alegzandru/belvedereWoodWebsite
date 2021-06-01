@@ -148,23 +148,35 @@ export function Footer(props){
                         </div>
                     </div>
                     <Fade bottom>
-                        <div className={styles.devContainer}>
-                            <img 
-                                src="/devImg.svg"
-                                className={styles.devImg}
-                                alt=""
-                            ></img>
-                            <a 
-                                href="https://lira.md/"
-                                target="blank"
-                                style={{
-                                    textDecoration: "underline",
-                                    color : "#9A9A9A"
-                                }}
-                            >
-                                {text.layout[props.lang].devText}
-                            </a>
-                        </div>
+                        <a 
+                            href="https://lira.md/"
+                            target="blank"
+                            style={{
+                                textDecoration: "none",
+                                width: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                justifyContent : "flex-start"
+                            }}
+                        >
+                            <div className={styles.dev}>
+                                <div className={styles.devContainer}>
+                                    <div>
+                                        Crafted by
+                                    </div>
+                                    <img 
+                                        src="/lira.svg"
+                                        className={styles.devImg}
+                                        alt=""
+                                    ></img>
+                                    <div className={styles.lira}>
+                                        Lira
+                                    </div>
+                                </div>
+                                <div className={styles.liraLine}/>
+                            </div>
+                        </a>
                     </Fade>
                 </div>
             </section>
