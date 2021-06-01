@@ -19,3 +19,8 @@ export const WidthContext = React.createContext({
   width: 0,
   setWidth: () => {}
 })
+
+export const PopupContext = React.createContext({
+  popupOpen : 0,
+  setPopupOpen : () => {}
+})
