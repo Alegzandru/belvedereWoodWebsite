@@ -63,7 +63,7 @@ function HomePage() {
                                 Nu pierde oferta limitată!
                             </div>
                             <div className={styles.subheading}>
-                                Fă o programare în showroomul nostru și primește <span className={styles.accent}>5%</span> reducere
+                                Fă o programare în showroomul nostru și primește <span className={styles.accent}>10%</span> reducere
                             </div>
                             <a 
                                 href="tel:37368448111"
