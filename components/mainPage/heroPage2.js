@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
 import styles from "../../styles/mainPage/heroPage.module.css"
 import Link from 'next/link'
 import {text} from "../text"
+import {WidthContext} from "../context"
 
 // Images
 const slide1 = "/mainPage/slider/slide1.jpg";
@@ -13,6 +14,9 @@ const slide5 = "/mainPage/slider/slide5.jpg";
 
 
 export const HeroPage2 = (props) => {
+
+    const {width, setWidth} = useContext(WidthContext)
+    console.log(width)
 
   return (
     <HeroSlider
@@ -37,7 +41,7 @@ export const HeroPage2 = (props) => {
         shouldAutoplay: true,
         shouldDisplayButtons: true,
         autoplayDuration: 5000,
-        height: "100vh"
+        height: width < 1080 ? "80vh" : "100vh"
       }}
     >
 

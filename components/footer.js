@@ -88,12 +88,12 @@ export function Footer(props){
                                     />
                                     <a 
                                         className={styles.desktopLink}
-                                        href="tel:37379123456"
+                                        href="tel:37368448111"
                                         style={{
                                             textDecoration: "none"
                                         }}
                                     >
-                                        +37369239184
+                                        0 (68) 448111
                                     </a>
                                 </div>
                                 <div className={styles.contactsBox}>
@@ -129,12 +129,12 @@ export function Footer(props){
                         <div className={styles.rightContainer}>
                             <a 
                                 className={styles.button}
-                                href="tel:37369239184"
+                                href="tel:37368448111"
                                 style={{
                                     textDecoration: "none"
                                 }}
                             >
-                                +373 69 239 184
+                                0 (68) 448111
                             </a>
                         </div>
                     </div>

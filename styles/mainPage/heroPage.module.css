@@ -261,6 +261,13 @@
 
 @media screen and (max-width: 1080px){
 
+    .heroPageWrapper{
+        height: 80vh;
+        width: 100%;
+    
+        overflow: hidden;
+    }
+
     .heroPageSection{
         width: 528px;
         margin-left: auto;
@@ -269,7 +276,7 @@
     
     .heroPageContainer{
         height: 411px;
-        margin-top: calc( (100vh - 411px)/2 );
+        margin-top: calc( (80vh - 411px)/2 );
 
         width: 528px;
     }
@@ -311,13 +318,21 @@
 }
 
 @media screen and (max-width: 528px){
+
+    .heroPageWrapper{
+        height: 80vh;
+        width: 100%;
+    
+        overflow: hidden;
+    }
+
     .heroPageContainer{
         margin-left: 16px;
         margin-right: 16px;
         margin-top: -50px;
 
         height: 343px;
-        margin-top: calc( (100vh - 343px)/2 );
+        margin-top: calc( (80vh - 343px)/2 );
 
         width: auto;
     }

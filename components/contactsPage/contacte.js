@@ -82,13 +82,13 @@ export function Contacte(props){
                             </div>
                             <div className={styles.contactsLink}>
                                 <a 
-                                    href="tel:37369239184"
+                                    href="tel:37368448111"
                                     style={{
                                         textDecoration: "none",
                                         color: "#EDB65C"
                                     }}
                                 >
-                                    +37369239184
+                                    0 (68) 448111
                                 </a>
                             </div>
                         </div>
