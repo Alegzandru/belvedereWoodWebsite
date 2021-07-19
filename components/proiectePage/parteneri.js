@@ -71,6 +71,13 @@ export function Parteneri(props){
                                 className={styles.img}
                             />
                         </a>
+                        <a target="blank" href="https://abandpartners.net/">
+                            <img
+                                src="/proiecte/logo10.png"
+                                alt="AB and partners"
+                                className={styles.img}
+                            />
+                        </a>
                         <a target="blank" href="http://www.tover.com/?lang=en">
                             <img
                                 src="/proiecte/logo1.png"

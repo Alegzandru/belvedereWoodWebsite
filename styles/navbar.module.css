@@ -82,6 +82,11 @@
     box-sizing: border-box;
 }
 
+.linkMobile:hover{
+    color: #FCC84E;
+    transition: 300ms;
+}
+
 /* .linkMobile:hover{
     border: 6px solid #031D1E;
     border-left-width: 6px;
@@ -92,6 +97,11 @@
 
 .mobileA{
     text-decoration: none;
+}
+
+.mobileA:hover{
+    color: #fcc84e;
+    transition: 300ms;
 }
 
 .container{

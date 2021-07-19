@@ -9,7 +9,6 @@ import {text} from "./text"
 import { Divide as Hamburger } from 'hamburger-react'
 
 function useWindowSize() {
-
     const [windowSize, setWindowSize] = useState({
       width: undefined,
       height: undefined,

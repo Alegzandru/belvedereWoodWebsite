@@ -4,6 +4,7 @@ import {LanguageContext, WidthContext, PopupContext} from "../components/context
 import {useState} from "react"
 import GoogleTagManager from '../components/GoogleTagManager'
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import NextNProgress from "../components/NextNProgress"
 
 
 // This default export is required in a new `pages/_app.js` file.
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
       <PopupContext.Provider value={valuePopup}>
         <WidthContext.Provider value={valueWidth}>
           <LanguageContext.Provider value={valueLanguage}>
+            <NextNProgress/>
             <Component {...pageProps} />
             <MessengerCustomerChat
               pageId="1702839073333694"

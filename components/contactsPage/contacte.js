@@ -190,7 +190,6 @@ export function Contacte(props){
                                         type="text" 
                                         placeholder = {text.contactsPage[props.lang].nume}
                                         className={styles.inputSmall}
-                                        type="text" 
                                         id="name"
                                         name="nume"
                                         onChange={handleInputChange}
