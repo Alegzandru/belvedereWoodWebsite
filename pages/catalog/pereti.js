@@ -12,8 +12,8 @@ function PeretiPage() {
 
     return(
         <Layout 
-            title={"Pereți din lemn natural | Belvedere Wood Parchet"}
-            description="În colaborare cu designeri internaționali, Belvedere Wood Parchet propune clienților pereți și tavane din lemn. Modele de astfel de lucrări pot fi văzute și în showroom-ul nostru."
+            title={"Pereti din lemn natural | Belvedere Wood Parchet"}
+            description="In colaborare cu designeri internationali, Belvedere Wood Parchet propune clientilor pereti si tavane din lemn. Modele de astfel de lucrari pot fi vazute si în showroom-ul nostru."
             lang={0}
             langStr=""
         >

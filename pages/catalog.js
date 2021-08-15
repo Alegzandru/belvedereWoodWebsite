@@ -11,7 +11,7 @@ function Catalog() {
     return(
         <Layout 
             title={"Toate produsele | Belvedere Wood Parchet"}
-            description="Diferite tipuri de parchet, pereți și scări din lemn - toate acestea fac parte din asortimentul bogat de produse al companiei Belvedere Wood Parchet"
+            description="Diferite tipuri de parchet, pereti si scari din lemn - toate acestea fac parte din asortimentul bogat de produse al companiei Belvedere Wood Parchet"
             lang={0}
             langStr=""
         >

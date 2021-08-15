@@ -12,8 +12,8 @@ function ParchetBradutPage() {
 
     return(
         <Layout 
-            title={`Parchet Brăduț | Belvedere Wood Parchet`}
-            description="Belvedere Wood Parchet propune 3 unghiuri diferite de de aranjare a plăcilor de parchet brăduț: 45 grade (Chevron), 60 (Brăduț Unguresc) grade și 90 de grade (Heringbone)."
+            title={`Parchet Bradut | Belvedere Wood Parchet`}
+            description="Belvedere Wood Parchet propune 3 unghiuri diferite de de aranjare a placilor de parchet bradut: 45 grade (Chevron), 60 (Bradut Unguresc) grade si 90 de grade (Heringbone)."
             lang={0}
             langStr=""
         >

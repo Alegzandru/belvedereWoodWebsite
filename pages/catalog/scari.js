@@ -12,8 +12,8 @@ function ScariPage() {
 
     return(
         <Layout 
-            title={"Scări din lemn masiv | Belvedere Wood Parchet"}
-            description="Scările din lemn marca Belvedere Wood Parchet sunt o alegere deosebit de inspirată pentru a completa designul din orice casă și a uni etajele acesteia."
+            title={"Scari din lemn masiv | Belvedere Wood Parchet"}
+            description="Scarile din lemn marca Belvedere Wood Parchet sunt o alegere deosebit de inspirata pentru a completa designul din orice casa și a uni etajele acesteia."
             lang={0}
             langStr=""
         >

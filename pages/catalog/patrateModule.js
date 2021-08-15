@@ -13,7 +13,7 @@ function PatrateModulePage() {
     return(
         <Layout 
             title={"Parchet Modular | Belvedere Wood Parchet"}
-            description="Pentru parchetul din colecția „Module”, Belvedere Wood Parchet propune 2 dimensiuni ale plăcilor pătrate cele mai populare, însă susținem orice design individual pe care doriți să îl elaborăm."
+            description="Pentru parchetul din colectia „Module”, Belvedere Wood Parchet propune 2 dimensiuni ale placilor pătrate cele mai populare, insa sustinem orice design individual pe care doriti sa il elaboram."
             lang={0}
             langStr=""
         >
