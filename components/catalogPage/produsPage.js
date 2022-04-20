@@ -62,13 +62,9 @@ export function ProdusPage(props){
             .send("contact_bwp", "contact_bwp_template", templateParams, "user_EqOBrPF8rtgBDhkZe8vcW")
             .then(
                     function(response) {
-                    // toast.success("Your message has successfully sent!", {
-                    //     position: toast.POSITION.BOTTOM_CENTER
-                    // });
                     console.log("SUCCESS!", response.status, response.text);
                     },
                     function(err) {
-                    // toast.error("Your message was not able to be sent");
                     }
                 );
         setState({
@@ -365,6 +361,7 @@ export function ProdusPage(props){
                     </div>
                 </div>
             </Fade>
+
             <div 
                 className={styles.wrapper}
                 style={{
@@ -504,7 +501,7 @@ export function ProdusPage(props){
                                     {props.product.descriptionLong} 
                                 </div>
                                 <div className={styles.buttonsWrapper}>
-                                    <div 
+                                    {/* <div 
                                         className={styles.button}
                                         onClick={ () => {
                                             setPopupOpen(true) 
@@ -515,7 +512,7 @@ export function ProdusPage(props){
                                         }}
                                     >
                                         {text.catalogPage.produsPage[props.lang].button1}
-                                    </div>
+                                    </div> */}
                                     <div 
                                         className={styles.button}
                                         onClick={ () => {
@@ -603,9 +600,9 @@ export function ProdusPage(props){
                                         </div>
                                     </LinkScroll>
 
-                                    <div className={styles.priceBox}>
+                                    {/* <div className={styles.priceBox}>
                                         {text.catalogPage.produsPage[props.lang].price} <span className={styles.price}>{props.product.types[0].price}</span>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className={`${styles.mobileTypeWrapper} ${styles.firstType}`}>
@@ -633,9 +630,9 @@ export function ProdusPage(props){
                                         </div>
                                     </LinkScroll>
                                     
-                                    <div className={styles.priceBox}>
+                                    {/* <div className={styles.priceBox}>
                                         {text.catalogPage.produsPage[props.lang].price} <span className={styles.price}>{props.product.types[1].price}</span>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div 
@@ -669,9 +666,9 @@ export function ProdusPage(props){
                                         </div>
                                     </LinkScroll>
                                     
-                                    <div className={styles.priceBox}>
+                                    {/* <div className={styles.priceBox}>
                                         {text.catalogPage.produsPage[props.lang].price} : <span className={styles.price}>65-80 EUR/mp</span>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                             </div>
