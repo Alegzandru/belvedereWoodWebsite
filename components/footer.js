@@ -88,12 +88,23 @@ export function Footer(props){
                                     />
                                     <a 
                                         className={styles.desktopLink}
-                                        href="tel:37368448111"
+                                        href="tel:+37360490505"
                                         style={{
                                             textDecoration: "none"
                                         }}
                                     >
-                                        0 (68) 448111
+                                    0 (60) 490505
+                                    </a>
+
+
+                                             <a 
+                                        className={styles.desktopLink}
+                                        href="tel:+37369239184"
+                                        style={{
+                                            textDecoration: "none"
+                                        }}
+                                    >
+                                        0 (69) 239184
                                     </a>
                                 </div>
                                 <div className={styles.contactsBox}>
@@ -129,12 +140,22 @@ export function Footer(props){
                         <div className={styles.rightContainer}>
                             <a 
                                 className={styles.button}
-                                href="tel:37368448111"
+                                href="tel:37360490505"
                                 style={{
                                     textDecoration: "none"
                                 }}
                             >
-                                0 (68) 448111
+                               0 (60) 490505
+                            </a>
+
+                                     <a 
+                                className={styles.button}
+                                href="tel:37369239184"
+                                style={{
+                                    textDecoration: "none"
+                                }}
+                            >
+                                 0 (69) 239184
                             </a>
                         </div>
                     </div>
