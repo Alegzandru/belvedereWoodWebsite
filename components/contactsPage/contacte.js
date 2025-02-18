@@ -91,20 +91,6 @@ export function Contacte(props){
                                     0 (60) 490505
                                 </a>
 
-
-
-                                             <a 
-                                    href="tel:++37369239184"
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "#EDB65C"
-                                    }}
-                                >
-                                    0 (69) 239184
-                                </a>
-
-
-
                                         
                             </div>
                         </div>
