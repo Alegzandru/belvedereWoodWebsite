@@ -1,5 +1,5 @@
 import styles from "../../styles/despreNoi/istoria.module.css"
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import {text} from "../text"
 
 

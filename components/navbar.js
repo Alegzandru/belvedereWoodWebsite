@@ -4,7 +4,7 @@ import React, {useState, useEffect, useContext} from "react"
 import { useRouter } from 'next/router'
 import {NavbarContext, LanguageContext, WidthContext} from "./context"
 import Link from 'next/link'
-import Slide from 'react-reveal/Slide';
+import {Slide} from 'react-awesome-reveal';
 import {text} from "./text"
 import { Divide as Hamburger } from 'hamburger-react'
 

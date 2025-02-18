@@ -6,7 +6,7 @@ import {WidthContext} from "../context"
 import {Link as LinkScroll} from 'react-scroll'
 import { text } from "../text"
 import Image from 'next/image'
-import {Fade} from "react-reveal"
+import {Fade} from "react-awesome-reveal"
 import emailjs from 'emailjs-com';
 
 

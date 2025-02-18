@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../../styles/proiecte/toateProiectele.module.css"
 import Link from 'next/link'
 import {Link as LinkScroll} from 'react-scroll'
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import {text} from "../text"
 
 

@@ -77,3 +77,56 @@ body{
     font-display: swap;
 }
 
+.slick-slider img.projects { 
+    width: auto;     
+    height: 700px;
+    object-fit: cover;
+}
+
+.slick-slider img.hero { 
+    width: auto;     
+    height: 100vh;
+    object-fit: cover;
+}
+
+.slick-prev {
+    left: 0px;
+    z-index: 10;
+}
+
+.slick-next {
+    right: 0px;
+    z-index: 10;
+}
+
+.slick-dots {
+    bottom: 0px;
+    z-index: 10;
+    padding-bottom: 40px;
+}
+
+.slick-dots li {
+    width: 40px;
+    height: 2px;
+}
+
+.slick-dots li button {
+    width: 40px;
+    height: 2px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slick-dots li.slick-active button {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slick-dots li ::before {
+    display: none
+}
+
+@media screen and (max-width: 1080px){
+    .slick-slider img.hero { 
+        height: 80vh;
+    }    
+}

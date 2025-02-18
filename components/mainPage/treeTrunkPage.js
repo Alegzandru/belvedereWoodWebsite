@@ -2,7 +2,7 @@ import styles from "../../styles/mainPage/treeTrunkPage.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {useState} from "react"
-import Fade from "react-reveal"
+import {Fade} from "react-awesome-reveal"
 import {text} from "../text"
 
 

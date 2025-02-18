@@ -10,7 +10,7 @@ import {useContext, useEffect, useState, useRef} from "react"
 import Cookies from 'universal-cookie';
 import styles from "../styles/mainPage/popup.module.css"
 import Image from "next/image"
-import Fade from 'react-reveal/Fade';
+import {Fade, Slide} from 'react-awesome-reveal';
 
 function HomePage() {
 
@@ -51,56 +51,54 @@ function HomePage() {
             langStr=""
         >
             <div ref={wrapperRef}>
-                <Fade bottom>
-                    <div 
-                        className={styles.popupWrapper}
-                        style={{
-                            display : renderPopup && !popupOpen ? "flex" : "none",
-                        }}
-                    >
-                        <div className={styles.textWrapper}>
-                            <div className={styles.heading}>
-                                Nu pierde oferta limitată!
-                            </div>
-                            <div className={styles.subheading}>
-                                Fă o programare în showroomul nostru și primește <span className={styles.accent}>10%</span> reducere
-                            </div>
-                            <a 
-                                href="tel:37368448111"
-                                style={{
-                                    textDecoration: "none"
-                                }}
-                                onClick={() => 
-                                    setPopupOpen(1)
-                                }
-                            >
-                                <div className={styles.button}>
-                                    0 (68) 448111
-                                </div>
-                            </a>
+                <div 
+                    className={styles.popupWrapper}
+                    style={{
+                        display : renderPopup && !popupOpen ? "flex" : "none",
+                    }}
+                >
+                    <div className={styles.textWrapper}>
+                        <div className={styles.heading}>
+                            Nu pierde oferta limitată!
                         </div>
-                        <div className={styles.photoWrapper}>
-                            <div 
-                                className={styles.close}
-                                onClick={() => {
-                                    cookies.set('Closed', 1, { path: '/' })
-                                    setPopupOpen(1)
-                                }}
-                            >
-                                <Image
-                                    src="/popup/close.svg"
-                                    layout="fill"
-                                    objectFit="cover"
-                                />
+                        <div className={styles.subheading}>
+                            Fă o programare în showroomul nostru și primește <span className={styles.accent}>10%</span> reducere
+                        </div>
+                        <a 
+                            href="tel:37368448111"
+                            style={{
+                                textDecoration: "none"
+                            }}
+                            onClick={() => 
+                                setPopupOpen(1)
+                            }
+                        >
+                            <div className={styles.button}>
+                                0 (68) 448111
                             </div>
+                        </a>
+                    </div>
+                    <div className={styles.photoWrapper}>
+                        <div 
+                            className={styles.close}
+                            onClick={() => {
+                                cookies.set('Closed', 1, { path: '/' })
+                                setPopupOpen(1)
+                            }}
+                        >
                             <Image
-                                src="/popup/bg.jpeg"
+                                src="/popup/close.svg"
                                 layout="fill"
                                 objectFit="cover"
                             />
                         </div>
+                        <Image
+                            src="/popup/bg.jpeg"
+                            layout="fill"
+                            objectFit="cover"
+                        />
                     </div>
-                </Fade>
+                </div>
             </div>
 
             <div

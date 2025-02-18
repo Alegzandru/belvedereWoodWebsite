@@ -2,7 +2,7 @@ import styles from "../../styles/mainPage/heroPage.module.css"
 import Image from 'next/image'
 import React, {useState, useEffect} from "react"
 import Link from 'next/link'
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 
 
 export function HeroPage(){

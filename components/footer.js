@@ -2,7 +2,7 @@ import styles from "../styles/footer.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import {text} from "./text"
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 
 
 export function Footer(props){
@@ -95,6 +95,7 @@ export function Footer(props){
                                     >
                                     0 (60) 490505
                                     </a>
+                                </div>
                                 <div className={styles.contactsBox}>
                                     <img
                                         src="/mainPage/InstagramIcon2.svg"
@@ -156,7 +157,7 @@ export function Footer(props){
                             {text.layout[props.lang].footerText}
                         </div>
                     </div>
-                    <Fade bottom>
+                    <Fade>
                         <a 
                             href="https://lira.md/"
                             target="blank"

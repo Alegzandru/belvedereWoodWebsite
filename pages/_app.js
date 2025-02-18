@@ -3,7 +3,6 @@ import '../styles/global.css'
 import {LanguageContext, WidthContext, PopupContext} from "../components/context"
 import {useState} from "react"
 import GoogleTagManager from '../components/GoogleTagManager'
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import NextNProgress from "../components/NextNProgress"
 
 
@@ -26,10 +25,6 @@ export default function App({ Component, pageProps }) {
           <LanguageContext.Provider value={valueLanguage}>
             <NextNProgress/>
             <Component {...pageProps} />
-            <MessengerCustomerChat
-              pageId="1702839073333694"
-              appId="1221952348222595"
-            />
           </LanguageContext.Provider>
         </WidthContext.Provider>
       </PopupContext.Provider>

@@ -1,6 +1,6 @@
 import styles from "../../styles/mainPage/servicesPage.module.css"
 import {useState, useEffect} from "react"
-import Fade from 'react-reveal/Fade';
+import {Fade} from 'react-awesome-reveal';
 import {text} from "../text"
 
 
