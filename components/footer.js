@@ -95,18 +95,6 @@ export function Footer(props){
                                     >
                                     0 (60) 490505
                                     </a>
-
-
-                                             <a 
-                                        className={styles.desktopLink}
-                                        href="tel:+37369239184"
-                                        style={{
-                                            textDecoration: "none"
-                                        }}
-                                    >
-                                        0 (69) 239184
-                                    </a>
-                                </div>
                                 <div className={styles.contactsBox}>
                                     <img
                                         src="/mainPage/InstagramIcon2.svg"
